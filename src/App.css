@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+.headerContainer{
+    background: #27323E;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Logo{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    }
+.jsTitle{
+    background: linear-gradient(90deg, #FC4A1A 47.9%, #F7B733 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.hiButton{
+    width: 134px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 40px 40px 40px 0px;
+    background: linear-gradient(108deg, #FC4A1A -36.03%, #F7B733 128.44%);
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.headerBg{
+    background-image: url("./Images/laptop_phone_clock_178806_1920x1080.jpg");
+    background-position: center;
+    background-size: contain;
+   
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.myServiceContainer{
+    background-image: url("./Images/Ellipse\ 2.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
 }
