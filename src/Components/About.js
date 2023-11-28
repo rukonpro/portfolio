@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfilePhoto from './Images/profilePhoto.jpg';
+import ProfilePhoto from '../Images/profilePhoto.jpg';
 const About = () => {
     return (
         <section className=' w-screen bg-neutral-800 px-5 py-10'>
@@ -12,7 +12,7 @@ const About = () => {
                 </div>
                 <div>
                     <div className='pt-10'>
-                        <div className="w-[55px] h-[55px] bg-gradient-to-r from-orange-600 to-amber-400 rounded-full ">
+                        <div className="w-[55px] h-[55px] bg-gradient-to-r from-orange-600 to-amber-400 rounded-full customShadow ">
                             <div className='absolute px-5'>
                                 <h1 className="text-white text-6xl font-bold font-['Roboto'] ">About me</h1>
                             </div>

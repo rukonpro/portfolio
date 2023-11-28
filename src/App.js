@@ -1,4 +1,5 @@
 import './App.css';
+import About from './Components/About';
 import Blog from './Components/Blog';
 import Contact from './Components/Contact';
 import Header from './Components/Header';
@@ -15,6 +16,7 @@ function App() {
     <main className='headerBg'>
       <Navigation />
       <Header />
+      <About />
       <Services />
       <Portfolio />
       <Blog />

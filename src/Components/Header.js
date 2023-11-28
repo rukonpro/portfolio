@@ -8,12 +8,12 @@ const Header = () => {
                 <div>
                     <div>
                         <div>
-                            <button className="w-[134px] h-16 bg-gradient-to-r from-orange-600 to-amber-400 rounded-tl-[40px] rounded-tr-[40px] rounded-br-[40px] text-white text-[22px] font-bold font-['Roboto'] customShadow">
+                            <button className="w-[134px] py-2 bg-gradient-to-r from-orange-600 to-amber-400 rounded-tl-[40px] rounded-tr-[40px] rounded-br-[40px] text-white text-[22px] font-bold font-['Roboto'] ">
                                 Hello, i’m
                             </button>
                             <h1 className="text-white md:text-7xl text-5xl font-bold font-['Roboto'] pt-2  ">Rukon Uddin</h1>
 
-                            <h5 className="text-white text-xl font-bold font-['Roboto'] mt-2">FULL-STACK DEVELOPER | UX/UI DESIGNER | FREELANCER</h5>
+                            <h5 className="text-white md:text-xl text-base font-bold font-['Roboto'] mt-2">FULL-STACK DEVELOPER | UX/UI DESIGNER | FREELANCER</h5>
 
                             <div className='flex gap-4 pt-5'>
 
@@ -88,7 +88,7 @@ const Header = () => {
                 </div>
 
                 <div className='flex justify-end'>
-                    <img className='' alt='' src={Iphone} />
+                    <img className='md:w-5/6 w-2/3' alt='iphone' src={Iphone} />
                 </div>
             </div>
 
