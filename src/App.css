@@ -40,6 +40,7 @@
     background-image: url("./Images/laptop_phone_clock_178806_1920x1080.jpg");
     background-position: center;
     background-size: contain;
+    
    
 }
 .myServiceContainer{
@@ -48,3 +49,113 @@
     background-position: bottom left;
     background-size: cover;
 }
+
+.customShadow {
+    box-shadow: 
+      0px 0px 28px rgba(255, 1, 149, 0.967), /* black shadow */
+      0 -5px 10px -5px rgba(163, 34, 255, 0.367), /* red shadow */
+      5px 7px 10px 2px #6f00ff2d, /* green shadow */
+      -0px -1px 20px 5px #ff505055; /* blue shadow */
+  }
+
+
+  @keyframes example {
+    0%   {     
+        background-image: linear-gradient(100deg, rgb(10, 0, 201) 0%, rgb(56, 3, 37), rgba(255, 47, 0, 0.529) 100%);
+        transition: 10s;
+        rotate: 15deg;
+        transform: rotateX(15deg);
+        left: -1000px;
+        transform: scale(5)
+    }
+    10%  {     
+        background-image: linear-gradient(100deg, rgb(10, 0, 201) 0%, rgb(86, 31, 4) 35%, rgb(255, 119, 0) 100%);
+        transition: 10s;
+        rotate: 30deg;
+        transform: rotateY(30deg);
+        left: 10px;
+    }
+    20%  {     
+        background-image: linear-gradient(100deg, rgb(10, 0, 201) 0%, rgb(86, 31, 4) 35%, rgb(255, 174, 0) 100%);
+        transition: 10s;
+        rotate: 45deg;
+        transform: rotateZ(45deg);
+        left: 20px;
+    }
+    30%  {     
+        background-image: linear-gradient(100deg, rgb(10, 0, 201) 0%, rgb(86, 31, 4) 35%, rgb(166, 0, 255) 100%);
+        transition: 10s;
+        rotate: 65deg;
+        transform: rotateX(65deg);
+        left: 30px;
+    }
+    40%  {     
+        background-image: linear-gradient(100deg, rgb(10, 0, 201) 0%, rgb(86, 31, 4) 35%, rgb(0, 166, 8) 100%);
+        transition: 10s;
+        rotate: 85deg;
+        transform: rotateY(85deg);
+        left: 40px;
+    }
+    
+    50%  {     
+        background-image: linear-gradient(100deg, rgb(10, 0, 201) 0%, rgb(32, 32, 94) 35%, rgb(0, 242, 255) 100%);
+        transition: 10s;
+        rotate: 100deg;
+        transform: rotateZ(100deg);
+        left: 50px;
+    }
+    60%  {     
+        background-image: linear-gradient(100deg, rgb(10, 0, 201) 0%, rgb(86, 31, 4) 35%, rgb(0, 170, 255) 100%);
+        transition: 10s;
+        rotate: 115deg;
+        transform: rotateY(115deg);
+        left: -40px;
+    }
+    70%  {     
+        background-image: linear-gradient(100deg, rgb(10, 0, 201) 0%, rgb(86, 31, 4) 35%, rgb(123, 0, 255) 100%);
+        transition: 10s;
+        rotate: 130deg;
+        transform: rotateZ(130deg);
+        left: -30px;
+    }
+    80%  {     
+        background-image: linear-gradient(100deg, rgb(10, 0, 201) 0%, rgb(86, 31, 4) 35%, rgb(0, 4, 255) 100%);
+        transition: 10s;
+        rotate: 145deg;
+        transform: rotateX(145deg);
+        left: -20px;
+    }
+    90%  {     
+        background-image: linear-gradient(100deg, rgb(10, 0, 201) 0%, rgb(86, 31, 4) 35%, rgb(204, 0, 255) 100%);
+        transition: 10s;
+        rotate: 165deg;
+        transform: rotateY(165deg);
+        left: 50%;
+    }
+    100% {
+        
+        background-image: linear-gradient(100deg, rgb(10, 0, 201) 0%, rgb(0, 0, 0) 35%, rgb(255, 0, 123) 100%);
+        transition: 10s;
+        rotate: 190deg;
+        transform: rotateZ(190deg);
+        
+        transition-timing-function: ease-in;
+        left: 200%;
+        transform: scale(.1);
+        }
+        
+
+    
+  }
+
+  .bgGradient{
+    background-image: linear-gradient(100deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(255, 0, 195) 100%);
+    animation-name: example;
+    animation-duration: 10s;
+    transition: 5s;
+    animation-iteration-count: infinite;
+    rotate: 0deg;
+    transition-timing-function: ease-in;
+    left: -100px;
+    position: relative;
+  }
