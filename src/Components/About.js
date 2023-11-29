@@ -2,7 +2,7 @@ import React from 'react';
 import ProfilePhoto from '../Images/profilePhoto.jpg';
 const About = () => {
     return (
-        <section className=' w-screen bg-neutral-800 px-5 py-10'>
+        <section id="about" className=' w-screen bg-neutral-800 px-5 py-10'>
 
             <div className='container mx-auto grid md:grid-cols-2 '>
                 <div className="w-[292px] text-center ">

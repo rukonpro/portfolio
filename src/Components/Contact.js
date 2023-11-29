@@ -6,7 +6,7 @@ import SkypeIcon from "../Images/skype-icon.png";
 import LinkdinIcon from "../Images/linkedin-square-icon.svg";
 const Contact = () => {
     return (
-        <section className='bg-neutral-800 py-10 '>
+        <section id="contact" className='bg-neutral-800 py-10 '>
             <div className='container mx-auto '>
                 <div className="flex justify-start">
                     <div className="relative -inset-3   w-[55px] h-[55px] bg-gradient-to-r from-orange-600 to-amber-400 rounded-full customShadow" />
