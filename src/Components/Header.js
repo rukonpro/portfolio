@@ -2,7 +2,7 @@ import React from 'react';
 import Iphone from '../Images/iphon13.png';
 const Header = () => {
     return (
-        <header className='w-screen pb-10 bg-gradient-to-bl from-violet-950/90 from-5%  via-slate-900/90 via-60% to-rose-950/90    backdrop-blur-3xl  backdrop-opacity-70 backdrop-hue-rotate-15'>
+        <header id="home" className='w-screen pb-10 bg-gradient-to-bl from-violet-950/90 from-5%  via-slate-900/90 via-60% to-rose-950/90    backdrop-blur-3xl  backdrop-opacity-70 backdrop-hue-rotate-15'>
 
             <div className='md:flex flex-none justify-between container mx-auto md:pt-28 pt-28 md:px-0 px-5  '>
                 <div>

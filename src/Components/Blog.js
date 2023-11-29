@@ -8,7 +8,7 @@ import Blog42 from "../Images/Rectangle 42.png";
 
 const Blog = () => {
     return (
-        <section className="myServiceContainer  w-screen  bg-slate-800 py-10 px-5  overflow-x-hidden">
+        <section id="blogs" className="myServiceContainer  w-screen  bg-slate-800 py-10 px-5  overflow-x-hidden">
             <div className="flex-none md:flex justify-around items-center backdrop-blur-3xl  backdrop-opacity-70 ">
                 <div>
                     <div className="flex justify-center">

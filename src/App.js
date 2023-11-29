@@ -13,7 +13,7 @@ function App() {
 
 
   return (
-    <main className='headerBg'>
+    <main className='headerBg' >
       <Navigation />
       <Header />
       <About />

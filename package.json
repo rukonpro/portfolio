@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "rukon.js",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "daisyui": "^4.4.14",
     "tailwindcss": "^3.3.5"
   }
 }

@@ -6,7 +6,7 @@ import Ellipse from "../Images/Ellipse 7.png";
 
 const Services = () => {
     return (
-        <section className="myServiceContainer  w-screen   flex justify-center items-center bg-slate-800 py-20 ">
+        <section id="services" className="myServiceContainer  w-screen   flex justify-center items-center bg-slate-800 py-20 ">
             <div className="container mx-auto ">
                 <div className="flex justify-center">
                     <div className="relative  w-[55px] h-[55px] bg-gradient-to-r from-orange-600 to-amber-400 rounded-full right-28 customShadow"></div>
