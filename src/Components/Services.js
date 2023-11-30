@@ -6,7 +6,9 @@ import Ellipse from "../Images/Ellipse 7.png";
 
 const Services = () => {
     return (
-        <section id="services" className="myServiceContainer  w-screen   flex justify-center items-center bg-slate-800 py-20 ">
+        <section id="services" className="relative   w-screen   flex justify-center items-center bg-slate-800 py-20 ">
+            <div className="absolute inset-0    blur-[1000px]  w" style={{ background: "linear-gradient(-10.89deg, rgba(123, 0, 247, 0.29) 5.73%, rgba(95, 17, 189, 0.37) 15.74%, rgba(82, 10, 94, 0.39) 56.49%, rgba(197, 68, 255, 0.58) 115.91%)" }}></div>
+
             <div className="container mx-auto ">
                 <div className="flex justify-center">
                     <div className="relative  w-[55px] h-[55px] bg-gradient-to-r from-orange-600 to-amber-400 rounded-full right-28 customShadow"></div>

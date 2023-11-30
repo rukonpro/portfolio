@@ -6,7 +6,8 @@ import SkypeIcon from "../Images/skype-icon.png";
 import LinkdinIcon from "../Images/linkedin-square-icon.svg";
 const Contact = () => {
     return (
-        <section id="contact" className='bg-neutral-800 py-10 '>
+        <section id="contact" className='relative bg-neutral-800 py-10 '>
+            <div className="absolute inset-0    blur-[1000px]  w" style={{ background: "linear-gradient(190.89deg, rgb(123, 0, 247) 5.73%, rgba(95, 17, 189, 0.37) 15.74%, rgba(82, 10, 94, 0.39) 56.49%, rgba(197, 68, 255, 0.58) 115.91%)" }}></div>
             <div className='container mx-auto '>
                 <div className="flex justify-start">
                     <div className="relative -inset-3   w-[55px] h-[55px] bg-gradient-to-r from-orange-600 to-amber-400 rounded-full customShadow" />
@@ -14,7 +15,7 @@ const Contact = () => {
                 </div>
 
 
-                <div className='pt-24'>
+                <div className='pt-24 '>
                     <div className='grid md:grid-cols-2 md:gap-2'>
 
                         <div className='grid grid-cols-2 md:gap-5 md:pb-0 pb-16'>
@@ -49,6 +50,7 @@ const Contact = () => {
                             </div>
 
                             <div className='col-span-2 flex justify-center text-white font-bold font-["Roboto"] '>
+
                                 <button type='submit' className="w-[167px] h-[49px] bg-gradient-to-r from-orange-600/90 to-amber-400 rounded-[86.50px] customShadow" >
                                     Send
                                 </button>
@@ -56,7 +58,9 @@ const Contact = () => {
                         </div>
 
 
-                        <div className=" bg-gradient-to-bl from-violet-950/90 from-5%  via-slate-900/90 via-60% to-rose-950/90 rounded-[7px] p-5 mx-5">
+                        <div className=" relative bg-gradient-to-bl from-violet-950/90 from-5%  via-slate-900/90 via-60% to-rose-950/90 rounded-[7px] p-5 mx-5">
+                            <div className="absolute inset-0    blur-[1000px]  w" style={{ background: "linear-gradient(106.89deg, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%,rgba(192, 132, 252, 0.11) 5.73%,  rgba(79, 70, 229, 0.4) 115.91%)" }}></div>
+
                             <h1 className="text-white text-2xl font-bold font-['Roboto']">CONTACT INFO</h1>
                             <br />
                             <article  className="text-white text-lg font-bold font-['Roboto'] text-justify">"Ready to bring your digital vision to life. Let's connect and discuss how I can elevate your online presence. Reach out for web development expertise in HTML, CSS, JavaScript, and more. Looking forward to collaborating with you!"</article>

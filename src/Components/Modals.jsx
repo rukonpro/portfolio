@@ -11,7 +11,7 @@ const Modals = ({ data}) => {
                     <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 z-10">✕</button>
                 </form>
               <div >
-                  <Carousel images={data?.logo}/>
+                  <Carousel images={data?.images}/>
               </div>
 
                 <div>

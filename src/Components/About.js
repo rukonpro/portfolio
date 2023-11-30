@@ -2,8 +2,8 @@ import React from 'react';
 import ProfilePhoto from '../Images/profilePhoto.jpg';
 const About = () => {
     return (
-        <section id="about" className=' w-screen bg-neutral-800 px-5 py-10'>
-
+        <section id="about" className='relative w-screen bg-neutral-800 px-5 py-10'>
+            <div className="absolute inset-0    blur-[1000px]  w" style={{ background: "linear-gradient(190.89deg, rgb(123, 0, 247) 5.73%, rgba(95, 17, 189, 0.37) 15.74%, rgba(82, 10, 94, 0.39) 56.49%, rgba(197, 68, 255, 0.58) 115.91%)" }}></div>
             <div className='container mx-auto grid md:grid-cols-2 '>
                 <div className="w-[292px] text-center ">
                     <img className='rounded-full object-contain scale-x-[-1]' src={ProfilePhoto} alt="" />

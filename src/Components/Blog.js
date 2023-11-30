@@ -8,7 +8,9 @@ import Blog42 from "../Images/Rectangle 42.png";
 
 const Blog = () => {
     return (
-        <section id="blogs" className="myServiceContainer  w-screen  bg-slate-800 py-10 px-5  overflow-x-hidden">
+        <section id="blogs" className="relative  w-screen  bg-slate-800 py-10 px-5  overflow-x-hidden">
+            <div className="absolute inset-0    blur-[1000px]  w" style={{ background: "linear-gradient(190.89deg, rgb(123, 0, 247) 5.73%, rgba(95, 17, 189, 0.37) 15.74%, rgba(82, 10, 94, 0.39) 56.49%, rgba(197, 68, 255, 0.58) 115.91%)" }}></div>
+
             <div className="flex-none md:flex justify-around items-center backdrop-blur-3xl  backdrop-opacity-70 ">
                 <div>
                     <div className="flex justify-center">
