@@ -6,13 +6,14 @@ import Ellipse from "../Images/Ellipse 7.png";
 
 const Services = () => {
     return (
-        <section id="services" className="relative   w-screen   flex justify-center items-center bg-slate-800 py-20 ">
-            <div className="absolute inset-0    blur-[1000px]  w" style={{ background: "linear-gradient(-10.89deg, rgba(123, 0, 247, 0.29) 5.73%, rgba(95, 17, 189, 0.37) 15.74%, rgba(82, 10, 94, 0.39) 56.49%, rgba(197, 68, 255, 0.58) 115.91%)" }}></div>
-
-            <div className="container mx-auto ">
+        <section id="services" className=" relative flex justify-center items-center bg-gray-900 py-20 ">
+            <div className="absolute inset-0 m-auto max-w-xs h-[357px] blur-[1000px] sm:max-w-md md:max-w-lg" style={{ background: "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)" }}></div>
+            <div className="container relative z-10 mx-auto ">
                 <div className="flex justify-center">
-                    <div className="relative  w-[55px] h-[55px] bg-gradient-to-r from-orange-600 to-amber-400 rounded-full right-28 customShadow"></div>
-                    <h1 className="text-white z-10 text-[50px] font-bold font-['Roboto'] absolute">My services</h1>
+                    <div className="flex items-center relative">
+                        <div className="  w-[55px] h-[55px] bg-gradient-to-r from-orange-600 to-amber-400 rounded-full  customShadow"></div>
+                        <h1 className=" relative right-10 text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] ">My services</h1>
+                    </div>
                 </div>
 
                 <div className="md:flex flex-none justify-center mt-10">
@@ -37,11 +38,9 @@ const Services = () => {
                             </div>
 
                             <div className="md:text-left lg:text-right">
-                                <h1 className="  text-white text-[28px] font-bold font-['Roboto']">PHOTOGRAPHY</h1>
-                                <p className=" text-white text-lg font-bold font-['Roboto']">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque excepturi sit odit impedit, voluptas.</p>
+                                <h1 className="  text-white text-2xl font-bold font-['Roboto']">PHOTOGRAPHY</h1>
+                                <p className=" text-white text-base pt-5 font-bold font-['Roboto']">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque excepturi sit odit impedit, voluptas.</p>
                             </div>
-
-
                         </div>
 
                         <div className="flex  md:flex-row-reverse">
@@ -51,14 +50,12 @@ const Services = () => {
                                     <img className="absolute" src={Icon} alt="" />
                                 </div>
                             </div>
+
                             <div className="md:text-left lg:text-right">
-                                <h1 className="text-white text-[28px] font-bold font-['Roboto']">PHOTOGRAPHY</h1>
-                                <p className="text-white text-lg font-bold font-['Roboto']">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque excepturi sit odit impedit, voluptas.</p>
+                                <h1 className="  text-white text-2xl font-bold font-['Roboto']">PHOTOGRAPHY</h1>
+                                <p className=" text-white text-base pt-5 font-bold font-['Roboto']">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque excepturi sit odit impedit, voluptas.</p>
                             </div>
-
-
                         </div>
-
                         <div className="flex  md:flex-row-reverse">
                             <div className="px-3">
                                 <div className="relative w-[68px] h-[68px] flex justify-center items-center">
@@ -66,12 +63,11 @@ const Services = () => {
                                     <img className="absolute" src={Icon} alt="" />
                                 </div>
                             </div>
+
                             <div className="md:text-left lg:text-right">
-                                <h1 className=" text-white text-[28px] font-bold font-['Roboto']">PHOTOGRAPHY</h1>
-                                <p className=" text-white text-lg font-bold font-['Roboto']">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque excepturi sit odit impedit, voluptas.</p>
+                                <h1 className="  text-white text-2xl font-bold font-['Roboto']">PHOTOGRAPHY</h1>
+                                <p className=" text-white text-base pt-5 font-bold font-['Roboto']">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque excepturi sit odit impedit, voluptas.</p>
                             </div>
-
-
                         </div>
                     </div>
 
@@ -96,8 +92,8 @@ const Services = () => {
                             </div>
 
                             <div >
-                                <h1 className=" text-left text-white text-[28px] font-bold font-['Roboto']">PHOTOGRAPHY</h1>
-                                <p className="text-left text-white text-lg font-bold font-['Roboto']">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque excepturi sit odit impedit, voluptas.</p>
+                                <h1 className=" text-left text-white text-2xl font-bold font-['Roboto']">PHOTOGRAPHY</h1>
+                                <p className="text-left text-white text-base font-bold font-['Roboto']">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque excepturi sit odit impedit, voluptas.</p>
                             </div>
 
                         </div>
@@ -112,8 +108,8 @@ const Services = () => {
                             </div>
 
                             <div >
-                                <h1 className=" text-left text-white text-[28px] font-bold font-['Roboto']">PHOTOGRAPHY</h1>
-                                <p className="text-left text-white text-lg font-bold font-['Roboto']">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque excepturi sit odit impedit, voluptas.</p>
+                                <h1 className=" text-left text-white text-2xl font-bold font-['Roboto']">PHOTOGRAPHY</h1>
+                                <p className="text-left text-white text-base font-bold font-['Roboto']">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque excepturi sit odit impedit, voluptas.</p>
                             </div>
 
                         </div>
@@ -128,8 +124,8 @@ const Services = () => {
                             </div>
 
                             <div >
-                                <h1 className=" text-left text-white text-[28px] font-bold font-['Roboto']">PHOTOGRAPHY</h1>
-                                <p className="text-left text-white text-lg font-bold font-['Roboto']">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque excepturi sit odit impedit, voluptas.</p>
+                                <h1 className=" text-left text-white text-2xl font-bold font-['Roboto']">PHOTOGRAPHY</h1>
+                                <p className="text-left text-white text-base font-bold font-['Roboto']">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque excepturi sit odit impedit, voluptas.</p>
                             </div>
 
                         </div>

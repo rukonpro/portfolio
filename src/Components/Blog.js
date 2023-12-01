@@ -8,14 +8,13 @@ import Blog42 from "../Images/Rectangle 42.png";
 
 const Blog = () => {
     return (
-        <section id="blogs" className="relative  w-screen  bg-slate-800 py-10 px-5  overflow-x-hidden">
-            <div className="absolute inset-0    blur-[1000px]  w" style={{ background: "linear-gradient(190.89deg, rgb(123, 0, 247) 5.73%, rgba(95, 17, 189, 0.37) 15.74%, rgba(82, 10, 94, 0.39) 56.49%, rgba(197, 68, 255, 0.58) 115.91%)" }}></div>
-
-            <div className="flex-none md:flex justify-around items-center backdrop-blur-3xl  backdrop-opacity-70 ">
+        <section id="blogs" className="relative  bg-gray-900   py-10 px-5  overflow-x-hidden">
+            <div className="absolute inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg" style={{ background: "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)" }}></div>
+            <div className="relative z-10 flex-none md:flex justify-around items-center backdrop-blur-3xl  backdrop-opacity-70 ">
                 <div>
                     <div className="flex justify-center">
                         <div className="relative  w-[55px] h-[55px] bgGradient rounded-full right-16 top-2 customShadow"></div>
-                        <h1 className="text-white z-10 text-[50px] font-bold font-['Roboto'] absolute">Blogs</h1>
+                        <h1 className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute">Blogs</h1>
                     </div>
 
                     <div className="grid md:grid-cols-3 grid-cols-2  pt-10">
