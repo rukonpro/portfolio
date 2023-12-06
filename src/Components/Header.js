@@ -80,7 +80,7 @@ const Header = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <button className="mt-5 w-[180px] h-[45px] text-center text-white md:text-xl text-base font-bold font-['Roboto'] bg-gradient-to-r from-[#263458] to- rounded-[#111827] rounded-full active:bg-gradient-to-l hover:shadow-2xl  hover:shadow-[#263458]">Download CV</button>
+                                <button className="mt-5 w-[180px] h-[45px] text-center text-white md:text-xl text-base font-bold font-['Roboto'] bg-gradient-to-r from-[#263458] to-[#111827] rounded-full active:bg-gradient-to-l hover:shadow-2xl  hover:shadow-[#263458]">Download CV</button>
 
                             </div>
                         </div>
