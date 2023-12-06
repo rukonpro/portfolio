@@ -16,6 +16,7 @@ const Navigation = () => {
                                     <li><a href="/#portfolio">Portfolio</a></li>
                                     <li><a href="/#blogs">Blogs</a></li>
                                     <li><a href="/#contact">Contact</a></li>
+                                    <li><a href="/#contact">Login</a></li>
                                 </ul>
                             </div>
                             <button className="md:hidden  rounded-full block">

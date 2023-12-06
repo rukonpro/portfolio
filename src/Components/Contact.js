@@ -21,22 +21,22 @@ const Contact = () => {
 
                         <div className='grid grid-cols-2 md:gap-5 gap-y-3 gap-x-1 md:pb-0 px-5 pb-16'>
 
-                            <input className=" px-5 py-2 w-full rounded-full focus:outline-none border bg-gray-800 text-white font-bold font-['Roboto'] "
+                            <input className=" px-5 py-2 w-full rounded-full border bg-gray-800 text-white font-bold font-['Roboto'] "
                                    type="text"
                                    name="fname"
                                    id="fname"
                                    placeholder='Firs Name' />
-                            <input className=" px-5 py-2 w-full rounded-full focus:outline-none border bg-gray-800 text-white font-bold font-['Roboto'] "
+                            <input className=" px-5 py-2 w-full rounded-full  border bg-gray-800 text-white font-bold font-['Roboto'] "
                                    type="text"
                                    name="lname"
                                    id="lname"
                                    placeholder='Last Name' />
-                            <input className=" col-span-2 px-2 px-5 py-2 w-full rounded-full focus:outline-none border bg-gray-800 text-white font-bold font-['Roboto'] "
+                            <input className=" col-span-2 px-2 px-5 py-2 w-full rounded-full  border bg-gray-800 text-white font-bold font-['Roboto'] "
                                    type="email"
                                    name="email"
                                    id="email"
                                    placeholder='example@gmail.com' />
-                            <textarea className=" col-span-2 px-2 py-2 w-full rounded-md h-48 focus:outline-none border bg-gray-800 text-white font-bold font-['Roboto'] "
+                            <textarea className=" col-span-2 px-2 py-2 w-full rounded-md h-48  border bg-gray-800 text-white font-bold font-['Roboto'] "
                                       name="massage"
                                       id="email"
                                       placeholder='Your massage' />
