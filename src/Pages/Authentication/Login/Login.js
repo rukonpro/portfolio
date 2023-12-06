@@ -51,6 +51,7 @@ const Login = () => {
                                 id="password"
                                 placeholder="Password" />
 
+
                             <div className='col-span-2 flex justify-center text-white font-bold font-["Roboto"] '>
 
                                 <button type='submit' className=" w-full py-2  rounded-[86.50px] bg-gray-700 shadow-2xl shadow-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 "  >
