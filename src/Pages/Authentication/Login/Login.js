@@ -18,31 +18,29 @@ const Login = () => {
                 </div>
 
 
+
                 <div className='py-10 '>
-                    <div className=''>
-
-
-
-
+                    <form >
 
                         <div className='grid grid-cols-2 md:gap-5 gap-y-3 gap-x-1  px-5 md:mt-0 mt-16  border  rounded-lg py-5'>
 
                             <div className=" col-span-2 ">
-                                <label className="text-white font-bold ">Email address</label>
-
-                                <input className="mt-2 px-5 py-2 w-full rounded-[10px]  border bg-gradient-to-l   from-[#263458] to-[#111827] text-white font-bold font-['Roboto'] "
+                                <label className="text-white font-bold ">Email address:</label>
+                                <input
+                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border bg-gradient-to-l   from-[#263458] to-[#111827] text-white font-bold font-['Roboto'] "
                                     type="email"
                                     name="email"
-                                    id="email"
-                                    placeholder='rukon.pro@gmail.com' />
+                                    placeholder='rukon.pro@gmail.com'
+                                />
+
                             </div>
                             <div className=" col-span-2  relative">
                                 <div className="flex justify-between ">
-                                    <label className="text-white text-sm font-bold ">Password</label>
+                                    <label className="text-white text-sm font-bold ">Password:</label>
                                     <p className="text-slate-300 text-xs font-bold">Forgot password?</p>
                                 </div>
 
-                                <button className="text-gray-400 absolute right-[10px] top-[30px] inset-y-0  my-auto active:text-gray-600"
+                                <button type="button" className="text-gray-400 absolute right-[10px] top-[30px] inset-y-0  my-auto active:text-gray-600"
                                     onClick={() => setPasswordHidden(!isPasswordHidden)}
                                 >
                                     {
@@ -60,12 +58,13 @@ const Login = () => {
                                     }
                                 </button>
 
+                                <input
+                                    type="password"
+                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border bg-gradient-to-l   from-[#263458] to-[#111827] text-white font-bold font-['Roboto'] "
+                                    placeholder='******'
 
-                                <input className=" mt-2 px-5 py-2 w-full rounded-[10px] border bg-gradient-to-l   from-[#263458] to-[#111827] text-white font-bold font-['Roboto'] "
-                                    type={isPasswordHidden ? "password" : "text"}
-                                    name="password"
-                                    id="password"
-                                    placeholder="************" />
+                                />
+
                             </div>
                             <div className='col-span-2 flex justify-center text-white font-bold font-["Roboto"] '>
 
@@ -78,11 +77,7 @@ const Login = () => {
                             </div>
 
                         </div>
-
-
-
-
-                    </div>
+                    </form>
 
 
                 </div>
