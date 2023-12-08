@@ -5,8 +5,7 @@ const Login = () => {
     const [isPasswordHidden, setPasswordHidden] = useState(true)
 
     return (
-        <section id="contact" className=' relative bg-gray-900  py-10  '>
-            <div className="absolute inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg" style={{ background: "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)" }}></div>
+        <section id="contact" className=' relative  overflow-hidden bg-gradient-to-tl to-[#13053d] via-[#031220] from-[#250725]  py-10  '>
 
             <div className='relative  z-10 container mx-auto  px-5'>
 
@@ -59,7 +58,7 @@ const Login = () => {
                                 </button>
 
                                 <input
-                                    type="password"
+                                    type={isPasswordHidden ? "password" : "text"}
                                     className="mt-2 px-5 py-2 w-full rounded-[10px]  border bg-gradient-to-l   from-[#263458] to-[#111827] text-white font-bold font-['Roboto'] "
                                     placeholder='******'
 

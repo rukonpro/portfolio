@@ -2,14 +2,14 @@ import React from 'react';
 import Iphone from '../Images/iphon13.png';
 const Header = () => {
     return (
-        <header id="home" className=' relative pb-10 bg-gray-900'>
+        <header id="home" className=' relative pb-10 bg-[#0e0e36] overflow-hidden' >
 
             <div className="relative z-10 md:px-28">
                 <div className='md:flex flex-none justify-between container mx-auto md:pt-28 pt-28 md:px-0 px-5  '>
                     <div>
                         <div>
                             <div>
-                                <button className="w-[134px] py-2 bg-gradient-to-r from-[#111827] to-[#263458] rounded-tl-[40px] rounded-tr-[40px] rounded-br-[40px] text-white md:text-lg text-base font-bold font-['Roboto'] ">
+                                <button className="w-[134px] py-2 bg-gradient-to-r from-[#111827] to-[#292658] rounded-tl-[40px] rounded-tr-[40px] rounded-br-[40px] text-white md:text-lg text-base font-bold font-['Roboto'] ">
                                     Hello, i’m
                                 </button>
                                 <h1 className="text-white md:text-7xl text-4xl font-bold font-['Roboto'] pt-2  ">Rukon Uddin</h1>
@@ -112,7 +112,7 @@ const Header = () => {
                     </button>
                 </div>
             </div>
-            <div className="absolute inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg" style={{ background: "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)" }}></div>
+            <div className="absolute custom-animate-pulse inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg" style={{ background: "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)" }}></div>
         </header>
     );
 };

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Navigation = () => {
     return (
-        <nav className=' fixed z-50 bg-gray-900'>
+        <nav className=' fixed z-50 bg-[#0e0e36]'>
             <div className="flex  justify-between items-center px-8 py-4  w-screen">
-                <div><Link to="/"><span className="text-white text-[22px] font-bold font-['Roboto'] ">Rukon. </span><span className="text-orange-600 text-[22px] font-bold font-['Roboto']">JS</span></Link></div>
+                <div><Link to="/"><span className="text-white text-[22px] font-bold font-['Roboto'] ">Rukon.</span><span className="text-orange-600 text-[22px] font-bold font-['Roboto']">PRO</span></Link></div>
                 <div className="flex" >
 
                     <div className="hidden md:block">

@@ -8,8 +8,8 @@ const Modals = ({ data }) => {
 
     return (
         <dialog id={data?.id} className="modal">
-            <div className="modal-box ">
-                <form method="dialog">
+            <div className="modal-box text-white bg-gradient-to-tl to-[#060212] via-[#021a30] from-[#410b42] ">
+                <form method="dialog" >
                     {/* if there is a button in form, it will close the modal */}
                     <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-2xl text-red-500 z-10">✕</button>
                 </form>
@@ -18,10 +18,12 @@ const Modals = ({ data }) => {
                 </div>
 
                 <div>
-                    <div className='flex  justify-between flex-wrap py-5'>
-                        <h1 className='text-lg font-semibold underline underline-offset-4'>{data?.title}</h1>
+                    <div className='flex  justify-between flex-wrap pb-4'>
+                        <a href={data?.links?.liveLink} target="_blank" rel="noopener noreferrer">
+                            <h1 className='text-lg font-semibold underline underline-offset-4  mt-5'>{data?.title}</h1>
+                        </a>
 
-                        <ol className='flex gap-4'>
+                        <ol className='flex gap-4 mt-5'>
                             <li>
                                 <a
                                     href={data?.links?.liveLink}
@@ -46,15 +48,25 @@ const Modals = ({ data }) => {
                             </li>
                         </ol>
                     </div>
-                    <description><span className='font-bold'>Description:</span> {data?.description}</description>
 
-                    <h1 className='font-bold'>Technology:</h1>
 
-                    <ul className='flex flex-wrap'>
-                        {data?.technology?.map(t =>
-                            <li className='px-2 py-1 m-1 bg-[#839dfb] rounded-full text-sm font-bold text-[#2f3414]'>{t}</li>
-                        )}
-                    </ul>
+
+                    <article className='text-justify mb-3' >
+                        <span className='font-bold'>Description: </span>
+                        <span className='text-base'>{data?.description}</span>
+                    </article>
+
+
+                    <h1 className='font-bold mb-3'>Technology:</h1>
+
+                    <div className='border rounded-md p-2'>
+
+                        <ul className='flex flex-wrap justify-center'>
+                            {data?.technology?.map(t =>
+                                <li className='px-5 py-1 m-1 border bg-gradient-to-br from-inherit to-transparent rounded-full text-sm font-bold text-white'>{t}</li>
+                            )}
+                        </ul>
+                    </div>
 
 
                     <br />

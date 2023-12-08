@@ -128,3 +128,25 @@
     left: -100px;
     position: relative;
 }
+
+
+@keyframes customPulse {
+    50% {
+        opacity: .5;
+        transform: rotateX('angle');
+        background-color: rgb(35, 3, 63);
+        transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        transition: 10s;
+        rotate: 30deg;
+    }
+}
+
+.custom-animate-pulse {
+    animation: customPulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation-timing-function: customPulse 10s cubic-bezier(0.55, 0.055, 0.675, 0.19) ease-in;
+    animation-fill-mode: customPulse 10s forwards;
+    animation-play-state: customPulse 10s running;
+    transition: customPulse 10s cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-fill-mode: customPulse 10s both;
+
+}
