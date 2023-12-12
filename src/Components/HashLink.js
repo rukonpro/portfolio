@@ -7,13 +7,11 @@ const ScrollToHashElement = () => {
     let hashElement = useMemo(() => {
         let hash = location.hash;
         const removeHashCharacter = (str) => {
-            const result = str.slice(1);
-            return result;
+            return str.slice(1);
         };
 
         if (hash) {
-            let element = document.getElementById(removeHashCharacter(hash));
-            return element;
+            return document.getElementById(removeHashCharacter(hash));
         } else {
             return null;
         }
