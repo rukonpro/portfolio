@@ -37,7 +37,12 @@ const Navigation = () => {
             path: "/#contact"
         },
     ]
-    const menuHandlder = () => setMenuOpen(value => !value)
+    const menuHandlder = () => setMenuOpen(value => !value);
+
+
+
+
+    
     return (
         <nav className="fixed z-50   w-screen">
             <div

@@ -4,9 +4,6 @@ import portfolioData from "../data/portfolioData";
 
 
 const Portfolio = () => {
-    // const [showModal, setShowModal] = useState(false);
-
-
     return (
         <section id="portfolio" className='relative bg-[#090718] py-10 px-5 overflow-hidden'>
             <div className="absolute inset-0 m-auto   blur-[1000px] "
@@ -24,7 +21,7 @@ const Portfolio = () => {
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-2 mt-10">
 
                     {
-                        portfolioData?.map(data =>
+                        portfolioData?.portfolios?.map(data =>
                             data?.id ?
                                 <div key={data?.id} onClick={() => document.getElementById(data?.id).showModal()}>
                                     <img className=" w-full h-full cursor-pointer " src={data?.images?.[0]} alt=""/>
@@ -32,7 +29,6 @@ const Portfolio = () => {
                                 </div> : null
                         )
                     }
-
                 </div>
             </div>
         </section>

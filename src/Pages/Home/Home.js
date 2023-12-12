@@ -7,6 +7,7 @@ import Portfolio from "../../Components/Portfolio";
 import Services from "../../Components/Services";
 import LoginModal from "../Authentication/LoginModal/LoginModal";
 import ScrollToHashElement from "../../Components/HashLink";
+import Skills from "../../Components/Skills";
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <Navigation/>
             <Header/>
             <About/>
+            <Skills/>
             <Services/>
             <Portfolio/>
             <Blog/>
