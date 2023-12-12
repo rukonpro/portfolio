@@ -42,8 +42,7 @@ const Navigation = () => {
         <nav className="fixed z-50   w-screen">
             <div
                 className={`  ${menuOpen ? " m-3 rounded-xl bg-gradient-to-tr from-[#030b55ec] to-[#994cd0f5]" +
-                    " lg:bg-[#0e0e36] lg:m-0" +
-                    " lg:rounded-none" : "bg-[#0a0e36]"}`}>
+                    " lg:from-[#0a0e36] lg:to-[#0a0e36] lg:m-0 lg:rounded-none" : " lg:bg-[#0a0e36]"}`}>
                 <div>
                     <div className="flex  justify-between items-center px-8 py-4  ">
                         <div><Link to="/#home"><span

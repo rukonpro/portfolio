@@ -60,15 +60,14 @@ const Header = () => {
                                         </div>
                                     </a>
                                 </div>
-                                <button
-                                    className="mt-5 w-[180px] h-[45px] text-center text-white md:text-xl text-base font-bold font-['Roboto'] bg-gradient-to-r from-[#263458] to-[#111827] rounded-full active:bg-gradient-to-l hover:shadow-2xl  hover:shadow-[#263458]">Download
-                                    CV
-                                </button>
-
+                                <a href="https://drive.google.com/file/d/1S8dFRWC7f3QH6ZVnGp6miYLwPz8s4coh/view?usp=sharing">
+                                    <button
+                                        className="mt-5 w-[180px] h-[45px] text-center text-white md:text-xl text-base font-bold font-['Roboto'] bg-gradient-to-r from-[#263458] to-[#111827] rounded-full active:bg-gradient-to-l hover:shadow-2xl  hover:shadow-[#263458]">Download
+                                        CV
+                                    </button>
+                                </a>
                             </div>
                         </div>
-
-
                     </div>
 
                     <div className='flex justify-end'>
