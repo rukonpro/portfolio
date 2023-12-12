@@ -30,7 +30,7 @@ const Skills = () => {
 
                     <div className={`${bgGradientColor1} p-2 mt-3 rounded-3xl`}>
                         <h1 className={`${bgGradientColor1} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Experienced: </h1>
-                        <ul className="flex gap-1 flex-wrap md:justify-center justify-between">
+                        <ul className="flex gap-1 flex-wrap  justify-between">
                             {
                                 PortfolioData?.skills?.experienced?.map((data) =>
                                     <li key={data}
@@ -42,7 +42,7 @@ const Skills = () => {
 
                     <div className={`${bgGradientColor2} p-2 mt-3 rounded-3xl`}>
                         <h1 className={`${bgGradientColor2} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Comfortable: </h1>
-                        <ul className="flex gap-1 flex-wrap md:justify-center justify-between">
+                        <ul className="flex gap-1 flex-wrap  justify-between">
                             {
                                 PortfolioData?.skills?.comfortable?.map((data) =>
                                     <li key={data}
@@ -53,7 +53,7 @@ const Skills = () => {
                     </div>
                     <div className={`${bgGradientColor3} p-2 mt-3 rounded-3xl`}>
                         <h1 className={`${bgGradientColor3} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Familiar: </h1>
-                        <ul className="flex gap-1 flex-wrap md:justify-center justify-between">
+                        <ul className="flex gap-1 flex-wrap  justify-between">
                             {
                                 PortfolioData?.skills?.familiar?.map((data) =>
                                     <li key={data}
@@ -64,7 +64,7 @@ const Skills = () => {
                     </div>
                     <div className={`${bgGradientColor4} p-2 mt-3 rounded-3xl`}>
                         <h1 className={`${bgGradientColor4} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Tools: </h1>
-                        <ul className="flex gap-1 flex-wrap md:justify-center justify-between">
+                        <ul className="flex gap-1 flex-wrap justify-between">
                             {
                                 PortfolioData?.skills?.tools?.map((data) =>
                                     <li key={data}
