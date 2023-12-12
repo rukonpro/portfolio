@@ -26,7 +26,7 @@ const Skills = () => {
                 </div>
 
 
-                <div className="p-10 grid md:grid-cols-2 lg:grid-cols-4 gap-3 ">
+                <div className="p-10 grid md:grid-cols-2 lg:grid-cols-4 gap-3 text-white">
 
                     <div className={`${bgGradientColor1} p-2 mt-3 rounded-3xl`}>
                         <h1 className={`${bgGradientColor1} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Experienced: </h1>
