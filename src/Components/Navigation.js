@@ -42,7 +42,7 @@ const Navigation = () => {
         <nav className="fixed z-50   w-screen">
             <div
                 className={`  ${menuOpen ? " m-3 rounded-xl bg-gradient-to-tr from-[#030b55ec] to-[#994cd0f5]" +
-                    " lg:from-[#0a0e36] lg:to-[#0a0e36] lg:m-0 lg:rounded-none" : " lg:bg-[#0a0e36]"}`}>
+                    " lg:from-[#0a0e36] lg:to-[#0a0e36] lg:m-0 lg:rounded-none" : " bg-gradient-to-tr from-[#0a0e36] to-[#0a0e36] "} ${!menuOpen && " bg-[#0a0e36]"}`}>
                 <div>
                     <div className="flex  justify-between items-center px-8 py-4  ">
                         <div><Link to="/#home"><span
@@ -68,8 +68,8 @@ const Navigation = () => {
                         <button onClick={menuHandlder}
                                 className="lg:hidden p-2  bg-gradient-to-tr from-[#030b55ec] to-[#994cd0f5] rounded-full block">
                             {
-                                !menuOpen ? <img src={MenuBar} alt=""/> :
-                                    <img src={Close} alt=""/>
+                                !menuOpen ? <img src={MenuBar || undefined} alt=""/> :
+                                    <img src={Close || undefined} alt=""/>
                             }
                         </button>
                     </div>

@@ -1,8 +1,6 @@
 import Project4 from "../Images/project4.jpg";
 import Project5 from "../Images/project5.jpg";
 import Project6 from "../Images/project6.jpeg";
-import Project7 from "../Images/Thumbnail.png"
-import Project8 from "../Images/Cover.png"
 import MosafirLogo from "../Images/musafir_logo.png";
 import MosafirCover from "../Images/musafir-cover.png";
 import MosafirImg1 from "../Images/musafira2z1.png";
@@ -23,7 +21,6 @@ import ShopMartCover from "../Images/ShopMart-cover.gif";
 import DoctorPortalCover from "../Images/doctor-portal.png"
 import DoctorPortal1 from "../Images/doctor-portal2.png"
 import DoctorPortal2 from "../Images/doctor-portal3.png"
-
 
 
 const portfolioData = [
@@ -164,34 +161,6 @@ const portfolioData = [
             backEndCode: "https://github.com/RnRukon/Shop-mart-server-code",
             liveLink: "https://shop-mart-80ef1.web.app"
         }
-    },
-    {
-        id: "7",
-        title: "project7",
-        logo: Project7,
-        description: "sortDescription",
-        images: ["1", "2"],
-        technology: ["fsdf", 'sdfsd'],
-        point: ["sd", 'sfs'],
-        links: {
-            fontEndCode: "sdfsdf",
-            backEndCode: "dsfsd",
-            liveLink: "fsdfsd"
-        }
-    },
-    {
-        id: "8",
-        title: "project8",
-        logo: Project8,
-        description: "sortDescription",
-        images: ["1", "2"],
-        technology: ["fsdf", 'sdfsd'],
-        point: ["sd", 'sfs'],
-        links: {
-            fontEndCode: "sdfsdf",
-            backEndCode: "dsfsd",
-            liveLink: "fsdfsd"
-        }
-    },
+    }
 ]
 export default portfolioData;
