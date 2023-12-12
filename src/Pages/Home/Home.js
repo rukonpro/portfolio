@@ -6,18 +6,20 @@ import Navigation from "../../Components/Navigation";
 import Portfolio from "../../Components/Portfolio";
 import Services from "../../Components/Services";
 import LoginModal from "../Authentication/LoginModal/LoginModal";
+import ScrollToHashElement from "../../Components/HashLink";
 
 const Home = () => {
     return (
         <div>
-            <Navigation />
-            <Header />
-            <About />
-            <Services />
-            <Portfolio />
-            <Blog />
-            <Contact />
-            <LoginModal />
+            <ScrollToHashElement/>
+            <Navigation/>
+            <Header/>
+            <About/>
+            <Services/>
+            <Portfolio/>
+            <Blog/>
+            <Contact/>
+            <LoginModal/>
         </div>
     )
 }

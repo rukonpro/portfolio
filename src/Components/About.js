@@ -2,15 +2,18 @@ import React from 'react';
 import ProfilePhoto from '../Images/profilePhoto.jpg';
 
 const About = () => {
+
     return (
         <section id="about" className='relative bg-slate-950 px-5 py-10'>
             <div className="relative z-10">
-                <div className='container mx-auto grid md:grid-cols-2 '>
-                    <div className="md:w-[350px] w-[292px] text-center ">
-                        <img className='rounded-full object-contain scale-x-[-1]' src={ProfilePhoto || undefined}
-                             alt=""/>
-                        <h5 className="text-white text-lg font-bold font-['Roboto']">Certifications</h5>
-                        <p className="text-white md:text-3xl text-2xl font-bold font-['Roboto']">MD. Rukon Uddin</p>
+                <div className='container mx-auto grid lg:grid-cols-2 '>
+                    <div className=" flex lg:justify-start justify-center items-center text-center  ">
+                        <div className="md:w-[350px] w-[292px]">
+                            <img className='rounded-full object-contain scale-x-[-1]' src={ProfilePhoto || undefined}
+                                 alt=""/>
+                            <h5 className="text-white text-lg font-bold font-['Roboto']">Certifications</h5>
+                            <p className="text-white md:text-3xl text-2xl font-bold font-['Roboto']">MD. Rukon Uddin</p>
+                        </div>
                     </div>
                     <div>
                         <div className='pt-10'>

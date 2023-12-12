@@ -21,10 +21,10 @@ const Services = () => {
                     </div>
                 </div>
 
-                <div className="md:flex flex-none justify-center mt-10">
+                <div className="lg:flex flex-none justify-center mt-10">
 
 
-                    <div className="block md:hidden pb-20">
+                    <div className="block lg:hidden pb-20">
                         <div className="flex justify-center">
                             <div className="w-[244.63px] h-[494.98px] z-20 flex justify-center">
                                 <img className="absolute" src={BlueBackCover || undefined} alt=""/>
@@ -34,7 +34,7 @@ const Services = () => {
                     </div>
 
                     <div className="flex flex-col justify-between  gap-5">
-                        <div className="flex  md:flex-row-reverse">
+                        <div className="flex lg:flex-row-reverse">
                             <div className="px-3">
                                 <div className="relative w-[68px] h-[68px] flex justify-center items-center">
                                     <img className="absolute" src={Ellipse || undefined} alt=""/>
@@ -52,7 +52,7 @@ const Services = () => {
                             </div>
                         </div>
 
-                        <div className="flex  md:flex-row-reverse">
+                        <div className="flex pt-5 lg:flex-row-reverse">
                             <div className="px-3">
                                 <div className="relative w-[68px] h-[68px] flex justify-center items-center">
                                     <img className="absolute" src={Ellipse || undefined} alt=""/>
@@ -68,7 +68,7 @@ const Services = () => {
                                     applications. </p>
                             </div>
                         </div>
-                        <div className="flex  md:flex-row-reverse">
+                        <div className="flex   lg:flex-row-reverse">
                             <div className="px-3">
                                 <div className="relative w-[68px] h-[68px] flex justify-center items-center">
                                     <img className="absolute" src={Ellipse || undefined} alt=""/>
@@ -76,7 +76,7 @@ const Services = () => {
                                 </div>
                             </div>
 
-                            <div className="md:text-left lg:text-right">
+                            <div className="lg:text-left lg:text-right">
                                 <h1 className="  text-white text-2xl font-bold font-['Roboto']">Template</h1>
                                 <p className=" text-white text-base pt-5 font-bold font-['Roboto']">
                                     As well as making responsive web template with HTML5, CSS3, Bootstrap4&5,
@@ -87,7 +87,7 @@ const Services = () => {
                     </div>
 
 
-                    <div className="md:block hidden">
+                    <div className="lg:block hidden">
                         <div className="w-[244.63px] h-[494.98px] z-20 flex justify-center">
                             <img className="absolute" src={BlueBackCover || undefined} alt=""/>
                             <img className="absolute mt-3  rounded-3xl " src={IphonScreen || undefined} alt=""/>
@@ -96,7 +96,7 @@ const Services = () => {
 
 
                     <div className="flex flex-col justify-between gap-5">
-                        <div className="flex">
+                        <div className="flex pt-5">
 
 
                             <div className="px-3">
@@ -107,15 +107,15 @@ const Services = () => {
                             </div>
 
                             <div>
-                                <h1 className=" text-left text-white text-2xl pt-5 font-bold font-['Roboto']">Full-Stack
+                                <h1 className=" text-left text-white text-2xl  font-bold font-['Roboto']">Full-Stack
                                     Development</h1>
-                                <p className="text-left text-white text-base font-bold font-['Roboto']"> Full-stack
+                                <p className="text-left text-white text-base pt-5 font-bold font-['Roboto']"> Full-stack
                                     developers are proficient in both frontend and backend development, allowing them to
                                     work on the entire web application development process.</p>
                             </div>
 
                         </div>
-                        <div className="flex">
+                        <div className="flex pt-5">
 
 
                             <div className="px-3">
@@ -126,15 +126,15 @@ const Services = () => {
                             </div>
 
                             <div>
-                                <h1 className=" text-left text-white text-2xl pt-5 font-bold font-['Roboto']">Web
+                                <h1 className=" text-left text-white text-2xl font-bold font-['Roboto']">Web
                                     Hosting and Maintenance</h1>
-                                <p className="text-left text-white text-base font-bold font-['Roboto']">After
+                                <p className="text-left text-white text-base pt-5  font-bold font-['Roboto']">After
                                     development, websites and applications need hosting and ongoing maintenance to
                                     ensure they remain secure, updated, and operational.</p>
                             </div>
 
                         </div>
-                        <div className="flex">
+                        <div className="flex pt-5">
 
 
                             <div className="px-3">
@@ -145,9 +145,10 @@ const Services = () => {
                             </div>
 
                             <div>
-                                <h1 className=" text-left text-white text-2xl pt-5 font-bold font-['Roboto']">E-commerce
+                                <h1 className=" text-left text-white text-2xl  font-bold font-['Roboto']">E-commerce
                                     Development</h1>
-                                <p className="text-left text-white text-base font-bold font-['Roboto']">Specialized in
+                                <p className="text-left text-white text-base pt-5 font-bold font-['Roboto']">Specialized
+                                    in
                                     creating online stores, e-commerce developers enable businesses to sell products and
                                     services online, often integrating payment gateways and shopping cart
                                     functionality.</p>

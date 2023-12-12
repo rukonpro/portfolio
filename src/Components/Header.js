@@ -8,10 +8,10 @@ import Whatsapp from "../Images/whatsapp.png";
 
 const Header = () => {
     return (
-        <header id="home" className='relative pb-10 bg-[#0e0e36] h-[100vh] overflow-hidden'>
+        <header id="home" className='relative pb-10 bg-[#0e0e36]     overflow-hidden'>
 
             <div className="relative z-10 md:px-28">
-                <div className='md:flex flex-none justify-between container mx-auto md:pt-28 pt-28 md:px-0 px-5  '>
+                <div className='lg:flex flex-none justify-between container mx-auto md:pt-28 pt-28 md:px-0 px-5  '>
                     <div>
                         <div>
                             <div>
