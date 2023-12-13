@@ -26,28 +26,28 @@ const Modals = ({data}) => {
                         </a>
 
                         <ol className='flex gap-4 mt-5'>
-                            <li>
+                            {data?.links?.liveLink && <li>
                                 <a
                                     href={data?.links?.liveLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className='text-[#454545]'
                                 >
-                                    <img className='h-10 w-10' src={Live} alt=""/>
+                                    <img className='h-10 w-10' src={Live || undefined} alt=""/>
 
                                 </a>
-                            </li>
-                            <li>
+                            </li>}
+                            {data?.links?.fontEndCode && <li>
                                 <a href={data?.links?.fontEndCode} target="_blank" rel="noopener noreferrer">
-                                    <img className='h-10 w-10' src={Github} alt=""/>
+                                    <img className='h-10 w-10' src={Github || undefined} alt=""/>
                                 </a>
 
-                            </li>
-                            <li>
-                                <a href={data?.links?.fontEndCode} target="_blank" rel="noopener noreferrer">
-                                    <img className='h-10 w-10' src={Global} alt=""/>
+                            </li>}
+                            {data?.links?.backEndCode && <li>
+                                <a href={data?.links?.backEndCode} target="_blank" rel="noopener noreferrer">
+                                    <img className='h-10 w-10' src={Global || undefined} alt=""/>
                                 </a>
-                            </li>
+                            </li>}
                         </ol>
                     </div>
 
@@ -73,6 +73,7 @@ const Modals = ({data}) => {
 
                     <br/>
 
+                  
                     <h1 className='font-bold'>Points:</h1>
                     <ol className='list-disc'>
                         {

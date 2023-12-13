@@ -22,8 +22,8 @@ const Header = () => {
                                 <h1 className="text-white md:text-7xl text-4xl font-bold font-['Roboto'] pt-2  ">Rukon
                                     Uddin</h1>
 
-                                <h5 className="text-white md:text-xl text-base font-bold font-['Roboto'] mt-2">FULL-STACK
-                                    DEVELOPER | MERN-STACK DEVELOPER | REACT DEVELOPER </h5>
+                                <h5 className="text-white md:text-xl text-base font-bold font-['Roboto'] mt-2">MERN-STACK
+                                    DEVELOPER | REACT DEVELOPER | JAVASCRIPT DEVELOPER</h5>
 
                                 <div className='flex gap-4 pt-5'>
                                     <a href="https://www.linkedin.com/in/rukonpro/">

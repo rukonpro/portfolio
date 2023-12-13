@@ -17,13 +17,14 @@ const Navigation = () => {
             path: "/#about"
         },
         {
-            title: "Services",
-            path: "/#services"
-        },
-        {
             title: "Skills",
             path: "/#skills"
         },
+        {
+            title: "Services",
+            path: "/#services"
+        },
+
         {
             title: "Portfolio",
             path: "/#portfolio"
@@ -37,12 +38,9 @@ const Navigation = () => {
             path: "/#contact"
         },
     ]
-    const menuHandlder = () => setMenuOpen(value => !value);
+    const menuHandler = () => setMenuOpen(value => !value);
 
 
-
-
-    
     return (
         <nav className="fixed z-50   w-screen">
             <div
@@ -70,7 +68,7 @@ const Navigation = () => {
                                 </ul>
                             </div>
                         </div>
-                        <button onClick={menuHandlder}
+                        <button onClick={menuHandler}
                                 className="lg:hidden p-2  bg-gradient-to-tr from-[#030b55ec] to-[#994cd0f5] rounded-full block">
                             {
                                 !menuOpen ? <img src={MenuBar || undefined} alt=""/> :
