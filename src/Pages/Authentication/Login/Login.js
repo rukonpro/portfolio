@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 
-const Login = () => {
+const Login = ({ setIsLogin }) => {
     const [isPasswordHidden, setPasswordHidden] = useState(true)
 
     return (
@@ -9,7 +9,7 @@ const Login = () => {
 
             <div className='relative  z-10 container mx-auto  px-5'>
 
-                <div className="flex justify-center">
+                <div className="flex ">
                     <div className="flex px-8 ">
                         <div className="relative -inset-3   w-[55px] h-[55px] bg-gradient-to-r from-[#0c2140d0] to-[#6d2613] rounded-full customShadow" />
                         <h1 className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute">Login</h1>
@@ -22,7 +22,6 @@ const Login = () => {
                     <form >
 
                         <div className='grid grid-cols-2 md:gap-5 gap-y-3 gap-x-1  px-5 md:mt-0 mt-16  border  rounded-lg py-5'>
-
                             <div className=" col-span-2 ">
                                 <label className="text-white font-bold ">Email address:</label>
                                 <input
@@ -31,12 +30,12 @@ const Login = () => {
                                     name="email"
                                     placeholder='rukon.pro@gmail.com'
                                 />
-
                             </div>
+
                             <div className=" col-span-2  relative">
                                 <div className="flex justify-between ">
                                     <label className="text-white text-sm font-bold ">Password:</label>
-                                    <p className="text-slate-300 text-xs font-bold">Forgot password?</p>
+                                    <button type="button" className="text-slate-300 text-xs font-bold">Forgot password?</button>
                                 </div>
 
                                 <button type="button" className="text-gray-400 absolute right-[10px] top-[30px] inset-y-0  my-auto active:text-gray-600"
@@ -67,12 +66,18 @@ const Login = () => {
                             </div>
                             <div className='col-span-2 flex justify-center text-white font-bold font-["Roboto"] '>
 
-                                <button type='submit' className=" w-full py-2  rounded-[10px] border shadow-2xl bg-gradient-to-l   from-[#263458] to-[#111827] active:bg-gradient-to-r  hover:shadow-2xl  hover:shadow-[#111827]"  >
+                                <button type='submit' className=" w-full py-2  rounded-[10px] border shadow-2xl bg-gradient-to-l   from-[#442658] to-[#111827] active:bg-gradient-to-r  hover:shadow-2xl  hover:shadow-[#111827]"  >
                                     Login
                                 </button>
                             </div>
                             <div className="col-span-2 flex justify-center ">
-                                <p className="text-white text-sm">Are you not Registered? <span className="text-blue-500/80">Please Register</span></p>
+                                <p className="text-white text-sm">Are you not Registered?
+                                    <button
+                                        type="button"
+                                        onClick={() => setIsLogin(isLogin => !isLogin)}
+
+                                        className="text-blue-500/80 px-1">Please Register</button>
+                                </p>
                             </div>
 
                         </div>
