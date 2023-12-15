@@ -1,3 +1,4 @@
+import React from "react";
 import About from "../../Components/About";
 import Blog from "../../Components/Blog";
 import Contact from "../../Components/Contact";
@@ -11,7 +12,7 @@ import Skills from "../../Components/Skills";
 
 const Home = () => {
     return (
-        <div>
+        <React.Fragment>
             <ScrollToHashElement/>
             <Navigation/>
             <Header/>
@@ -22,7 +23,7 @@ const Home = () => {
             <Blog/>
             <Contact/>
             <LoginModal/>
-        </div>
+        </React.Fragment>
     )
 }
 export default Home;

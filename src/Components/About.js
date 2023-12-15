@@ -12,7 +12,7 @@ const About = () => {
                             <img className='rounded-full object-contain scale-x-[-1]' src={ProfilePhoto || undefined}
                                  alt=""/>
                             <h5 className="text-white text-lg font-bold font-['Roboto']">Certifications</h5>
-                            <p className="text-white md:text-3xl text-2xl font-bold font-['Roboto']">MD. Rukon Uddin</p>
+                            <h1 className="text-white md:text-3xl text-2xl font-bold font-['Roboto']">MD. Rukon Uddin</h1>
                         </div>
                     </div>
                     <div>
@@ -24,7 +24,7 @@ const About = () => {
                                         me</h1>
                                 </div>
                             </div>
-                            <p className="text-white md:text-xl text-base   font-['Roboto'] pt-10"><span
+                            <article className="text-white md:text-xl text-base   font-['Roboto'] pt-10"><span
                                 className='text-2xl font-extrabold'>Hello!</span> <br/>
                                 I am a <span className='font-bold'>Web Developer</span>,<span className='font-bold'> React Developer</span>, <span
                                     className='font-bold'>MERN stack developer</span>, or a <span
@@ -43,7 +43,7 @@ const About = () => {
                                 <br/>
 
                                 I am currently available for a job. If your company needs a <span className='font-bold'>React developer,  web developer, or MERN stack developer,</span> then
-                                get in touch.</p>
+                                get in touch.</article>
                         </div>
                     </div>
                 </div>
