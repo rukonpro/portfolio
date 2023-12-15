@@ -1,6 +1,6 @@
 import React from 'react';
 import BlueBackCover from "../Images/BlueBackCover.png";
-import IphonScreen from "../Images/iphonScreen.png";
+import IphonScreen from "../Images/ca4743afbe2b7ad35b293256b2fc1866.jpg";
 import Icon from "../Images/fluent_design-ideas-20-regular.png";
 import Ellipse from "../Images/Ellipse 7.png";
 
@@ -26,9 +26,11 @@ const Services = () => {
 
                     <div className="block lg:hidden pb-20">
                         <div className="flex justify-center">
-                            <div className="w-[244.63px] h-[494.98px] z-20 flex justify-center">
-                                <img className="absolute" src={BlueBackCover || undefined} alt=""/>
-                                <img className="absolute mt-3  rounded-3xl " src={IphonScreen || undefined} alt=""/>
+                            <div className="w-[244.63px] h-[494.98px] z-20 p-3 flex justify-center overflow-hidden">
+                                <img className="absolute w-[244.63px] h-[494.98px]" src={BlueBackCover || undefined}
+                                     alt=""/>
+                                <img className="absolute mt-3  w-[228.63px] h-[470.98px] rounded-3xl "
+                                     src={IphonScreen || undefined} alt=""/>
                             </div>
                         </div>
                     </div>
@@ -76,7 +78,7 @@ const Services = () => {
                                 </div>
                             </div>
 
-                            <div className="lg:text-left lg:text-right">
+                            <div className="lg:text-right">
                                 <h1 className="  text-white text-2xl font-bold font-['Roboto']">Template</h1>
                                 <p className=" text-white text-base pt-5 font-bold font-['Roboto']">
                                     As well as making responsive web template with HTML5, CSS3, Bootstrap4&5,
@@ -88,9 +90,11 @@ const Services = () => {
 
 
                     <div className="lg:block hidden">
-                        <div className="w-[244.63px] h-[494.98px] z-20 flex justify-center">
-                            <img className="absolute" src={BlueBackCover || undefined} alt=""/>
-                            <img className="absolute mt-3  rounded-3xl " src={IphonScreen || undefined} alt=""/>
+                        <div className="w-[244.63px] h-[494.98px] z-20 p-3 flex justify-center overflow-hidden">
+                            <img className="absolute w-[244.63px] h-[494.98px]" src={BlueBackCover || undefined}
+                                 alt=""/>
+                            <img className="absolute mt-3  w-[228.63px] h-[470.98px] rounded-3xl "
+                                 src={IphonScreen || undefined} alt=""/>
                         </div>
                     </div>
 

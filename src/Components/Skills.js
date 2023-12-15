@@ -7,7 +7,7 @@ const Skills = () => {
     const bgGradientColor1 = "bg-gradient-to-tr from-[#030b55ec] to-[#04ff6da1]";
     const bgGradientColor2 = "bg-gradient-to-tr from-[#030b55ec] to-[#008ac0f5]";
     const bgGradientColor3 = "bg-gradient-to-tr from-[#030b55ec] to-[#b402fab7]";
-    const bgGradientColor4 = "bg-gradient-to-tr from-[#030b55ec] to-[#805a4ff5]";
+    const bgGradientColor4 = "bg-gradient-to-tr from-[#030b55ec] to-[#805a4ff5] ";
 
 
     return (
@@ -26,9 +26,9 @@ const Skills = () => {
                 </div>
 
 
-                <div className="p-10 grid md:grid-cols-2 lg:grid-cols-4 gap-3 text-white">
+                <div className="p-10 grid md:grid-cols-2 lg:grid-cols-4 gap-3 text-white ">
 
-                    <div className={`${bgGradientColor1} p-2 mt-3 rounded-3xl`}>
+                    <div className={`${bgGradientColor1} p-2 mt-3 rounded-3xl `}>
                         <h1 className={`${bgGradientColor1} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Experienced: </h1>
                         <ul className="flex gap-1 flex-wrap  justify-between">
                             {
