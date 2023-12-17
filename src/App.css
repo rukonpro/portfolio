@@ -130,24 +130,29 @@
 }
 
 
-@keyframes customPulse {
-    50% {
-        opacity: .5;
-        transform: rotateX('angle');
-        background-color: rgb(35, 3, 63);
-        transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        transition: 10s;
-        rotate: 30deg;
-    }
+
+.animated-button {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
 }
 
-.custom-animate-pulse {
-    animation: customPulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-    animation-timing-function: customPulse 10s cubic-bezier(0.55, 0.055, 0.675, 0.19) ease-in;
-    animation-fill-mode: customPulse 10s forwards;
-    animation-play-state: customPulse 10s running;
-    transition: customPulse 10s cubic-bezier(0.165, 0.84, 0.44, 1);
-    animation-fill-mode: customPulse 10s both;
+.animated-button::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
 
+    background-image: linear-gradient(100deg, rgb(115, 14, 239) 0%, rgb(239, 149, 14) 35%, rgb(115, 14, 239) 100%);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
 }
 
+.animated-button:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

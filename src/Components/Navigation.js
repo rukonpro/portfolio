@@ -47,10 +47,13 @@ const Navigation = () => {
                 className={`  ${menuOpen ? " m-3 rounded-xl bg-gradient-to-tr from-[#030b55ec] to-[#994cd0f5]" +
                     " lg:from-[#0a0e36] lg:to-[#0a0e36] lg:m-0 lg:rounded-none" : " bg-gradient-to-tr from-[#0a0e36] to-[#0a0e36] "} ${!menuOpen && " bg-[#0a0e36]"}`}>
                 <div>
-                    <div className="flex  justify-between items-center px-8 py-4  ">
-                        <div><Link to="/#home"><span
+                    <div className="flex  justify-between items-center md:px-8 px-5 py-4   ">
+                        <div >
+                            <Link to="/#home"><span
                             className="text-white text-[22px] font-bold font-['Roboto'] ">Rukon.</span><span
-                            className="text-orange-600 text-[22px] font-bold font-['Roboto']">PRO</span></Link></div>
+                            className="text-orange-600 text-[22px] font-bold font-['Roboto']">PRO</span></Link>
+
+                        </div>
 
                         <div className=" hidden lg:block">
 
@@ -58,11 +61,15 @@ const Navigation = () => {
                                 <ul className="flex items-center gap-5 text-white font-bold px-5 text-xl  ">
                                     {
                                         navLinks?.map((nav, index) =>
-                                            <li key={index}><a href={nav?.path}>{nav?.title}</a></li>
+                                            <li className="animated-button"  key={index}><a href={nav?.path}>
+                                                <button>
+                                                    {nav?.title}
+                                                </button>
+                                            </a></li>
                                         )
                                     }
                                     <li>
-                                        <button onClick={() => document.getElementById("loginModal").showModal()}>Login
+                                        <button className="animated-button" onClick={() => document.getElementById("loginModal").showModal()}>Login
                                         </button>
                                     </li>
                                 </ul>
@@ -71,8 +78,8 @@ const Navigation = () => {
                         <button onClick={menuHandler}
                                 className="lg:hidden p-2  bg-gradient-to-tr from-[#030b55ec] to-[#994cd0f5] rounded-full block">
                             {
-                                !menuOpen ? <img src={MenuBar || undefined} alt=""/> :
-                                    <img src={Close || undefined} alt=""/>
+                                !menuOpen ? <img className="h-5 w-5" src={MenuBar || undefined} alt=""/> :
+                                    <img className="h-5 w-5" src={Close || undefined} alt=""/>
                             }
                         </button>
                     </div>
@@ -84,16 +91,16 @@ const Navigation = () => {
                     <ul className=" text-white font-bold  text-xl   ">
                         {
                             navLinks?.map((nav, index) =>
-                                <li key={index}>
+                                <li key={index} >
                                     <NavLink to={nav?.path}
                                              onClick={() => setMenuOpen(false)}
-                                             className="w-full rounded-full inline-block transition-opacity hover:bg-gradient-to-l hover:transition-opacity   from-[#9a4cd00d] to-[#9a4cd03d] px-5 py-3 ">{nav?.title}</NavLink>
+                                             className="animated-button w-full rounded-full inline-block transition-opacity hover:bg-gradient-to-l hover:transition-opacity   from-[#9a4cd00d] to-[#9a4cd03d] px-5 py-3 ">{nav?.title}</NavLink>
                                 </li>
                             )
                         }
-                        <li className="bg-gradient-to-l from-[#0a0cd00d] to-[#9a4cd09d] px-5 py-3 rounded-full my-3">
-                            <button onClick={() => document.getElementById("loginModal").showModal()}
-                                    className="w-full">Login
+                        <li className=" bg-gradient-to-l from-[#0a0cd00d] to-[#9a4cd09d] px-5 py-3 rounded-full my-3 animated-button w-full">
+                            <button  onClick={() => document.getElementById("loginModal").showModal()}
+                                    className="w-full ">Login
                             </button>
                         </li>
                     </ul>
