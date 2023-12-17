@@ -6,7 +6,7 @@ const Skills = () => {
 
     const bgGradientColor1 = "bg-gradient-to-tr from-[#030b55ec] to-[#04ff6da1]";
     const bgGradientColor2 = "bg-gradient-to-tr from-[#030b55ec] to-[#008ac0f5]";
-    const bgGradientColor3 = "bg-gradient-to-tr from-[#030b55ec] to-[#b402fab7]";
+    const bgGradientColor3 = "bg-gradient-to-tr from-sky-950 to-[#b402fab7]";
     const bgGradientColor4 = "bg-gradient-to-tr from-[#030b55ec] to-[#805a4ff5] ";
 
 
@@ -25,7 +25,11 @@ const Skills = () => {
                     </div>
                 </div>
 
-
+                <div className="flex justify-center px-5 mt-10">
+                    <p className="max-w-4xl text-center font-bold font-['Roboto'] text-sm"> I am a dynamic MERN stack developer passionate about transforming ideas into powerful and user-friendly
+                        web applications. With a strong foundation in MongoDB, Express.js, React, and Node.js, I specialize in
+                        building seamless, responsive, and scalable solutions.</p>
+                </div>
                 <div className="p-10 grid md:grid-cols-2 lg:grid-cols-4 gap-3 text-white ">
 
                     <div className={`${bgGradientColor1} p-2 mt-3 rounded-3xl `}>

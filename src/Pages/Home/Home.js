@@ -9,6 +9,7 @@ import Services from "../../Components/Services";
 import LoginModal from "../Authentication/LoginModal/LoginModal";
 import ScrollToHashElement from "../../Components/HashLink";
 import Skills from "../../Components/Skills";
+import Pricing from "../../Components/Pricing";
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
             <Services />
             <Portfolios />
             <Blog />
+            <Pricing/>
             <Contact />
             <LoginModal />
         </React.Fragment>

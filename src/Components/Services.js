@@ -16,9 +16,12 @@ const Services = () => {
                     <div className="flex items-center relative">
                         <div
                             className="  w-[55px] h-[55px] bg-gradient-to-r from-orange-600 to-amber-400 rounded-full  customShadow"></div>
-                        <h1 className=" relative right-10 text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] ">My
-                            services</h1>
+                        <h1 className=" relative right-10 text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] ">My services</h1>
                     </div>
+                </div>
+                <div className="flex justify-center px-5 mt-10">
+                    <p className="max-w-4xl text-center font-bold font-['Roboto'] text-sm">If you're looking for a developer with expertise in a stack typically associated with web
+                        development, here's a brief description of the MEAN stack, which is a popular choice</p>
                 </div>
 
                 <div className="lg:flex flex-none justify-center mt-10">

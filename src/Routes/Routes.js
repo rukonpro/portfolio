@@ -5,6 +5,7 @@ import Home from "../Pages/Home/Home";
 import Dashboard from "../Dashboard/Dashboard";
 import Loader from "../Components/Loader";
 import Root from "../Pages/Root/Root";
+import NotfoundPage from "../Pages/404/NotfoundPage";
 
 
 const router = createBrowserRouter([
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <Root />,
         loader: Loader,
+        errorElement:<NotfoundPage/>,
         children: [
             {
                 path: "/",

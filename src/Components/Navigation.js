@@ -49,9 +49,10 @@ const Navigation = () => {
                 <div>
                     <div className="flex  justify-between items-center md:px-8 px-5 py-4   ">
                         <div >
-                            <Link to="/#home"><span
-                            className="text-white text-[22px] font-bold font-['Roboto'] ">Rukon.</span><span
-                            className="text-orange-600 text-[22px] font-bold font-['Roboto']">PRO</span></Link>
+                            <Link to="/#home">
+                                <span className="text-white text-[22px] font-bold font-['Roboto'] ">Rukon.</span>
+                                <span className="text-orange-600 text-[22px] font-bold font-['Roboto']">PRO</span>
+                            </Link>
 
                         </div>
 
