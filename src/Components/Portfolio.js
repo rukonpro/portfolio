@@ -1,37 +1,82 @@
 import React from 'react';
-import Modals from './Modals';
-import portfolioData from "../data/portfolioData";
-
-
-const Portfolio = () => {
+import Carousel from "./Carousel";
+import Github from "../Images/github.png";
+import Live from "../Images/live.png";
+import Global from "../Images/global.png";
+const Portfolio = ({ data }) => {
     return (
-        <section id="portfolio" className='relative bg-[#090718] py-10 px-5 overflow-hidden'>
-            <div className="absolute inset-0 m-auto   blur-[1000px] "
-                 style={{
-                     background: "linear-gradient(200.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233," +
-                         " 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)"
-                 }}></div>
-            <div className="relative z-10 container mx-auto">
-                <div className="flex justify-center">
-                    <div
-                        className="relative  w-[55px] h-[55px] bg-gradient-to-r from-orange-600 to-amber-400 rounded-full right-24 customShadow"></div>
-                    <h1 className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute">Portfolio</h1>
+        <div>
+            <div>
+                <Carousel images={data?.images} />
+            </div>
+
+            <div>
+                <div className='flex  justify-between flex-wrap pb-4'>
+                    <a href={data?.links?.liveLink} target="_blank" rel="noopener noreferrer">
+                        <h1 className='text-lg font-semibold underline underline-offset-4  mt-5'>{data?.title}</h1>
+                    </a>
+
+                    <ol className='flex gap-4 mt-5'>
+                        {data?.links?.liveLink && <li>
+                            <a
+                                href={data?.links?.liveLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className='text-[#454545]'
+                            >
+                                <img className='h-10 w-10' src={Live || undefined} alt="" />
+
+                            </a>
+                        </li>}
+                        {data?.links?.fontEndCode && <li>
+                            <a href={data?.links?.fontEndCode} target="_blank" rel="noopener noreferrer">
+                                <img className='h-10 w-10' src={Github || undefined} alt="" />
+                            </a>
+
+                        </li>}
+                        {data?.links?.backEndCode && <li>
+                            <a href={data?.links?.backEndCode} target="_blank" rel="noopener noreferrer">
+                                <img className='h-10 w-10' src={Global || undefined} alt="" />
+                            </a>
+                        </li>}
+                    </ol>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-2 mt-10">
 
+                <article className='text-justify mb-3'>
+                    <span className='font-bold'>Description: </span>
+                    <span className='text-base'>{data?.description}</span>
+                </article>
+
+
+                <h1 className='font-bold mb-3'>Technology:</h1>
+
+                <div className='border rounded-md p-2'>
+
+                    <ul className='flex flex-wrap justify-center'>
+                        {data?.technology?.map((t, i) =>
+                            <li key={i}
+                                className='px-5 py-1 m-1 border bg-gradient-to-br from-inherit to-transparent rounded-full text-sm font-bold text-white'>{t}</li>
+                        )}
+                    </ul>
+                </div>
+
+
+                <br />
+
+
+                <h1 className='font-bold'>Points:</h1>
+                <ol className='list-disc'>
                     {
-                        portfolioData?.portfolios?.map(data =>
-                            data?.id ?
-                                <div key={data?.id} onClick={() => document.getElementById(data?.id).showModal()}>
-                                    <img className=" w-full h-full cursor-pointer " src={data?.images?.[0]} alt=""/>
-                                    <Modals data={data}/>
-                                </div> : null
+                        data.point.map((p, i) =>
+
+                            <li key={i} className=' text-justify mt-2'>{p}</li>
                         )
                     }
-                </div>
+                </ol>
+
             </div>
-        </section>
+        </div>
     );
 };
 
