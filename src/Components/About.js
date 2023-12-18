@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfilePhoto from '../Images/profilePhoto.jpg';
+import ProfilePhoto from '../Images/profilePhoto.webp';
 import LazyImageLoader from "../utilitis/LazyImageLoader";
 
 const About = () => {
