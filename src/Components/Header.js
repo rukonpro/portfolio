@@ -85,7 +85,7 @@ const Header = () => {
 
                     <div className='flex justify-end'>
                         <LazyImageLoader>
-                            <img className=' md:w-[76vh]' src={Iphone || undefined} alt='bannderphoto' loading="eager"/>
+                            <img className=' md:w-[76vh]' src={Iphone || undefined} alt='bannderphoto' fetchpriority="high" loading="eager"/>
                         </LazyImageLoader>
                     </div>
                 </div>
