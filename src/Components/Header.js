@@ -29,7 +29,9 @@ const Header = () => {
                                     <a href="https://www.linkedin.com/in/rukonpro/">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
-                                            <img src={LinkdinIcon || undefined} alt="linkdin" loading="lazy"/>
+                                            <LazyImageLoader>
+                                            <img src={LinkdinIcon || undefined} alt="linkdin" loading="eager"/>
+                                            </LazyImageLoader>
                                         </div>
                                     </a>
 
@@ -37,7 +39,7 @@ const Header = () => {
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
                                             <LazyImageLoader>
-                                                <img src={EmailIcon || undefined} alt="email" loading="eager"/>
+                                                <img src={EmailIcon || undefined} alt="email" loading="lazy"/>
                                             </LazyImageLoader>
                                         </div>
                                     </a>
@@ -45,26 +47,34 @@ const Header = () => {
                                     <a href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR18ICJ_AmaQUWEIsiIfd4XyikyYvhcEIrM5HLImwXXJc42KT6pwqWjDaC0">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
+                                            <LazyImageLoader>
                                             <img src={SkypeIcon || undefined} alt="skype" loading="lazy"/>
+                                            </LazyImageLoader>
                                         </div>
                                     </a>
                                     <a href="https://api.whatsapp.com/send?phone=1765459224">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
-                                            <img src={Whatsapp || undefined} alt="whatsapp" loading="lazy"/>
+                                            <LazyImageLoader>
+                                                <img src={Whatsapp || undefined} alt="whatsapp" loading="lazy"/>
+                                            </LazyImageLoader>
+
                                         </div>
                                     </a>
 
                                     <a href="tel:+8801765459224">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
-                                            <img src={PhoneIcon || undefined} alt="phone number" loading="lazy"/>
+                                            <LazyImageLoader>
+                                               <img src={PhoneIcon || undefined} alt="phone number" loading="lazy"/>
+                                            </LazyImageLoader>
                                         </div>
                                     </a>
                                 </div>
                                 <a href="https://drive.google.com/file/d/1S8dFRWC7f3QH6ZVnGp6miYLwPz8s4coh/view?usp=sharing">
                                     <button
                                         id="downloadcv"
+                                        aria-label="resume"
                                         className="mt-5 w-[180px] h-[45px] text-center text-white md:text-xl text-base font-bold font-['Roboto'] bg-gradient-to-r from-[#263458] to-[#111827] rounded-full active:bg-gradient-to-l hover:shadow-2xl  hover:shadow-[#263458]">Download
                                         CV
                                     </button>
