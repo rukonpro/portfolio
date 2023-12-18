@@ -25,7 +25,7 @@ const Portfolio = ({ data }) => {
                                 rel="noopener noreferrer"
                                 className='text-[#454545]'
                             >
-                                <img className='h-10 w-10' src={Live || undefined} alt="Live" />
+                                <img className='h-10 w-10' src={Live || undefined} alt="Live" loading="lazy"/>
 
                             </a>
                         </li>}
@@ -34,7 +34,7 @@ const Portfolio = ({ data }) => {
                                aria-label={data?.title}
                                target="_blank"
                                rel="noopener noreferrer">
-                                <img className='h-10 w-10' src={Github || undefined} alt="Github" />
+                                <img className='h-10 w-10' src={Github || undefined} alt="Github" loading="lazy"/>
                             </a>
 
                         </li>}
@@ -42,7 +42,7 @@ const Portfolio = ({ data }) => {
                             <a href={data?.links?.backEndCode}
                                aria-label={data?.title} target="_blank"
                                rel="noopener noreferrer">
-                                <img className='h-10 w-10' src={Global || undefined} alt="Global" />
+                                <img className='h-10 w-10' src={Global || undefined} alt="Global" loading="lazy" />
                             </a>
                         </li>}
                     </ol>
