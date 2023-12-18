@@ -1,5 +1,6 @@
 import React from 'react';
 import ProfilePhoto from '../Images/profilePhoto.jpg';
+import LazyImageLoader from "../utilitis/LazyImageLoader";
 
 const About = () => {
 
@@ -9,8 +10,11 @@ const About = () => {
                 <div className='container mx-auto grid lg:grid-cols-2 '>
                     <div className=" flex lg:justify-start justify-center items-center text-center  ">
                         <div className="md:w-[350px] w-[292px]">
-                            <img className='rounded-full object-contain scale-x-[-1]' src={ProfilePhoto || undefined}
-                                 alt="profilephoto" loading="lazy"/>
+                            <LazyImageLoader>
+                                <img className='rounded-full object-contain scale-x-[-1]'
+                                     src={ProfilePhoto || undefined}
+                                     alt="profilephoto" loading="lazy"/>
+                            </LazyImageLoader>
                             <h5 className="text-white text-lg font-bold font-['Roboto']">Certifications</h5>
                             <h1 className="text-white md:text-3xl text-2xl font-bold font-['Roboto']">MD. Rukon Uddin</h1>
                         </div>
