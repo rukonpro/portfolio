@@ -35,7 +35,7 @@ const Header = () => {
                                     <a href="mailto:rukon.js@gamil.com">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
-                                            <img src={EmailIcon || undefined} alt="email" loading="lazy"/>
+                                            <img src={EmailIcon || undefined} alt="email" loading="eager"/>
                                         </div>
                                     </a>
 
