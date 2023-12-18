@@ -123,7 +123,7 @@ const Contact = () => {
                             </div>
 
                             <div className='col-span-2 flex justify-center text-white font-bold font-["Roboto"] '>
-                                <button type='submit' className="w-[167px] h-[49px]  border rounded-[86.50px] bg-gradient-to-l   from-[#263458] to-[#111827] shadow-2xl shadow-indigo-600 hover:bg-gradient-to-tr active:bg-gradient-to-r "  >
+                                <button type='submit' id="emailSubmit" className="w-[167px] h-[49px]  border rounded-[86.50px] bg-gradient-to-l   from-[#263458] to-[#111827] shadow-2xl shadow-indigo-600 hover:bg-gradient-to-tr active:bg-gradient-to-r "  >
                                     Send
                                 </button>
                             </div>

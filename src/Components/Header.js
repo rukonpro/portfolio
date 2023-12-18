@@ -76,7 +76,7 @@ const Header = () => {
                 </div>
 
                 <div className='flex justify-center'>
-                    <button id="mouseButton">
+                    <button type="button" id="mouseButton">
                         <svg width="45" height="77" viewBox="0 0 45 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="22.1461" cy="14.6504" r="6.47345" fill="url(#paint0_linear_128_381)"/>
                             <rect x="0.5" y="0.5" width="43.9734" height="76" rx="21.9867"
