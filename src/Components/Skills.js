@@ -26,7 +26,7 @@ const Skills = () => {
                 </div>
 
                 <div className="flex justify-center px-5 mt-10">
-                    <p className="max-w-4xl text-center font-bold font-['Roboto'] text-sm"> I am a dynamic MERN stack developer passionate about transforming ideas into powerful and user-friendly
+                    <p className="max-w-4xl text-center font-bold font-['Roboto'] text-sm text-white"> I am a dynamic MERN stack developer passionate about transforming ideas into powerful and user-friendly
                         web applications. With a strong foundation in MongoDB, Express.js, React, and Node.js, I specialize in
                         building seamless, responsive, and scalable solutions.</p>
                 </div>

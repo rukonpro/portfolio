@@ -12,7 +12,7 @@ const Portfolio = ({ data }) => {
 
             <div>
                 <div className='flex  justify-between flex-wrap pb-4'>
-                    <a href={data?.links?.liveLink} target="_blank" rel="noopener noreferrer">
+                    <a href={data?.links?.liveLink} aria-label={data?.title} target="_blank" rel="noopener noreferrer">
                         <h1 className='text-lg font-semibold underline underline-offset-4  mt-5'>{data?.title}</h1>
                     </a>
 
@@ -21,6 +21,7 @@ const Portfolio = ({ data }) => {
                             <a
                                 href={data?.links?.liveLink}
                                 target="_blank"
+                                aria-label={data?.title}
                                 rel="noopener noreferrer"
                                 className='text-[#454545]'
                             >
@@ -29,13 +30,18 @@ const Portfolio = ({ data }) => {
                             </a>
                         </li>}
                         {data?.links?.fontEndCode && <li>
-                            <a href={data?.links?.fontEndCode} target="_blank" rel="noopener noreferrer">
+                            <a href={data?.links?.fontEndCode}
+                               aria-label={data?.title}
+                               target="_blank"
+                               rel="noopener noreferrer">
                                 <img className='h-10 w-10' src={Github || undefined} alt="Github" />
                             </a>
 
                         </li>}
                         {data?.links?.backEndCode && <li>
-                            <a href={data?.links?.backEndCode} target="_blank" rel="noopener noreferrer">
+                            <a href={data?.links?.backEndCode}
+                               aria-label={data?.title} target="_blank"
+                               rel="noopener noreferrer">
                                 <img className='h-10 w-10' src={Global || undefined} alt="Global" />
                             </a>
                         </li>}

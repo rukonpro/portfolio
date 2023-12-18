@@ -18,7 +18,7 @@ const Portfolios = () => {
                     <h1 className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute">Portfolio</h1>
                 </div>
                 <div className="flex justify-center px-5 mt-10">
-                    <p className="max-w-4xl text-center font-bold font-['Roboto'] text-sm">Welcome to my portfolio! As a MERN stack developer, I specialize in crafting dynamic and efficient web applications. Below are some key projects that showcase my skills and passion for creating seamless user experiences.</p>
+                    <p className="max-w-4xl text-center font-bold font-['Roboto'] text-sm text-white">Welcome to my portfolio! As a MERN stack developer, I specialize in crafting dynamic and efficient web applications. Below are some key projects that showcase my skills and passion for creating seamless user experiences.</p>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-2 mt-10">
 
