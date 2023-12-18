@@ -5,6 +5,7 @@ import PhoneIcon from "../Images/phone-call.png";
 import SkypeIcon from "../Images/skype.png";
 import LinkdinIcon from "../Images/linkedin.png";
 import Whatsapp from "../Images/whatsapp.png";
+import LazyImageLoader from "../utilitis/LazyImageLoader";
 
 const Header = () => {
     return (
@@ -35,7 +36,9 @@ const Header = () => {
                                     <a href="mailto:rukon.js@gamil.com">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
-                                            <img src={EmailIcon || undefined} alt="email" loading="eager"/>
+                                            <LazyImageLoader>
+                                                <img src={EmailIcon || undefined} alt="email" loading="eager"/>
+                                            </LazyImageLoader>
                                         </div>
                                     </a>
 
