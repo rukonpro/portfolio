@@ -26,7 +26,7 @@ const Portfolios = () => {
                         portfolioData?.portfolios?.map(data =>
                             data?.id ?
                                 <div key={data?.id} onClick={() => document.getElementById(data?.id).showModal()}>
-                                    <img className=" w-full h-full cursor-pointer " src={data?.images?.[0]} alt=""/>
+                                    <img className=" w-full h-full cursor-pointer " src={data?.images?.[0]} alt="protfoliocover"/>
                                     <Modals data={data}/>
                                 </div> : null
                         )

@@ -19,8 +19,7 @@ const Header = () => {
                                     className="w-[134px] py-2 bg-gradient-to-r from-[#111827] to-[#292658] rounded-tl-[40px] rounded-tr-[40px] rounded-br-[40px] text-white md:text-lg text-base font-bold font-['Roboto'] ">
                                     Hello, i’m
                                 </button>
-                                <h1 className="text-white md:text-7xl text-4xl font-bold font-['Roboto'] pt-2  ">Rukon
-                                    Uddin</h1>
+                                <h1 className="text-white md:text-7xl text-4xl font-bold font-['Roboto'] pt-2  ">Rukon Uddin</h1>
 
                                 <h5 className="text-white md:text-xl text-base font-bold font-['Roboto'] mt-2">MERN-STACK
                                     DEVELOPER | REACT DEVELOPER | JAVASCRIPT DEVELOPER</h5>
@@ -62,6 +61,7 @@ const Header = () => {
                                 </div>
                                 <a href="https://drive.google.com/file/d/1S8dFRWC7f3QH6ZVnGp6miYLwPz8s4coh/view?usp=sharing">
                                     <button
+                                        id="downloadcv"
                                         className="mt-5 w-[180px] h-[45px] text-center text-white md:text-xl text-base font-bold font-['Roboto'] bg-gradient-to-r from-[#263458] to-[#111827] rounded-full active:bg-gradient-to-l hover:shadow-2xl  hover:shadow-[#263458]">Download
                                         CV
                                     </button>
@@ -71,12 +71,12 @@ const Header = () => {
                     </div>
 
                     <div className='flex justify-end'>
-                        <img className=' md:w-[76vh]' alt='iphone' src={Iphone || undefined}/>
+                        <img className=' md:w-[76vh]'  src={Iphone || undefined} alt='bannderphoto'/>
                     </div>
                 </div>
 
                 <div className='flex justify-center'>
-                    <button>
+                    <button id="mouseButton">
                         <svg width="45" height="77" viewBox="0 0 45 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="22.1461" cy="14.6504" r="6.47345" fill="url(#paint0_linear_128_381)"/>
                             <rect x="0.5" y="0.5" width="43.9734" height="76" rx="21.9867"

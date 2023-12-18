@@ -76,11 +76,11 @@ const Navigation = () => {
                                 </ul>
                             </div>
                         </div>
-                        <button onClick={menuHandler}
+                        <button id="threeDotButton" onClick={menuHandler}
                                 className="lg:hidden p-2  bg-gradient-to-tr from-[#030b55ec] to-[#994cd0f5] rounded-full block">
                             {
-                                !menuOpen ? <img className="h-5 w-5" src={MenuBar || undefined} alt=""/> :
-                                    <img className="h-5 w-5" src={Close || undefined} alt=""/>
+                                !menuOpen ? <img className="h-5 w-5" src={MenuBar || undefined} alt="icon"/> :
+                                    <img className="h-5 w-5" src={Close || undefined} alt="icon"/>
                             }
                         </button>
                     </div>
@@ -100,7 +100,7 @@ const Navigation = () => {
                             )
                         }
                         <li className=" bg-gradient-to-l from-[#0a0cd00d] to-[#9a4cd09d] px-5 py-3 rounded-full my-3 animated-button w-full">
-                            <button  onClick={() => document.getElementById("loginModal").showModal()}
+                            <button type="button" id="loginbuttion1"  onClick={() => document.getElementById("loginModal").showModal()}
                                     className="w-full ">Login
                             </button>
                         </li>

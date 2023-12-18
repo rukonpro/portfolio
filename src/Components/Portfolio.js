@@ -24,19 +24,19 @@ const Portfolio = ({ data }) => {
                                 rel="noopener noreferrer"
                                 className='text-[#454545]'
                             >
-                                <img className='h-10 w-10' src={Live || undefined} alt="" />
+                                <img className='h-10 w-10' src={Live || undefined} alt="Live" />
 
                             </a>
                         </li>}
                         {data?.links?.fontEndCode && <li>
                             <a href={data?.links?.fontEndCode} target="_blank" rel="noopener noreferrer">
-                                <img className='h-10 w-10' src={Github || undefined} alt="" />
+                                <img className='h-10 w-10' src={Github || undefined} alt="Github" />
                             </a>
 
                         </li>}
                         {data?.links?.backEndCode && <li>
                             <a href={data?.links?.backEndCode} target="_blank" rel="noopener noreferrer">
-                                <img className='h-10 w-10' src={Global || undefined} alt="" />
+                                <img className='h-10 w-10' src={Global || undefined} alt="Global" />
                             </a>
                         </li>}
                     </ol>

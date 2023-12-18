@@ -31,9 +31,9 @@ const Services = () => {
                         <div className="flex justify-center">
                             <div className="w-[244.63px] h-[494.98px] z-20 p-3 flex justify-center overflow-hidden">
                                 <img className="absolute w-[244.63px] h-[494.98px]" src={BlueBackCover || undefined}
-                                     alt=""/>
+                                     alt="BlueBackCover"/>
                                 <img className="absolute mt-3  w-[228.63px] h-[470.98px] rounded-3xl "
-                                     src={IphonScreen || undefined} alt=""/>
+                                     src={IphonScreen || undefined} alt="IphonScreen"/>
                             </div>
                         </div>
                     </div>
@@ -42,8 +42,8 @@ const Services = () => {
                         <div className="flex lg:flex-row-reverse">
                             <div className="px-3">
                                 <div className="relative w-[68px] h-[68px] flex justify-center items-center">
-                                    <img className="absolute" src={Ellipse || undefined} alt=""/>
-                                    <img className="absolute" src={Icon || undefined} alt=""/>
+                                    <img className="absolute" src={Ellipse || undefined} alt="Ellipse"/>
+                                    <img className="absolute" src={Icon || undefined} alt="Ellipse"/>
                                 </div>
                             </div>
 
@@ -60,8 +60,8 @@ const Services = () => {
                         <div className="flex pt-5 lg:flex-row-reverse">
                             <div className="px-3">
                                 <div className="relative w-[68px] h-[68px] flex justify-center items-center">
-                                    <img className="absolute" src={Ellipse || undefined} alt=""/>
-                                    <img className="absolute" src={Icon || undefined} alt=""/>
+                                    <img className="absolute" src={Ellipse || undefined} alt="Ellipse"/>
+                                    <img className="absolute" src={Icon || undefined} alt="Icon"/>
                                 </div>
                             </div>
 
@@ -76,8 +76,8 @@ const Services = () => {
                         <div className="flex   lg:flex-row-reverse">
                             <div className="px-3">
                                 <div className="relative w-[68px] h-[68px] flex justify-center items-center">
-                                    <img className="absolute" src={Ellipse || undefined} alt=""/>
-                                    <img className="absolute" src={Icon || undefined} alt=""/>
+                                    <img className="absolute" src={Ellipse || undefined} alt="Ellipse"/>
+                                    <img className="absolute" src={Icon || undefined} alt="Icon"/>
                                 </div>
                             </div>
 
@@ -95,9 +95,9 @@ const Services = () => {
                     <div className="lg:block hidden">
                         <div className="w-[244.63px] h-[494.98px] z-20 p-3 flex justify-center overflow-hidden">
                             <img className="absolute w-[244.63px] h-[494.98px]" src={BlueBackCover || undefined}
-                                 alt=""/>
+                                 alt="BlueBackCover"/>
                             <img className="absolute mt-3  w-[228.63px] h-[470.98px] rounded-3xl "
-                                 src={IphonScreen || undefined} alt=""/>
+                                 src={IphonScreen || undefined} alt="IphonScreen"/>
                         </div>
                     </div>
 
@@ -108,8 +108,8 @@ const Services = () => {
 
                             <div className="px-3">
                                 <div className="relative w-[68px] h-[68px] flex justify-center items-center">
-                                    <img className="absolute" src={Ellipse || undefined} alt=""/>
-                                    <img className="absolute" src={Icon || undefined} alt=""/>
+                                    <img className="absolute" src={Ellipse || undefined} alt="Ellipse"/>
+                                    <img className="absolute" src={Icon || undefined} alt="Icon"/>
                                 </div>
                             </div>
 
@@ -127,8 +127,8 @@ const Services = () => {
 
                             <div className="px-3">
                                 <div className="relative w-[68px] h-[68px] flex justify-center items-center">
-                                    <img className="absolute" src={Ellipse || undefined} alt=""/>
-                                    <img className="absolute" src={Icon || undefined} alt=""/>
+                                    <img className="absolute" src={Ellipse || undefined} alt="Ellipse"/>
+                                    <img className="absolute" src={Icon || undefined} alt="Icon"/>
                                 </div>
                             </div>
 
@@ -146,8 +146,8 @@ const Services = () => {
 
                             <div className="px-3">
                                 <div className="relative w-[68px] h-[68px] flex justify-center items-center">
-                                    <img className="absolute" src={Ellipse || undefined} alt=""/>
-                                    <img className="absolute" src={Icon || undefined} alt=""/>
+                                    <img className="absolute" src={Ellipse || undefined} alt="Ellipse"/>
+                                    <img className="absolute" src={Icon || undefined} alt="Icon"/>
                                 </div>
                             </div>
 

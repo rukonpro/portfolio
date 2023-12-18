@@ -10,7 +10,7 @@ const About = () => {
                     <div className=" flex lg:justify-start justify-center items-center text-center  ">
                         <div className="md:w-[350px] w-[292px]">
                             <img className='rounded-full object-contain scale-x-[-1]' src={ProfilePhoto || undefined}
-                                 alt=""/>
+                                 alt="profilephoto"/>
                             <h5 className="text-white text-lg font-bold font-['Roboto']">Certifications</h5>
                             <h1 className="text-white md:text-3xl text-2xl font-bold font-['Roboto']">MD. Rukon Uddin</h1>
                         </div>
