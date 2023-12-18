@@ -1,10 +1,10 @@
 import React from 'react';
-import AddressIcon from "../Images/location.png";
-import EmailIcon from "../Images/gmail.png";
-import PhoneIcon from "../Images/phone-call.png";
-import SkypeIcon from "../Images/skype.png";
-import LinkdinIcon from "../Images/linkedin.png";
-import Whatsapp from "../Images/whatsapp.png";
+import AddressIcon from "../Images/location.webp";
+import EmailIcon from "../Images/gmail.webp";
+import PhoneIcon from "../Images/phone-call.webp";
+import SkypeIcon from "../Images/skype.webp";
+import LinkdinIcon from "../Images/linkedin.webp";
+import Whatsapp from "../Images/whatsapp.webp";
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
 import { useForm } from "react-hook-form";

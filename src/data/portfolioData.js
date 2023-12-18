@@ -1,26 +1,23 @@
-import Project4 from "../Images/project4.jpg";
-import Project5 from "../Images/project5.jpg";
-import Project6 from "../Images/project6.jpeg";
-import MosafirLogo from "../Images/musafir_logo.png";
-import MosafirCover from "../Images/musafir-cover.png";
-import MosafirImg1 from "../Images/musafira2z1.png";
-import MosafirImg2 from "../Images/musafirImage2.png";
-import MosafirImg3 from "../Images/musafir3.png";
-import SkulCover from "../Images/skul-cover.png";
-import SkulImg1 from "../Images/eskulImg1.png";
-import SkulImg2 from "../Images/eskulImage2.png";
-import SkulImg3 from "../Images/skulImg3.png";
-import EskulLogo from "../Images/EskulLogo.png";
+import MosafirLogo from "../Images/musafir_logo.webp";
+import MosafirCover from "../Images/musafir-cover.webp";
+import MosafirImg1 from "../Images/musafira2z1.webp";
+import MosafirImg2 from "../Images/musafirImage2.webp";
+import MosafirImg3 from "../Images/musafir3.webp";
+import SkulCover from "../Images/skul-cover.webp";
+import SkulImg1 from "../Images/eskulImg1.webp";
+import SkulImg2 from "../Images/eskulImage2.webp";
+import SkulImg3 from "../Images/skulImg3.webp";
+import EskulLogo from "../Images/EskulLogo.webp";
 import OnlineClockShopLogo from "../Images/onlineCLockShoplogo.webp";
-import OnlineClockShop1 from "../Images/onlineClockShop1.png";
-import OnlineClockCover from "../Images/ClockShop-cover.png";
-import OnlineClockShop2 from "../Images/onlineClockShop2.png";
-import OnlineClockShop3 from "../Images/onlineClockShop3.png";
-import ExploreTravelCovewr from "../Images/ExploreTravel-cover.png";
-import ShopMartCover from "../Images/ShopMart-cover.gif";
-import DoctorPortalCover from "../Images/doctor-portal.png"
-import DoctorPortal1 from "../Images/doctor-portal2.png"
-import DoctorPortal2 from "../Images/doctor-portal3.png"
+import OnlineClockShop1 from "../Images/onlineClockShop1.webp";
+import OnlineClockCover from "../Images/ClockShop-cover.webp";
+import OnlineClockShop2 from "../Images/onlineClockShop2.webp";
+import OnlineClockShop3 from "../Images/onlineClockShop3.webp";
+import ExploreTravelCovewr from "../Images/ExploreTravel-cover.webp";
+import ShopMartCover from "../Images/ShopMartCover.webp";
+import DoctorPortalCover from "../Images/doctor-portal.webp"
+import DoctorPortal1 from "../Images/doctor-portal2.webp"
+import DoctorPortal2 from "../Images/doctor-portal3.webp"
 
 
 const portfolioData = {
@@ -110,7 +107,7 @@ const portfolioData = {
         {
             id: "DoctorsPortal",
             title: "Doctors Portal",
-            logo: Project4,
+            logo: DoctorPortalCover,
             description: "Developed a modern web application, \"Doctors Portal,\" utilizing React, React Router, Node.js, Express.js, Firebase, Material UI, and MongoDB. The platform empowers users to schedule appointments seamlessly, enhancing the overall healthcare experience. The combination of a user-friendly interface and robust backend technologies ensures a reliable and efficient appointment management system.",
             images: [DoctorPortalCover, DoctorPortal1, DoctorPortal2],
             technology: ["React", "React Router Dom", 'Metaril UI', 'Firebase', 'Heroku', 'Node.JS', 'Express.JS', 'MongoDB'],
@@ -130,7 +127,7 @@ const portfolioData = {
         {
             id: "exploreTravel",
             title: "Explore Travel",
-            logo: Project5,
+            logo: ExploreTravelCovewr,
             description: "Crafted \"Explore Travel,\" a dynamic web platform, leveraging React, React Router, Node.js, Express.js, Firebase, Material UI, and MongoDB. This travel hub facilitates a vibrant community where users can seamlessly post travel blogs, share experiences, and engage through reviews. Admin privileges include comprehensive blog management, user role assignments, and ensuring the platform's vitality.",
             images: [ExploreTravelCovewr],
             technology: ["React", "React Router", "Node.js", "Express.js", "Firebase", "Material UI", "MongoDB"],
@@ -149,7 +146,7 @@ const portfolioData = {
         {
             id: "shopMart",
             title: "Shop Mart - E-commerce Platform",
-            logo: Project6,
+            logo: ShopMartCover,
             description: "Shop Mart is a feature-rich e-commerce platform designed and developed with cutting-edge technologies to provide a seamless shopping experience. Leveraging React, React-router, Node.js, Express.js, Firebase, Material UI, Tailwind CSS, MongoDB, Chat-Engin, and Email.js, this platform offers a robust set of functionalities for both users and administrators.Shop Mart stands as a testament to the power of modern web technologies, offering a user-friendly interface, robust features, and efficient management tools. This project showcases my expertise in full-stack development and my ability to create engaging and functional e-commerce platforms.",
             images: [ShopMartCover],
             technology: ["React", "React-router", "Node.js", "Express.js", "Firebase", "Material UI", "Tailwind CSS", "MongoDB", "Chat-Engin", "Email.js"],

@@ -1,8 +1,8 @@
 import React from 'react';
-import Blog37 from "../Images/Rectangle 37.png";
-import Blog38 from "../Images/Rectangle 38.png";
-import Blog39 from "../Images/Rectangle 39.png";
-import Blog40 from "../Images/Rectangle 40.png";
+import Blog37 from "../Images/Rectangle_37.webp";
+import Blog38 from "../Images/Rectangle_38.webp";
+import Blog39 from "../Images/Rectangle_39.webp";
+import Blog40 from "../Images/Rectangle_40.webp";
 
 const Blog = () => {
     return (
