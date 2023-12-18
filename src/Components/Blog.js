@@ -20,16 +20,16 @@ const Blog = () => {
 
                     <div className="grid md:grid-cols-3 grid-cols-2  pt-10">
                         <div className="md:col-span-1 col-span-1 flex md:justify-start justify-center">
-                            <img className=" " src={Blog40 || undefined} alt=""/>
+                            <img className=" " src={Blog40 || undefined} alt="" loading="lazy"/>
                         </div>
                         <div className="md:col-span-1 col-span-1 flex md:justify-start justify-center">
-                            <img className=" " src={Blog37 || undefined} alt=""/>
+                            <img className=" " src={Blog37 || undefined} alt="" loading="lazy"/>
                         </div>
                         <div className="md:col-span-1 col-span-1 flex md:justify-start justify-center">
-                            <img className=" " src={Blog38 || undefined} alt=""/>
+                            <img className=" " src={Blog38 || undefined} alt="" loading="lazy"/>
                         </div>
                         <div className="md:col-span-3 col-span-1 flex justify-center">
-                            <img className=" " src={Blog39 || undefined} alt=""/>
+                            <img className=" " src={Blog39 || undefined} alt="" loading="lazy"/>
                         </div>
 
 

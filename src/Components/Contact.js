@@ -141,12 +141,12 @@ const Contact = () => {
                                 <br />
                                 <address
                                     className="text-white text-sm font-bold font-['Roboto'] flex gap-2 items-center">
-                                    <img src={AddressIcon||undefined} alt="AddressIcon" className='h-6 w-6' />
+                                    <img src={AddressIcon||undefined} alt="AddressIcon" className='h-6 w-6' loading="lazy" />
                                     <span>Address: Sunamganj, Sylhet, Bangladesh.</span
                                     ></address>
                                 <br />
                                 <h5 className="text-white text-sm font-bold font-['Roboto'] flex gap-2 items-center">
-                                    <img src={EmailIcon ||undefined} alt="EmailIcon" className='h-6 w-6' />Email:
+                                    <img src={EmailIcon ||undefined} alt="EmailIcon" className='h-6 w-6' loading="lazy"/>Email:
                                     <span>
                                         <a className="text-white text-sm font-bold font-['Roboto']"
                                             href="mailto:rukon.js@gmail.com">rukon.js@gmail.com</a>
@@ -154,7 +154,7 @@ const Contact = () => {
                                 </h5>
                                 <br />
                                 <h5 className="text-white text-sm font-bold font-['Roboto'] flex items-center gap-2">
-                                    <img src={PhoneIcon ||undefined} alt="PhoneIcon" className='h-6 w-6' />Phone:
+                                    <img src={PhoneIcon ||undefined} alt="PhoneIcon" className='h-6 w-6' loading="lazy"/>Phone:
                                     <span>
                                         <a className="text-white text-sm font-bold font-['Roboto']"
                                             href="tel:+8801765459224">+8801765459224</a>
@@ -162,7 +162,7 @@ const Contact = () => {
                                 </h5>
                                 <br />
                                 <h5 className="text-white text-sm font-bold font-['Roboto'] flex items-center gap-2">
-                                    <img src={Whatsapp ||undefined} alt="PhoneIcon" className='h-6 w-6' />Whatsapp:
+                                    <img src={Whatsapp ||undefined} alt="PhoneIcon" className='h-6 w-6' loading="lazy"/>Whatsapp:
                                     <span>
                                         <a className="text-white text-sm font-bold font-['Roboto']"
                                             href="tel:+8801765459224">+8801765459224</a>
@@ -170,14 +170,14 @@ const Contact = () => {
                                 </h5>
                                 <br />
                                 <h5 className="text-white text-sm font-bold font-['Roboto'] flex items-center gap-2">
-                                    <img src={SkypeIcon ||undefined} alt="SkypeIcon" className='h-6 w-6' /> Skype: <span>
+                                    <img src={SkypeIcon ||undefined} alt="SkypeIcon" className='h-6 w-6' loading="lazy"/> Skype: <span>
                                         <a className="text-white text-sm font-bold font-['Roboto']"
                                             href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR0_F5FZQG1sYISeOdnT_dB3PTJqS1bxp4OOI590YbfpZE9gGmw4rs_pYYU"> live:.cid.adbc52c0d5ebc624</a>
                                     </span>
                                 </h5>
                                 <br />
                                 <h5 className="text-white text-sm font-bold font-['Roboto'] flex items-center gap-2">
-                                    <img src={LinkdinIcon ||undefined} alt="SkypeIcon" className='h-6 w-6' /> Linkdin: <span>
+                                    <img src={LinkdinIcon ||undefined} alt="SkypeIcon" className='h-6 w-6' loading="lazy"/> Linkdin: <span>
                                         <a className="text-white text-sm font-bold font-['Roboto']"
                                             href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR0_F5FZQG1sYISeOdnT_dB3PTJqS1bxp4OOI590YbfpZE9gGmw4rs_pYYU"> Rukon Uddin</a>
                                     </span>

@@ -28,34 +28,34 @@ const Header = () => {
                                     <a href="https://www.linkedin.com/in/rukonpro/">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
-                                            <img src={LinkdinIcon || undefined} alt="linkdin"/>
+                                            <img src={LinkdinIcon || undefined} alt="linkdin" loading="lazy"/>
                                         </div>
                                     </a>
 
                                     <a href="mailto:rukon.js@gamil.com">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
-                                            <img src={EmailIcon || undefined} alt="email"/>
+                                            <img src={EmailIcon || undefined} alt="email" loading="lazy"/>
                                         </div>
                                     </a>
 
                                     <a href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR18ICJ_AmaQUWEIsiIfd4XyikyYvhcEIrM5HLImwXXJc42KT6pwqWjDaC0">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
-                                            <img src={SkypeIcon || undefined} alt="skype"/>
+                                            <img src={SkypeIcon || undefined} alt="skype" loading="lazy"/>
                                         </div>
                                     </a>
                                     <a href="https://api.whatsapp.com/send?phone=1765459224">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
-                                            <img src={Whatsapp || undefined} alt="whatsapp"/>
+                                            <img src={Whatsapp || undefined} alt="whatsapp" loading="lazy"/>
                                         </div>
                                     </a>
 
                                     <a href="tel:+8801765459224">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
-                                            <img src={PhoneIcon || undefined} alt="phone number"/>
+                                            <img src={PhoneIcon || undefined} alt="phone number" loading="lazy"/>
                                         </div>
                                     </a>
                                 </div>
@@ -71,7 +71,7 @@ const Header = () => {
                     </div>
 
                     <div className='flex justify-end'>
-                        <img className=' md:w-[76vh]'  src={Iphone || undefined} alt='bannderphoto'/>
+                        <img className=' md:w-[76vh]'  src={Iphone || undefined} alt='bannderphoto' loading="lazy"/>
                     </div>
                 </div>
 

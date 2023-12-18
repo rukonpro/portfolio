@@ -8,7 +8,7 @@ const Carousel = ({images}) => {
             {
                 images?.map((image,index)=>
                     <div key={image} id={index} className="carousel-item relative w-full">
-                        <img src={image} className="w-full" alt="coverphoto"/>
+                        <img src={image} className="w-full" alt="coverphoto" loading="lazy"/>
                         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                             <a href={`#${index>0&&index<images?.length? index-1:index+images.length}`} className="btn btn-circle">❮</a>
                             <a href={`#${index>-1&&index<images?.length? index+1:index-images.length}`} className="btn btn-circle">❯</a>
