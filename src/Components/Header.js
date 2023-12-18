@@ -30,7 +30,7 @@ const Header = () => {
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
                                             <LazyImageLoader>
-                                            <img src={LinkdinIcon || undefined} alt="linkdin" loading="eager"/>
+                                            <img src={LinkdinIcon || undefined} alt="linkdin" loading="lazy"/>
                                             </LazyImageLoader>
                                         </div>
                                     </a>
@@ -84,7 +84,9 @@ const Header = () => {
                     </div>
 
                     <div className='flex justify-end'>
-                        <img className=' md:w-[76vh]'  src={Iphone || undefined} alt='bannderphoto' loading="lazy"/>
+                        <LazyImageLoader>
+                            <img className=' md:w-[76vh]' src={Iphone || undefined} alt='bannderphoto' loading="eager"/>
+                        </LazyImageLoader>
                     </div>
                 </div>
 
