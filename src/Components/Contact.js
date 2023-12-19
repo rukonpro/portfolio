@@ -147,21 +147,21 @@ const Contact = () => {
                                     <span>Address: Sunamganj, Sylhet, Bangladesh.</span
                                     ></address>
                                 <br />
-                                <h5 className="text-white text-sm font-bold font-['Roboto'] flex gap-2 items-center">
+                                <address className="text-white text-sm font-bold font-['Roboto'] flex gap-2 items-center">
                                     <img src={EmailIcon ||undefined} alt="EmailIcon" height="100%" width="100%" className='h-6 w-6' loading="lazy"/>Email:
                                     <span>
                                         <a className="text-white text-sm font-bold font-['Roboto']"
                                             href="mailto:rukon.js@gmail.com">rukon.js@gmail.com</a>
                                     </span>
-                                </h5>
+                                </address>
                                 <br />
-                                <h5 className="text-white text-sm font-bold font-['Roboto'] flex items-center gap-2">
+                                <address className="text-white text-sm font-bold font-['Roboto'] flex items-center gap-2">
                                     <img src={PhoneIcon ||undefined} alt="PhoneIcon" height="100%" width="100%" className='h-6 w-6' loading="lazy"/>Phone:
                                     <span>
                                         <a className="text-white text-sm font-bold font-['Roboto']"
                                             href="tel:+8801765459224">+8801765459224</a>
                                     </span>
-                                </h5>
+                                </address>
                                 <br />
                                 <h5 className="text-white text-sm font-bold font-['Roboto'] flex items-center gap-2">
                                     <img src={Whatsapp ||undefined} height="100%" width="100%" alt="PhoneIcon" className='h-6 w-6' loading="lazy"/>Whatsapp:
