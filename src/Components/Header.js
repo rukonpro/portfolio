@@ -77,7 +77,7 @@ const Header = () => {
                                 <a href="https://drive.google.com/file/d/1S8dFRWC7f3QH6ZVnGp6miYLwPz8s4coh/view?usp=sharing">
                                     <button
                                         id="downloadcv"
-                                        aria-label="resume"
+                                        aria-label="Download CV"
                                         className=" mt-5  text-center text-white md:text-xl text-base font-bold font-['Roboto'] bg-gradient-to-l from-[#1355b7] to-[#0e0e36] rounded-full active:bg-gradient-to-l hover:shadow-2xl  hover:shadow-[#263458] tracking-[1px] px-4 py-2 ">
                                         <span
                                             className="bg-gradient-to-r from-[#816aff] to-[#d066fd] text-transparent bg-clip-text"> Download CV</span>
@@ -99,7 +99,10 @@ const Header = () => {
                     <button
                         onClick={()=>window.scrollBy(0, 600)}
 
-                        type="button" id="mouseButton" className="mouseButton ">
+                        type="button"
+                        id="mouseButton"
+                        aria-label="mouseButton"
+                        className="mouseButton ">
                         <svg width="45" height="77" viewBox="0 0 45 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="22.1461" cy="14.6504" r="6.47345" fill="url(#paint0_linear_128_381)"/>
                             <rect x="0.5" y="0.5" width="43.9734" height="76" rx="21.9867"
