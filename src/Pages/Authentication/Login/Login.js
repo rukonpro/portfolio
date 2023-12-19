@@ -66,7 +66,10 @@ const Login = ({ setIsLogin }) => {
                             </div>
                             <div className='col-span-2 flex justify-center text-white font-bold font-["Roboto"] '>
 
-                                <button type='submit' className=" w-full py-2  rounded-[10px] border shadow-2xl bg-gradient-to-l   from-[#442658] to-[#111827] active:bg-gradient-to-r  hover:shadow-2xl  hover:shadow-[#111827]"  >
+                                <button
+                                    type='submit'
+                                    aria-label="Login"
+                                    className=" w-full py-2  rounded-[10px] border shadow-2xl bg-gradient-to-l   from-[#442658] to-[#111827] active:bg-gradient-to-r  hover:shadow-2xl  hover:shadow-[#111827]"  >
                                     Login
                                 </button>
                             </div>

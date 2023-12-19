@@ -12,7 +12,7 @@ const Registation = ({ setIsLogin }) => {
                 <div className="flex ">
                     <div className="flex px-8 ">
                         <div className="relative -inset-3   w-[55px] h-[55px] bg-gradient-to-r from-[#0c2140d0] to-[#6d2613] rounded-full customShadow" />
-                        <h1 className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute">Registation</h1>
+                        <h1 className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute">Registration</h1>
                     </div>
                 </div>
 
@@ -89,8 +89,11 @@ const Registation = ({ setIsLogin }) => {
                             </div>
                             <div className='col-span-2 flex justify-center text-white font-bold font-["Roboto"] '>
 
-                                <button type='submit' className=" w-full py-2  rounded-[10px] border shadow-2xl bg-gradient-to-l   from-[#442658] to-[#111827] active:bg-gradient-to-r  hover:shadow-2xl  hover:shadow-[#111827]"  >
-                                    Registater
+                                <button
+                                        type='submit'
+                                        aria-label="Registration"
+                                        className=" w-full py-2  rounded-[10px] border shadow-2xl bg-gradient-to-l   from-[#442658] to-[#111827] active:bg-gradient-to-r  hover:shadow-2xl  hover:shadow-[#111827]"  >
+                                    Registration
                                 </button>
                             </div>
                             <div className="col-span-2 flex justify-center ">
