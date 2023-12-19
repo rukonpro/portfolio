@@ -36,8 +36,10 @@ const Skills = () => {
                         <h1 className={`${bgGradientColor1} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Experienced: </h1>
                         <ul className="flex gap-1 flex-wrap  justify-between">
                             {
-                                PortfolioData?.skills?.experienced?.map((data) =>
-                                    <li key={data}
+                                PortfolioData?.skills?.experienced?.map((data,i) =>
+                                    <li
+                                        id={data+i}
+                                        key={data}
                                         className={`${bgGradientColor1} px-2 py-1 text-base font-bold font-['Roboto'] rounded-full`}>{data}</li>
                                 )
                             }
@@ -48,8 +50,10 @@ const Skills = () => {
                         <h1 className={`${bgGradientColor2} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Comfortable: </h1>
                         <ul className="flex gap-1 flex-wrap  justify-between">
                             {
-                                PortfolioData?.skills?.comfortable?.map((data) =>
-                                    <li key={data}
+                                PortfolioData?.skills?.comfortable?.map((data,i) =>
+                                    <li
+                                        id={data+i}
+                                        key={data}
                                         className={`${bgGradientColor2} px-2 py-1 text-base font-bold font-['Roboto'] rounded-full`}>{data}</li>
                                 )
                             }
@@ -59,8 +63,8 @@ const Skills = () => {
                         <h1 className={`${bgGradientColor3} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Familiar: </h1>
                         <ul className="flex gap-1 flex-wrap  justify-between">
                             {
-                                PortfolioData?.skills?.familiar?.map((data) =>
-                                    <li key={data}
+                                PortfolioData?.skills?.familiar?.map((data,i) =>
+                                    <li id={data+i} key={data}
                                         className={`${bgGradientColor3} px-2 py-1 text-base font-bold font-['Roboto'] rounded-full`}>{data}</li>
                                 )
                             }
@@ -70,8 +74,8 @@ const Skills = () => {
                         <h1 className={`${bgGradientColor4} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Tools: </h1>
                         <ul className="flex gap-1 flex-wrap justify-between">
                             {
-                                PortfolioData?.skills?.tools?.map((data) =>
-                                    <li key={data}
+                                PortfolioData?.skills?.tools?.map((data,i) =>
+                                    <li id={data+i} key={data}
                                         className={`${bgGradientColor4} px-2 py-1 text-base font-bold font-['Roboto'] rounded-full`}>{data}</li>
                                 )
                             }
