@@ -1,6 +1,7 @@
 import React from 'react';
 import Modals from './Modals';
 import portfolioData from "../data/portfolioData";
+import LazyImageLoader from "../utilitis/LazyImageLoader";
 
 
 const Portfolios = () => {
@@ -15,10 +16,10 @@ const Portfolios = () => {
                 <div className="flex justify-center">
                     <div
                         className="relative  w-[55px] h-[55px] bg-gradient-to-r from-orange-600 to-amber-400 rounded-full right-24 customShadow"></div>
-                    <h1 className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute">Portfolio</h1>
+                    <h1 className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute tracking-[4px]">Portfolio</h1>
                 </div>
-                <div className="flex justify-center px-5 mt-10">
-                    <p className="max-w-4xl text-center font-bold font-['Roboto'] text-sm text-white">Welcome to my portfolio! As a MERN stack developer, I specialize in crafting dynamic and efficient web applications. Below are some key projects that showcase my skills and passion for creating seamless user experiences.</p>
+                <div className="flex justify-center  mt-10">
+                    <p className="max-w-4xl  font-bold font-['Roboto'] text-base text-slate-400 tracking-[2px] md:text-center text-justify">Welcome to my portfolio! As a MERN stack developer, I specialize in crafting dynamic and efficient web applications. Below are some key projects that showcase my skills and passion for creating seamless user experiences.</p>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-2 mt-10">
 
@@ -26,7 +27,12 @@ const Portfolios = () => {
                         portfolioData?.portfolios?.map(data =>
                             data?.id ?
                                 <div key={data?.id} onClick={() => document.getElementById(data?.id).showModal()}>
-                                    <img className=" w-full h-full cursor-pointer " src={data?.images?.[0]} alt="protfoliocover"/>
+                                    <LazyImageLoader>
+                                        <img className=" w-full h-full cursor-pointer "
+                                             src={data?.images?.[0]}
+                                             alt="protfoliocover"
+                                             loading="lazy"/>
+                                    </LazyImageLoader>
                                     <Modals data={data}/>
                                 </div> : null
                         )

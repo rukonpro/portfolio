@@ -156,3 +156,31 @@
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+
+
+.mouseButton{
+    animation: animatedMouse 5s steps(5) ;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+  }
+
+@keyframes animatedMouse {
+    0%   {
+        transform: rotate(45deg);
+        transition: 5s;
+    }
+    25%  {
+        transform: rotate(-45deg);
+        transition: 5s;
+    }
+    50%  {
+        transform: rotate(45deg)
+    }
+    75% {
+        transform: rotate(-45deg)
+    }
+    100% {
+        transform: rotate(45deg)
+    }
+}

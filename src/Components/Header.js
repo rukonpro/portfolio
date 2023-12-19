@@ -8,6 +8,7 @@ import Whatsapp from "../Images/whatsapp.png";
 import LazyImageLoader from "../utilitis/LazyImageLoader";
 
 const Header = () => {
+
     return (
         <header id="home" className='relative pb-10 bg-[#0e0e36]     overflow-hidden'>
 
@@ -16,19 +17,21 @@ const Header = () => {
                     <div>
                         <div>
                             <div>
-                                <button
-                                    className="w-[134px] py-2 bg-gradient-to-r from-[#111827] to-[#292658] rounded-tl-[40px] rounded-tr-[40px] rounded-br-[40px] text-white md:text-lg text-base font-bold font-['Roboto'] ">
-                                    Hello, i’m
-                                </button>
-                                <h1 className="text-white md:text-7xl text-4xl font-bold font-['Roboto'] pt-2  ">Rukon Uddin</h1>
+                                <span
+                                    className="text-2xl font-bold bg-gradient-to-r from-[#816aff] to-[#d066fd] text-transparent bg-clip-text tracking-[5px]">
+                                    Hello!, I'm
+                                </span>
+                                <h1 className=" md:text-7xl text-4xl font-bold font-['Roboto'] pt-2  "><
+                                    span className="bg-gradient-to-br from-[#816aff] to-[#d066fd] text-transparent bg-clip-text tracking-[4px] ">Rukon Uddin</span>
+                                </h1>
 
-                                <h5 className="text-white md:text-xl text-base font-bold font-['Roboto'] mt-2">MERN-STACK
-                                    DEVELOPER | REACT DEVELOPER | JAVASCRIPT DEVELOPER</h5>
+                                <p className=" md:text-xl text-base font-bold font-['Roboto'] mt-2 md:tracking-[5px] tracking-[2px] text-[#fccdff]">MERN-stack
+                                    Developer | React Developer |  Javascript Developer</p>
 
                                 <div className='flex gap-4 pt-5'>
                                     <a href="https://www.linkedin.com/in/rukonpro/">
                                         <div
-                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
+                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-[#fbcdff]'>
                                             <LazyImageLoader>
                                             <img src={LinkdinIcon || undefined} alt="linkdin" loading="lazy"/>
                                             </LazyImageLoader>
@@ -37,7 +40,7 @@ const Header = () => {
 
                                     <a href="mailto:rukon.js@gamil.com">
                                         <div
-                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
+                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-[#fbcdff]'>
                                             <LazyImageLoader>
                                                 <img src={EmailIcon || undefined} alt="email" loading="lazy"/>
                                             </LazyImageLoader>
@@ -46,7 +49,7 @@ const Header = () => {
 
                                     <a href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR18ICJ_AmaQUWEIsiIfd4XyikyYvhcEIrM5HLImwXXJc42KT6pwqWjDaC0">
                                         <div
-                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
+                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-[#fbcdff]'>
                                             <LazyImageLoader>
                                             <img src={SkypeIcon || undefined} alt="skype" loading="lazy"/>
                                             </LazyImageLoader>
@@ -54,7 +57,7 @@ const Header = () => {
                                     </a>
                                     <a href="https://api.whatsapp.com/send?phone=1765459224">
                                         <div
-                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
+                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-[#fbcdff]'>
                                             <LazyImageLoader>
                                                 <img src={Whatsapp || undefined} alt="whatsapp" loading="lazy"/>
                                             </LazyImageLoader>
@@ -64,7 +67,7 @@ const Header = () => {
 
                                     <a href="tel:+8801765459224">
                                         <div
-                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-white'>
+                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-[#fbcdff]'>
                                             <LazyImageLoader>
                                                <img src={PhoneIcon || undefined} alt="phone number" loading="lazy"/>
                                             </LazyImageLoader>
@@ -75,8 +78,10 @@ const Header = () => {
                                     <button
                                         id="downloadcv"
                                         aria-label="resume"
-                                        className="mt-5 w-[180px] h-[45px] text-center text-white md:text-xl text-base font-bold font-['Roboto'] bg-gradient-to-r from-[#263458] to-[#111827] rounded-full active:bg-gradient-to-l hover:shadow-2xl  hover:shadow-[#263458]">Download
-                                        CV
+                                        className=" mt-5  text-center text-white md:text-xl text-base font-bold font-['Roboto'] bg-gradient-to-l from-[#1355b7] to-[#0e0e36] rounded-full active:bg-gradient-to-l hover:shadow-2xl  hover:shadow-[#263458] tracking-[1px] px-4 py-2 ">
+                                        <span
+                                            className="bg-gradient-to-r from-[#816aff] to-[#d066fd] text-transparent bg-clip-text"> Download CV</span>
+
                                     </button>
                                 </a>
                             </div>
@@ -91,7 +96,10 @@ const Header = () => {
                 </div>
 
                 <div className='flex justify-center'>
-                    <button type="button" id="mouseButton">
+                    <button
+                        onClick={()=>window.scrollBy(0, 600)}
+
+                        type="button" id="mouseButton" className="mouseButton ">
                         <svg width="45" height="77" viewBox="0 0 45 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="22.1461" cy="14.6504" r="6.47345" fill="url(#paint0_linear_128_381)"/>
                             <rect x="0.5" y="0.5" width="43.9734" height="76" rx="21.9867"

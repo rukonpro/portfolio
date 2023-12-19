@@ -54,7 +54,7 @@ const Pricing= () => {
                         Pay as you grow
                     </p>
                     <div className='max-w-xl'>
-                        <p>
+                        <p className="text-slate-300 tracking-[2px]">
                             I offer comprehensive MERN stack development expertise to bring your projects to life. My pricing structure is designed to provide flexibility based on the scope and complexity of your needs.
                         </p>
                     </div>
@@ -64,16 +64,16 @@ const Pricing= () => {
                         plans.map((item, idx) => (
                             <div key={idx} className={`relative  mt-5  flex-1 flex flex-col hover:shadow-sky-500/20 shadow-2xl sm:mt-0 sm:rounded-xl sm:max-w-md    bg-gradient-to-t from-gray-950 to-sky-950    rounded-lg  hover:border-orange-500   border-transparent `} >
                                 <div className="p-4 py-8 space-y-4 border-b border-gray-700  md:p-8">
-                                    <span className='text-gray-200 font-medium'>
+                                    <h2 className='text-gray-200 font-medium tracking-[3px]'>
                                         {item.name}
-                                    </span>
+                                    </h2>
                                     <div className='text-orange-500 text-3xl font-semibold'>
                                         ${item.price} <span className="text-xl font-normal">/mo</span>
                                     </div>
-                                    <p className="text-gray-400">
+                                    <p className="text-gray-400 tracking-[1px]">
                                         {item.desc}
                                     </p>
-                                    <button className='px-3 py-3 rounded-lg w-full font-semibold text-sm duration-150 text-white  bg-gradient-to-tr from-gray-950 to-sky-700  hover:bg-gradient-to-r active:bg-cyan-700'>
+                                    <button className='px-3 py-3 rounded-lg w-full font-bold text-sm duration-150 text-white  bg-gradient-to-tr from-gray-950 to-sky-700  hover:bg-gradient-to-r active:bg-cyan-700 tracking-[3px]'>
                                         Get Started
                                     </button>
                                 </div>
@@ -91,7 +91,7 @@ const Pricing= () => {
                                                         d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z'
                                                         clipRule='evenodd'></path>
                                                 </svg>
-                                                <p>{featureItem}</p>
+                                                <p className="tracking-[1px] ">{featureItem}</p>
                                             </li>
                                         ))
                                     }

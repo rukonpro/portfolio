@@ -15,8 +15,8 @@ const About = () => {
                                      src={ProfilePhoto || undefined}
                                      alt="profilephoto" loading="lazy"/>
                             </LazyImageLoader>
-                            <h5 className="text-white text-lg font-bold font-['Roboto']">Certifications</h5>
-                            <h1 className="text-white md:text-3xl text-2xl font-bold font-['Roboto']">MD. Rukon Uddin</h1>
+                            <h5 className="text-white  text-lg font-bold font-['Roboto'] tracking-[1px]">Certifications</h5>
+                            <h1 className="text-white  md:text-3xl text-2xl font-bold font-['Roboto'] tracking-[2px]">MD. Rukon Uddin</h1>
                         </div>
                     </div>
                     <div>
@@ -24,11 +24,11 @@ const About = () => {
                             <div
                                 className="w-[55px] h-[55px] bg-gradient-to-r from-orange-600 to-amber-400 rounded-full customShadow ">
                                 <div className='absolute px-5'>
-                                    <h1 className="text-white md:text-5xl text-2xl font-bold font-['Roboto'] ">About
+                                    <h1 className="text-white  md:text-5xl text-2xl font-bold font-['Roboto'] tracking-[4px] ">About
                                         me</h1>
                                 </div>
                             </div>
-                            <article className="text-white md:text-xl text-base   font-['Roboto'] pt-10"><span
+                            <article className="text-white  md:text-xl text-base   font-['Roboto'] pt-10 tracking-[1px]"><span
                                 className='text-2xl font-extrabold'>Hello!</span> <br/>
                                 I am a <span className='font-bold'>Web Developer</span>,<span className='font-bold'> React Developer</span>, <span
                                     className='font-bold'>MERN stack developer</span>, or a <span
