@@ -30,6 +30,7 @@ const Portfolios = () => {
                                     <LazyImageLoader>
                                         <img className=" w-full h-full cursor-pointer "
                                              src={data?.images?.[0]}
+                                             height="100%" width="100%"
                                              alt="protfoliocover"
                                              loading="lazy"/>
                                     </LazyImageLoader>

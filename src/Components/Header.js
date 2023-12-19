@@ -33,7 +33,7 @@ const Header = () => {
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-[#fbcdff]'>
                                             <LazyImageLoader>
-                                            <img src={LinkdinIcon || undefined} alt="linkdin" loading="lazy"/>
+                                            <img src={LinkdinIcon || undefined} height="100%" width="100%" alt="linkdin" loading="lazy"/>
                                             </LazyImageLoader>
                                         </div>
                                     </a>
@@ -42,7 +42,7 @@ const Header = () => {
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-[#fbcdff]'>
                                             <LazyImageLoader>
-                                                <img src={EmailIcon || undefined} alt="email" loading="lazy"/>
+                                                <img src={EmailIcon || undefined} height="100%" width="100%" alt="email" loading="lazy"/>
                                             </LazyImageLoader>
                                         </div>
                                     </a>
@@ -51,7 +51,7 @@ const Header = () => {
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-[#fbcdff]'>
                                             <LazyImageLoader>
-                                            <img src={SkypeIcon || undefined} alt="skype" loading="lazy"/>
+                                            <img src={SkypeIcon || undefined} height="100%" width="100%" alt="skype" loading="lazy"/>
                                             </LazyImageLoader>
                                         </div>
                                     </a>
@@ -59,7 +59,7 @@ const Header = () => {
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-[#fbcdff]'>
                                             <LazyImageLoader>
-                                                <img src={Whatsapp || undefined} alt="whatsapp" loading="lazy"/>
+                                                <img src={Whatsapp || undefined} height="100%" width="100%" alt="whatsapp" loading="lazy"/>
                                             </LazyImageLoader>
 
                                         </div>
@@ -69,7 +69,7 @@ const Header = () => {
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-[#fbcdff]'>
                                             <LazyImageLoader>
-                                               <img src={PhoneIcon || undefined} alt="phone number" loading="lazy"/>
+                                               <img src={PhoneIcon || undefined} height="100%" width="100%" alt="phone number" loading="lazy"/>
                                             </LazyImageLoader>
                                         </div>
                                     </a>
@@ -90,7 +90,7 @@ const Header = () => {
 
                     <div className='flex justify-end'>
                         <LazyImageLoader>
-                            <img className=' md:w-[76vh]' src={Iphone || undefined} alt='bannderphoto' fetchpriority="high" loading="eager"/>
+                            <img className=' md:w-[76vh]' src={Iphone || undefined} height="100%" width="100%" alt='bannderphoto' fetchpriority="high" loading="eager"/>
                         </LazyImageLoader>
                     </div>
                 </div>

@@ -50,9 +50,8 @@ const Navigation = () => {
                     <div className="flex  justify-between items-center md:px-8 px-5 py-4   ">
                         <div >
                             <Link to="/#home" >
-                                <h1 className="bg-gradient-to-r from-[#816aff] to-[#d066fd] text-transparent bg-clip-text">
-                                    <span
-                                        className="bg-gradient-to-br from-[#816aff] to-[#d066fd] text-transparent bg-clip-text text-white text-[22px] font-bold font-['Roboto'] tracking-[2px] ">Rukon.PRO</span>
+                                <h1 className="bg-gradient-to-br from-[#816aff] to-[#d066fd] text-transparent bg-clip-text text-[22px] font-bold font-['Roboto'] tracking-[2px] ">
+                                    Rukon.PRO
                                 </h1>
 
                             </Link>
@@ -75,7 +74,7 @@ const Navigation = () => {
                                         )
                                     }
                                     <li>
-                                        <button className=" bg-gradient-to-l from-[#0a0cd00d] to-[#9a4cd09d] px-5 py-1 rounded-lg  animated-button tracking-[3px]  text-[#fccdff]" onClick={() => document.getElementById("loginModal").showModal()}> <span className="bg-gradient-to-r from-[#816aff] to-[#d066fd] text-transparent bg-clip-text">Login</span>
+                                        <button className=" bg-gradient-to-r from-[#0a0cd00d] to-[#9a4cd09d] px-5 py-1 rounded-lg  animated-button tracking-[3px]  text-[#fccdff]" onClick={() => document.getElementById("loginModal").showModal()}> <span className="bg-gradient-to-r from-[#816aff] to-[#d066fd] text-transparent bg-clip-text">Login</span>
                                         </button>
                                     </li>
                                 </ul>

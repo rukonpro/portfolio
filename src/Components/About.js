@@ -13,7 +13,7 @@ const About = () => {
                             <LazyImageLoader>
                                 <img className='rounded-full object-contain scale-x-[-1]'
                                      src={ProfilePhoto || undefined}
-                                     alt="profilephoto" loading="lazy"/>
+                                     alt="profilephoto" height="100%" width="100%" loading="lazy"/>
                             </LazyImageLoader>
                             <h5 className="text-white  text-lg font-bold font-['Roboto'] tracking-[1px]">Certifications</h5>
                             <h1 className="text-white  md:text-3xl text-2xl font-bold font-['Roboto'] tracking-[2px]">MD. Rukon Uddin</h1>
