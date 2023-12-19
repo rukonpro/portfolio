@@ -1,5 +1,6 @@
 import React from 'react';
 import PortfolioData from "../data/portfolioData";
+import LazyImageLoader from "../utilitis/LazyImageLoader";
 
 const Skills = () => {
 
@@ -32,55 +33,73 @@ const Skills = () => {
                 </div>
                 <div className="pt-10 px-5 grid md:grid-cols-2 lg:grid-cols-4 gap-3 text-white ">
 
-                    <div className={`${bgGradientColor1} p-2 mt-3 rounded-3xl `}>
-                        <h1 className={`${bgGradientColor1} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Experienced: </h1>
-                        <ul className="flex gap-1 flex-wrap  justify-between">
-                            {
-                                PortfolioData?.skills?.experienced?.map((data,i) =>
-                                    <li
-                                        id={data+i}
-                                        key={data}
-                                        className={`${bgGradientColor1} px-2 py-1 text-base font-bold font-['Roboto'] rounded-full`}>{data}</li>
-                                )
-                            }
-                        </ul>
-                    </div>
 
-                    <div className={`${bgGradientColor2} p-2 mt-3 rounded-3xl`}>
-                        <h1 className={`${bgGradientColor2} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Comfortable: </h1>
-                        <ul className="flex gap-1 flex-wrap  justify-between">
-                            {
-                                PortfolioData?.skills?.comfortable?.map((data,i) =>
-                                    <li
-                                        id={data+i}
-                                        key={data}
-                                        className={`${bgGradientColor2} px-2 py-1 text-base font-bold font-['Roboto'] rounded-full`}>{data}</li>
-                                )
-                            }
-                        </ul>
-                    </div>
-                    <div className={`${bgGradientColor3} p-2 mt-3 rounded-3xl`}>
-                        <h1 className={`${bgGradientColor3} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Familiar: </h1>
-                        <ul className="flex gap-1 flex-wrap  justify-between">
-                            {
-                                PortfolioData?.skills?.familiar?.map((data,i) =>
-                                    <li id={data+i} key={data}
-                                        className={`${bgGradientColor3} px-2 py-1 text-base font-bold font-['Roboto'] rounded-full`}>{data}</li>
-                                )
-                            }
-                        </ul>
-                    </div>
-                    <div className={`${bgGradientColor4} p-2 mt-3 rounded-3xl`}>
-                        <h1 className={`${bgGradientColor4} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Tools: </h1>
-                        <ul className="flex gap-1 flex-wrap justify-between">
-                            {
-                                PortfolioData?.skills?.tools?.map((data,i) =>
-                                    <li id={data+i} key={data}
-                                        className={`${bgGradientColor4} px-2 py-1 text-base font-bold font-['Roboto'] rounded-full`}>{data}</li>
-                                )
-                            }
-                        </ul>
-                    </div>
+                        <div className={`${bgGradientColor1} p-2 mt-3 rounded-3xl `}>
+                            <h1 className={`${bgGradientColor1} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Experienced: </h1>
+                            <LazyImageLoader>
+                                <ul className="flex gap-1 flex-wrap  justify-between">
+                                    {
+                                        PortfolioData?.skills?.experienced?.map((data, i) =>
+                                            <li
+                                                id={data + i}
+                                                key={data}
+                                                className={`${bgGradientColor1} px-2 py-1 text-base font-bold font-['Roboto'] rounded-full`}>{data}</li>
+                                        )
+                                    }
+                                </ul>
+                            </LazyImageLoader>
+                        </div>
+
+
+
+                        <div className={`${bgGradientColor2} p-2 mt-3 rounded-3xl`}>
+                            <h1 className={`${bgGradientColor2} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Comfortable: </h1>
+                            <LazyImageLoader>
+                            <ul className="flex gap-1 flex-wrap  justify-between">
+                                {
+                                    PortfolioData?.skills?.comfortable?.map((data, i) =>
+                                        <li
+                                            id={data + i}
+                                            key={data}
+                                            className={`${bgGradientColor2} px-2 py-1 text-base font-bold font-['Roboto'] rounded-full`}>{data}</li>
+                                    )
+                                }
+                            </ul>
+                    </LazyImageLoader>
+                        </div>
+
+
+
+                        <div className={`${bgGradientColor3} p-2 mt-3 rounded-3xl`}>
+                            <h1 className={`${bgGradientColor3} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Familiar: </h1>
+                            <LazyImageLoader>
+                                <ul className="flex gap-1 flex-wrap  justify-between">
+                                    {
+                                        PortfolioData?.skills?.familiar?.map((data, i) =>
+                                            <li id={data + i} key={data}
+                                                className={`${bgGradientColor3} px-2 py-1 text-base font-bold font-['Roboto'] rounded-full`}>{data}</li>
+                                        )
+                                    }
+                                </ul>
+                              </LazyImageLoader>
+                        </div>
+
+
+                        <div className={`${bgGradientColor4} p-2 mt-3 rounded-3xl`}>
+                            <h1 className={`${bgGradientColor4} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Tools: </h1>
+                            <LazyImageLoader>
+                            <ul className="flex gap-1 flex-wrap justify-between">
+                                {
+                                    PortfolioData?.skills?.tools?.map((data, i) =>
+                                        <li id={data + i} key={data}
+                                            className={`${bgGradientColor4} px-2 py-1 text-base font-bold font-['Roboto'] rounded-full`}>{data}</li>
+                                    )
+                                }
+                            </ul>
+                            </LazyImageLoader>
+                        </div>
+
+
                 </div>
             </div>
         </section>
