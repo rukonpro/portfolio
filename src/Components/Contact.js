@@ -163,27 +163,27 @@ const Contact = () => {
                                     </span>
                                 </address>
                                 <br />
-                                <h5 className="text-white text-sm font-bold font-['Roboto'] flex items-center gap-2">
+                                <address className="text-white text-sm font-bold font-['Roboto'] flex items-center gap-2">
                                     <img src={Whatsapp ||undefined} height="100%" width="100%" alt="PhoneIcon" className='h-6 w-6' loading="lazy"/>Whatsapp:
                                     <span>
                                         <a className="text-white text-sm font-bold font-['Roboto']"
                                             href="tel:+8801765459224">+8801765459224</a>
                                     </span>
-                                </h5>
+                                </address>
                                 <br />
-                                <h5 className="text-white text-sm font-bold font-['Roboto'] flex items-center gap-2">
+                                <address className="text-white text-sm font-bold font-['Roboto'] flex items-center gap-2">
                                     <img src={SkypeIcon ||undefined} height="100%" width="100%" alt="SkypeIcon" className='h-6 w-6' loading="lazy"/> Skype: <span>
                                         <a className="text-white text-sm font-bold font-['Roboto']"
                                             href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR0_F5FZQG1sYISeOdnT_dB3PTJqS1bxp4OOI590YbfpZE9gGmw4rs_pYYU"> live:.cid.adbc52c0d5ebc624</a>
                                     </span>
-                                </h5>
+                                </address>
                                 <br />
-                                <h5 className="text-white text-sm font-bold font-['Roboto'] flex items-center gap-2">
+                                <address className="text-white text-sm font-bold font-['Roboto'] flex items-center gap-2">
                                     <img src={LinkdinIcon ||undefined} height="100%" width="100%" alt="SkypeIcon" className='h-6 w-6' loading="lazy"/> Linkdin: <span>
                                         <a className="text-white text-sm font-bold font-['Roboto']"
                                             href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR0_F5FZQG1sYISeOdnT_dB3PTJqS1bxp4OOI590YbfpZE9gGmw4rs_pYYU"> Rukon Uddin</a>
                                     </span>
-                                </h5>
+                                </address>
                             </div>
                         </div>
                     </div>
