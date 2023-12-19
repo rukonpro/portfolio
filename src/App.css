@@ -14,14 +14,7 @@
 
 .customShadow {
     box-shadow:
-        0 0 28px rgba(255, 238, 1, 0.967),
-        /* black shadow */
-        0 -5px 10px -5px rgba(111, 4, 186, 0.367),
-        /* red shadow */
-        5px 7px 10px 2px #6f00ff2d,
-        /* green shadow */
-        -0px -1px 20px 5px #50fffc55;
-    /* blue shadow */
+            0 0 28px rgba(247, 1, 255, 0.97), 0 -5px 10px -5px rgba(197, 115, 255, 0.37), 5px 7px 10px 2px #e7d5ff2e, -0px -1px 20px 5px #dd7fff82
 }
 
 

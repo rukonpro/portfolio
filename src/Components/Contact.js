@@ -63,7 +63,7 @@ const Contact = () => {
 
             <div className='relative  z-10 container mx-auto '>
                 <div className="flex px-8 ">
-                    <div className="relative -inset-3   w-[55px] h-[55px] bg-gradient-to-r from-orange-600 to-amber-400 rounded-full customShadow" />
+                    <div className="relative -inset-3   w-[55px] h-[55px] bg-gradient-to-tl from-[#816aff] to-[#d066fd] rounded-full customShadow" />
                     <h1 className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute tracking-[4px]">GET IN TOUCH</h1>
                 </div>
                 <div className='md:pt-24 pt-12 '>

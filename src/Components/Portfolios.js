@@ -15,7 +15,7 @@ const Portfolios = () => {
             <div className="relative z-10 container mx-auto">
                 <div className="flex justify-center">
                     <div
-                        className="relative  w-[55px] h-[55px] bg-gradient-to-r from-orange-600 to-amber-400 rounded-full right-24 customShadow"></div>
+                        className="relative  w-[55px] h-[55px] bg-gradient-to-tl from-[#816aff] to-[#d066fd] rounded-full right-24 customShadow"></div>
                     <h1 className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute tracking-[4px]">Portfolio</h1>
                 </div>
                 <div className="flex justify-center  mt-10">

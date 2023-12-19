@@ -22,7 +22,7 @@ const About = () => {
                     <div>
                         <div className='pt-10'>
                             <div
-                                className="w-[55px] h-[55px] bg-gradient-to-r from-orange-600 to-amber-400 rounded-full customShadow ">
+                                className="w-[55px] h-[55px] bg-gradient-to-tl from-[#816aff] to-[#d066fd] rounded-full customShadow ">
                                 <div className='absolute px-5'>
                                     <h1 className="text-white  md:text-5xl text-2xl font-bold font-['Roboto'] tracking-[4px] ">About
                                         me</h1>

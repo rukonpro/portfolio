@@ -21,7 +21,7 @@ const Skills = () => {
                 <div className="flex justify-center">
                     <div className="flex items-center relative">
                         <div
-                            className="  w-[55px] h-[55px] bg-gradient-to-r from-orange-600 to-amber-400 rounded-full  customShadow"></div>
+                            className="  w-[55px] h-[55px] bg-gradient-to-tl from-[#816aff] to-[#d066fd] rounded-full  customShadow"></div>
                         <h1 className=" relative right-10 text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] ">Skills</h1>
                     </div>
                 </div>
