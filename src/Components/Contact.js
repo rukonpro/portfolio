@@ -81,7 +81,7 @@ const Contact = () => {
               <div>
                 <label className="text-white">First Name:</label>
                 <input
-                  className=" mt-2 px-5 py-2 w-full rounded-full border border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r  from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] "
+                  className=" mt-2 px-5 py-2 w-full rounded-full border  border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r  from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] "
                   {...register("fname", { required: true })}
                   type="fname"
                   name="fname"
@@ -97,7 +97,7 @@ const Contact = () => {
               <div>
                 <label className="text-white">Last Name:</label>
                 <input
-                  className=" mt-2 px-5 py-2 w-full rounded-full  border border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] "
+                  className=" mt-2 px-5 py-2 w-full rounded-full   border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] "
                   {...register("lname", { required: true })}
                   type="lname"
                   name="lname"
@@ -113,7 +113,7 @@ const Contact = () => {
               <div className="col-span-2">
                 <label className="text-white">Email address:</label>
                 <input
-                  className=" mt-2  px-5 py-2 w-full rounded-full  border border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] "
+                  className=" mt-2  px-5 py-2 w-full rounded-full   border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] "
                   {...register("email", { required: true })}
                   type="email"
                   name="email"
@@ -130,7 +130,7 @@ const Contact = () => {
               <div className="col-span-2">
                 <label className="text-white">Subject:</label>
                 <input
-                  className=" mt-2  px-5 py-2 w-full rounded-full  border border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] "
+                  className=" mt-2  px-5 py-2 w-full rounded-full   border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] "
                   {...register("subject", { required: true })}
                   type="text"
                   name="subject"

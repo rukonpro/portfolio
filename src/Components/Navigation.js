@@ -90,7 +90,7 @@ const Navigation = () => {
             <button
               id="threeDotButton"
               onClick={menuHandler}
-              className="lg:hidden p-2  bg-gradient-to-tr from-[#5b3491ff] to-[#994cd0f5] rounded-full block"
+              className="lg:hidden p-2  bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] rounded-full block"
             >
               {!menuOpen ? (
                 <img
