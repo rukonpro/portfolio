@@ -74,13 +74,8 @@ Features
 
 Contact
 
-Feel free to reach out if you have any questions or would like to collaborate. You can contact me at your.email@example.com.
+Feel free to reach out if you have any questions or would like to collaborate. You can contact me at rukon.js@gmail.com .
 
 Thank you for visiting my MERN Stack Developer Portfolio!
 
 Note: Update placeholders such as your-username, your_mongodb_connection_string, and your.email@example.com with your actual information.
-
-vbnet
-
-
-Remember to replace the placeholder information with your actual details, such as your GitHub username, MongoDB connection string, and contact email address.
