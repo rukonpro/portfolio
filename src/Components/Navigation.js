@@ -44,7 +44,7 @@ const Navigation = () => {
     return (
         <nav className="fixed z-50   w-screen">
             <div
-                className={`  ${menuOpen ? " m-3 rounded-xl bg-gradient-to-tr from-[#030b55ec] to-[#994cd0f5]" +
+                className={`  ${menuOpen ? " m-3 rounded-xl bg-gradient-to-tr from-[#5e2594ec] to-[#270257fd]" +
                     " lg:from-[#0a0e36] lg:to-[#0a0e36] lg:m-0 lg:rounded-none" : " bg-gradient-to-tr from-[#0a0e36] to-[#0a0e36] "} ${!menuOpen && " bg-[#0a0e36]"}`}>
                 <div>
                     <div className="flex  justify-between items-center md:px-8 px-5 py-4   ">
@@ -74,7 +74,7 @@ const Navigation = () => {
                                         )
                                     }
                                     <li>
-                                        <button className=" bg-gradient-to-r from-[#0a0cd00d] to-[#9a4cd09d] px-5 py-1 rounded-lg  animated-button tracking-[3px]  text-[#fccdff]" onClick={() => document.getElementById("loginModal").showModal()}> <span className="bg-gradient-to-r from-[#816aff] to-[#d066fd] text-transparent bg-clip-text">Login</span>
+                                        <button className=" bg-gradient-to-r from-[#5e2594ec] to-[#270257fd] px-5 py-1 rounded-lg  animated-button tracking-[3px]  text-[#fccdff]" onClick={() => document.getElementById("loginModal").showModal()}> <span className="bg-gradient-to-r from-[#816aff] to-[#d066fd] text-transparent bg-clip-text">Login</span>
                                         </button>
                                     </li>
                                 </ul>
@@ -99,11 +99,11 @@ const Navigation = () => {
                                 <li key={index} >
                                     <NavLink to={nav?.path}
                                              onClick={() => setMenuOpen(false)}
-                                             className="animated-button w-full rounded-full inline-block transition-opacity hover:bg-gradient-to-l hover:transition-opacity   from-[#9a4cd00d] to-[#9a4cd03d] px-5 py-3 tracking-[2px] text-[#fccdff]">{nav?.title}</NavLink>
+                                             className="animated-button w-full rounded-l-full inline-block transition-opacity hover:bg-gradient-to-l hover:transition-opacity   from-[#9a4cd00d] to-[#270257fd] px-5 py-3 tracking-[2px] text-[#fccdff]">{nav?.title}</NavLink>
                                 </li>
                             )
                         }
-                        <li className=" bg-gradient-to-l from-[#0a0cd00d] to-[#9a4cd09d] px-5 py-3 rounded-full my-3 animated-button w-full">
+                        <li className=" bg-gradient-to-l from-[#0a0cd00d] to-[#9a4cd09d] px-5 py-3 rounded-l-full my-3 animated-button w-full">
                             <button type="button" id="loginbuttion1"
                                     onClick={() => document.getElementById("loginModal").showModal()}
                                     className="w-full tracking-[3px] "><span

@@ -177,3 +177,23 @@
         transform: rotate(45deg)
     }
 }
+
+
+.animated-box {
+    padding: 50px 0;
+    width: 100vw;
+
+    top: 0;
+    left: 0;
+    animation: moveRightToLeft 30s linear infinite;
+
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

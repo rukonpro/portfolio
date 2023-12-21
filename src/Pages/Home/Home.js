@@ -14,17 +14,17 @@ import Pricing from "../../Components/Pricing";
 const Home = () => {
     return (
         <React.Fragment>
-            <ScrollToHashElement />
-            <Navigation />
-            <Header />
-            <About />
-            <Skills />
-            <Services />
-            <Portfolios />
-            <Blog />
+            <ScrollToHashElement/>
+            <Navigation/>
+            <Header/>
+            <About/>
+            <Skills/>
+            <Services/>
+            <Portfolios/>
+            <Blog/>
             <Pricing/>
-            <Contact />
-            <LoginModal />
+            <Contact/>
+            <LoginModal/>
         </React.Fragment>
     )
 }

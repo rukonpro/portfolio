@@ -31,7 +31,7 @@ const Header = () => {
                                 <div className='flex gap-4 pt-5'>
                                     <a href="https://www.linkedin.com/in/rukonpro/">
                                         <div
-                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-[#fbcdff]'>
+                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#007ab9] to-[#0e0e36]'>
                                             <LazyImageLoader>
                                             <img src={LinkdinIcon || undefined} height="100%" width="100%" alt="linkdin" loading="lazy"/>
                                             </LazyImageLoader>
@@ -40,7 +40,7 @@ const Header = () => {
 
                                     <a href="mailto:rukon.js@gamil.com">
                                         <div
-                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-[#fbcdff]'>
+                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#f44336] to-[#0e0e36]'>
                                             <LazyImageLoader>
                                                 <img src={EmailIcon || undefined} height="100%" width="100%" alt="email" loading="lazy"/>
                                             </LazyImageLoader>
@@ -49,7 +49,7 @@ const Header = () => {
 
                                     <a href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR18ICJ_AmaQUWEIsiIfd4XyikyYvhcEIrM5HLImwXXJc42KT6pwqWjDaC0">
                                         <div
-                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-[#fbcdff]'>
+                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#00aff0] to-[#0e0e36]'>
                                             <LazyImageLoader>
                                             <img src={SkypeIcon || undefined} height="100%" width="100%" alt="skype" loading="lazy"/>
                                             </LazyImageLoader>
@@ -57,7 +57,7 @@ const Header = () => {
                                     </a>
                                     <a href="https://api.whatsapp.com/send?phone=1765459224">
                                         <div
-                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-[#fbcdff]'>
+                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#4caf50] to-[#0e0e36]'>
                                             <LazyImageLoader>
                                                 <img src={Whatsapp || undefined} height="100%" width="100%" alt="whatsapp" loading="lazy"/>
                                             </LazyImageLoader>
@@ -67,7 +67,7 @@ const Header = () => {
 
                                     <a href="tel:+8801765459224">
                                         <div
-                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-[#fbcdff]'>
+                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#3e9ddd] to-[#0e0e36]'>
                                             <LazyImageLoader>
                                                <img src={PhoneIcon || undefined} height="100%" width="100%" alt="phone number" loading="lazy"/>
                                             </LazyImageLoader>
@@ -81,7 +81,6 @@ const Header = () => {
                                         className=" mt-5  text-center text-white md:text-xl text-base font-bold font-['Roboto'] bg-gradient-to-l from-[#1355b7] to-[#0e0e36] rounded-full active:bg-gradient-to-l hover:shadow-2xl  hover:shadow-[#263458] tracking-[1px] px-4 py-2 ">
                                         <span
                                             className="bg-gradient-to-r from-[#816aff] to-[#d066fd] text-transparent bg-clip-text"> Download CV</span>
-
                                     </button>
                                 </a>
                             </div>
