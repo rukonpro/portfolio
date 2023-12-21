@@ -1,43 +1,43 @@
-import {useState} from "react";
-import {Link, NavLink} from 'react-router-dom';
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import MenuBar from "../Images/menu-bar.png";
 import Close from "../Images/close.png";
 
 const Navigation = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
+  const navLinks = [
+    {
+      title: "Home",
+      path: "/#home",
+    },
+    {
+      title: "About",
+      path: "/#about",
+    },
+    {
+      title: "Skills",
+      path: "/#skills",
+    },
+    {
+      title: "Services",
+      path: "/#services",
+    },
 
-    const navLinks = [
-        {
-            title: "Home",
-            path: "/#home"
-        },
-        {
-            title: "About",
-            path: "/#about"
-        },
-        {
-            title: "Skills",
-            path: "/#skills"
-        },
-        {
-            title: "Services",
-            path: "/#services"
-        },
+    {
+      title: "Portfolio",
+      path: "/#portfolio",
+    },
+    {
+      title: "Blogs",
+      path: "/#blogs",
+    },
+    {
+      title: "Contact",
+      path: "/#contact",
+    },
+  ];
 
-        {
-            title: "Portfolio",
-            path: "/#portfolio"
-        },
-        {
-            title: "Blogs",
-            path: "/#blogs"
-        },
-        {
-            title: "Contact",
-            path: "/#contact"
-        },
-    ]
     const menuHandler = () => setMenuOpen(value => !value);
 
 
@@ -113,8 +113,10 @@ const Navigation = () => {
                     </ul>
                 </div>
             </div>
-        </nav>
-    );
+
+
+    </nav>
+  );
 };
 
 export default Navigation;
