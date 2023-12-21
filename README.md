@@ -40,7 +40,9 @@ To run this project locally, follow these steps:
 
 cd portfolio
 
-Install dependencies for the client and server: bash
+Install dependencies for the client and server: 
+
+bash
 
 cd client && npm install
 cd ../server && npm install
