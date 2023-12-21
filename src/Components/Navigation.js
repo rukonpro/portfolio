@@ -1,43 +1,43 @@
-import {useState} from "react";
-import {Link, NavLink} from 'react-router-dom';
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import MenuBar from "../Images/menu-bar.png";
 import Close from "../Images/close.png";
 
 const Navigation = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
-
     const navLinks = [
         {
             title: "Home",
-            path: "/#home"
+            path: "/#home",
         },
         {
             title: "About",
-            path: "/#about"
+            path: "/#about",
         },
         {
             title: "Skills",
-            path: "/#skills"
+            path: "/#skills",
         },
         {
             title: "Services",
-            path: "/#services"
+            path: "/#services",
         },
 
         {
             title: "Portfolio",
-            path: "/#portfolio"
+            path: "/#portfolio",
         },
         {
             title: "Blogs",
-            path: "/#blogs"
+            path: "/#blogs",
         },
         {
             title: "Contact",
-            path: "/#contact"
+            path: "/#contact",
         },
-    ]
+    ];
+
     const menuHandler = () => setMenuOpen(value => !value);
 
 
@@ -113,6 +113,8 @@ const Navigation = () => {
                     </ul>
                 </div>
             </div>
+
+
         </nav>
     );
 };
