@@ -179,21 +179,16 @@
 }
 
 
-.animated-box {
-    padding: 50px 0;
-    width: 100vw;
 
-    top: 0;
-    left: 0;
-    animation: moveRightToLeft 30s linear infinite;
-
+.radial-gradient{
+   background: radial-gradient(closest-corner, rgba(135, 0, 252, 0.55) 15.73%, rgba(221, 0, 255, 0.21) 15.74%, rgba(10, 30, 108, 0.42) 56.49%, rgb(24, 10, 52) 115.91%);
+   background: -moz-radial-gradient(circle at center, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%,rgba(79, 70, 229, 0.4) 115.91%);
+   background-attachment: fixed;
+    background-position: top;
 }
 
-@keyframes moveRightToLeft {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
+
+
+
+
+

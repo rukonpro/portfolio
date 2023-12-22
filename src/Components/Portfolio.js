@@ -42,7 +42,7 @@ const Portfolio = ({ data }) => {
                             <a href={data?.links?.backEndCode}
                                aria-label={data?.title} target="_blank"
                                rel="noopener noreferrer">
-                                <img className='h-10 w-10' src={Global || undefined}  height="100%" width="100%"alt="Global" loading="lazy" />
+                                <img className='h-10 w-10' src={Global || undefined}  height="100%" width="100%" alt="Global" loading="lazy" />
                             </a>
                         </li>}
                     </ol>

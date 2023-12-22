@@ -53,8 +53,7 @@ const Skills = () => {
         <section id="skills"
             className=" overflow-hidden relative flex justify-center items-center bg-[#0e0e36] pt-20 ">
             <div
-                className="absolute custom-animate-pulse inset-0 m-auto max-w-xs h-[357px] blur-[1000px] sm:max-w-md md:max-w-lg"
-                style={{ background: "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)" }}></div>
+                className="absolute custom-animate-pulse inset-0 blur-[118px] radial-gradient"></div>
             <div className="container relative z-10 mx-auto ">
                 <div className="flex justify-center">
                     <div className="flex items-center relative">
@@ -144,89 +143,89 @@ const Skills = () => {
 */}
 
 
-                <div className="mt-16 grid gap-10 md:grid-cols-2 lg:grid-cols-2 grid-cols-1 px-3">
+                <div className="mt-16 grid gap-10 md:grid-cols-2 lg:grid-cols-2 grid-cols-1 px-3 pb-16">
 
                     <div>
-                        <h1 className={`text-2xl p-2   my-2 font-bold font-[Roboto]`}>Experienced:</h1>
+                        <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Experienced:</h1>
                         <div className={`grid grid-cols-4 sm:grid-cols-6 md:grid-cols-5 lg:grid-cols-10  gap-1`}>
                             <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#61dafb]  rounded-[10px] flex justify-center items-center">
+                                className="bg-gradient-to-tl from-[#0e0e36] to-[#61dafb]  rounded-[10px] flex justify-center items-center ">
                                 <img className=" p-1 animate-spin " height="100%" width="100%"
                                      src={ReactIcon || undefined}
                                      alt="ReactIcon"/>
 
                             </div>
                             <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#ffffff]  rounded-[10px] flex justify-center items-center">
+                                className="bg-gradient-to-tl from-[#0e0e36] to-[#ffffff]  rounded-[10px] flex justify-center items-center ">
                                 <img className=" p-1 " height="100%" width="100%" src={NextJSIcon || undefined}
                                      alt="NextJSIcon"/>
                             </div>
                             <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#764abc]   rounded-[10px] flex justify-center items-center">
+                                className="bg-gradient-to-tl from-[#0e0e36] to-[#764abc]   rounded-[10px] flex justify-center items-center ">
                                 <img className=" p-1 " height="100%" width="100%" src={ReduxIcon || undefined}
                                      alt="ReduxIcon"/>
                             </div>
                             <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#e34f26]   rounded-[10px] flex justify-center items-center">
+                                className="bg-gradient-to-tl from-[#0e0e36] to-[#e34f26]   rounded-[10px] flex justify-center items-center ">
                                 <img className=" p-1 " height="100%" width="100%" src={HtmlIcon || undefined}
                                      alt="html"/>
                             </div>
                             <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#e9ca32]   rounded-[10px] flex justify-center items-center">
+                                className="bg-gradient-to-tl from-[#0e0e36] to-[#e9ca32]   rounded-[10px] flex justify-center items-center ">
                                 <img className=" p-1 " height="100%" width="100%" src={JsIcon || undefined}
                                      alt="javascript"/>
                             </div>
                             <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#f26522]   rounded-[10px] flex justify-center items-center">
+                                className="bg-gradient-to-tl from-[#0e0e36] to-[#f26522]   rounded-[10px] flex justify-center items-center ">
                                 <img className=" p-1 rounded-full " height="100%" width="100%" src={ES6 || undefined}
                                      alt="es6"/>
                             </div>
                             <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#599636]   rounded-[10px] flex justify-center items-center">
+                                className="bg-gradient-to-tl from-[#0e0e36] to-[#599636]   rounded-[10px] flex justify-center items-center ">
                                 <img className=" p-1 " height="100%" width="100%" src={MongoDBIcon || undefined}
                                      alt="MongoDBIcon"/>
                             </div>
                             <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#00758f]   rounded-[10px] flex justify-center items-center">
+                                className="bg-gradient-to-tl from-[#0e0e36] to-[#00758f]   rounded-[10px] flex justify-center items-center ">
                                 <img className=" p-1 " height="100%" width="100%" src={MYSQL || undefined}
                                      alt="MYSQL"/>
                             </div>
                             <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#00d486]  rounded-[10px] flex justify-center items-center">
+                                className="bg-gradient-to-tl from-[#0e0e36] to-[#00d486]  rounded-[10px] flex justify-center items-center ">
                                 <img className=" p-1 " height="100%" width="100%" src={NodeJsIcon || undefined}
                                      alt="NodeJS"/>
                             </div>
                             <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#1b73ba]  rounded-[10px] flex justify-center items-center">
+                                className="bg-gradient-to-tl from-[#0e0e36] to-[#1b73ba]  rounded-[10px] flex justify-center items-center ">
                                 <img className=" p-1 " height="100%" width="100%" src={CSSIcon || undefined} alt="CSS"/>
                             </div>
                             <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#06b6d4] rounded-[10px] flex justify-center items-center">
+                                className="bg-gradient-to-tl from-[#0e0e36] to-[#06b6d4] rounded-[10px] flex justify-center items-center ">
                                 <img className=" p-1 " height="100%" width="100%" src={TailwindCSSIcon || undefined}
                                      alt="TailwindCSSIcon"/>
                             </div>
                             <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#00b0ff]   rounded-[10px] flex justify-center items-center">
+                                className="bg-gradient-to-tl from-[#0e0e36] to-[#00b0ff]   rounded-[10px] flex justify-center items-center ">
                                 <img className=" p-1 " height="100%" width="100%" src={MaterialUIIcon || undefined}
                                      alt="MaterialUIIcon"/>
                             </div>
                             <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#463277]  rounded-[10px] flex justify-center items-center">
+                                className="bg-gradient-to-tl from-[#0e0e36] to-[#463277]  rounded-[10px] flex justify-center items-center ">
                                 <img className=" p-1 " height="100%" width="100%" src={Bootstrap || undefined}
                                      alt="Bootstrap"/>
                             </div>
                             <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#fea611]  rounded-[10px] flex justify-center items-center">
+                                className="bg-gradient-to-tl from-[#0e0e36] to-[#fea611]  rounded-[10px] flex justify-center items-center ">
                                 <img className=" p-1 " height="100%" width="100%" src={FireBaseIcon || undefined}
                                      alt="FireBaseIcon"/>
                             </div>
                             <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#ffffff] rounded-[10px] flex justify-center items-center">
+                                className="bg-gradient-to-tl from-[#0e0e36] to-[#ffffff] rounded-[10px] flex justify-center items-center ">
                                 <img className=" p-1 " height="100%" width="100%" src={ApolloIcon || undefined}
                                      alt="ApolloIcon"/>
                             </div>
                             <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#e535ab]  rounded-[10px] flex justify-center items-center">
+                                className="bg-gradient-to-tl from-[#0e0e36] to-[#e535ab]  rounded-[10px] flex justify-center items-center ">
                                 <img className=" p-1 animate-spin" height="100%" width="100%"
                                      src={GraphQLIcon || undefined}
                                      alt="GraphQLIcon"/>
@@ -237,7 +236,7 @@ const Skills = () => {
 
 
                     <div>
-                        <h1 className={`text-2xl p-2   my-2 font-bold font-[Roboto]`}>Comfortable:</h1>
+                        <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Comfortable:</h1>
                         <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-5 lg:grid-cols-10  gap-1">
                             <div
                                 className="bg-gradient-to-tl from-[#0e0e36] to-[#61dafb]  rounded-[10px] flex justify-center items-center">
@@ -312,7 +311,7 @@ const Skills = () => {
                     </div>
 
                     <div>
-                        <h1 className={`text-2xl p-2   my-2 font-bold font-[Roboto]`}>Tools:</h1>
+                        <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Tools:</h1>
                         <div
                             className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-5 lg:grid-cols-10 justify-center  gap-1">
                             <div
@@ -393,7 +392,7 @@ const Skills = () => {
                     </div>
 
                     <div>
-                        <h1 className={`text-2xl p-2   my-2 font-bold font-[Roboto]`}>Familiar:</h1>
+                        <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Familiar:</h1>
                         <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-5 lg:grid-cols-10  gap-1">
                             <div
                                 className="bg-gradient-to-tl from-[#0e0e36] to-[#007acc]  rounded-[10px] flex justify-center items-center">
