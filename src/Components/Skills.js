@@ -40,6 +40,7 @@ import Python from  "../SkillsLogo/python-5.svg";
 import PHP from  "../SkillsLogo/php-1.svg";
 import Laravel from  "../SkillsLogo/laravel-2.svg";
 import Django from  "../SkillsLogo/django.svg";
+import LazyImageLoader from "../utilitis/LazyImageLoader";
 const Skills = () => {
 
 
@@ -145,306 +146,318 @@ const Skills = () => {
 
                 <div className="mt-16 grid gap-10 md:grid-cols-2 lg:grid-cols-2 grid-cols-1 px-3 pb-16">
 
-                    <div>
-                        <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Experienced:</h1>
-                        <div className={`grid grid-cols-4 sm:grid-cols-6 md:grid-cols-5 lg:grid-cols-10  gap-1`}>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#61dafb]  rounded-[10px] flex justify-center items-center ">
-                                <img className=" p-1 animate-spin " height="100%" width="100%"
-                                     src={ReactIcon || undefined}
-                                     alt="ReactIcon"/>
+                    <LazyImageLoader>
+                        <div>
+                            <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Experienced:</h1>
+                            <div className={`grid grid-cols-4 sm:grid-cols-6 md:grid-cols-5 lg:grid-cols-10  gap-1`}>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#61dafb]  rounded-[10px] flex justify-center items-center ">
+                                    <img className=" p-1 animate-spin " height="100%" width="100%"
+                                         src={ReactIcon || undefined}
+                                         alt="ReactIcon"/>
 
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#ffffff]  rounded-[10px] flex justify-center items-center ">
-                                <img className=" p-1 " height="100%" width="100%" src={NextJSIcon || undefined}
-                                     alt="NextJSIcon"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#764abc]   rounded-[10px] flex justify-center items-center ">
-                                <img className=" p-1 " height="100%" width="100%" src={ReduxIcon || undefined}
-                                     alt="ReduxIcon"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#e34f26]   rounded-[10px] flex justify-center items-center ">
-                                <img className=" p-1 " height="100%" width="100%" src={HtmlIcon || undefined}
-                                     alt="html"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#e9ca32]   rounded-[10px] flex justify-center items-center ">
-                                <img className=" p-1 " height="100%" width="100%" src={JsIcon || undefined}
-                                     alt="javascript"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#f26522]   rounded-[10px] flex justify-center items-center ">
-                                <img className=" p-1 rounded-full " height="100%" width="100%" src={ES6 || undefined}
-                                     alt="es6"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#599636]   rounded-[10px] flex justify-center items-center ">
-                                <img className=" p-1 " height="100%" width="100%" src={MongoDBIcon || undefined}
-                                     alt="MongoDBIcon"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#00758f]   rounded-[10px] flex justify-center items-center ">
-                                <img className=" p-1 " height="100%" width="100%" src={MYSQL || undefined}
-                                     alt="MYSQL"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#00d486]  rounded-[10px] flex justify-center items-center ">
-                                <img className=" p-1 " height="100%" width="100%" src={NodeJsIcon || undefined}
-                                     alt="NodeJS"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#1b73ba]  rounded-[10px] flex justify-center items-center ">
-                                <img className=" p-1 " height="100%" width="100%" src={CSSIcon || undefined} alt="CSS"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#06b6d4] rounded-[10px] flex justify-center items-center ">
-                                <img className=" p-1 " height="100%" width="100%" src={TailwindCSSIcon || undefined}
-                                     alt="TailwindCSSIcon"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#00b0ff]   rounded-[10px] flex justify-center items-center ">
-                                <img className=" p-1 " height="100%" width="100%" src={MaterialUIIcon || undefined}
-                                     alt="MaterialUIIcon"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#463277]  rounded-[10px] flex justify-center items-center ">
-                                <img className=" p-1 " height="100%" width="100%" src={Bootstrap || undefined}
-                                     alt="Bootstrap"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#fea611]  rounded-[10px] flex justify-center items-center ">
-                                <img className=" p-1 " height="100%" width="100%" src={FireBaseIcon || undefined}
-                                     alt="FireBaseIcon"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#ffffff] rounded-[10px] flex justify-center items-center ">
-                                <img className=" p-1 " height="100%" width="100%" src={ApolloIcon || undefined}
-                                     alt="ApolloIcon"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#e535ab]  rounded-[10px] flex justify-center items-center ">
-                                <img className=" p-1 animate-spin" height="100%" width="100%"
-                                     src={GraphQLIcon || undefined}
-                                     alt="GraphQLIcon"/>
-                            </div>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#ffffff]  rounded-[10px] flex justify-center items-center ">
+                                    <img className=" p-1 " height="100%" width="100%" src={NextJSIcon || undefined}
+                                         alt="NextJSIcon"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#764abc]   rounded-[10px] flex justify-center items-center ">
+                                    <img className=" p-1 " height="100%" width="100%" src={ReduxIcon || undefined}
+                                         alt="ReduxIcon"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#e34f26]   rounded-[10px] flex justify-center items-center ">
+                                    <img className=" p-1 " height="100%" width="100%" src={HtmlIcon || undefined}
+                                         alt="html"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#e9ca32]   rounded-[10px] flex justify-center items-center ">
+                                    <img className=" p-1 " height="100%" width="100%" src={JsIcon || undefined}
+                                         alt="javascript"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#f26522]   rounded-[10px] flex justify-center items-center ">
+                                    <img className=" p-1 rounded-full " height="100%" width="100%"
+                                         src={ES6 || undefined}
+                                         alt="es6"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#599636]   rounded-[10px] flex justify-center items-center ">
+                                    <img className=" p-1 " height="100%" width="100%" src={MongoDBIcon || undefined}
+                                         alt="MongoDBIcon"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#00758f]   rounded-[10px] flex justify-center items-center ">
+                                    <img className=" p-1 " height="100%" width="100%" src={MYSQL || undefined}
+                                         alt="MYSQL"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#00d486]  rounded-[10px] flex justify-center items-center ">
+                                    <img className=" p-1 " height="100%" width="100%" src={NodeJsIcon || undefined}
+                                         alt="NodeJS"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#1b73ba]  rounded-[10px] flex justify-center items-center ">
+                                    <img className=" p-1 " height="100%" width="100%" src={CSSIcon || undefined}
+                                         alt="CSS"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#06b6d4] rounded-[10px] flex justify-center items-center ">
+                                    <img className=" p-1 " height="100%" width="100%" src={TailwindCSSIcon || undefined}
+                                         alt="TailwindCSSIcon"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#00b0ff]   rounded-[10px] flex justify-center items-center ">
+                                    <img className=" p-1 " height="100%" width="100%" src={MaterialUIIcon || undefined}
+                                         alt="MaterialUIIcon"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#463277]  rounded-[10px] flex justify-center items-center ">
+                                    <img className=" p-1 " height="100%" width="100%" src={Bootstrap || undefined}
+                                         alt="Bootstrap"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#fea611]  rounded-[10px] flex justify-center items-center ">
+                                    <img className=" p-1 " height="100%" width="100%" src={FireBaseIcon || undefined}
+                                         alt="FireBaseIcon"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#ffffff] rounded-[10px] flex justify-center items-center ">
+                                    <img className=" p-1 " height="100%" width="100%" src={ApolloIcon || undefined}
+                                         alt="ApolloIcon"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#e535ab]  rounded-[10px] flex justify-center items-center ">
+                                    <img className=" p-1 animate-spin" height="100%" width="100%"
+                                         src={GraphQLIcon || undefined}
+                                         alt="GraphQLIcon"/>
+                                </div>
 
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Comfortable:</h1>
-                        <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-5 lg:grid-cols-10  gap-1">
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#61dafb]  rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 animate-spin " height="100%" width="100%"
-                                     src={ReactIcon || undefined}
-                                     alt="ReactIcon"/>
-
-                            </div>
-
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#764abc]   rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={ReduxIcon || undefined}
-                                     alt="ReduxIcon"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#e34f26]   rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={HtmlIcon || undefined}
-                                     alt="html"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#e9ca32]   rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={JsIcon || undefined}
-                                     alt="javascript"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#599636]   rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={MongoDBIcon || undefined}
-                                     alt="javascript"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#00d486]  rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={NodeJsIcon || undefined}
-                                     alt="NodeJS"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#1b73ba]  rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={CSSIcon || undefined} alt="CSS"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#06b6d4] rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={TailwindCSSIcon || undefined}
-                                     alt="TailwindCSSIcon"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#00b0ff]   rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={MaterialUIIcon || undefined}
-                                     alt="MaterialUIIcon"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#463277]  rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={Bootstrap || undefined}
-                                     alt="Bootstrap"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#fea611]  rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={FireBaseIcon || undefined}
-                                     alt="FireBaseIcon"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#ffffff] rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={ApolloIcon || undefined}
-                                     alt="ApolloIcon"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#e535ab]  rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 animate-spin" height="100%" width="100%"
-                                     src={GraphQLIcon || undefined}
-                                     alt="GraphQLIcon"/>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div>
-                        <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Tools:</h1>
-                        <div
-                            className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-5 lg:grid-cols-10 justify-center  gap-1">
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#de4c36]  rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%"
-                                     src={Git || undefined}
-                                     alt="Git"/>
-
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#ffffff]  rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={Github || undefined}
-                                     alt="Github"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#cb3837]   rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={NPM || undefined}
-                                     alt="NPM"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#3398c2]   rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={Yarn || undefined}
-                                     alt="Yarn"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#3c99d4]   rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={VisualStudioCode || undefined}
-                                     alt="VisualStudioCode"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#00cdd7]   rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={Webstorm || undefined}
-                                     alt="Webstorm"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#f52238]  rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={Firefox || undefined}
-                                     alt="Firefox"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#f4d911]  rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={Chrome || undefined}
-                                     alt="Chrome"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#430098] rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={Heroku || undefined}
-                                     alt="Heroku"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#d61f27]   rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={Render || undefined}
-                                     alt="Render"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#25c7b7]  rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={Netlify || undefined}
-                                     alt="Netlify"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#0acf83]  rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={Figma || undefined}
-                                     alt="Figma"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#ff6c37] rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={Postman || undefined}
-                                     alt="Postman"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#e9ca32]  rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%"
-                                     src={Varcel || undefined}
-                                     alt="Varcel"/>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div>
-                        <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Familiar:</h1>
-                        <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-5 lg:grid-cols-10  gap-1">
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#007acc]  rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 rounded-3xl " height="100%" width="100%"
-                                     src={TypeScript || undefined}
-                                     alt="TypeScript"/>
-
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#61dafb]  rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={ReactNative || undefined}
-                                     alt="ReactNative"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#cf649a]   rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={Sass || undefined}
-                                     alt="Sass"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#7f52ff]   rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={Kotlin || undefined}
-                                     alt="Kotlin"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#3ddb85]   rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={Android || undefined}
-                                     alt="Android"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#ffdd55]   rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={Python || undefined}
-                                     alt="Python"/>
-                            </div>
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#2ba977]   rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={Django || undefined}
-                                     alt="Django"/>
-                            </div>
-
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#8993be]   rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={PHP || undefined}
-                                     alt="php"/>
-                            </div>
-
-                            <div
-                                className="bg-gradient-to-tl from-[#0e0e36] to-[#ff2d20]   rounded-[10px] flex justify-center items-center">
-                                <img className=" p-1 " height="100%" width="100%" src={Laravel || undefined}
-                                     alt="Laravel"/>
                             </div>
                         </div>
-                    </div>
+                    </LazyImageLoader>
+
+
+                    <LazyImageLoader>
+                        <div>
+                            <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Comfortable:</h1>
+                            <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-5 lg:grid-cols-10  gap-1">
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#61dafb]  rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 animate-spin " height="100%" width="100%"
+                                         src={ReactIcon || undefined}
+                                         alt="ReactIcon"/>
+
+                                </div>
+
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#764abc]   rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={ReduxIcon || undefined}
+                                         alt="ReduxIcon"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#e34f26]   rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={HtmlIcon || undefined}
+                                         alt="html"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#e9ca32]   rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={JsIcon || undefined}
+                                         alt="javascript"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#599636]   rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={MongoDBIcon || undefined}
+                                         alt="javascript"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#00d486]  rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={NodeJsIcon || undefined}
+                                         alt="NodeJS"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#1b73ba]  rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={CSSIcon || undefined}
+                                         alt="CSS"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#06b6d4] rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={TailwindCSSIcon || undefined}
+                                         alt="TailwindCSSIcon"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#00b0ff]   rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={MaterialUIIcon || undefined}
+                                         alt="MaterialUIIcon"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#463277]  rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={Bootstrap || undefined}
+                                         alt="Bootstrap"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#fea611]  rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={FireBaseIcon || undefined}
+                                         alt="FireBaseIcon"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#ffffff] rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={ApolloIcon || undefined}
+                                         alt="ApolloIcon"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#e535ab]  rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 animate-spin" height="100%" width="100%"
+                                         src={GraphQLIcon || undefined}
+                                         alt="GraphQLIcon"/>
+                                </div>
+
+                            </div>
+                        </div>
+                    </LazyImageLoader>
+
+                    <LazyImageLoader>
+                        <div>
+                            <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Tools:</h1>
+                            <div
+                                className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-5 lg:grid-cols-10 justify-center  gap-1">
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#de4c36]  rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%"
+                                         src={Git || undefined}
+                                         alt="Git"/>
+
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#ffffff]  rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={Github || undefined}
+                                         alt="Github"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#cb3837]   rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={NPM || undefined}
+                                         alt="NPM"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#3398c2]   rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={Yarn || undefined}
+                                         alt="Yarn"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#3c99d4]   rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%"
+                                         src={VisualStudioCode || undefined}
+                                         alt="VisualStudioCode"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#00cdd7]   rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={Webstorm || undefined}
+                                         alt="Webstorm"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#f52238]  rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={Firefox || undefined}
+                                         alt="Firefox"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#f4d911]  rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={Chrome || undefined}
+                                         alt="Chrome"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#430098] rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={Heroku || undefined}
+                                         alt="Heroku"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#d61f27]   rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={Render || undefined}
+                                         alt="Render"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#25c7b7]  rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={Netlify || undefined}
+                                         alt="Netlify"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#0acf83]  rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={Figma || undefined}
+                                         alt="Figma"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#ff6c37] rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={Postman || undefined}
+                                         alt="Postman"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#e9ca32]  rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%"
+                                         src={Varcel || undefined}
+                                         alt="Varcel"/>
+                                </div>
+
+                            </div>
+                        </div>
+                    </LazyImageLoader>
+
+                    <LazyImageLoader>
+                        <div>
+                            <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Familiar:</h1>
+                            <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-5 lg:grid-cols-10  gap-1">
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#007acc]  rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 rounded-3xl " height="100%" width="100%"
+                                         src={TypeScript || undefined}
+                                         alt="TypeScript"/>
+
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#61dafb]  rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={ReactNative || undefined}
+                                         alt="ReactNative"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#cf649a]   rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={Sass || undefined}
+                                         alt="Sass"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#7f52ff]   rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={Kotlin || undefined}
+                                         alt="Kotlin"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#3ddb85]   rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={Android || undefined}
+                                         alt="Android"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#ffdd55]   rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={Python || undefined}
+                                         alt="Python"/>
+                                </div>
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#2ba977]   rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={Django || undefined}
+                                         alt="Django"/>
+                                </div>
+
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#8993be]   rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={PHP || undefined}
+                                         alt="php"/>
+                                </div>
+
+                                <div
+                                    className="bg-gradient-to-tl from-[#0e0e36] to-[#ff2d20]   rounded-[10px] flex justify-center items-center">
+                                    <img className=" p-1 " height="100%" width="100%" src={Laravel || undefined}
+                                         alt="Laravel"/>
+                                </div>
+                            </div>
+                        </div>
+                    </LazyImageLoader>
 
 
                 </div>
