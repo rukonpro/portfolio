@@ -109,14 +109,14 @@ const Skills = () => {
                     <LazyImageLoader>
                         <div>
                             <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Experienced:</h1>
-                            <div className={`grid grid-cols-4 sm:grid-cols-6 md:grid-cols-5 lg:grid-cols-10  gap-1`}>
+                            <div className={` flex justify-center flex-wrap  gap-2`}>
                                 {
                                     PortfolioData?.skills?.experienced?.map(({title,logo,color},index)=>{
                                         return (
                                             <div
                                                 key={title}
                                                 id={title+index+logo+color}
-                                                className={`bg-gradient-to-tl from-[#0e0e36] to-[${color}]  rounded-[10px] flex justify-center items-center`}>
+                                                className={`bg-gradient-to-tl from-[#0e0e36] to-[${color||"#7d1ba9"}]  rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all`}>
                                                 <LazyImageLoader>
                                                     {logo?
                                                         <img className=" p-1 " height="100%" width="100%"
@@ -136,14 +136,14 @@ const Skills = () => {
                     <LazyImageLoader>
                         <div>
                             <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Comfortable:</h1>
-                            <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-5 lg:grid-cols-10  gap-1">
+                            <div className=" flex justify-center flex-wrap  gap-2">
                                 {
                                     PortfolioData?.skills?.comfortable?.map(({title,logo,color},index)=>{
                                         return (
                                             <div
                                                 key={title}
                                                 id={title+index+logo+color}
-                                                className={`bg-gradient-to-tl from-[#0e0e36] to-[${color}]  rounded-[10px] flex justify-center items-center`}>
+                                                className={`bg-gradient-to-tl from-[#0e0e36] to-[${color}]  rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all`}>
                                                 <LazyImageLoader>
                                                     {logo?
                                                         <img className=" p-1 " height="100%" width="100%"
@@ -163,14 +163,14 @@ const Skills = () => {
                         <div>
                             <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Tools:</h1>
                             <div
-                                className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-5 lg:grid-cols-10 justify-center  gap-1">
+                                className=" flex justify-center flex-wrap  gap-2">
                                 {
                                     PortfolioData?.skills?.tools?.map(({title,logo,color},index)=>{
                                         return (
                                             <div
                                                 key={title}
                                                 id={title+index+logo+color}
-                                                className={`bg-gradient-to-tl from-[#0e0e36] to-[${color}]  rounded-[10px] flex justify-center items-center`}>
+                                                className={`bg-gradient-to-tl from-[#0e0e36] to-[${color}]  rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all`}>
                                                 <LazyImageLoader>
                                                     {logo?
                                                         <img className=" p-1 " height="100%" width="100%"
@@ -189,19 +189,23 @@ const Skills = () => {
                     <LazyImageLoader>
                         <div>
                             <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Familiar:</h1>
-                            <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-5 lg:grid-cols-10  gap-1">
+                            <div className=" flex justify-center flex-wrap  gap-2">
                                 {
                                     PortfolioData?.skills?.familiar?.map(({title,logo,color},index)=>{
                                         return (
+                                            color &&
                                             <div
                                                 key={title}
-                                                id={title+index+logo+color}
-                                                className={`bg-gradient-to-tl from-[#0e0e36] to-[${color}]  rounded-[10px] flex justify-center items-center`}>
+                                                id={title + index + logo + color}
+                                                className={`bg-gradient-to-tl from-[#0e0e36] to-[${color}]  rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all`}>
                                                 <LazyImageLoader>
-                                                    {logo?
-                                                        <img className=" p-1 " height="100%" width="100%"
-                                                             src={logo}
-                                                             alt={title}/>:<span className="text-xs">{title}</span>}
+                                                    {logo ?
+                                                        <img
+                                                            className=" p-1 "
+                                                            height="100%"
+                                                            width="100%"
+                                                            src={logo}
+                                                            alt={title}/> : <span className="text-xs">title</span>}
                                                 </LazyImageLoader>
 
                                             </div>

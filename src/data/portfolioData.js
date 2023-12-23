@@ -326,7 +326,7 @@ const portfolioData = {
                 color: "#cb3837"
             },
             {
-                title:  "yarn",
+                title:  "Yarn",
                 logo: Yarn,
                 color: "#3398c2"
             },
