@@ -20,12 +20,372 @@ import DoctorPortal1 from "../Images/doctor-portal2.webp"
 import DoctorPortal2 from "../Images/doctor-portal3.webp"
 
 
+import HtmlIcon from "../SkillsLogo/html-1.svg";
+import JsIcon from "../SkillsLogo/javascript-1.svg";
+import NodeJsIcon from "../SkillsLogo/nodejs-3.svg";
+import CSSIcon from "../SkillsLogo/css-3.svg";
+import MongoDBIcon from "../SkillsLogo/mongodb-icon-1.svg";
+import FireBaseIcon from "../SkillsLogo/firebase-1.svg";
+import Bootstrap from "../SkillsLogo/bootstrap-5-1.svg";
+import ReactIcon from "../SkillsLogo/react-2.svg";
+import ReduxIcon from "../SkillsLogo/redux.svg";
+import GraphQLIcon from "../SkillsLogo/graphql-logo-2.svg";
+import ApolloIcon from "../SkillsLogo/apollo-graphql-1.svg";
+import NextJSIcon from "../SkillsLogo/next-js.svg";
+import TailwindCSSIcon from "../SkillsLogo/tailwind-css-2.svg";
+import MaterialUIIcon from "../SkillsLogo/material-ui-1.svg";
+import ES6 from "../SkillsLogo/es6.svg";
+import MYSQL from "../SkillsLogo/mysql-logo.svg";
+import TypeScript from "../SkillsLogo/typescript.svg";
+import ReactNative from  "../SkillsLogo/react-native-1.svg";
+import Sass from  "../SkillsLogo/sass-1.svg";
+import Kotlin from  "../SkillsLogo/kotlin-2.svg";
+import Android from  "../SkillsLogo/android-4.svg";
+import Git from  "../SkillsLogo/git-icon.svg";
+import Github from  "../SkillsLogo/github-icon-1.svg";
+import NPM from  "../SkillsLogo/npm.svg";
+import Yarn from  "../SkillsLogo/yarn.svg";
+import VisualStudioCode from  "../SkillsLogo/visual-studio-code-1.svg";
+import Webstorm from  "../SkillsLogo/webstorm-icon.svg";
+import Firefox from  "../SkillsLogo/firefox-3.svg";
+import Chrome from  "../SkillsLogo/chrome.svg";
+import Heroku from  "../SkillsLogo/heroku-4.svg";
+import Render from  "../SkillsLogo/renner-1.svg";
+import Netlify from  "../SkillsLogo/netlify.svg";
+import Figma from  "../SkillsLogo/figma-5.svg";
+import Postman from  "../SkillsLogo/postman.svg";
+import Varcel from  "../SkillsLogo/vercel.svg";
+import Python from  "../SkillsLogo/python-5.svg";
+import PHP from  "../SkillsLogo/php-1.svg";
+import Laravel from  "../SkillsLogo/laravel-2.svg";
+import Django from  "../SkillsLogo/django.svg";
+import AndroidStudio from "../SkillsLogo/android-auto-os-1.svg";
+import PyCharm from "../SkillsLogo/PyCharm_Icon.svg.png"
+
+
 const portfolioData = {
     skills: {
-        experienced: ["Javascript", "React.JSX", "Next.JS", "ES6", "Redux", "Redux-toolkit", "RTK Query", "Node.JS", "Express.JS", "MongoDB", "PostgresQL", "MySQL", "Mongoose", "GraphQL", "Apollo Client", "React-hook-form", "Firebase", "Bootstrap 4&5", "React-Bootstrap", "Material UI", "Tailwind-CSS", "HTML5", "CSS3"],
-        comfortable: ["Javascript", "React.JSX", "ES6", "Redux", "Redux-toolkit", "RTK Query", "Node.JS", "Express.JS", "MongoDB", "Mongoose", "GraphQL", "Apollo Client", "React-hook-form", "Firebase", "Tailwind-CSS", "Bootstrap 4&5", "Material UI", "HTML5", "CSS3"],
-        familiar: ["TypeScript", "React-Native", "Chassis", "Kotlin", "Jetpack Compose"],
-        tools: ["Git", "GitHub", "npm", "yarn", "VS Code", "WebStorm", "Firefox dev tool", "Chrome dev tool", "Heroku", "Render", "Netlify", "Figma", "MongoDB Compass", "Postman"]
+        experienced: [
+            {
+                title:"Javascript",
+                logo:JsIcon,
+                color:"#e9ca32"
+            },
+            {
+                title: "React.JSX",
+                logo: ReactIcon,
+                color: "#61dafb"
+            },
+            {
+                title:"Next.JS",
+                logo: NextJSIcon,
+                color: "#ffffff"
+            },
+            {
+                title: "ES6",
+                logo: ES6,
+                color: "#f26522"
+            },
+            {
+                title: "Redux",
+                logo: ReduxIcon,
+                color: "#764abc"
+            },
+            {
+                title:  "Redux-toolkit"
+            },
+            {
+                title: "RTK Query",
+            },
+            {
+                title: "Node.JS",
+                logo: NodeJsIcon,
+                color: "#00d486"
+            },
+            {
+                title:  "Express.JS",
+            },
+            {
+                title: "MongoDB",
+                logo: MongoDBIcon,
+                color: "#599636"
+            },
+            {
+                title: "PostgresQL",
+            },
+            {
+                title: "MySQL",
+                logo: MYSQL,
+                color: "#00758f"
+            },
+            {
+                title: "Mongoose",
+            },
+            {
+                title: "GraphQL",
+                logo: GraphQLIcon,
+                color: "#e535ab"
+            },
+            {
+                title: "Apollo Client",
+                logo: ApolloIcon,
+                color: "#ffffff"
+            },
+            {
+                title: "React-hook-form",
+            },
+            {
+                title: "Firebase",
+                logo: FireBaseIcon,
+                color: "#fea611"
+            },
+            {
+                title: "Bootstrap 4&5",
+                logo: Bootstrap,
+                color: "#463277"
+            },
+            {
+                title: "React-Bootstrap",
+                logo: Bootstrap,
+                color: "#463277"
+            },
+            {
+                title:  "Material UI",
+                logo: MaterialUIIcon,
+                color: "#00b0ff",
+            },
+            {
+                title: "Tailwind-CSS",
+                logo: TailwindCSSIcon,
+                color: "#06b6d4"
+            },
+            {
+                title: "HTML5",
+                logo: HtmlIcon,
+                color: "#e34f26"
+            },
+            {
+                title:  "CSS3",
+                logo: CSSIcon,
+                color: "#1b73ba"
+            }],
+
+        comfortable: [
+            {
+                title:"Javascript",
+                logo:JsIcon,
+                color:"#e9ca32"
+            },
+            {
+                title: "React.JSX",
+                logo: ReactIcon,
+                color: "#61dafb"
+            },
+            {
+                title: "ES6",
+                logo: ES6,
+                color: "#f26522"
+            },
+            {
+                title:  "Redux",
+                logo: ReduxIcon,
+                color: "#764abc"
+            },
+            {
+            title: "Redux-toolkit",
+            },
+            {
+                title: "RTK Query",
+            },
+            {
+                title: "Node.JS",
+                logo: NodeJsIcon,
+                color: "#00d486"
+            },
+            {
+                title:  "Express.JS",
+            },
+            {
+                title:  "MongoDB",
+                logo: MongoDBIcon,
+                color: "#599636"
+            },
+            {
+                title:  "Mongoose",
+            },
+            {
+                title:  "GraphQL",
+                login:GraphQLIcon,
+                color: "#e535ab"
+            },
+            {
+                title: "Apollo Client",
+                logo: ApolloIcon,
+                color: "#ffffff"
+            },
+            {
+                title: "React-hook-form",
+            },
+            {
+                title:   "Firebase",
+                logo: FireBaseIcon,
+                color: "#fea611"
+            },
+            {
+                title: "Tailwind-CSS",
+                logo: TailwindCSSIcon,
+                color: "#06b6d4"
+            },
+            {
+                title: "Bootstrap 4&5",
+                logo: Bootstrap,
+                color: "#463277"
+            },
+            {
+                title:   "Material UI",
+                logo: MaterialUIIcon,
+                color: "#00b0ff",
+            },
+            {
+                title:   "HTML5",
+                logo: HtmlIcon,
+                color: "#e34f26"
+            },
+            {
+                title:  "CSS3",
+                logo: CSSIcon,
+                color: "#1b73ba"
+            },
+            {
+                title: "Android Studio",
+                logo: AndroidStudio,
+                color: "#039be5"
+            }
+        ],
+        familiar: [
+            {
+                title:"TypeScript",
+                logo:TypeScript,
+                color:"#007acc"
+            },
+            {
+                title:   "React-Native",
+                logo: ReactNative,
+                color: "#61dafb"
+            },
+            {
+                title: "Sass",
+                logo: Sass,
+                color: "#cf649a"
+            },
+            {
+                title: "Kotlin",
+                logo: Kotlin,
+                color: "#7f52ff"
+            },
+            {
+                title:  "Jetpack Compose",
+                logo: Android,
+                color: "#3ddb85"
+            },
+            {
+                title: "Python",
+                logo: Python,
+                color: "#ffdd55"
+            },
+            {
+                title: "Django",
+                logo: Django,
+                color: "#2ba977"
+            },
+            {
+                title: "PHP",
+                logo: PHP,
+                color: "#8993be"
+            },
+            {
+                title: "Laravel",
+                logo: Laravel,
+                color: "#ff2d20"
+            }
+            ],
+        tools: [
+            {
+                title:"Git",
+                logo:Git,
+                color:"#de4c36"
+            },
+            {
+                title: "GitHub",
+                logo: Github,
+                color: "#ffffff"
+            },
+            {
+                title:  "npm",
+                logo: NPM,
+                color: "#cb3837"
+            },
+            {
+                title:  "yarn",
+                logo: Yarn,
+                color: "#3398c2"
+            },
+            {
+                title: "VS Code",
+                logo: VisualStudioCode,
+                color: "#3c99d4"
+            },
+            {
+                title: "WebStorm",
+                logo: Webstorm,
+                color: "#00cdd7"
+            },
+            {
+                title: "PyCharm",
+                logo: PyCharm,
+                color: "#69df7a"
+            },
+            {
+                title: "Firefox dev tool",
+                logo: Firefox,
+                color: "#f52238"
+            },
+            {
+                title: "Chrome dev tool",
+                logo: Chrome,
+                color: "#f4d911"
+            },
+            {
+                title:  "Heroku",
+                logo: Heroku,
+                color: "#430098"
+            },
+            {
+                title: "Render",
+                logo: Render,
+                color: "#d61f27"
+            },
+            {
+                title: "Netlify",
+                logo: Netlify,
+                color: "#25c7b7"
+            },
+            {
+                title: "Varcel",
+                logo: Varcel,
+                color: "#e9ca32"
+            },
+            {
+                title:  "Figma",
+                logo: Figma,
+                color: "#0acf83"
+            },
+            {
+                title:  "Postman",
+                logo: Postman,
+                color: "#ff6c37"
+            }
+            ]
     },
     portfolios: [
         {
