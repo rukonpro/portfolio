@@ -106,7 +106,7 @@ const Skills = () => {
 
                 <div className="mt-16 grid gap-10 md:grid-cols-2 lg:grid-cols-2 grid-cols-1 px-3 pb-16">
 
-                    <LazyImageLoader>
+
                         <div>
                             <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Experienced:</h1>
                             <div className={` flex justify-center flex-wrap  gap-2`}>
@@ -121,7 +121,7 @@ const Skills = () => {
                                                     {logo?
                                                         <img className=" p-1 " height="100%" width="100%"
                                                              src={logo}
-                                                             alt={title}/>:<span className="text-xs">{title}</span>}
+                                                             alt={title}/>:<span className="text-xs text-[#f8cafb]">{title}</span>}
                                                 </LazyImageLoader>
 
                                             </div>
@@ -130,7 +130,7 @@ const Skills = () => {
                                 }
                             </div>
                         </div>
-                    </LazyImageLoader>
+
 
 
                     <LazyImageLoader>
@@ -148,7 +148,7 @@ const Skills = () => {
                                                     {logo?
                                                         <img className=" p-1 " height="100%" width="100%"
                                                              src={logo}
-                                                             alt={title}/>:<span className="text-xs">{title}</span>}
+                                                             alt={title}/>:<span className="text-[#f8cafb] text-xs">{title}</span>}
                                                 </LazyImageLoader>
 
                                             </div>
@@ -175,7 +175,7 @@ const Skills = () => {
                                                     {logo?
                                                         <img className=" p-1 " height="100%" width="100%"
                                                              src={logo}
-                                                             alt={title}/>:<span className="text-xs">{title}</span>}
+                                                             alt={title}/>:<span className="text-[#f8cafb] text-xs">{title}</span>}
                                                 </LazyImageLoader>
 
                                             </div>
@@ -205,7 +205,7 @@ const Skills = () => {
                                                             height="100%"
                                                             width="100%"
                                                             src={logo}
-                                                            alt={title}/> : <span className="text-xs">title</span>}
+                                                            alt={title}/> : <span className="text-[#f8cafb] text-xs">title</span>}
                                                 </LazyImageLoader>
 
                                             </div>
