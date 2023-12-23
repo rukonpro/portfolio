@@ -116,11 +116,27 @@ const Skills = () => {
                                                 key={title}
                                                 id={title+index+logo+color}
                                                 style={{background:`linear-gradient(to top right, #0e0e36, ${color})`}}
+                                                data-aos="fade-right"
+                                                data-aos-offset="10"
+                                                data-aos-duration="2000"
+                                                data-aos-easing="ease-in-sine"
                                                 className={`rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}>
                                                     {logo?
-                                                        <img className=" p-1 " height="100%" width="100%"
-                                                             src={logo}
-                                                             alt={title}/>:<span className="text-xs text-[#f8cafb]">{title}</span>}
+                                                        <img
+                                                            data-aos="zoom-out-left"
+                                                            data-aos-offset="10"
+                                                            data-aos-duration="3000"
+                                                            data-aos-easing="ease-in-sine"
+                                                            className=" p-1 "
+                                                            height="100%"
+                                                            width="100%"
+                                                            src={logo}
+                                                            alt={title}/>:<span
+                                                            data-aos="zoom-out-left"
+                                                            data-aos-offset="10"
+                                                            data-aos-duration="3000"
+                                                            data-aos-easing="ease-in-sine"
+                                                            className="text-xs text-[#f8cafb]">{title}</span>}
 
                                             </div>
                                         )
@@ -142,11 +158,29 @@ const Skills = () => {
                                                 key={title}
                                                 id={title+index+logo+color}
                                                 style={{background:`linear-gradient(to top right, #0e0e36, ${color})`}}
-                                                className={` rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}>
+                                                className={` rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}
+
+                                                data-aos="fade-left"
+                                                data-aos-offset="10"
+                                                data-aos-duration="1500"
+                                                data-aos-easing="ease-in-sine"
+                                            >
                                                     {logo?
-                                                        <img className=" p-1 " height="100%" width="100%"
-                                                             src={logo}
-                                                             alt={title}/>:<span className="text-[#f8cafb] text-xs">{title}</span>}
+                                                        <img
+                                                            data-aos="zoom-out-right"
+                                                            data-aos-offset="10"
+                                                            data-aos-duration="3000"
+                                                            data-aos-easing="ease-in-sine"
+                                                            className=" p-1 "
+                                                            height="100%"
+                                                            width="100%"
+                                                            src={logo}
+                                                            alt={title}/>:<span
+                                                            data-aos="zoom-out-right"
+                                                            data-aos-offset="10"
+                                                            data-aos-duration="2500"
+                                                            data-aos-easing="ease-in-sine"
+                                                            className="text-[#f8cafb] text-xs">{title}</span>}
 
                                             </div>
                                         )
@@ -168,11 +202,28 @@ const Skills = () => {
                                                 key={title}
                                                 id={title+index+logo+color}
                                                 style={{background:`linear-gradient(to top right, #0e0e36, ${color})`}}
-                                                className={`rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}>
+                                                className={`rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}
+                                                data-aos="fade-right"
+                                                data-aos-offset="10"
+                                                data-aos-duration="1500"
+                                                data-aos-easing="ease-in-sine"
+                                            >
                                                        {logo?
-                                                        <img className=" p-1 " height="100%" width="100%"
-                                                             src={logo}
-                                                             alt={title}/>:<span className="text-[#f8cafb] text-xs">{title}</span>}
+                                                        <img
+                                                            data-aos="zoom-out-left"
+                                                            data-aos-offset="10"
+                                                            data-aos-duration="3000"
+                                                            data-aos-easing="ease-in-sine"
+                                                            className=" p-1 "
+                                                            height="100%"
+                                                            width="100%"
+                                                            src={logo}
+                                                            alt={title}/>:<span
+                                                            data-aos="zoom-out-left"
+                                                            data-aos-offset="10"
+                                                            data-aos-duration="2500"
+                                                            data-aos-easing="ease-in-sine"
+                                                            className="text-[#f8cafb] text-xs">{title}</span>}
                                             </div>
                                         )
                                     })
@@ -192,14 +243,28 @@ const Skills = () => {
                                                 key={title}
                                                 id={title + index + logo + color}
                                                 style={{background:`linear-gradient(to top right, #0e0e36, ${color})`}}
-                                                className={` rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}>
+                                                className={` rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}
+                                                data-aos="fade-left"
+                                                data-aos-offset="10"
+                                                data-aos-duration="1500"
+                                                data-aos-easing="ease-in-sine"
+                                             >
 
                                                     {logo ?<img
-                                                            className=" p-1 "
-                                                            height="100%"
-                                                            width="100%"
-                                                            src={logo}
-                                                            alt={title}/> : <span className="text-[#f8cafb] text-xs">title</span>}
+                                                        data-aos="zoom-out-right"
+                                                        data-aos-offset="10"
+                                                        data-aos-duration="2500"
+                                                        data-aos-easing="ease-in-sine"
+                                                        className=" p-1 "
+                                                        height="100%"
+                                                        width="100%"
+                                                        src={logo}
+                                                        alt={title}/> : <span
+                                                        data-aos="zoom-out-right"
+                                                        data-aos-offset="10"
+                                                        data-aos-duration="3000"
+                                                        data-aos-easing="ease-in-sine"
+                                                        className="text-[#f8cafb] text-xs">title</span>}
                                              </div>
                                         )
                                     })

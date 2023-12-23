@@ -8,7 +8,9 @@ import Whatsapp from "../Images/whatsapp.png";
 import GithubIcon from "../Images/github-icon-1.svg";
 import LazyLoader from "../utilitis/LazyLoader";
 
+
 const Header = () => {
+
     return (
         <header
             id="home"
@@ -16,7 +18,11 @@ const Header = () => {
         >
             <div className="relative z-10 md:px-28">
                 <div className='lg:flex flex-none justify-between container mx-auto md:pt-28 pt-28 md:px-0 px-5  '>
-                    <div>
+                    <div
+                        data-aos="fade-right"
+                        data-aos-offset="10"
+                        data-aos-duration="2000"
+                        data-aos-easing="ease-in-sine">
                         <div>
                             <div>
                                 <span
@@ -84,7 +90,9 @@ const Header = () => {
 
                                     <a href="tel:+8801765459224">
                                         <div
-                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#3e9ddd] to-[#0e0e36]'>
+                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#3e9ddd] to-[#0e0e36]'
+                                            data-aos="fade-in"
+                                        >
                                             <LazyLoader>
                                                 <img src={PhoneIcon || undefined} height="100%" width="100%"
                                                      alt="phone number" loading="lazy"/>
@@ -107,6 +115,10 @@ const Header = () => {
                     <div className="flex justify-end">
                         <LazyLoader>
                             <img
+                                data-aos="fade-left"
+                                data-aos-offset="10"
+                                data-aos-duration="2000"
+                                data-aos-easing="ease-in-sine"
                                 className=" md:w-[76vh]"
                                 src={Iphone || undefined}
                                 height="100%"
@@ -175,7 +187,8 @@ const Header = () => {
                     </button>
                 </div>
             </div>
-            <div className="absolute custom-animate-pulse inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg" style={{ background: "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)",
+            <div className="absolute custom-animate-pulse inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg"
+                 style={{ background: "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)",
             }}
             ></div>
         </header>

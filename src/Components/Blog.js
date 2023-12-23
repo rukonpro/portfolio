@@ -15,24 +15,43 @@ const Blog = () => {
                     <div className="flex justify-center">
                         <div
                             className="relative  w-[55px] h-[55px] bg-gradient-to-bl transition from-[#17113a] to-[#8907c0]  animate-spin rounded-full right-16 top-2  customShadow "></div>
-                        <h1 className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute tracking-[4px]">Blogs</h1>
+                        <h1
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="center-center"
+                            data-aos-duration="2000"
+                            className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute tracking-[4px]">Blogs</h1>
                     </div>
 
                     <div className="grid md:grid-cols-3 grid-cols-2  pt-10">
                         <div className="md:col-span-1 col-span-1 flex md:justify-start justify-center">
-                            <img src={Blog40 || undefined} height="100%" width="100%" alt="blog"
+                            <img
+                                data-aos="fade-left"
+                                data-aos-anchor-placement="top-bottom"
+                                data-aos-duration="2000"
+                                src={Blog40 || undefined} height="100%" width="100%" alt="blog"
                                  loading="lazy"/>
                         </div>
                         <div className="md:col-span-1 col-span-1 flex md:justify-start justify-center">
-                            <img src={Blog37 || undefined} height="100%" width="100%" alt="blog"
+                            <img
+                                data-aos="fade-down"
+                                data-aos-anchor-placement="top-bottom"
+                                data-aos-duration="2000"
+                                src={Blog37 || undefined} height="100%" width="100%" alt="blog"
                                  loading="lazy"/>
                         </div>
                         <div className="md:col-span-1 col-span-1 flex md:justify-start justify-center">
-                            <img  src={Blog38 || undefined} height="100%" width="100%" alt="blog"
+                            <img
+                                data-aos="fade-right"
+                                data-aos-anchor-placement="top-bottom"
+                                data-aos-duration="2000"
+                                src={Blog38 || undefined} height="100%" width="100%" alt="blog"
                                  loading="lazy"/>
                         </div>
                         <div className="md:col-span-3 flex justify-center">
-                            <img  src={Blog39 || undefined} height={250} width={250} alt="blog" loading="lazy"/>
+                            <img
+                                data-aos="fade-up"
+                                data-aos-duration="2000"
+                                src={Blog39 || undefined} height={250} width={250} alt="blog" loading="lazy"/>
                         </div>
                     </div>
                 </div>
