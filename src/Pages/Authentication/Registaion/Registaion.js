@@ -11,8 +11,8 @@ const Registation = ({ setIsLogin }) => {
 
                 <div className="flex ">
                     <div className="flex px-8 ">
-                        <div className="relative -inset-3   w-[55px] h-[55px] bg-gradient-to-r from-[#0c2140d0] to-[#6d2613] rounded-full customShadow" />
-                        <h1 className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute">Registration</h1>
+                        <div className="relative -inset-3   w-[55px] h-[55px] bg-gradient-to-r from-[#17113a] to-[#8907c0]  animate-spin rounded-full customShadow" />
+                        <h1 className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute">Registration</h1>
                     </div>
                 </div>
 
@@ -25,9 +25,9 @@ const Registation = ({ setIsLogin }) => {
 
 
                             <div className=" col-span-1 ">
-                                <label className="text-white font-bold ">First Name:</label>
+                                <label className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text font-bold ">First Name:</label>
                                 <input
-                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border bg-gradient-to-l   from-[#263458] to-[#111827] text-white font-bold font-['Roboto'] "
+                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] "
                                     type="fname"
                                     name="fname"
                                     placeholder='Rukon'
@@ -35,18 +35,18 @@ const Registation = ({ setIsLogin }) => {
                             </div>
 
                             <div className=" col-span-1 ">
-                                <label className="text-white font-bold ">Last Name:</label>
+                                <label className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text font-bold ">Last Name:</label>
                                 <input
-                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border bg-gradient-to-l   from-[#263458] to-[#111827] text-white font-bold font-['Roboto'] "
+                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] "
                                     type="lname"
                                     name="lname"
                                     placeholder='Uddin'
                                 />
                             </div>
                             <div className=" col-span-2 ">
-                                <label className="text-white font-bold ">Email address:</label>
+                                <label className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text font-bold ">Email address:</label>
                                 <input
-                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border bg-gradient-to-l   from-[#263458] to-[#111827] text-white font-bold font-['Roboto'] "
+                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white font-bold  font-['Roboto']"
                                     type="email"
                                     name="email"
                                     placeholder='rukon.pro@gmail.com'
@@ -55,8 +55,8 @@ const Registation = ({ setIsLogin }) => {
                             </div>
                             <div className=" col-span-2  relative">
                                 <div className="flex justify-between ">
-                                    <label className="text-white text-sm font-bold ">Password:</label>
-                                    <button type="button" className="text-slate-300 text-xs font-bold">Forgot password?</button>
+                                    <label className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-sm font-bold ">Password:</label>
+                                    <button type="button" className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-xs font-bold"><span className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text"> Forgot password?</span> </button>
                                 </div>
 
                                 <button
@@ -81,7 +81,7 @@ const Registation = ({ setIsLogin }) => {
 
                                 <input
                                     type={isPasswordHidden ? "password" : "text"}
-                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border bg-gradient-to-l   from-[#263458] to-[#111827] text-white font-bold font-['Roboto'] "
+                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white font-bold  font-['Roboto']"
                                     placeholder='******'
 
                                 />
@@ -90,19 +90,22 @@ const Registation = ({ setIsLogin }) => {
                             <div className='col-span-2 flex justify-center text-white font-bold font-["Roboto"] '>
 
                                 <button
-                                        type='submit'
-                                        aria-label="Registration"
-                                        className=" w-full py-2  rounded-[10px] border shadow-2xl bg-gradient-to-l   from-[#442658] to-[#111827] active:bg-gradient-to-r  hover:shadow-2xl  hover:shadow-[#111827]"  >
-                                    Registration
+                                    type="submit"
+                                    aria-label="Login"
+                                    className=" w-full py-2  rounded-[10px] border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white text-xl font-bold   hover:shadow-2xl  hover:shadow-[#111827]"
+                                >
+                                    <span className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text  font-bold">
+                                        Register
+                                    </span>
                                 </button>
                             </div>
                             <div className="col-span-2 flex justify-center ">
-                                <p className="text-white text-sm">Are you alrady Registered?
+                                <p className="text-[#fccdff] text-sm">Are you alrady Registered?
                                     <button
                                         type="button"
                                         onClick={() => setIsLogin(isLogin => !isLogin)}
 
-                                        className="text-blue-500/80 px-1">Please Login</button>
+                                        className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text px-1">Please Login</button>
                                 </p>
                             </div>
 

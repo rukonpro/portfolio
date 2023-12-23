@@ -14,7 +14,7 @@ const Blog = () => {
                 <div>
                     <div className="flex justify-center">
                         <div
-                            className="relative  w-[55px] h-[55px] bgGradient rounded-full right-16 top-2 customShadow "></div>
+                            className="relative  w-[55px] h-[55px] bg-gradient-to-bl transition from-[#17113a] to-[#8907c0]  animate-spin rounded-full right-16 top-2  customShadow "></div>
                         <h1 className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute tracking-[4px]">Blogs</h1>
                     </div>
 

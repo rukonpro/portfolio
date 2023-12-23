@@ -10,6 +10,7 @@ import LoginModal from "../Authentication/LoginModal/LoginModal";
 import ScrollToHashElement from "../../Components/HashLink";
 import Skills from "../../Components/Skills";
 import Pricing from "../../Components/Pricing";
+import LazyLoader from "../../utilitis/LazyLoader";
 
 const Home = () => {
     return (
@@ -17,13 +18,27 @@ const Home = () => {
             <ScrollToHashElement/>
             <Navigation/>
             <Header/>
-            <About/>
-            <Skills/>
-            <Services/>
-            <Portfolios/>
-            <Blog/>
-            <Pricing/>
-            <Contact/>
+            <LazyLoader>
+                <About/>
+            </LazyLoader>
+            <LazyLoader>
+                <Skills/>
+            </LazyLoader>
+            <LazyLoader>
+                <Services/>
+            </LazyLoader>
+            <LazyLoader>
+                <Portfolios/>
+            </LazyLoader>
+            <LazyLoader>
+                <Blog/>
+            </LazyLoader>
+          <LazyLoader>
+              <Pricing/>
+          </LazyLoader>
+           <LazyLoader>
+               <Contact/>
+           </LazyLoader>
             <LoginModal/>
         </React.Fragment>
     )

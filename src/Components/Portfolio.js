@@ -3,14 +3,14 @@ import Carousel from "./Carousel";
 import Github from "../Images/github.png";
 import Live from "../Images/live.png";
 import Global from "../Images/global.png";
-import LazyImageLoader from "../utilitis/LazyImageLoader";
+import LazyLoader from "../utilitis/LazyLoader";
 const Portfolio = ({ data }) => {
     return (
         <div>
             <div>
-               <LazyImageLoader>
+               <LazyLoader>
                    <Carousel images={data?.images} />
-               </LazyImageLoader>
+               </LazyLoader>
             </div>
 
             <div>
@@ -28,10 +28,10 @@ const Portfolio = ({ data }) => {
                                 rel="noopener noreferrer"
                                 className='text-[#454545]'
                             >
-                                <LazyImageLoader>
+                                <LazyLoader>
                                     <img className='h-10 w-10' src={Live || undefined} height="100%" width="100%"
                                          alt="Live" loading="lazy"/>
-                                </LazyImageLoader>
+                                </LazyLoader>
 
                             </a>
                         </li>}
@@ -40,10 +40,10 @@ const Portfolio = ({ data }) => {
                                aria-label={data?.title}
                                target="_blank"
                                rel="noopener noreferrer">
-                                <LazyImageLoader>
+                                <LazyLoader>
                                     <img className='h-10 w-10' src={Github || undefined} height="100%" width="100%"
                                          alt="Github" loading="lazy"/>
-                                </LazyImageLoader>
+                                </LazyLoader>
                             </a>
 
                         </li>}
@@ -51,10 +51,10 @@ const Portfolio = ({ data }) => {
                             <a href={data?.links?.backEndCode}
                                aria-label={data?.title} target="_blank"
                                rel="noopener noreferrer">
-                                <LazyImageLoader>
+                                <LazyLoader>
                                     <img className='h-10 w-10' src={Global || undefined} height="100%" width="100%"
                                          alt="Global" loading="lazy"/>
-                                </LazyImageLoader>
+                                </LazyLoader>
                             </a>
                         </li>}
                     </ol>

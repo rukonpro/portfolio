@@ -4,7 +4,7 @@ import IphonScreen from "../Images/MobileScreen.webp";
 import Icon from "../Images/fluent_design-ideas-20-regular.png";
 import Ellipse from "../Images/Ellipse 7.png";
 import ServiceIcon from "../Images/24-hour-clock.png";
-import LazyImageLoader from "../utilitis/LazyImageLoader";
+import LazyLoader from "../utilitis/LazyLoader";
 
 const Services = () => {
     return (
@@ -17,7 +17,7 @@ const Services = () => {
                 <div className="flex justify-center">
                     <div className="flex items-center relative">
                         <div
-                            className="  w-[55px] h-[55px] bg-gradient-to-tl from-[#816aff] to-[#d066fd] rounded-full  customShadow"></div>
+                            className="  w-[55px] h-[55px] bg-gradient-to-tl from-[#17113a] to-[#8907c0]  animate-spin rounded-full  customShadow"></div>
                         <h1 className=" relative right-10 text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] tracking-[4px]">My
                             services</h1>
                     </div>
@@ -28,20 +28,20 @@ const Services = () => {
                         development, here's a brief description of the MEAN stack, which is a popular choice</p>
                 </div>
                 <div className="divider">
-                    <LazyImageLoader>
+                    <LazyLoader>
                         <img
                             style={{width:"32px"}}
                             src={ServiceIcon || undefined}
                             height="100%" width="100%"
                             alt="ServiceICon" loading="lazy"/>
-                    </LazyImageLoader>
+                    </LazyLoader>
                 </div>
                 <div className="lg:flex flex-none justify-center mt-10">
 
 
                     <div className="block lg:hidden pb-20">
                         <div className="flex justify-center">
-                            <LazyImageLoader>
+                            <LazyLoader>
                             <div className="w-[244.63px] h-[494.98px] z-20 p-3 flex justify-center overflow-hidden">
 
                                     <img className="absolute w-[244.63px] h-[494.98px]"
@@ -54,19 +54,19 @@ const Services = () => {
                                          height="100%" width="100%"
                                          alt="IphonScreen"/>
                             </div>
-                            </LazyImageLoader>
+                            </LazyLoader>
                         </div>
                     </div>
 
                     <div className="flex flex-col justify-between  gap-5">
                         <div className="flex gap-2 lg:flex-row-reverse">
                             <div >
-                                <LazyImageLoader>
+                                <LazyLoader>
                                 <div className="relative w-[68px] h-[68px] flex justify-center items-center">
                                     <img className="absolute" src={Ellipse || undefined} height="100%" width="100%" alt="Ellipse" loading="lazy"/>
                                     <img className="absolute" src={Icon || undefined} height="100%" width="100%" alt="Ellipse" loading="lazy"/>
                                 </div>
-                                </LazyImageLoader>
+                                </LazyLoader>
                             </div>
 
                             <div className="md:text-left lg:text-right">
@@ -81,12 +81,12 @@ const Services = () => {
 
                         <div className="flex gap-2 pt-5 lg:flex-row-reverse">
                             <div >
-                                <LazyImageLoader>
+                                <LazyLoader>
                                     <div className="relative w-[68px] h-[68px] flex justify-center items-center">
                                         <img className="absolute" src={Ellipse || undefined} height="100%" width="100%" alt="Ellipse"/>
                                         <img className="absolute" src={Icon || undefined} height="100%" width="100%" alt="Icon"/>
                                     </div>
-                                </LazyImageLoader>
+                                </LazyLoader>
                             </div>
 
                             <div className="md:text-left lg:text-right">
@@ -117,7 +117,7 @@ const Services = () => {
 
 
                     <div className="lg:block hidden px-3">
-                        <LazyImageLoader>
+                        <LazyLoader>
                             <div className="w-[244.63px] h-[494.98px] z-20 p-3 flex justify-center overflow-hidden">
                                 <img className="absolute w-[244.63px] h-[494.98px]"
                                      src={BlueBackCover || undefined}
@@ -129,7 +129,7 @@ const Services = () => {
                                      width="100%"
                                      alt="IphonScreen"/>
                             </div>
-                            </LazyImageLoader>
+                            </LazyLoader>
                     </div>
 
 
@@ -138,12 +138,12 @@ const Services = () => {
 
 
                             <div >
-                                <LazyImageLoader>
+                                <LazyLoader>
                                 <div className="relative w-[68px] h-[68px] flex justify-center items-center">
                                     <img className="absolute" src={Ellipse || undefined} height="100%" width="100%" alt="Ellipse"/>
                                     <img className="absolute" src={Icon || undefined} height="100%" width="100%" alt="Icon"/>
                                 </div>
-                                </LazyImageLoader>
+                                </LazyLoader>
                             </div>
 
                             <div>
@@ -159,12 +159,12 @@ const Services = () => {
 
 
                             <div >
-                                <LazyImageLoader>
+                                <LazyLoader>
                                     <div className="relative w-[68px] h-[68px] flex justify-center items-center">
                                         <img className="absolute" src={Ellipse || undefined} height="100%" width="100%" alt="Ellipse"/>
                                         <img className="absolute" src={Icon || undefined} height="100%" width="100%" alt="Icon"/>
                                     </div>
-                                </LazyImageLoader>
+                                </LazyLoader>
                             </div>
 
                             <div>
@@ -180,12 +180,12 @@ const Services = () => {
 
 
                             <div>
-                                <LazyImageLoader>
+                                <LazyLoader>
                                     <div className="relative w-[68px] h-[68px] flex justify-center items-center">
                                         <img className="absolute" src={Ellipse || undefined} height="100%" width="100%" alt="Ellipse"/>
                                         <img className="absolute" src={Icon || undefined} height="100%" width="100%" alt="Icon"/>
                                     </div>
-                                </LazyImageLoader>
+                                </LazyLoader>
                             </div>
 
                             <div>

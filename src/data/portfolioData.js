@@ -27,6 +27,7 @@ import CSSIcon from "../SkillsLogo/css-3.svg";
 import MongoDBIcon from "../SkillsLogo/mongodb-icon-1.svg";
 import FireBaseIcon from "../SkillsLogo/firebase-1.svg";
 import Bootstrap from "../SkillsLogo/bootstrap-5-1.svg";
+import ReactBootstrap from "../SkillsLogo/bootstrap-icon-1.svg";
 import ReactIcon from "../SkillsLogo/react-2.svg";
 import ReduxIcon from "../SkillsLogo/redux.svg";
 import GraphQLIcon from "../SkillsLogo/graphql-logo-2.svg";
@@ -92,10 +93,12 @@ const portfolioData = {
                 color: "#764abc"
             },
             {
-                title:  "Redux-toolkit"
+                title:  "Redux-toolkit",
+                color: "#61dafb"
             },
             {
                 title: "RTK Query",
+                color: "#61dafb"
             },
             {
                 title: "Node.JS",
@@ -104,6 +107,7 @@ const portfolioData = {
             },
             {
                 title:  "Express.JS",
+                color: "#61dafb"
             },
             {
                 title: "MongoDB",
@@ -112,6 +116,7 @@ const portfolioData = {
             },
             {
                 title: "PostgresQL",
+                color: "#61dafb"
             },
             {
                 title: "MySQL",
@@ -120,6 +125,7 @@ const portfolioData = {
             },
             {
                 title: "Mongoose",
+                color: "#61dafb"
             },
             {
                 title: "GraphQL",
@@ -133,6 +139,7 @@ const portfolioData = {
             },
             {
                 title: "React-hook-form",
+                color: "#61dafb"
             },
             {
                 title: "Firebase",
@@ -146,7 +153,7 @@ const portfolioData = {
             },
             {
                 title: "React-Bootstrap",
-                logo: Bootstrap,
+                logo: ReactBootstrap,
                 color: "#463277"
             },
             {
@@ -192,10 +199,12 @@ const portfolioData = {
                 color: "#764abc"
             },
             {
-            title: "Redux-toolkit",
+                title: "Redux-toolkit",
+                color: "#61dafb"
             },
             {
                 title: "RTK Query",
+                color: "#61dafb"
             },
             {
                 title: "Node.JS",
@@ -204,6 +213,7 @@ const portfolioData = {
             },
             {
                 title:  "Express.JS",
+                color: "#61dafb"
             },
             {
                 title:  "MongoDB",
@@ -212,6 +222,7 @@ const portfolioData = {
             },
             {
                 title:  "Mongoose",
+                color: "#61dafb"
             },
             {
                 title:  "GraphQL",
@@ -225,6 +236,7 @@ const portfolioData = {
             },
             {
                 title: "React-hook-form",
+                color: "#61dafb"
             },
             {
                 title:   "Firebase",
@@ -353,7 +365,7 @@ const portfolioData = {
             {
                 title: "Chrome dev tool",
                 logo: Chrome,
-                color: "#f4d911"
+                color: "#81b354"
             },
             {
                 title:  "Heroku",

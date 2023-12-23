@@ -1,6 +1,6 @@
 import React from 'react';
 import PortfolioData from "../data/portfolioData";
-import LazyImageLoader from "../utilitis/LazyImageLoader";
+import LazyLoader from "../utilitis/LazyLoader";
 const Skills = () => {
 
 
@@ -19,7 +19,7 @@ const Skills = () => {
                 <div className="flex justify-center">
                     <div className="flex items-center relative">
                         <div
-                            className="  w-[55px] h-[55px] bg-gradient-to-tl from-[#816aff] to-[#d066fd] rounded-full  customShadow"></div>
+                            className="  w-[55px] h-[55px] bg-gradient-to-tl from-[#17113a] to-[#8907c0]  animate-spin rounded-full  customShadow"></div>
                         <h1 className=" relative right-10 text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] ">Skills</h1>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ const Skills = () => {
 
                     <div className={`${bgGradientColor1} p-2 mt-3 rounded-3xl `}>
                         <h1 className={`${bgGradientColor1} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Experienced: </h1>
-                        <LazyImageLoader>
+                        <LazyLoader>
                             <ul className="flex gap-1 flex-wrap  justify-between">
                                 {
                                     PortfolioData?.skills?.experienced?.map((data, i) =>
@@ -49,13 +49,13 @@ const Skills = () => {
                                     )
                                 }
                             </ul>
-                        </LazyImageLoader>
+                        </LazyLoader>
                     </div>
 
 
                     <div className={`${bgGradientColor2} p-2 mt-3 rounded-3xl`}>
                         <h1 className={`${bgGradientColor2} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Comfortable: </h1>
-                        <LazyImageLoader>
+                        <LazyLoader>
                             <ul className="flex gap-1 flex-wrap  justify-between">
                                 {
                                     PortfolioData?.skills?.comfortable?.map((data, i) =>
@@ -66,13 +66,13 @@ const Skills = () => {
                                     )
                                 }
                             </ul>
-                        </LazyImageLoader>
+                        </LazyLoader>
                     </div>
 
 
                     <div className={`${bgGradientColor3} p-2 mt-3 rounded-3xl`}>
                         <h1 className={`${bgGradientColor3} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Familiar: </h1>
-                        <LazyImageLoader>
+                        <LazyLoader>
                             <ul className="flex gap-1 flex-wrap  justify-between">
                                 {
                                     PortfolioData?.skills?.familiar?.map((data, i) =>
@@ -81,13 +81,13 @@ const Skills = () => {
                                     )
                                 }
                             </ul>
-                        </LazyImageLoader>
+                        </LazyLoader>
                     </div>
 
 
                     <div className={`${bgGradientColor4} p-2 mt-3 rounded-3xl`}>
                         <h1 className={`${bgGradientColor4} text-2xl p-2 rounded-full  my-2 font-bold font-[Roboto]`}>Tools: </h1>
-                        <LazyImageLoader>
+                        <LazyLoader>
                             <ul className="flex gap-1 flex-wrap justify-between">
                                 {
                                     PortfolioData?.skills?.tools?.map((data, i) =>
@@ -96,7 +96,7 @@ const Skills = () => {
                                     )
                                 }
                             </ul>
-                        </LazyImageLoader>
+                        </LazyLoader>
                     </div>
 
 
@@ -105,7 +105,6 @@ const Skills = () => {
 
 
                 <div className="mt-16 grid gap-10 md:grid-cols-2 lg:grid-cols-2 grid-cols-1 px-3 pb-16">
-
 
                         <div>
                             <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Experienced:</h1>
@@ -116,13 +115,12 @@ const Skills = () => {
                                             <div
                                                 key={title}
                                                 id={title+index+logo+color}
-                                                className={`bg-gradient-to-tl from-[#0e0e36] to-[${color||"#7d1ba9"}]  rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all`}>
-                                                <LazyImageLoader>
+                                                style={{background:`linear-gradient(to top right, #0e0e36, ${color})`}}
+                                                className={`rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}>
                                                     {logo?
                                                         <img className=" p-1 " height="100%" width="100%"
                                                              src={logo}
                                                              alt={title}/>:<span className="text-xs text-[#f8cafb]">{title}</span>}
-                                                </LazyImageLoader>
 
                                             </div>
                                         )
@@ -133,7 +131,7 @@ const Skills = () => {
 
 
 
-                    <LazyImageLoader>
+                    <LazyLoader>
                         <div>
                             <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Comfortable:</h1>
                             <div className=" flex justify-center flex-wrap  gap-2">
@@ -143,13 +141,12 @@ const Skills = () => {
                                             <div
                                                 key={title}
                                                 id={title+index+logo+color}
-                                                className={`bg-gradient-to-tl from-[#0e0e36] to-[${color}]  rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all`}>
-                                                <LazyImageLoader>
+                                                style={{background:`linear-gradient(to top right, #0e0e36, ${color})`}}
+                                                className={` rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}>
                                                     {logo?
                                                         <img className=" p-1 " height="100%" width="100%"
                                                              src={logo}
                                                              alt={title}/>:<span className="text-[#f8cafb] text-xs">{title}</span>}
-                                                </LazyImageLoader>
 
                                             </div>
                                         )
@@ -157,9 +154,9 @@ const Skills = () => {
                                 }
                             </div>
                         </div>
-                    </LazyImageLoader>
+                    </LazyLoader>
 
-                    <LazyImageLoader>
+                    <LazyLoader>
                         <div>
                             <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Tools:</h1>
                             <div
@@ -170,51 +167,46 @@ const Skills = () => {
                                             <div
                                                 key={title}
                                                 id={title+index+logo+color}
-                                                className={`bg-gradient-to-tl from-[#0e0e36] to-[${color}]  rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all`}>
-                                                <LazyImageLoader>
-                                                    {logo?
+                                                style={{background:`linear-gradient(to top right, #0e0e36, ${color})`}}
+                                                className={`rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}>
+                                                       {logo?
                                                         <img className=" p-1 " height="100%" width="100%"
                                                              src={logo}
                                                              alt={title}/>:<span className="text-[#f8cafb] text-xs">{title}</span>}
-                                                </LazyImageLoader>
-
                                             </div>
                                         )
                                     })
                                 }
                             </div>
                         </div>
-                    </LazyImageLoader>
+                    </LazyLoader>
 
-                    <LazyImageLoader>
+                    <LazyLoader>
                         <div>
                             <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Familiar:</h1>
                             <div className=" flex justify-center flex-wrap  gap-2">
                                 {
                                     PortfolioData?.skills?.familiar?.map(({title,logo,color},index)=>{
                                         return (
-                                            color &&
-                                            <div
+                                             <div
                                                 key={title}
                                                 id={title + index + logo + color}
-                                                className={`bg-gradient-to-tl from-[#0e0e36] to-[${color}]  rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all`}>
-                                                <LazyImageLoader>
-                                                    {logo ?
-                                                        <img
+                                                style={{background:`linear-gradient(to top right, #0e0e36, ${color})`}}
+                                                className={` rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}>
+
+                                                    {logo ?<img
                                                             className=" p-1 "
                                                             height="100%"
                                                             width="100%"
                                                             src={logo}
                                                             alt={title}/> : <span className="text-[#f8cafb] text-xs">title</span>}
-                                                </LazyImageLoader>
-
-                                            </div>
+                                             </div>
                                         )
                                     })
                                 }
                             </div>
                         </div>
-                    </LazyImageLoader>
+                    </LazyLoader>
 
 
                 </div>

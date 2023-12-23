@@ -6,7 +6,7 @@ import SkypeIcon from "../Images/skype.png";
 import LinkdinIcon from "../Images/linkedin.png";
 import Whatsapp from "../Images/whatsapp.png";
 import GithubIcon from "../Images/github-icon-1.svg";
-import LazyImageLoader from "../utilitis/LazyImageLoader";
+import LazyLoader from "../utilitis/LazyLoader";
 
 const Header = () => {
     return (
@@ -35,49 +35,49 @@ const Header = () => {
                                     <a href="https://www.linkedin.com/in/rukonpro/">
                                         <div
                                             className=' w-10 p-2 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#007ab9] to-[#eceff1]  shadow-2xl shadow-fuchsia-300'>
-                                            <LazyImageLoader>
+                                            <LazyLoader>
                                                 <img src={GithubIcon || undefined} height="100%" width="100%" alt="GithubIcon"
                                                      loading="lazy"/>
-                                            </LazyImageLoader>
+                                            </LazyLoader>
                                         </div>
                                     </a>
 
                                     <a href="https://www.linkedin.com/in/rukonpro/">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#007ab9] to-[#0e0e36]'>
-                                            <LazyImageLoader>
+                                            <LazyLoader>
                                                 <img src={LinkdinIcon || undefined} height="100%" width="100%" alt="linkdin"
                                                      loading="lazy"/>
-                                            </LazyImageLoader>
+                                            </LazyLoader>
                                         </div>
                                     </a>
 
                                     <a href="mailto:rukon.js@gamil.com">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#f44336] to-[#0e0e36]'>
-                                            <LazyImageLoader>
+                                            <LazyLoader>
                                                 <img src={EmailIcon || undefined} height="100%" width="100%" alt="email"
                                                      loading="lazy"/>
-                                            </LazyImageLoader>
+                                            </LazyLoader>
                                         </div>
                                     </a>
 
                                     <a href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR18ICJ_AmaQUWEIsiIfd4XyikyYvhcEIrM5HLImwXXJc42KT6pwqWjDaC0">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#00aff0] to-[#0e0e36]'>
-                                            <LazyImageLoader>
+                                            <LazyLoader>
                                                 <img src={SkypeIcon || undefined} height="100%" width="100%" alt="skype"
                                                      loading="lazy"/>
-                                            </LazyImageLoader>
+                                            </LazyLoader>
                                         </div>
                                     </a>
                                     <a href="https://api.whatsapp.com/send?phone=1765459224">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#4caf50] to-[#0e0e36]'>
-                                            <LazyImageLoader>
+                                            <LazyLoader>
                                                 <img src={Whatsapp || undefined} height="100%" width="100%" alt="whatsapp"
                                                      loading="lazy"/>
-                                            </LazyImageLoader>
+                                            </LazyLoader>
 
                                         </div>
                                     </a>
@@ -85,10 +85,10 @@ const Header = () => {
                                     <a href="tel:+8801765459224">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#3e9ddd] to-[#0e0e36]'>
-                                            <LazyImageLoader>
+                                            <LazyLoader>
                                                 <img src={PhoneIcon || undefined} height="100%" width="100%"
                                                      alt="phone number" loading="lazy"/>
-                                            </LazyImageLoader>
+                                            </LazyLoader>
                                         </div>
                                     </a>
                                 </div>
@@ -105,7 +105,7 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="flex justify-end">
-                        <LazyImageLoader>
+                        <LazyLoader>
                             <img
                                 className=" md:w-[76vh]"
                                 src={Iphone || undefined}
@@ -115,7 +115,7 @@ const Header = () => {
                                 fetchpriority="high"
                                 loading="eager"
                             />
-                        </LazyImageLoader>
+                        </LazyLoader>
                     </div>
                 </div>
                 <div className="flex justify-center">

@@ -1,6 +1,6 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
-const LazyImageLoader = ({children}) => {
+const LazyLoader = ({children}) => {
     return (
         <React.Fragment>
             <LazyLoad>
@@ -10,4 +10,4 @@ const LazyImageLoader = ({children}) => {
     );
 };
 
-export default LazyImageLoader;
+export default LazyLoader;

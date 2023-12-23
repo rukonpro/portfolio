@@ -1,7 +1,7 @@
 import React from "react";
 import Modals from "./Modals";
 import portfolioData from "../data/portfolioData";
-import LazyImageLoader from "../utilitis/LazyImageLoader";
+import LazyLoader from "../utilitis/LazyLoader";
 
 const Portfolios = () => {
   return (
@@ -11,15 +11,15 @@ const Portfolios = () => {
     >
       <div
         className="absolute  inset-0  blur-[118px] radial-gradient"
-       /* style={{
-          background:
-            "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)",
-        }}*/
+      /* style={{
+         background:
+           "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)",
+       }}*/
       ></div>
 
       <div className="relative z-10 container mx-auto">
         <div className="flex justify-center">
-          <div className="relative  w-[55px] h-[55px] bg-gradient-to-tl from-[#816aff] to-[#d066fd] rounded-full right-24 customShadow"></div>
+          <div className="relative  w-[55px] h-[55px] bg-gradient-to-tl from-[#17113a] to-[#8907c0]  animate-spin  rounded-full right-28 customShadow"></div>
           <h1 className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute tracking-[4px]">
             Portfolio
           </h1>
@@ -39,7 +39,7 @@ const Portfolios = () => {
                 key={data?.id}
                 onClick={() => document.getElementById(data?.id).showModal()}
               >
-                <LazyImageLoader>
+                <LazyLoader>
                   <img
                     className=" w-full h-full cursor-pointer "
                     src={data?.images?.[0]}
@@ -48,7 +48,7 @@ const Portfolios = () => {
                     alt="protfoliocover"
                     loading="lazy"
                   />
-                </LazyImageLoader>
+                </LazyLoader>
                 <Modals data={data} />
               </div>
             ) : null
