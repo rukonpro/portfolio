@@ -37,8 +37,9 @@ const Header = () => {
                                 <p className=" md:text-xl text-base font-bold font-['Roboto'] mt-2 md:tracking-[5px] tracking-[2px] text-[#fccdff]">MERN-stack
                                     Developer | React Developer | Javascript Developer</p>
 
+
                                 <div className='flex flex-wrap gap-2 pt-5'>
-                                    <a href="https://www.linkedin.com/in/rukonpro/">
+                                    <a href="https://www.linkedin.com/in/rukonpro/" target="_blank" rel="noreferrer">
                                         <div
                                             className=' w-10 p-2 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#007ab9] to-[#eceff1]  shadow-2xl shadow-fuchsia-300'>
                                             <LazyLoader>
@@ -48,7 +49,7 @@ const Header = () => {
                                         </div>
                                     </a>
 
-                                    <a href="https://www.linkedin.com/in/rukonpro/">
+                                    <a href="https://www.linkedin.com/in/rukonpro/" target="_blank" rel="noreferrer">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#007ab9] to-[#0e0e36]'>
                                             <LazyLoader>
@@ -58,7 +59,7 @@ const Header = () => {
                                         </div>
                                     </a>
 
-                                    <a href="mailto:rukon.js@gamil.com">
+                                    <a href="mailto:rukon.js@gamil.com" target="_blank" rel="noreferrer">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#f44336] to-[#0e0e36]'>
                                             <LazyLoader>
@@ -68,7 +69,7 @@ const Header = () => {
                                         </div>
                                     </a>
 
-                                    <a href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR18ICJ_AmaQUWEIsiIfd4XyikyYvhcEIrM5HLImwXXJc42KT6pwqWjDaC0">
+                                    <a href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR18ICJ_AmaQUWEIsiIfd4XyikyYvhcEIrM5HLImwXXJc42KT6pwqWjDaC0" target="_blank" rel="noreferrer">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#00aff0] to-[#0e0e36]'>
                                             <LazyLoader>
@@ -77,7 +78,7 @@ const Header = () => {
                                             </LazyLoader>
                                         </div>
                                     </a>
-                                    <a href="https://api.whatsapp.com/send?phone=1765459224">
+                                    <a href="https://api.whatsapp.com/send?phone=1765459224" target="_blank" rel="noreferrer">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#4caf50] to-[#0e0e36]'>
                                             <LazyLoader>
@@ -88,7 +89,7 @@ const Header = () => {
                                         </div>
                                     </a>
 
-                                    <a href="tel:+8801765459224">
+                                    <a href="tel:+8801765459224" target="_blank" rel="noreferrer">
                                         <div
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#3e9ddd] to-[#0e0e36]'
                                             data-aos="fade-in"
@@ -100,7 +101,7 @@ const Header = () => {
                                         </div>
                                     </a>
                                 </div>
-                                <a href="https://drive.google.com/file/d/1S8dFRWC7f3QH6ZVnGp6miYLwPz8s4coh/view?usp=sharing">
+                                <a href="https://drive.google.com/file/d/1S8dFRWC7f3QH6ZVnGp6miYLwPz8s4coh/view?usp=sharing" target="_blank" rel="noreferrer">
                                     <button
                                         id="downloadcv"
                                         aria-label="Download CV"
