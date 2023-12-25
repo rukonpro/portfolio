@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import OnClickSound from "../../../utilitis/OnClickSound";
 
 const Login = ({ setIsLogin }) => {
   const [isPasswordHidden, setPasswordHidden] = useState(true);
@@ -30,6 +31,7 @@ const Login = ({ setIsLogin }) => {
                   type="email"
                   name="email"
                   placeholder="rukon.pro@gmail.com"
+                  onClick={()=>OnClickSound("/keypress.mp3")}
                 />
               </div>
 
@@ -41,6 +43,7 @@ const Login = ({ setIsLogin }) => {
                   <button
                     type="button"
                     className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-[16px] font-bold clickSound"
+                    onClick={()=>OnClickSound("/keypress.mp3")}
                   >
                     Forgot password?
                   </button>
@@ -49,7 +52,10 @@ const Login = ({ setIsLogin }) => {
                 <button
                   type="button"
                   className="text-gray-400 absolute right-[10px] top-[30px] inset-y-0  my-auto active:text-gray-600 clickSound"
-                  onClick={() => setPasswordHidden(!isPasswordHidden)}
+                  onClick={() => {
+                    OnClickSound("/keypress.mp3").catch()
+                    setPasswordHidden(!isPasswordHidden)
+                  }}
                 >
                   {isPasswordHidden ? (
                     <svg
@@ -93,6 +99,7 @@ const Login = ({ setIsLogin }) => {
                   type={isPasswordHidden ? "password" : "text"}
                   className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white font-bold  font-['Roboto'] clickSound"
                   placeholder="******"
+                  onClick={()=>OnClickSound("/keypress.mp3")}
                 />
               </div>
               <div className='col-span-2 flex justify-center text-white font-bold font-["Roboto"] '>
@@ -100,6 +107,7 @@ const Login = ({ setIsLogin }) => {
                   type="submit"
                   aria-label="Login"
                   className=" w-full py-2  rounded-[10px] border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white text-xl font-bold   hover:shadow-2xl  hover:shadow-[#111827] clickSound"
+                  onClick={()=>OnClickSound("/keypress.mp3")}
                 >
                   <span className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text  font-bold">
                     Login
@@ -113,7 +121,10 @@ const Login = ({ setIsLogin }) => {
                   </span>
                   <button
                     type="button"
-                    onClick={() => setIsLogin((isLogin) => !isLogin)}
+                    onClick={() => {
+                      setIsLogin((isLogin) => !isLogin)
+                      OnClickSound("/keypress.mp3").catch()
+                    }}
                     className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-[16px] font-bold px-1 clickSound"
                   >
                     Please Register

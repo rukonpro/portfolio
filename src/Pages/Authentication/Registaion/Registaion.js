@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import OnClickSound from "../../../utilitis/OnClickSound";
 
-const Registation = ({ setIsLogin }) => {
+const Registration = ({ setIsLogin }) => {
     const [isPasswordHidden, setPasswordHidden] = useState(true)
 
     return (
@@ -31,6 +32,7 @@ const Registation = ({ setIsLogin }) => {
                                     type="fname"
                                     name="fname"
                                     placeholder='Rukon'
+                                    onClick={()=>OnClickSound("/keypress.mp3")}
                                 />
                             </div>
 
@@ -41,6 +43,7 @@ const Registation = ({ setIsLogin }) => {
                                     type="lname"
                                     name="lname"
                                     placeholder='Uddin'
+                                    onClick={()=>OnClickSound("/keypress.mp3")}
                                 />
                             </div>
                             <div className=" col-span-2 ">
@@ -50,19 +53,26 @@ const Registation = ({ setIsLogin }) => {
                                     type="email"
                                     name="email"
                                     placeholder='rukon.pro@gmail.com'
+                                    onClick={()=>OnClickSound("/keypress.mp3")}
                                 />
 
                             </div>
                             <div className=" col-span-2  relative">
                                 <div className="flex justify-between ">
                                     <label className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-sm font-bold ">Password:</label>
-                                    <button type="button" className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-xs font-bold clickSound"><span className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text"> Forgot password?</span> </button>
+                                    <button
+                                        type="button"
+                                        onClick={()=>OnClickSound("/keypress.mp3")}
+                                        className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-xs font-bold clickSound"><span className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text"> Forgot password?</span> </button>
                                 </div>
 
                                 <button
                                     type="button"
                                     className="text-gray-400 absolute right-[10px] top-[30px] inset-y-0  my-auto active:text-gray-600 clickSound"
-                                    onClick={() => setPasswordHidden(!isPasswordHidden)}
+                                    onClick={() => {
+                                        OnClickSound("/keypress.mp3").catch()
+                                        setPasswordHidden(!isPasswordHidden)
+                                    }}
                                 >
                                     {
                                         isPasswordHidden ? (
@@ -83,6 +93,7 @@ const Registation = ({ setIsLogin }) => {
                                     type={isPasswordHidden ? "password" : "text"}
                                     className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white font-bold  font-['Roboto'] clickSound"
                                     placeholder='******'
+                                    onClick={()=>OnClickSound("/keypress.mp3")}
 
                                 />
 
@@ -92,6 +103,7 @@ const Registation = ({ setIsLogin }) => {
                                 <button
                                     type="submit"
                                     aria-label="Login"
+                                    onClick={()=>OnClickSound("/keypress.mp3")}
                                     className=" w-full py-2  rounded-[10px] border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white text-xl font-bold   hover:shadow-2xl  hover:shadow-[#111827] clickSound"
                                 >
                                     <span className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text  font-bold">
@@ -103,7 +115,10 @@ const Registation = ({ setIsLogin }) => {
                                 <p className="text-[#fccdff] text-sm">Are you alrady Registered?
                                     <button
                                         type="button"
-                                        onClick={() => setIsLogin(isLogin => !isLogin)}
+                                        onClick={() => {
+                                            OnClickSound("/keypress.mp3").catch()
+                                            setIsLogin(isLogin => !isLogin)
+                                        }}
 
                                         className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text px-1 clickSound">Please Login</button>
                                 </p>
@@ -120,4 +135,4 @@ const Registation = ({ setIsLogin }) => {
     )
 }
 
-export default Registation;
+export default Registration;

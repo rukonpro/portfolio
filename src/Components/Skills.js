@@ -1,6 +1,7 @@
 import React from 'react';
 import PortfolioData from "../data/portfolioData";
 import LazyLoader from "../utilitis/LazyLoader";
+import OnClickSound from "../utilitis/OnClickSound";
 const Skills = () => {
 
 
@@ -120,6 +121,7 @@ const Skills = () => {
                                                 data-aos-offset="10"
                                                 data-aos-duration="2000"
                                                 data-aos-easing="ease-in-sine"
+                                                onClick={() => OnClickSound("/keypress.mp3")}
                                                 className={`rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}>
                                                     {logo?
                                                         <img
@@ -127,16 +129,17 @@ const Skills = () => {
                                                             data-aos-offset="10"
                                                             data-aos-duration="3000"
                                                             data-aos-easing="ease-in-sine"
-                                                            className=" p-1 "
+                                                            className=" p-1 hover:z-[2]"
                                                             height="100%"
                                                             width="100%"
                                                             src={logo}
-                                                            alt={title}/>:<span
+                                                            alt={title}
+                                                        />:<span
                                                             data-aos="zoom-out-left"
                                                             data-aos-offset="10"
                                                             data-aos-duration="3000"
                                                             data-aos-easing="ease-in-sine"
-                                                            className="text-xs text-[#f8cafb]">{title}</span>}
+                                                            className="text-xs text-[#f8cafb] hover:z-[2]">{title}</span>}
 
                                             </div>
                                         )
@@ -159,7 +162,7 @@ const Skills = () => {
                                                 id={title+index+logo+color}
                                                 style={{background:`linear-gradient(to top right, #0e0e36, ${color})`}}
                                                 className={` rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}
-
+                                                onClick={() => OnClickSound("/keypress.mp3")}
                                                 data-aos="fade-left"
                                                 data-aos-offset="10"
                                                 data-aos-duration="1500"
@@ -203,6 +206,7 @@ const Skills = () => {
                                                 id={title+index+logo+color}
                                                 style={{background:`linear-gradient(to top right, #0e0e36, ${color})`}}
                                                 className={`rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}
+                                                onClick={() => OnClickSound("/keypress.mp3")}
                                                 data-aos="fade-right"
                                                 data-aos-offset="10"
                                                 data-aos-duration="1500"
@@ -248,6 +252,7 @@ const Skills = () => {
                                                 data-aos-offset="10"
                                                 data-aos-duration="1500"
                                                 data-aos-easing="ease-in-sine"
+                                                onClick={() => OnClickSound("/keypress.mp3")}
                                              >
 
                                                     {logo ?<img

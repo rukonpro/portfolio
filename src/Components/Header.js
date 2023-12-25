@@ -7,6 +7,7 @@ import LinkdinIcon from "../Images/linkedin.png";
 import Whatsapp from "../Images/whatsapp.png";
 import GithubIcon from "../Images/github-icon-1.svg";
 import LazyLoader from "../utilitis/LazyLoader";
+import OnClickSound from "../utilitis/OnClickSound";
 
 
 const Header = () => {
@@ -41,6 +42,7 @@ const Header = () => {
                                 <div className='flex flex-wrap gap-2 pt-5'>
                                     <a href="https://www.linkedin.com/in/rukonpro/" target="_blank" rel="noreferrer">
                                         <button
+                                            onClick={()=>OnClickSound("/keypress.mp3")}
                                             className=' w-10 p-2 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#007ab9] to-[#eceff1]  shadow-2xl shadow-fuchsia-300 '>
                                             <LazyLoader>
                                                 <img src={GithubIcon || undefined} height="100%" width="100%" alt="GithubIcon"
@@ -51,6 +53,7 @@ const Header = () => {
 
                                     <a href="https://www.linkedin.com/in/rukonpro/" target="_blank" rel="noreferrer">
                                         <button
+                                            onClick={()=>OnClickSound("/keypress.mp3")}
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#007ab9] to-[#0e0e36] '>
                                             <LazyLoader>
                                                 <img src={LinkdinIcon || undefined} height="100%" width="100%" alt="linkdin"
@@ -61,6 +64,7 @@ const Header = () => {
 
                                     <a href="mailto:rukon.js@gamil.com" target="_blank" rel="noreferrer">
                                         <button
+                                            onClick={()=>OnClickSound("/keypress.mp3")}
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#f44336] to-[#0e0e36] '>
                                             <LazyLoader>
                                                 <img src={EmailIcon || undefined} height="100%" width="100%" alt="email"
@@ -71,6 +75,7 @@ const Header = () => {
 
                                     <a href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR18ICJ_AmaQUWEIsiIfd4XyikyYvhcEIrM5HLImwXXJc42KT6pwqWjDaC0" target="_blank" rel="noreferrer">
                                         <button
+                                            onClick={()=>OnClickSound("/keypress.mp3")}
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#00aff0] to-[#0e0e36] '>
                                             <LazyLoader>
                                                 <img src={SkypeIcon || undefined} height="100%" width="100%" alt="skype"
@@ -80,6 +85,7 @@ const Header = () => {
                                     </a>
                                     <a href="https://api.whatsapp.com/send?phone=1765459224" target="_blank" rel="noreferrer">
                                         <button
+                                            onClick={()=>OnClickSound("/keypress.mp3")}
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#4caf50] to-[#0e0e36] '>
                                             <LazyLoader>
                                                 <img src={Whatsapp || undefined} height="100%" width="100%" alt="whatsapp"
@@ -91,6 +97,7 @@ const Header = () => {
 
                                     <a href="tel:+8801765459224" target="_blank" rel="noreferrer">
                                         <button
+                                            onClick={()=>OnClickSound("/keypress.mp3")}
                                             className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#3e9ddd] to-[#0e0e36] '
                                             data-aos="fade-in"
                                         >
@@ -103,6 +110,7 @@ const Header = () => {
                                 </div>
                                 <a href="https://drive.google.com/file/d/1S8dFRWC7f3QH6ZVnGp6miYLwPz8s4coh/view?usp=sharing" target="_blank" rel="noreferrer">
                                     <button
+                                        onClick={()=>OnClickSound("/keypress.mp3")}
                                         id="downloadcv"
                                         aria-label="Download CV"
                                         className=" mt-5  text-center text-white md:text-xl text-base font-bold font-['Roboto'] bg-gradient-to-l from-[#1355b7] to-[#0e0e36] rounded-full active:bg-gradient-to-l hover:shadow-2xl  hover:shadow-[#263458] tracking-[1px] px-4 py-2 ">
@@ -133,7 +141,10 @@ const Header = () => {
                 </div>
                 <div className="flex justify-center">
                     <button
-                        onClick={() => window.scrollBy(0, 600)}
+                        onClick={() => {
+                            OnClickSound("/keypress.mp3").catch();
+                            window.scrollBy(0, 600);
+                        }}
                         type="button"
                         id="mouseButton"
                         aria-label="mouseButton"

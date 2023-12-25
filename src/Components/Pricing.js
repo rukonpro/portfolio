@@ -1,4 +1,5 @@
 import React from "react";
+import OnClickSound from "../utilitis/OnClickSound";
 const Pricing= () => {
 
     const plans = [
@@ -76,9 +77,16 @@ const Pricing= () => {
                                     <p className="text-gray-400 tracking-[1px]">
                                         {item.desc}
                                     </p>
-                                    <button className='px-3 py-3 rounded-lg w-full font-bold text-sm duration-150 text-white  bg-gradient-to-tr from-gray-950 to-sky-700  hover:bg-gradient-to-r active:bg-cyan-700 tracking-[3px]'>
-                                        Get Started
-                                    </button>
+
+                                        <button
+                                            onClick={() => {
+                                                OnClickSound("/keypress.mp3").catch()
+                                                window.scrollBy(0, 1000);
+                                            }}
+                                            className='px-3 py-3 rounded-lg w-full font-bold text-sm duration-150 text-white  bg-gradient-to-tr from-gray-950 to-sky-700  hover:bg-gradient-to-r active:bg-cyan-700 tracking-[3px]'>
+                                            Get Started
+                                        </button>
+
                                 </div>
                                 <ul className='p-4 py-8 space-y-3 md:p-8'>
                                     {

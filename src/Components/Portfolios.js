@@ -2,6 +2,7 @@ import React from "react";
 import Modals from "./Modals";
 import portfolioData from "../data/portfolioData";
 import LazyLoader from "../utilitis/LazyLoader";
+import OnClickSound from "../utilitis/OnClickSound";
 
 const Portfolios = () => {
   return (
@@ -53,6 +54,7 @@ const Portfolios = () => {
               >
                 <LazyLoader>
                   <img
+                      onClick={()=>OnClickSound("/keypress.mp3")}
                       data-aos="flip-left"
                       data-aos-easing="ease-out-cubic"
                       data-aos-duration="2000"

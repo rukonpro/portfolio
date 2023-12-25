@@ -1,5 +1,6 @@
 import React from 'react';
 import Portfolio from "./Portfolio";
+import OnClickSound from "../utilitis/OnClickSound";
 
 const Modals = ({ data }) => {
 
@@ -10,6 +11,7 @@ const Modals = ({ data }) => {
                 <form method="dialog">
                     {/* if there is a button in form, it will close the modal */}
                     <button
+                        onClick={()=>OnClickSound("/keypress.mp3")}
                         className="btn btn-sm btn-circle  btn-ghost absolute right-2 top-2 text-2xl text-red-500 z-10 ">✕
                     </button>
                 </form>

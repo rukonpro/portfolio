@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React from "react";
 import AddressIcon from "../Images/location.webp";
 import EmailIcon from "../Images/gmail.webp";
 import PhoneIcon from "../Images/phone-call.webp";
@@ -8,6 +8,8 @@ import Whatsapp from "../Images/whatsapp.webp";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { useForm } from "react-hook-form";
+import OnClickSound from "../utilitis/OnClickSound";
+import onClickSound from "../utilitis/OnClickSound";
 
 const Contact = () => {
   const {
@@ -16,11 +18,7 @@ const Contact = () => {
     formState: { errors },
     reset,
   } = useForm();
-  const audioRef = useRef(null);
 
-  const playSound = () => {
-    audioRef.current.play();
-  };
   const sendEmail = (data) => {
     const templateParams = {
       fullName: data.fname + " " + data.lname,
@@ -45,12 +43,18 @@ const Contact = () => {
               text: "Thank you for email",
               icon: "success",
             });
-            playSound()
+            onClickSound("/successSound.mp3")
+                .catch(errors=>{
+               console.log(errors)
+            })
+
             reset();
           }
         },
       ).catch(errors=>{
-      playSound()
+      onClickSound("/error.mp3").catch(errors=>{
+        console.log(errors)
+      })
       Swal.fire({
         title: "Sorry! something wrong please try again...",
         text: errors.massage,
@@ -61,11 +65,6 @@ const Contact = () => {
 
   return (
       <section id="contact" className=" relative bg-slate-950 py-10 ">
-
-        <audio ref={audioRef}>
-          <source src="/nokia_message.mp3" type="audio/mp3"/>
-          Your browser does not support the audio element.
-        </audio>
         <div
             className="absolute inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg"
             style={{
@@ -97,6 +96,7 @@ const Contact = () => {
                       name="fname"
                       id="fname"
                       placeholder="Rukon"
+                      onClick={()=>OnClickSound("/keypress.mp3")}
                   />
                   {errors.fname && (
                       <span className="text-xs text-red-500">
@@ -113,6 +113,7 @@ const Contact = () => {
                       name="lname"
                       id="lname"
                       placeholder="Uddin"
+                      onClick={()=>OnClickSound("/keypress.mp3")}
                   />
                   {errors.lname && (
                       <span className="text-xs text-red-500">
@@ -129,6 +130,7 @@ const Contact = () => {
                       name="email"
                       id="email"
                       placeholder="example@gmail.com"
+                      onClick={()=>OnClickSound("/keypress.mp3")}
                   />
                   {errors.email && (
                       <span className="text-xs text-red-500">
@@ -146,6 +148,7 @@ const Contact = () => {
                       name="subject"
                       id="subject"
                       placeholder="Subject"
+                      onClick={()=>OnClickSound("/keypress.mp3")}
                   />
                   {errors.subject && (
                       <span className="text-xs text-red-500">
@@ -162,6 +165,7 @@ const Contact = () => {
                       name="massage"
                       id="massage"
                       placeholder="Your massage"
+                      onClick={()=>OnClickSound("/keypress.mp3")}
                   />
                   {errors.massage && (
                       <span className="text-xs text-red-500">
@@ -175,6 +179,7 @@ const Contact = () => {
                       type="submit"
                       id="emailSubmit"
                       className="w-[167px] h-[49px]  border  border-purple-500  focus:outline-purple-400 rounded-[86.50px] bg-gradient-to-l   from-[#5f3391ff] to-[#111827] shadow-2xl shadow-indigo-600 hover:bg-gradient-to-tr active:bg-gradient-to-r "
+                      onClick={()=>OnClickSound("/keypress.mp3")}
                   >
                     Send
                   </button>
@@ -225,7 +230,9 @@ const Contact = () => {
                     <span>
                     <a
                         className="text-white text-sm font-bold font-['Roboto']"
+                        onClick={() => OnClickSound("/keypress.mp3")}
                         href="mailto:rukon.js@gmail.com"
+                        target="_blank" rel="noreferrer"
                     >
                       rukon.js@gmail.com
                     </a>
@@ -246,6 +253,8 @@ const Contact = () => {
                     <a
                         className="text-white text-sm font-bold font-['Roboto']"
                         href="tel:+8801765459224"
+                        target="_blank" rel="noreferrer"
+                        onClick={() => OnClickSound("/keypress.mp3")}
                     >
                       +8801765459224
                     </a>
@@ -260,12 +269,15 @@ const Contact = () => {
                         alt="PhoneIcon"
                         className="h-6 w-6"
                         loading="lazy"
+
                     />
                     Whatsapp:
                     <span>
                     <a
                         className="text-white text-sm font-bold font-['Roboto']"
                         href="tel:+8801765459224"
+                        target="_blank" rel="noreferrer"
+                        onClick={() => OnClickSound("/keypress.mp3")}
                     >
                       +8801765459224
                     </a>
@@ -286,6 +298,8 @@ const Contact = () => {
                     <a
                         className="text-white text-sm font-bold font-['Roboto']"
                         href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR0_F5FZQG1sYISeOdnT_dB3PTJqS1bxp4OOI590YbfpZE9gGmw4rs_pYYU"
+                        target="_blank" rel="noreferrer"
+                        onClick={() => OnClickSound("/keypress.mp3")}
                     >
                       {" "}
                       live:.cid.adbc52c0d5ebc624
@@ -307,6 +321,8 @@ const Contact = () => {
                     <a
                         className="text-white text-sm font-bold font-['Roboto']"
                         href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR0_F5FZQG1sYISeOdnT_dB3PTJqS1bxp4OOI590YbfpZE9gGmw4rs_pYYU"
+                        target="_blank" rel="noreferrer"
+                        onClick={() => OnClickSound("/keypress.mp3")}
                     >
                       {" "}
                       Rukon Uddin

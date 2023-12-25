@@ -4,6 +4,7 @@ import Github from "../Images/github.png";
 import Live from "../Images/live.png";
 import Global from "../Images/global.png";
 import LazyLoader from "../utilitis/LazyLoader";
+import OnClickSound from "../utilitis/OnClickSound";
 const Portfolio = ({ data }) => {
     return (
         <div>
@@ -22,7 +23,9 @@ const Portfolio = ({ data }) => {
                     <ol className='flex gap-4 mt-5'>
                         {data?.links?.liveLink && <li>
                             <a
+
                                 href={data?.links?.liveLink}
+                                onClick={()=>OnClickSound("/keypress.mp3")}
                                 target="_blank"
                                 aria-label={data?.title}
                                 rel="noopener noreferrer"
@@ -36,7 +39,9 @@ const Portfolio = ({ data }) => {
                             </a>
                         </li>}
                         {data?.links?.fontEndCode && <li>
-                            <a href={data?.links?.fontEndCode}
+                            <a
+                               onClick={()=>OnClickSound("/keypress.mp3")}
+                               href={data?.links?.fontEndCode}
                                aria-label={data?.title}
                                target="_blank"
                                rel="noopener noreferrer">
@@ -48,7 +53,9 @@ const Portfolio = ({ data }) => {
 
                         </li>}
                         {data?.links?.backEndCode && <li>
-                            <a href={data?.links?.backEndCode}
+                            <a
+                               onClick={()=>OnClickSound("/keypress.mp3")}
+                               href={data?.links?.backEndCode}
                                aria-label={data?.title} target="_blank"
                                rel="noopener noreferrer">
                                 <LazyLoader>
