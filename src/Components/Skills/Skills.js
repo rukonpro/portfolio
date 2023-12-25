@@ -1,7 +1,7 @@
 import React from 'react';
-import PortfolioData from "../data/portfolioData";
-import LazyLoader from "../utilitis/LazyLoader";
-import OnClickSound from "../utilitis/OnClickSound";
+import PortfolioData from "../../data/portfolioData";
+import LazyLoader from "../../Helpers/LazyLoader";
+import OnClickSound from "../../Helpers/OnClickSound";
 const Skills = () => {
 
 

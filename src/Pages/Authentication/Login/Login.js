@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import OnClickSound from "../../../utilitis/OnClickSound";
+import OnClickSound from "../../../Helpers/OnClickSound";
 
 const Login = ({ setIsLogin }) => {
   const [isPasswordHidden, setPasswordHidden] = useState(true);
@@ -21,7 +21,7 @@ const Login = ({ setIsLogin }) => {
 
         <div className="py-10 ">
           <form>
-            <div className="grid grid-cols-2 md:gap-5 gap-y-3 gap-x-1  px-2 md:mt-0 mt-16 border border-purple-700 rounded-2xl    py-5">
+            <div className="grid grid-cols-2 md:gap-5 gap-y-3 gap-x-1  px-3 md:mt-0 mt-16 border border-purple-700 rounded-2xl    py-5">
               <div className=" col-span-2 ">
                 <label className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-[16px] font-bold">
                   Email address:

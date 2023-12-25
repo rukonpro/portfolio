@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Login from '../Login/Login'
 import Registration from '../Registaion/Registaion'
-import OnClickSound from "../../../utilitis/OnClickSound";
+import OnClickSound from "../../../Helpers/OnClickSound";
 
 export default function LoginModal() {
     const [isLogin, setIsLogin] = useState(false);
@@ -11,7 +11,7 @@ export default function LoginModal() {
                 <form method="dialog">
                     <button
                         onClick={()=>OnClickSound("/keypress.mp3")}
-                        className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 z-10 text-red-500 text-3xl ">✕</button>
+                        className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 z-10 text-purple-500 text-3xl ">✕</button>
                 </form>
                 <div>
                     {!isLogin ?

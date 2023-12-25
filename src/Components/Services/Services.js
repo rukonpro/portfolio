@@ -1,10 +1,10 @@
 import React from 'react';
-import BlueBackCover from "../Images/BlueBackCover.webp";
-import IphonScreen from "../Images/MobileScreen.webp";
-import Icon from "../Images/fluent_design-ideas-20-regular.png";
-import Ellipse from "../Images/Ellipse 7.png";
-import ServiceIcon from "../Images/24-hour-clock.png";
-import LazyLoader from "../utilitis/LazyLoader";
+import BlueBackCover from "../../Images/BlueBackCover.webp";
+import IphonScreen from "../../Images/MobileScreen.webp";
+import Icon from "../../Images/fluent_design-ideas-20-regular.png";
+import Ellipse from "../../Images/Ellipse 7.png";
+import ServiceIcon from "../../Images/24-hour-clock.png";
+import LazyLoader from "../../Helpers/LazyLoader";
 
 const Services = () => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import Portfolio from "./Portfolio";
-import OnClickSound from "../utilitis/OnClickSound";
+import OnClickSound from "../../Helpers/OnClickSound";
 
 const Modals = ({ data }) => {
 

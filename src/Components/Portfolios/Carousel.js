@@ -1,5 +1,5 @@
 import React from 'react';
-import LazyLoader from "../utilitis/LazyLoader";
+import LazyLoader from "../../Helpers/LazyLoader";
 
 const Carousel = ({images}) => {
 

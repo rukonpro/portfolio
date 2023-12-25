@@ -579,8 +579,7 @@ const portfolioData = {
             },
             {
                 name: "Consulting and Advisory",
-                desc: "If you need guidance on an existing MERN stack project or want to explore the feasibility of a" +
-                    " new venture, I offer consulting services at 1999$. This includes:",
+                desc: 'If you need MERN stack project guidance or explore new ventures, my $1999 consulting includes:',
                 price: 1999,
                 isMostPop: false,
                 features: [

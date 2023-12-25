@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import OnClickSound from "../../../utilitis/OnClickSound";
+import OnClickSound from "../../../Helpers/OnClickSound";
 
 const Registration = ({ setIsLogin }) => {
     const [isPasswordHidden, setPasswordHidden] = useState(true)
@@ -8,7 +8,7 @@ const Registration = ({ setIsLogin }) => {
 
         <section id="contact" className=' relative  overflow-hidden bg-gradient-to-tl to-[#13053d] via-[#031220] from-[#250725]  py-10  '>
 
-            <div className='relative  z-10 container mx-auto  px-5'>
+            <div className='relative  z-10 container mx-auto  px-3'>
 
                 <div className="flex ">
                     <div className="flex px-8 ">
@@ -22,7 +22,7 @@ const Registration = ({ setIsLogin }) => {
                 <div className='py-10 '>
                     <form >
 
-                        <div className='grid grid-cols-2 md:gap-5 gap-y-3 gap-x-1  px-5 md:mt-0 mt-16  border  rounded-lg py-5'>
+                        <div className='grid grid-cols-2 md:gap-5 gap-y-3 gap-x-1  px-3 md:mt-0 mt-16  border border-purple-700  rounded-lg py-5'>
 
 
                             <div className=" col-span-1 ">

@@ -1,13 +1,13 @@
 import React from "react";
-import Iphone from "../Images/header-laptop-2.svg";
-import EmailIcon from "../Images/gmail.png";
-import PhoneIcon from "../Images/phone-call.png";
-import SkypeIcon from "../Images/skype.png";
-import LinkdinIcon from "../Images/linkedin.png";
-import Whatsapp from "../Images/whatsapp.png";
-import GithubIcon from "../Images/github-icon-1.svg";
-import LazyLoader from "../utilitis/LazyLoader";
-import OnClickSound from "../utilitis/OnClickSound";
+import Iphone from "../../Images/header-laptop-2.svg";
+import EmailIcon from "../../Images/gmail.png";
+import PhoneIcon from "../../Images/phone-call.png";
+import SkypeIcon from "../../Images/skype.png";
+import LinkdinIcon from "../../Images/linkedin.png";
+import Whatsapp from "../../Images/whatsapp.png";
+import GithubIcon from "../../Images/github-icon-1.svg";
+import LazyLoader from "../../Helpers/LazyLoader";
+import OnClickSound from "../../Helpers/OnClickSound";
 
 
 const Header = () => {

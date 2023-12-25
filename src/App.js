@@ -2,7 +2,7 @@ import { RouterProvider } from 'react-router-dom';
 import router from './Routes/Routes';
 import 'aos/dist/aos.css';
 import './App.css';
-import AocFuc from "./utilitis/AOS";
+import AocFuc from "./Helpers/AOS";
 import React from "react";
 
 

@@ -1,22 +1,17 @@
 import React from "react";
-import OnClickSound from "../utilitis/OnClickSound";
-import portfolioData from "../data/portfolioData";
+import OnClickSound from "../../Helpers/OnClickSound";
+import portfolioData from "../../data/portfolioData";
 const Pricing= () => {
 
-
-
-/*
-    style={{ background: "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)" }}
-*/
     return (
         <section className='relative py-14 bg-gray-950'>
             <div className='absolute inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl  radial-gradient' ></div>
             <div className="relative max-w-screen-xl mx-auto text-gray-300 sm:px-4 md:px-8">
                 <div className='max-w-xl mx-auto space-y-3 px-4 sm:text-center sm:px-0'>
-                    <h1 className="text-cyan-400 font-boldd">
-                        {portfolioData?.pricing?.subtitle}
+                    <h1 className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text font-boldd">
+                        {portfolioData?.pricing?.title}
                     </h1>
-                    <p className='text-white text-3xl font-semibold sm:text-4xl'>
+                    <p className='bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-3xl font-semibold sm:text-4xl'>
                         {portfolioData?.pricing?.subtitle}
                     </p>
                     <div className='max-w-xl'>
@@ -28,9 +23,9 @@ const Pricing= () => {
                 <div className='mt-16 justify-center gap-4 sm:flex px-5'>
                     {
                         portfolioData?.pricing?.future?.map((item, idx) => (
-                            <div key={idx} className={`relative  mt-5  flex-1 flex flex-col hover:shadow-sky-500/20 shadow-2xl sm:mt-0 sm:rounded-xl sm:max-w-md    bg-gradient-to-t from-gray-950 to-[#33064e]    rounded-lg  hover:border-orange-500   border-transparent `} >
+                            <div key={idx} className={`relative  mt-5  flex-1 flex flex-col hover:shadow-sky-500/20 shadow-2xl sm:mt-0 sm:rounded-xl sm:max-w-md    bg-gradient-to-t from-gray-950 to-[#3b056d]   rounded-lg  hover:border-orange-500 hover:bg-gradient-to-b   border-transparent `} >
                                 <div className="p-4 py-8 space-y-4 border-b border-gray-700  md:p-8">
-                                    <h2 className='text-gray-200 font-medium tracking-[3px]'>
+                                    <h2 className='text-gray-200 font-medium tracking-[3px] '>
                                         {item.name}
                                     </h2>
                                     <div className='text-orange-500 text-3xl font-semibold'>
@@ -43,9 +38,9 @@ const Pricing= () => {
                                         <button
                                             onClick={() => {
                                                 OnClickSound("/keypress.mp3").catch()
-                                                window.scrollBy(0, 1000);
+                                                document.getElementById("contactModal").showModal()
                                             }}
-                                            className='px-3 py-3 rounded-lg w-full font-bold text-sm duration-150 text-white  bg-gradient-to-tr from-gray-950 to-sky-700  hover:bg-gradient-to-r active:bg-cyan-700 tracking-[3px]'>
+                                            className='px-3 py-3 rounded-lg w-full font-bold text-sm duration-150 text-white  bg-gradient-to-tr from-[#39056b] to-[#9a69fe] hover:bg-gradient-to-r active:bg-cyan-700 tracking-[3px]'>
                                             Get Started
                                         </button>
 
@@ -74,6 +69,9 @@ const Pricing= () => {
                     }
                 </div>
             </div>
+
+
+
         </section>
     );
 };

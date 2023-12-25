@@ -1,8 +1,8 @@
 import React, { useState} from "react";
 import { Link, NavLink } from "react-router-dom";
-import MenuBar from "../Images/menu-bar.png";
-import Close from "../Images/close.png";
-import OnClickSound from "../utilitis/OnClickSound";
+import MenuBar from "../../Images/menu-bar.png";
+import Close from "../../Images/close.png";
+import OnClickSound from "../../Helpers/OnClickSound";
 
 const Navigation = () => {
     const [menuOpen, setMenuOpen] = useState(false);

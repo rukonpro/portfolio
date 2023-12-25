@@ -1,13 +1,13 @@
 import React from 'react';
 import Carousel from "./Carousel";
-import Github from "../Images/github.png";
-import Live from "../Images/live.png";
-import Global from "../Images/global.png";
-import LazyLoader from "../utilitis/LazyLoader";
-import OnClickSound from "../utilitis/OnClickSound";
+import Github from "../../Images/github.png";
+import Live from "../../Images/live.png";
+import Global from "../../Images/global.png";
+import LazyLoader from "../../Helpers/LazyLoader";
+import OnClickSound from "../../Helpers/OnClickSound";
 const Portfolio = ({ data }) => {
     return (
-        <div>
+        <div className="text-[#fccdff]">
             <div>
                <LazyLoader>
                    <Carousel images={data?.images} />
@@ -17,7 +17,7 @@ const Portfolio = ({ data }) => {
             <div>
                 <div className='flex  justify-between flex-wrap pb-4'>
                     <a href={data?.links?.liveLink} aria-label={data?.title} target="_blank" rel="noopener noreferrer">
-                        <h1 className='text-lg font-semibold underline underline-offset-4  mt-5'>{data?.title}</h1>
+                        <h1 className='text-lg font-semibold border-b border-purple-500 bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text  mt-5'>{data?.title}</h1>
                     </a>
 
                     <ol className='flex gap-4 mt-5'>
@@ -69,12 +69,12 @@ const Portfolio = ({ data }) => {
 
 
                 <article className='text-justify mb-3'>
-                    <span className='font-bold'>Description: </span>
-                    <span className='text-base'>{data?.description}</span>
+                    <span className='font-bold   underline underline-offset-[5px]'>Description: </span>
+                    <span className='text-base '>{data?.description}</span>
                 </article>
 
 
-                <h1 className='font-bold mb-3'>Technology:</h1>
+                <h1 className='font-bold mb-3   underline underline-offset-[5px]'>Technology:</h1>
 
                 <div className='border rounded-md p-2'>
 
@@ -90,7 +90,7 @@ const Portfolio = ({ data }) => {
                 <br />
 
 
-                <h1 className='font-bold'>Points:</h1>
+                <h1 className='font-bold   underline underline-offset-[5px]'>Points:</h1>
                 <ol className='list-disc'>
                     {
                         data.point.map((p, i) =>
