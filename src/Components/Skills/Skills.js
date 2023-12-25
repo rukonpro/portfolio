@@ -1,4 +1,6 @@
 import React from 'react';
+import Marquee from "react-fast-marquee";
+
 import PortfolioData from "../../data/portfolioData";
 import LazyLoader from "../../Helpers/LazyLoader";
 import OnClickSound from "../../Helpers/OnClickSound";
@@ -105,11 +107,14 @@ const Skills = () => {
 */}
 
 
-                <div className="mt-16 grid gap-10 md:grid-cols-2 lg:grid-cols-2 grid-cols-1 px-3 pb-16">
+                <div className="mt-16 grid gap-5 md:grid-cols-2 lg:grid-cols-2 grid-cols-1 px-3 pb-16">
 
                         <div>
                             <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Experienced:</h1>
-                            <div className={` flex justify-center flex-wrap  gap-2`}>
+                            <Marquee
+                                speed={15}
+                                pauseOnHover={true}
+                            >
                                 {
                                     PortfolioData?.skills?.experienced?.map(({title,logo,color},index)=>{
                                         return (
@@ -122,7 +127,7 @@ const Skills = () => {
                                                 data-aos-duration="2000"
                                                 data-aos-easing="ease-in-sine"
                                                 onClick={() => OnClickSound("/keypress.mp3")}
-                                                className={`rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}>
+                                                className={`rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none mx-3`}>
                                                     {logo?
                                                         <img
                                                             data-aos="zoom-out-left"
@@ -145,7 +150,7 @@ const Skills = () => {
                                         )
                                     })
                                 }
-                            </div>
+                            </Marquee>
                         </div>
 
 
@@ -153,7 +158,10 @@ const Skills = () => {
                     <LazyLoader>
                         <div>
                             <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Comfortable:</h1>
-                            <div className=" flex justify-center flex-wrap  gap-2">
+                            <Marquee
+                                direction={"right"}
+                                pauseOnHover={true}
+                            >
                                 {
                                     PortfolioData?.skills?.comfortable?.map(({title,logo,color},index)=>{
                                         return (
@@ -161,7 +169,7 @@ const Skills = () => {
                                                 key={title}
                                                 id={title+index+logo+color}
                                                 style={{background:`linear-gradient(to top right, #0e0e36, ${color})`}}
-                                                className={` rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}
+                                                className={` rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none mx-3`}
                                                 onClick={() => OnClickSound("/keypress.mp3")}
                                                 data-aos="fade-left"
                                                 data-aos-offset="10"
@@ -189,15 +197,16 @@ const Skills = () => {
                                         )
                                     })
                                 }
-                            </div>
+                            </Marquee>
                         </div>
                     </LazyLoader>
 
                     <LazyLoader>
                         <div>
                             <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Tools:</h1>
-                            <div
-                                className=" flex justify-center flex-wrap  gap-2">
+                            <Marquee
+                                pauseOnHover={true}
+                            >
                                 {
                                     PortfolioData?.skills?.tools?.map(({title,logo,color},index)=>{
                                         return (
@@ -205,7 +214,7 @@ const Skills = () => {
                                                 key={title}
                                                 id={title+index+logo+color}
                                                 style={{background:`linear-gradient(to top right, #0e0e36, ${color})`}}
-                                                className={`rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}
+                                                className={`rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none mx-3`}
                                                 onClick={() => OnClickSound("/keypress.mp3")}
                                                 data-aos="fade-right"
                                                 data-aos-offset="10"
@@ -232,14 +241,18 @@ const Skills = () => {
                                         )
                                     })
                                 }
-                            </div>
+                            </Marquee>
                         </div>
                     </LazyLoader>
 
                     <LazyLoader>
                         <div>
                             <h1 className={`text-[#f8cafb] text-2xl p-2   my-2 font-bold font-[Roboto]`}>Familiar:</h1>
-                            <div className=" flex justify-center flex-wrap  gap-2">
+                            <Marquee
+                                speed={15}
+                                pauseOnHover={true}
+                                direction={"right"}
+                            >
                                 {
                                     PortfolioData?.skills?.familiar?.map(({title,logo,color},index)=>{
                                         return (
@@ -247,7 +260,7 @@ const Skills = () => {
                                                 key={title}
                                                 id={title + index + logo + color}
                                                 style={{background:`linear-gradient(to top right, #0e0e36, ${color})`}}
-                                                className={` rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none`}
+                                                className={` rounded-[10px] flex justify-center items-center h-[70px] w-[70px] p-2 hover:scale-[1.5] hover:skew-y-2 skew-x-2 hover:z-[2] hover:transition-all transition-all cursor-pointer select-none mx-3`}
                                                 data-aos="fade-left"
                                                 data-aos-offset="10"
                                                 data-aos-duration="1500"
@@ -274,7 +287,7 @@ const Skills = () => {
                                         )
                                     })
                                 }
-                            </div>
+                            </Marquee>
                         </div>
                     </LazyLoader>
 
