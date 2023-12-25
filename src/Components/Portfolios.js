@@ -26,7 +26,7 @@ const Portfolios = () => {
               data-aos-anchor-placement="center-bottom"
               data-aos-duration="2000"
               className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute tracking-[4px]">
-            Portfolio
+            {portfolioData?.portfolios?.title}
           </h1>
         </div>
         <div className="flex justify-center  mt-10">
@@ -35,10 +35,7 @@ const Portfolios = () => {
               data-aos-anchor-placement="center-bottom"
               data-aos-duration="2000"
               className="max-w-4xl  font-bold font-['Roboto'] text-base text-slate-400 tracking-[2px] md:text-center text-justify">
-            Welcome to my portfolio! As a MERN stack developer, I specialize in
-            crafting dynamic and efficient web applications. Below are some key
-            projects that showcase my skills and passion for creating seamless
-            user experiences.
+            {portfolioData?.portfolios?.description}
           </p>
         </div>
         <div
@@ -46,7 +43,7 @@ const Portfolios = () => {
             data-aos-anchor-placement="center-bottom"
             data-aos-duration="2000"
             className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-2 my-24">
-          {portfolioData?.portfolios?.map((data) =>
+          {portfolioData?.portfolios?.future.map((data) =>
             data?.id ? (
               <div
                 key={data?.id}

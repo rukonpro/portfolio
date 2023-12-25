@@ -2,6 +2,7 @@ import React from 'react';
 import ProfilePhoto from '../Images/profilePhoto.webp';
 import LazyLoader from "../utilitis/LazyLoader";
 
+
 const About = () => {
 
 

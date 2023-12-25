@@ -1,47 +1,9 @@
 import React from "react";
 import OnClickSound from "../utilitis/OnClickSound";
+import portfolioData from "../data/portfolioData";
 const Pricing= () => {
 
-    const plans = [
-        {
-            name: "Hourly Rate",
-            desc: "My standard hourly rate for MERN stack development is 1200$. This includes:",
-            price: 1200,
-            isMostPop: true,
-            features: [
-                "Full-stack development using MongoDB, Express.js, React, and Node.js.",
-                "Custom feature development and enhancements.",
-                "Code optimization and performance tuning.",
-                "Ongoing support and maintenance.",
-            ],
-        },
-        {
-            name: "Project-Based Pricing",
-            desc: "For larger projects, I am open to discussing project-based pricing. This may include:",
-            price: 899,
-            isMostPop: false,
-            features: [
-                "In-depth project analysis and planning.",
-                "Fixed pricing for the entire project, providing cost predictability.",
-                "Milestone-based payments to ensure progress alignment.",
-            ],
-        },
-        {
-            name: "Consulting and Advisory",
-            desc: "If you need guidance on an existing MERN stack project or want to explore the feasibility of a" +
-                " new venture, I offer consulting services at 1999$. This includes:",
-            price: 1999,
-            isMostPop: false,
-            features: [
-                "Code reviews and optimization recommendations.",
-                "Technology stack assessment and recommendations.",
-                "Strategic planning for scalable and maintainable solutions.",
 
-            ],
-
-        },
-
-    ];
 
 /*
     style={{ background: "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)" }}
@@ -52,20 +14,20 @@ const Pricing= () => {
             <div className="relative max-w-screen-xl mx-auto text-gray-300 sm:px-4 md:px-8">
                 <div className='max-w-xl mx-auto space-y-3 px-4 sm:text-center sm:px-0'>
                     <h1 className="text-cyan-400 font-boldd">
-                        Pricing
+                        {portfolioData?.pricing?.subtitle}
                     </h1>
                     <p className='text-white text-3xl font-semibold sm:text-4xl'>
-                        Pay as you grow
+                        {portfolioData?.pricing?.subtitle}
                     </p>
                     <div className='max-w-xl'>
                         <p className="text-slate-300 tracking-[2px]">
-                            I offer comprehensive MERN stack development expertise to bring your projects to life. My pricing structure is designed to provide flexibility based on the scope and complexity of your needs.
+                            {portfolioData?.pricing?.description}
                         </p>
                     </div>
                 </div>
                 <div className='mt-16 justify-center gap-4 sm:flex px-5'>
                     {
-                        plans.map((item, idx) => (
+                        portfolioData?.pricing?.future?.map((item, idx) => (
                             <div key={idx} className={`relative  mt-5  flex-1 flex flex-col hover:shadow-sky-500/20 shadow-2xl sm:mt-0 sm:rounded-xl sm:max-w-md    bg-gradient-to-t from-gray-950 to-[#33064e]    rounded-lg  hover:border-orange-500   border-transparent `} >
                                 <div className="p-4 py-8 space-y-4 border-b border-gray-700  md:p-8">
                                     <h2 className='text-gray-200 font-medium tracking-[3px]'>
