@@ -4,7 +4,6 @@ import MenuBar from "../Images/menu-bar.png";
 import Close from "../Images/close.png";
 
 const Navigation = () => {
-
     const [menuOpen, setMenuOpen] = useState(false);
 
     const navLinks = [
@@ -41,18 +40,17 @@ const Navigation = () => {
 
     const menuHandler = () => setMenuOpen(value => !value);
 
-
     return (
-        <nav className="fixed z-50  w-screen">
+        <nav className="fixed z-50   w-screen">
 
             <div
                 className={`  ${menuOpen ? " m-3 rounded-xl bg-gradient-to-tr from-[#5e2594ec] to-[#270257fd]" +
                     " lg:from-[#0a0e36] lg:to-[#0a0e36] lg:m-0 lg:rounded-none" : " bg-gradient-to-tr from-[#0a0e36] to-[#0a0e36] "} ${!menuOpen && " bg-[#0a0e36]"}`}>
                 <div>
-                    <div className="flex  justify-between items-center md:px-8 px-5 py-4 ">
+                    <div className="flex  justify-between items-center md:px-8 px-5 py-4   ">
                         <div>
-                            <Link to="/#home" >
-                                <h1 className="rukon bg-gradient-to-br from-[#816aff] to-[#d066fd] text-transparent bg-clip-text text-[22px] font-bold font-['Roboto'] tracking-[2px] ">
+                            <Link to="/#home">
+                                <h1 className="bg-gradient-to-br from-[#816aff] to-[#d066fd] text-transparent bg-clip-text text-[22px] font-bold font-['Roboto'] tracking-[2px] ">
                                     Rukon.PRO
                                 </h1>
 
@@ -67,8 +65,8 @@ const Navigation = () => {
                                     {
                                         navLinks?.map((nav, index) =>
                                             <li className="animated-button" key={index}>
-                                                <a href={nav?.path} >
-                                                    <button  className="tracking-[2px] text-[#fccdff] clickButton">
+                                                <a href={nav?.path}>
+                                                    <button  className="tracking-[2px] text-[#fccdff]">
                                                         {nav?.title}
                                                     </button>
                                                 </a>
@@ -77,9 +75,10 @@ const Navigation = () => {
                                     }
                                     <li>
                                         <button
-                                            id="rukon"
                                             className=" bg-gradient-to-r from-[#5e2594ec] to-[#270257fd] px-5 py-1 rounded-lg  animated-button tracking-[3px]  text-[#fccdff]"
-                                            onClick={() =>{document.getElementById("loginModal").showModal()}}><span
+                                            onClick={() =>{
+                                                document.getElementById("loginModal").showModal()
+                                            }}><span
                                             className="bg-gradient-to-r from-[#816aff] to-[#d066fd] text-transparent bg-clip-text">Login</span>
                                         </button>
                                     </li>

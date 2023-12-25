@@ -7,6 +7,7 @@ import React, {useEffect, useRef} from "react";
 
 
 
+
 function App() {
     const audioRef = useRef(null);
 
@@ -20,7 +21,7 @@ function App() {
 
     useEffect(() => {
         // Get all elements with the class name 'clickButton'
-        const buttons = document.querySelectorAll('.clickButton');
+        const buttons = document.querySelectorAll('.sound');
 
         // Define the event handler function
         const handleClick = () => {
@@ -40,12 +41,12 @@ function App() {
                 button.removeEventListener('click', handleClick);
             });
         };
-    }, []);
+    }, [audioRef]);
 
 
     AocFuc()
   return (
-      <main className="overflow-hidden clickButton">
+      <main className="overflow-hidden sound">
           <audio ref={audioRef}>
               <source src="/keypress.mp3" type="audio/mp3"/>
               Your browser does not support the audio element.

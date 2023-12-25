@@ -27,7 +27,7 @@ const Registation = ({ setIsLogin }) => {
                             <div className=" col-span-1 ">
                                 <label className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text font-bold ">First Name:</label>
                                 <input
-                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] "
+                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] clickSound"
                                     type="fname"
                                     name="fname"
                                     placeholder='Rukon'
@@ -37,7 +37,7 @@ const Registation = ({ setIsLogin }) => {
                             <div className=" col-span-1 ">
                                 <label className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text font-bold ">Last Name:</label>
                                 <input
-                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] "
+                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] clickSound"
                                     type="lname"
                                     name="lname"
                                     placeholder='Uddin'
@@ -46,7 +46,7 @@ const Registation = ({ setIsLogin }) => {
                             <div className=" col-span-2 ">
                                 <label className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text font-bold ">Email address:</label>
                                 <input
-                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white font-bold  font-['Roboto']"
+                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white font-bold  font-['Roboto'] clickSound"
                                     type="email"
                                     name="email"
                                     placeholder='rukon.pro@gmail.com'
@@ -56,12 +56,12 @@ const Registation = ({ setIsLogin }) => {
                             <div className=" col-span-2  relative">
                                 <div className="flex justify-between ">
                                     <label className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-sm font-bold ">Password:</label>
-                                    <button type="button" className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-xs font-bold"><span className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text"> Forgot password?</span> </button>
+                                    <button type="button" className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-xs font-bold clickSound"><span className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text"> Forgot password?</span> </button>
                                 </div>
 
                                 <button
                                     type="button"
-                                    className="text-gray-400 absolute right-[10px] top-[30px] inset-y-0  my-auto active:text-gray-600"
+                                    className="text-gray-400 absolute right-[10px] top-[30px] inset-y-0  my-auto active:text-gray-600 clickSound"
                                     onClick={() => setPasswordHidden(!isPasswordHidden)}
                                 >
                                     {
@@ -81,7 +81,7 @@ const Registation = ({ setIsLogin }) => {
 
                                 <input
                                     type={isPasswordHidden ? "password" : "text"}
-                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white font-bold  font-['Roboto']"
+                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white font-bold  font-['Roboto'] clickSound"
                                     placeholder='******'
 
                                 />
@@ -92,7 +92,7 @@ const Registation = ({ setIsLogin }) => {
                                 <button
                                     type="submit"
                                     aria-label="Login"
-                                    className=" w-full py-2  rounded-[10px] border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white text-xl font-bold   hover:shadow-2xl  hover:shadow-[#111827]"
+                                    className=" w-full py-2  rounded-[10px] border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white text-xl font-bold   hover:shadow-2xl  hover:shadow-[#111827] clickSound"
                                 >
                                     <span className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text  font-bold">
                                         Register
@@ -105,7 +105,7 @@ const Registation = ({ setIsLogin }) => {
                                         type="button"
                                         onClick={() => setIsLogin(isLogin => !isLogin)}
 
-                                        className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text px-1">Please Login</button>
+                                        className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text px-1 clickSound">Please Login</button>
                                 </p>
                             </div>
 

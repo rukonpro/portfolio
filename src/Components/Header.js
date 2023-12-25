@@ -40,65 +40,65 @@ const Header = () => {
 
                                 <div className='flex flex-wrap gap-2 pt-5'>
                                     <a href="https://www.linkedin.com/in/rukonpro/" target="_blank" rel="noreferrer">
-                                        <div
-                                            className=' w-10 p-2 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#007ab9] to-[#eceff1]  shadow-2xl shadow-fuchsia-300'>
+                                        <button
+                                            className=' w-10 p-2 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#007ab9] to-[#eceff1]  shadow-2xl shadow-fuchsia-300 '>
                                             <LazyLoader>
                                                 <img src={GithubIcon || undefined} height="100%" width="100%" alt="GithubIcon"
                                                      loading="lazy"/>
                                             </LazyLoader>
-                                        </div>
+                                        </button>
                                     </a>
 
                                     <a href="https://www.linkedin.com/in/rukonpro/" target="_blank" rel="noreferrer">
-                                        <div
-                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#007ab9] to-[#0e0e36]'>
+                                        <button
+                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#007ab9] to-[#0e0e36] '>
                                             <LazyLoader>
                                                 <img src={LinkdinIcon || undefined} height="100%" width="100%" alt="linkdin"
                                                      loading="lazy"/>
                                             </LazyLoader>
-                                        </div>
+                                        </button>
                                     </a>
 
                                     <a href="mailto:rukon.js@gamil.com" target="_blank" rel="noreferrer">
-                                        <div
-                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#f44336] to-[#0e0e36]'>
+                                        <button
+                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#f44336] to-[#0e0e36] '>
                                             <LazyLoader>
                                                 <img src={EmailIcon || undefined} height="100%" width="100%" alt="email"
                                                      loading="lazy"/>
                                             </LazyLoader>
-                                        </div>
+                                        </button>
                                     </a>
 
                                     <a href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR18ICJ_AmaQUWEIsiIfd4XyikyYvhcEIrM5HLImwXXJc42KT6pwqWjDaC0" target="_blank" rel="noreferrer">
-                                        <div
-                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#00aff0] to-[#0e0e36]'>
+                                        <button
+                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#00aff0] to-[#0e0e36] '>
                                             <LazyLoader>
                                                 <img src={SkypeIcon || undefined} height="100%" width="100%" alt="skype"
                                                      loading="lazy"/>
                                             </LazyLoader>
-                                        </div>
+                                        </button>
                                     </a>
                                     <a href="https://api.whatsapp.com/send?phone=1765459224" target="_blank" rel="noreferrer">
-                                        <div
-                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#4caf50] to-[#0e0e36]'>
+                                        <button
+                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#4caf50] to-[#0e0e36] '>
                                             <LazyLoader>
                                                 <img src={Whatsapp || undefined} height="100%" width="100%" alt="whatsapp"
                                                      loading="lazy"/>
                                             </LazyLoader>
 
-                                        </div>
+                                        </button>
                                     </a>
 
                                     <a href="tel:+8801765459224" target="_blank" rel="noreferrer">
-                                        <div
-                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#3e9ddd] to-[#0e0e36]'
+                                        <button
+                                            className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#3e9ddd] to-[#0e0e36] '
                                             data-aos="fade-in"
                                         >
                                             <LazyLoader>
                                                 <img src={PhoneIcon || undefined} height="100%" width="100%"
                                                      alt="phone number" loading="lazy"/>
                                             </LazyLoader>
-                                        </div>
+                                        </button>
                                     </a>
                                 </div>
                                 <a href="https://drive.google.com/file/d/1S8dFRWC7f3QH6ZVnGp6miYLwPz8s4coh/view?usp=sharing" target="_blank" rel="noreferrer">
