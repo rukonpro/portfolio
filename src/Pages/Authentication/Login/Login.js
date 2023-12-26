@@ -27,7 +27,7 @@ const Login = ({ setIsLogin }) => {
                   Email address:
                 </label>
                 <input
-                  className="mt-2 px-5 py-2 rounded-lg w-full border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r    from-[#5f3391ff] to-[#020617ff] autofill:!bg-gradient-to-tl autofill:!from-[#5f3391ff] autofill:!to-[#020617ff] text-white font-bold  font-['Roboto'] clickSound"
+                  className="mt-2 px-5 py-2 rounded-lg w-full border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r    from-[#020617ff] via-[#5f3391ff] to-[#020617ff] autofill:!bg-gradient-to-tl autofill:!from-[#5f3391ff] autofill:!to-[#020617ff] text-white font-bold  font-['Roboto'] clickSound"
                   type="email"
                   name="email"
                   placeholder="rukon.pro@gmail.com"
@@ -97,7 +97,7 @@ const Login = ({ setIsLogin }) => {
 
                 <input
                   type={isPasswordHidden ? "password" : "text"}
-                  className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white font-bold  font-['Roboto'] clickSound"
+                  className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-l  from-[#020617ff] via-[#5f3391ff] to-[#020617ff] text-white font-bold  font-['Roboto'] clickSound"
                   placeholder="******"
                   onClick={()=>OnClickSound("/keypress.mp3")}
                 />
@@ -106,7 +106,7 @@ const Login = ({ setIsLogin }) => {
                 <button
                   type="submit"
                   aria-label="Login"
-                  className=" w-full py-2  rounded-[10px] border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white text-xl font-bold   hover:shadow-2xl  hover:shadow-[#111827] clickSound"
+                  className=" w-full py-2  rounded-[10px] border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#020617ff] via-[#5f3391ff] to-[#020617ff]   text-white text-xl font-bold   hover:shadow-2xl  hover:shadow-[#111827] clickSound"
                   onClick={()=>OnClickSound("/keypress.mp3")}
                 >
                   <span className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text  font-bold">
