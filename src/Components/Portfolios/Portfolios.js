@@ -51,7 +51,7 @@ const Portfolios = () => {
                       <div className="grid grid-cols-3 gap-5 items-center">
 
                         <div className="col-span-1">
-                          <h1 className="text-[24px] lg:text-[40px]">{data?.title.split(" ")[0].slice(0,30)}</h1>
+                          <h1 className="text-[24px] text-white lg:text-[40px]">{data?.title.split(" ")[0].slice(0,30)}</h1>
                         </div>
                         <div className="col-span-2">
                           <img
