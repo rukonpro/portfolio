@@ -74,7 +74,7 @@ const Portfolios = () => {
         </div>
         <div className="flex justify-center">
           <button type="button"
-                  className="font-bold border py-2 px-5 rounded-lg hover:bg-[#350b70] shadow-2xl shadow-fuchsia-300 active:shadow-xl active:shadow-fuchsia-100/30">
+                  className="font-bold text-white border py-2 px-5 rounded-lg hover:bg-[#350b70]  shadow-2xl shadow-fuchsia-300 active:shadow-xl active:shadow-fuchsia-100/30">
             ALl Project
           </button>
         </div>
