@@ -75,7 +75,7 @@ const About = () => {
                                     className='font-bold'>JavaScript</span> enthusiast.
                                 <br/>
                                 <br/>
-                                I have good knowledge of building web applications with
+                                I have good knowledge of building web applications with 
                                 <span
                                     data-aos="fade-up"
                                     data-aos-anchor-placement="bottom-bottom"
