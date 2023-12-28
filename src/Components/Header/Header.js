@@ -40,7 +40,7 @@ const Header = () => {
 
 
                                 <div className='flex flex-wrap gap-2 pt-5'>
-                                    <a href="https://www.linkedin.com/in/rukonpro/" target="_blank" rel="noreferrer">
+                                    <a href="https://github.com/RnRukon" target="_blank" rel="noreferrer">
                                         <button
                                             onClick={()=>OnClickSound("/keypress.mp3")}
                                             className=' w-10 p-2 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#007ab9] to-[#eceff1]  shadow-2xl shadow-fuchsia-300 '>
