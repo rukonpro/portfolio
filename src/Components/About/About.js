@@ -12,7 +12,7 @@ const About = () => {
 
 
             <div className="relative z-10">
-                <div className='container mx-auto grid lg:grid-cols-2 '>
+                <div className='max-w-[1200px] mx-auto grid lg:grid-cols-2 '>
                     <div className=" flex lg:justify-start justify-center items-center text-center  ">
                         <div className="md:w-[350px] w-[292px]">
                             <LazyLoader>
@@ -34,9 +34,6 @@ const About = () => {
                     </div>
                     <div>
                         <div
-                            data-aos="fade-up"
-                            data-aos-anchor-placement="center-bottom"
-                            data-aos-duration="2000"
                             className='pt-10 '>
                             <div className="relative ">
                             <div>
@@ -53,8 +50,7 @@ const About = () => {
 
                             <article
                                 className="text-white  md:text-xl text-base   font-['Roboto'] pt-10 tracking-[1px] mt-10"><span
-                                data-aos="fade-up"
-                                data-aos-anchor-placement="bottom-bottom"
+
                                 className='text-2xl font-extrabold'>Hello!</span> <br/>
 
                                 I am a <span

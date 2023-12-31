@@ -18,7 +18,7 @@ const Blog = () => {
                         <h1
                             data-aos="fade-up"
                             data-aos-anchor-placement="center-center"
-                            data-aos-duration="2000"
+                            data-aos-duration="1000"
                             className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute tracking-[4px]">Blogs</h1>
                     </div>
 

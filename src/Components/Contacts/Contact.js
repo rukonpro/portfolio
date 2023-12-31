@@ -13,7 +13,7 @@ const Contact = () => {
             }}
         ></div>
 
-        <div className="relative  z-10 container mx-auto ">
+        <div className="relative  z-10 max-w-[1200px] mx-auto ">
           <div className="flex px-8 ">
             <div
                 className="relative -inset-3   w-[55px] h-[55px]  bg-gradient-to-tl from-[#17113a] to-[#8907c0]  animate-spin  rounded-full customShadow"/>

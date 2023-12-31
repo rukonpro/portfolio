@@ -18,7 +18,7 @@ const Header = () => {
             className="relative pb-10 bg-[#0e0e36]     overflow-hidden"
         >
             <div className="relative z-10 md:px-28">
-                <div className='lg:flex flex-none justify-between container mx-auto md:pt-28 pt-28 md:px-0 px-5  '>
+                <div className='lg:flex flex-none justify-between max-w-[1200px] mx-auto md:pt-28 pt-28 md:px-0 px-5  '>
                     <div
                         data-aos="fade-right"
                         data-aos-offset="10"
