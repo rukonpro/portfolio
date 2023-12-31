@@ -76,6 +76,7 @@ const About = () => {
                                 <br/>
                                 <br/>
                                 I have good knowledge of building web applications with
+ 
                                 <span
                                     data-aos="fade-up"
                                     data-aos-anchor-placement="bottom-bottom"

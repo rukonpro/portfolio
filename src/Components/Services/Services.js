@@ -29,6 +29,7 @@ const Services = () => {
                     <p
                         data-aos="fade-up"
                         data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="1000"
                         className="max-w-4xl  font-bold font-['Roboto'] text-base text-slate-400 tracking-[2px] md:text-center text-justify">If
                         you're looking for a developer with expertise in a stack typically associated with web
                         development, here's a brief description of the MEAN stack, which is a popular choice</p>

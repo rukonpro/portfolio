@@ -26,7 +26,11 @@ const SkillsAll = () => {
                      className="   overflow-y-auto relative flex justify-center items-center bg-[#0e0e36] py-20 px-5">
                 <div className="absolute custom-animate-pulse inset-0 blur-[118px] radial-gradient"></div>
                 <div className="max-w-[1200px] relative z-10 mx-auto">
-                    <div className="flex justify-between items-center py-3">
+                    <div className="flex justify-between items-center py-3"
+                         data-aos="fade-up"
+                         data-aos-anchor-placement="bottom-bottom"
+                         data-aos-duration="1000"
+                    >
                         <h1 className={`text-[#f8cafb] text-3xl  font-bold font-[Roboto] pt-15 pb-3`}>{id}</h1>
                         <button type="button"
                                 onClick={() => window.history.back()}
@@ -44,7 +48,11 @@ const SkillsAll = () => {
                         {
                             skills?.data?.map((data, index) => {
                                 return (
-                                    <li key={index}>
+                                    <li key={index}
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="bottom-bottom"
+                                        data-aos-duration="1000"
+                                    >
                                         <SkillsCard data={data}/>
                                     </li>
                                 )
@@ -55,6 +63,9 @@ const SkillsAll = () => {
                     <div className="flex justify-center py-3">
                         <button type="button"
                                 onClick={() => window.history.back()}
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom"
+                                data-aos-duration="1000"
                         >
                             <img className="h-12" src={Arrow || undefined} alt=""/>
                         </button>

@@ -13,12 +13,20 @@ const Skills = () => {
                     <div className="flex items-center relative">
                         <div
                             className="  w-[55px] h-[55px] bg-gradient-to-tl from-[#17113a] to-[#8907c0]  animate-spin rounded-full  customShadow"></div>
-                        <h1 className=" relative right-10 text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] ">Skills</h1>
+                        <h1
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="1000"
+                            className=" relative right-10 text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] ">Skills</h1>
                     </div>
                 </div>
 
                 <div className="flex justify-center  py-10">
-                    <p className="max-w-4xl  font-bold font-['Roboto'] text-base text-slate-400 tracking-[2px] md:text-center text-justify"> I
+                    <p
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="1000"
+                        className="max-w-4xl  font-bold font-['Roboto'] text-base text-slate-400 tracking-[2px] md:text-center text-justify"> I
                         am a dynamic MERN stack developer passionate about transforming ideas into powerful and
                         user-friendly
                         web applications. With a strong foundation in MongoDB, Express.js, React, and Node.js, I

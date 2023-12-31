@@ -51,7 +51,7 @@ const Portfolios = () => {
                       <div className="grid grid-cols-3 gap-5 items-center">
 
                         <div className="col-span-1">
-                          <h1 className="text-[24px] lg:text-[40px]">{data?.title.split(" ")[0].slice(0,30)}</h1>
+                          <h1 className="text-[24px] text-white lg:text-[40px]">{data?.title.split(" ")[0].slice(0,30)}</h1>
                         </div>
                         <div className="col-span-2">
                           <img
@@ -74,8 +74,8 @@ const Portfolios = () => {
         </div>
         <div className="flex justify-center">
           <button type="button"
-                  className="text-lg font-bold  w-64 border py-2 px-5 rounded-lg hover:bg-[#350b70] shadow-2xl shadow-fuchsia-300 active:shadow-md active:shadow-fuchsia-100/30">
-            ALl Project
+                  className="font-bold text-white border py-2 px-5 rounded-lg hover:bg-[#350b70]  shadow-2xl shadow-fuchsia-300 active:shadow-xl active:shadow-fuchsia-100/30">
+            All Project
           </button>
         </div>
 
