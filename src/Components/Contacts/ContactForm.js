@@ -36,24 +36,30 @@ const ContactForm = () => {
                             title: "Email send is success",
                             text: "Thank you for email",
                             icon: "success",
-                        });
-                        onClickSound("/successSound.mp3")
-                            .catch(errors=>{
-                                console.log(errors)
-                            })
-
+                        }).then(res=>{
+                           if(res){
+                               onClickSound("/successSound.mp3")
+                                   .catch(errors=>{
+                                       console.log(errors)
+                                   })
+                           }
+                        })
                         reset();
                     }
                 },
             ).catch(errors=>{
-            onClickSound("/error.mp3").catch(errors=>{
-                console.log(errors)
-            })
+
             Swal.fire({
                 title: "Sorry! something wrong please try again...",
                 text: errors.massage,
                 icon: "error",
-            });
+            }).then(res=>{
+               if(res){
+                   onClickSound("/error.mp3").catch(errors=>{
+                       console.log(errors)
+                   })
+               }
+            })
         })
     };
     return (

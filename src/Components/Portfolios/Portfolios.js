@@ -43,7 +43,7 @@ const Portfolios = () => {
                       data-aos="fade-up"
                       data-aos-anchor-placement="center-bottom"
                       data-aos-duration="1000"
-                      key={data?.id}
+                      key={index}
                       onClick={() => document.getElementById(data?.id).showModal()}
                       className="bg-[#0d1247] hover:bg-[#280f5f] h-full flex items-center py-[16px] px-[32px] font-[400] rounded-2xl "
                   >
@@ -74,7 +74,7 @@ const Portfolios = () => {
         </div>
         <div className="flex justify-center">
           <button type="button"
-                  className="font-bold border py-2 px-5 rounded-lg hover:bg-[#350b70] shadow-2xl shadow-fuchsia-300 active:shadow-xl active:shadow-fuchsia-100/30">
+                  className="text-lg font-bold  w-64 border py-2 px-5 rounded-lg hover:bg-[#350b70] shadow-2xl shadow-fuchsia-300 active:shadow-md active:shadow-fuchsia-100/30">
             ALl Project
           </button>
         </div>

@@ -4,7 +4,7 @@ import portfolioData from "../../data/portfolioData";
 const Pricing= () => {
 
     return (
-        <section className='relative py-14 bg-gray-950'>
+        <section className='relative py-14 px-5 bg-gray-950'>
             <div className='absolute inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl  radial-gradient' ></div>
             <div className="relative max-w-screen-xl mx-auto text-gray-300 sm:px-4 md:px-8">
                 <div className='max-w-xl mx-auto space-y-3 px-4 sm:text-center sm:px-0'>
@@ -20,15 +20,15 @@ const Pricing= () => {
                         </p>
                     </div>
                 </div>
-                <div className='mt-16 justify-center gap-4 sm:flex px-5'>
+                <div className='mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 '>
                     {
-                        portfolioData?.pricing?.future?.map((item, idx) =>{
+                        portfolioData?.pricing?.future?.map((item, index) =>{
 
                             return(
                                 (
-                                    <div key={idx}
+                                    <div key={index}
 
-                                         className={`relative  mt-5  flex-1 flex flex-col hover:shadow-sky-500/20 shadow-2xl sm:mt-0 sm:rounded-xl sm:max-w-md    bg-gradient-to-t from-gray-950 to-[#3b056d]   rounded-lg  hover:border-orange-500 hover:bg-gradient-to-b   border-transparent `} >
+                                             className={`relative  mt-5  flex-1 flex flex-col hover:shadow-sky-500/20 shadow-2xl sm:mt-0 sm:rounded-xl sm:max-w-md    bg-gradient-to-t from-gray-950 to-[#3b056d]   rounded-lg  hover:border-orange-500 hover:bg-gradient-to-b   border-transparent `} >
                                         <div className="p-4 py-8 space-y-4 border-b border-gray-700  md:p-8">
                                             <h2 className='text-gray-200 font-medium tracking-[3px] '>
                                                 {item.name}

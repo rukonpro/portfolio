@@ -6,11 +6,11 @@ import Blog40 from "../../Images/Rectangle_40.webp";
 
 const Blog = () => {
     return (
-        <section id="blogs" className="relative  bg-[#0e0e36]     overflow-x-hidden px-5">
+        <section id="blogs" className="relative  bg-[#0e0e36]     overflow-x-hidden px-5 py-10">
             <div className="absolute inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg"
                  style={{background: "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)"}}></div>
             <article
-                className="relative py-10 z-10 flex-none md:flex justify-around items-center backdrop-blur-3xl  backdrop-opacity-70 ">
+                className="relative  z-10 flex-none md:flex justify-around items-center backdrop-blur-3xl  backdrop-opacity-70 ">
                 <div>
                     <div className="flex justify-center">
                         <div
@@ -29,7 +29,7 @@ const Blog = () => {
                                 data-aos-anchor-placement="top-bottom"
                                 data-aos-duration="2000"
                                 src={Blog40 || undefined} height="100%" width="100%" alt="blog"
-                                 loading="lazy"/>
+                                loading="lazy"/>
                         </div>
                         <div className="md:col-span-1 col-span-1 flex md:justify-start justify-center">
                             <img
@@ -37,7 +37,7 @@ const Blog = () => {
                                 data-aos-anchor-placement="top-bottom"
                                 data-aos-duration="2000"
                                 src={Blog37 || undefined} height="100%" width="100%" alt="blog"
-                                 loading="lazy"/>
+                                loading="lazy"/>
                         </div>
                         <div className="md:col-span-1 col-span-1 flex md:justify-start justify-center">
                             <img
@@ -45,7 +45,7 @@ const Blog = () => {
                                 data-aos-anchor-placement="top-bottom"
                                 data-aos-duration="2000"
                                 src={Blog38 || undefined} height="100%" width="100%" alt="blog"
-                                 loading="lazy"/>
+                                loading="lazy"/>
                         </div>
                         <div className="md:col-span-3 flex justify-center">
                             <img
@@ -56,6 +56,13 @@ const Blog = () => {
                     </div>
                 </div>
             </article>
+
+            <div className="flex justify-center pt-5">
+                <button type="button"
+                        className="text-lg font-bold  w-64 border py-2 px-5 rounded-lg hover:bg-[#350b70] shadow-2xl shadow-fuchsia-300 active:shadow-md active:shadow-fuchsia-100/30">
+                    ALl Project
+                </button>
+            </div>
         </section>
     );
 };

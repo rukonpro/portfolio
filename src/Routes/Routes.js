@@ -6,6 +6,7 @@ import Dashboard from "../Dashboard/Dashboard";
 import Loader from "../Helpers/Loader";
 import Root from "../Pages/Root/Root";
 import NotfoundPage from "../Pages/404/NotfoundPage";
+import SkillsAll from "../Pages/SkillsAll/SkillsAll";
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
             {
                 path: "home",
                 element: <Home />,
+                loader: Loader,
+            },
+            {
+                path: "all-skills/:id",
+                element: <SkillsAll />,
                 loader: Loader,
             },
             {
