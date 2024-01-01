@@ -122,8 +122,6 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="flex justify-end">
-
-                        <LazyLoader>
                              <img
                                 data-aos="fade-left"
                                 data-aos-offset="10"
@@ -131,12 +129,12 @@ const Header = () => {
                                 data-aos-easing="ease-in-sine"
                                 className=" md:w-[76vh]"
                                 rel="preload"
+                                fetchpriority="high"
                                 src={Iphone || undefined}
                                 height="100%"
                                 width="100%"
                                 alt="bannderphoto"
                             />
-                        </LazyLoader>
                     </div>
                 </div>
                 <div className="flex justify-center">
