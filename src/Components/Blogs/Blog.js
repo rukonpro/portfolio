@@ -60,7 +60,7 @@ const Blog = () => {
             <div className="flex justify-center pt-5">
                 <button type="button"
                         className="text-lg font-bold  w-64 border py-2 px-5 rounded-lg hover:bg-[#350b70] shadow-2xl shadow-fuchsia-300 active:shadow-md active:shadow-fuchsia-100/30">
-                    ALl Project
+                    All Project
                 </button>
             </div>
         </section>

@@ -4,7 +4,7 @@ const SkillsCard = ({data}) => {
     return (
         <div
             style={{background: `linear-gradient(to top right, rgba(14, 14, 54, 0.03), ${data?.color})`}}
-            className={` rounded-[10px] flex   cursor-pointer select-none  p-3 h-full`}
+            className={` skillsCard rounded-[10px] flex   cursor-pointer select-none  p-3 h-full`}
         >
 
                 <div className="grid grid-cols-6 items-center gap-2 ">
@@ -22,7 +22,7 @@ const SkillsCard = ({data}) => {
                     </div>
                     <div className="col-span-3">
                         <h1 className=" text-[20px] font-bold py-1 text-white">{data?.title}</h1>
-                        <p className="text-base text-[#fccdff] ">I am a dynamic MERN </p>
+                        <p className="text-sm text-[#fccdff] ">{data?.description} </p>
                     </div>
                 </div>
 

@@ -80,128 +80,142 @@ const portfolioData = {
             data:[
                 {
                     title:"Javascript",
+                    description:'Powerful, versatile language for web development.',
                     logo:JsIcon,
                     color:"rgba(233, 202, 50, 0.30)"
                 },
                 {
                     title: "React.JSX",
+                    description: "Expressive UI in JavaScript syntax.",
                     logo: ReactIcon,
                     color: "rgba(97, 218, 251, 0.30)"
                 },
                 {
                     title: "Node.JS",
+                    description: "JavaScript runtime for server-side applications.",
                     logo: NodeJsIcon,
                     color: "rgba(0, 212, 134, 0.30)"
                 },
                 {
                     title: "MongoDB",
+                    description: "NoSQL database for scalable applications.",
                     logo: MongoDBIcon,
                     color: "rgba(89, 150, 54, 0.30)"
                 },
-                {
-                    title: "Mongoose",
-                    color: "rgba(97, 218, 251, 0.30)"
-                },
+
                 {
                     title:  "Express.JS",
+                    description: "Fast, unopinionated web framework for Node.js.",
                     logo:Express,
                     color: "rgba(0, 255, 88, 0.30)"
                 },
 
                 {
                     title:"Next.JS",
+                    description: "React framework for server-rendered apps.",
                     logo: NextJSIcon,
                     color: "rgba(255, 255, 255, 0.30)"
                 },
                 {
                     title: "ES6",
+                    description: "ECMAScript 2015: JavaScript language enhancements.",
                     logo: ES6,
                     color: "rgba(250, 222, 52, 0.30)"
                 },
                 {
                     title: "Redux",
+                    description: "State management for JavaScript applications.",
                     logo: ReduxIcon,
                     color: "rgba(118, 74, 188, 0.30)"
                 },
                 {
                     title:  "Redux-toolkit",
+                    description: "Opinionated Redux utility library.",
                     color: "rgba(118, 74, 188, 0.30)"
                 },
                 {
                     title: "RTK Query",
+                    description: "Declarative data fetching with Redux.",
                     color: "rgba(118, 74, 188, 0.30)"
                 },
-
-                {
-                    title:  "Express.JS",
-                    logo: Express,
-                    color: "rgba(0, 255, 88, 0.30)"
-                },
-
                 {
                     title: "PostgresQL",
+                    description: "Open-source relational database management system.",
                     logo:Postgresql,
                     color: "rgba(47, 103, 146, 0.30)"
                 },
                 {
                     title: "MySQL",
+                    description: "Popular open-source relational database system.",
                     logo: MYSQL,
                     color: "rgba(0, 117, 143, 0.30)"
                 },
                 {
                     title: "Mongoose",
+                    description: "MongoDB ODM for elegant modeling.",
                     logo: Mongoose,
                     color: "rgba(251, 112, 43, 0.30)"
                 },
                 {
                     title: "GraphQL",
+                    description: "Query language for APIs, flexible and efficient.",
                     logo: GraphQLIcon,
                     color: "rgba(229, 53, 171, 0.30)"
                 },
                 {
                     title: "Apollo Client",
+                    description: "Robust GraphQL client for React.",
                     logo: ApolloIcon,
                     color: "rgba(255, 255, 255, 0.30)"
                 },
                 {
                     title: "React-hook-form",
+                    description: "React library for efficient form-handling.",
                     color: "rgba(97, 218, 251, 0.30)"
                 },
                 {
                     title: "Firebase",
+                    description: "Google's mobile and web platform.",
                     logo: FireBaseIcon,
                     color: "rgba(254, 166, 17, 0.30)"
                 },
                 {
                     title: "Bootstrap 4&5",
+                    description: "Responsive front-end framework for web.",
                     logo: Bootstrap,
                     color: "rgba(70, 50, 119, 0.30)"
                 },
                 {
                     title: "React-Bootstrap",
+                    description: "Bootstrap components for React applications.",
                     logo: ReactBootstrap,
                     color: "rgba(70, 50, 119, 0.30)"
                 },
                 {
                     title:  "Material UI",
+                    description: "React components following Material Design.",
                     logo: MaterialUIIcon,
                     color: "rgba(0, 176, 255, 0.30)",
                 },
                 {
                     title: "Tailwind-CSS",
+                    description: "Utility-first CSS framework for flexibility.",
                     logo: TailwindCSSIcon,
                     color: "rgba(6, 182, 212, 0.30)"
                 },
                 {
                     title: "HTML5",
+                    description: "Latest version of the Hypertext Markup Language.",
                     logo: HtmlIcon,
                     color: "rgba(227, 79, 38, 0.30)"
                 },
                 {
                     title:  "CSS3",
+                    description: "Latest version of Cascading Style Sheets.",
                     logo: CSSIcon,
                     color: "rgba(27, 115, 186, 0.30)"
-                }]
+                }
+                ]
         },
         {
             title: "Comfortable",
@@ -228,100 +242,127 @@ const portfolioData = {
             data: [
                 {
                     title: "MongoDB",
+                    description: "NoSQL database for scalable applications.",
                     logo: MongoDBIcon,
                     color: "rgba(89, 150, 54, 0.30)"
                 },
                 {
-                    title: "Express.JS",
-                    logo: Express,
+                    title:  "Express.JS",
+                    description: "Fast, unopinionated web framework for Node.js.",
+                    logo:Express,
                     color: "rgba(0, 255, 88, 0.30)"
                 },
                 {
                     title: "React.JSX",
+                    description: "Expressive UI in JavaScript syntax.",
                     logo: ReactIcon,
                     color: "rgba(97, 218, 251, 0.30)"
                 },
-
-
                 {
                     title: "Node.JS",
+                    description: "JavaScript runtime for server-side applications.",
                     logo: NodeJsIcon,
                     color: "rgba(0, 212, 134, 0.30)"
                 },
-
                 {
-                    title: "Javascript",
-                    logo: JsIcon,
+                    title:"Javascript",
+                    description:'Powerful, versatile language for web development.',
+                    logo:JsIcon,
                     color:"rgba(233, 202, 50, 0.30)"
                 },
-
+                {
+                    title:"Next.JS",
+                    description: "React framework for server-rendered apps.",
+                    logo: NextJSIcon,
+                    color: "rgba(255, 255, 255, 0.30)"
+                },
                 {
                     title: "ES6",
+                    description: "ECMAScript 2015: JavaScript language enhancements.",
                     logo: ES6,
                     color: "rgba(250, 222, 52, 0.30)"
                 },
                 {
                     title: "Redux",
+                    description: "State management for JavaScript applications.",
                     logo: ReduxIcon,
                     color: "rgba(118, 74, 188, 0.30)"
                 },
                 {
-                    title: "Redux-toolkit",
+                    title:  "Redux-toolkit",
+                    description: "Opinionated Redux utility library.",
                     color: "rgba(118, 74, 188, 0.30)"
                 },
                 {
                     title: "RTK Query",
+                    description: "Declarative data fetching with Redux.",
                     color: "rgba(118, 74, 188, 0.30)"
                 },
-
-                {
+               {
                     title: "Mongoose",
+                    description: "MongoDB ODM for elegant modeling.",
+                    logo: Mongoose,
                     color: "rgba(251, 112, 43, 0.30)"
                 },
                 {
                     title: "GraphQL",
-                    login: GraphQLIcon,
+                    description: "Query language for APIs, flexible and efficient.",
+                    logo: GraphQLIcon,
                     color: "rgba(229, 53, 171, 0.30)"
                 },
                 {
                     title: "Apollo Client",
+                    description: "Robust GraphQL client for React.",
                     logo: ApolloIcon,
                     color: "rgba(255, 255, 255, 0.30)"
                 },
                 {
                     title: "React-hook-form",
+                    description: "React library for efficient form-handling.",
                     color: "rgba(97, 218, 251, 0.30)"
                 },
                 {
                     title: "Firebase",
+                    description: "Google's mobile and web platform.",
                     logo: FireBaseIcon,
                     color: "rgba(254, 166, 17, 0.30)"
                 },
                 {
-                    title: "Tailwind-CSS",
-                    logo: TailwindCSSIcon,
-                    color: "rgba(6, 182, 212, 0.30)"
-                },
-                {
                     title: "Bootstrap 4&5",
+                    description: "Responsive front-end framework for web.",
                     logo: Bootstrap,
                     color: "rgba(70, 50, 119, 0.30)"
                 },
                 {
-                    title: "Material UI",
+                    title: "React-Bootstrap",
+                    description: "Bootstrap components for React applications.",
+                    logo: ReactBootstrap,
+                    color: "rgba(70, 50, 119, 0.30)"
+                },
+                {
+                    title:  "Material UI",
+                    description: "React components following Material Design.",
                     logo: MaterialUIIcon,
                     color: "rgba(0, 176, 255, 0.30)",
                 },
                 {
+                    title: "Tailwind-CSS",
+                    description: "Utility-first CSS framework for flexibility.",
+                    logo: TailwindCSSIcon,
+                    color: "rgba(6, 182, 212, 0.30)"
+                },
+                {
                     title: "HTML5",
+                    description: "Latest version of the Hypertext Markup Language.",
                     logo: HtmlIcon,
                     color: "rgba(227, 79, 38, 0.30)"
                 },
                 {
-                    title: "CSS3",
+                    title:  "CSS3",
+                    description: "Latest version of Cascading Style Sheets.",
                     logo: CSSIcon,
                     color: "rgba(27, 115, 186, 0.30)"
-                },
+                }
 
             ],
         },
@@ -330,46 +371,55 @@ const portfolioData = {
             data: [
                 {
                     title: "TypeScript",
+                    description: "Typed superset of JavaScript language.",
                     logo: TypeScript,
                     color: "rgba(0, 122, 204, 0.30)"
                 },
                 {
                     title: "React-Native",
+                    description: "Mobile app development framework ",
                     logo: ReactNative,
                     color: "rgba(97, 218, 251, 0.30)"
                 },
                 {
                     title: "Sass",
+                    description: "CSS preprocessor for more maintainable styles.",
                     logo: Sass,
                     color: "rgba(207, 100, 154, 0.30)"
                 },
                 {
                     title: "Kotlin",
+                    description: "Concise, expressive programming language for modern Android development.",
                     logo: Kotlin,
                     color: "rgba(127, 82, 255, 0.30)"
                 },
                 {
                     title: "Jetpack Compose",
+                    description: "Modern Android UI toolkit by Google.",
                     logo: Android,
                     color: "rgba(61, 219, 133, 0.30)"
                 },
                 {
                     title: "Python",
+                    description: "High-level, versatile programming language.",
                     logo: Python,
                     color: "rgba(255, 221, 85, 0.30)"
                 },
                 {
                     title: "Django",
+                    description: "High-level Python web framework.",
                     logo: Django,
                     color: "rgba(43, 169, 119, 0.30)"
                 },
                 {
                     title: "PHP",
+                    description: "Server-side scripting language for web development.",
                     logo: PHP,
                     color: "rgba(137, 147, 190, 0.30)"
                 },
                 {
                     title: "Laravel",
+                    description: "Elegant PHP web application framework.",
                     logo: Laravel,
                     color: "rgba(255, 45, 32, 0.30)"
                 }
@@ -380,83 +430,99 @@ const portfolioData = {
             data: [
                 {
                     title: "Git",
+                    description: "Distributed version control system for tracking changes in source code.",
                     logo: Git,
                     color: "rgba(222, 76, 54, 0.30)"
                 },
                 {
                     title: "GitHub",
+                    description: "Web-based platform for Git repositories, collaboration, and version control.",
                     logo: Github,
                     color: "rgba(255, 255, 255, 0.30)"
                 },
                 {
                     title: "npm",
+                    description: "Node Package Manager for JavaScript.",
                     logo: NPM,
                     color: "rgba(203, 56, 55, 0.30)"
                 },
                 {
                     title: "Yarn",
+                    description: "Fast and secure JavaScript package manager.",
                     logo: Yarn,
                     color: "rgba(51, 152, 194, 0.30)"
                 },
                 {
                     title: "VS Code",
+                    description: "Free source code editor by Microsoft.",
                     logo: VisualStudioCode,
                     color: "rgba(60, 153, 212, 0.30)"
                 },
                 {
                     title: "WebStorm",
+                    description: "JetBrains IDE for web development.",
                     logo: Webstorm,
                     color: "rgba(0, 205, 215, 0.30)"
                 },
                 {
+                    title: "Android Studio",
+                    description: "Official IDE for Android app development.",
+                    logo: AndroidStudio,
+                    color: "rgba(3, 169, 244, 0.30)"
+                },
+                {
                     title: "PyCharm",
+                    description: "JetBrains IDE for Python development.",
                     logo: PyCharm,
                     color: "rgba(105, 223, 122, 0.30)"
                 },
                 {
                     title: "Firefox dev tool",
+                    description: "Built-in developer tools in Mozilla Firefox browser.",
                     logo: Firefox,
                     color: "rgba(245, 34, 56, 0.30)"
                 },
                 {
                     title: "Chrome dev tool",
+                    description: "Integrated developer tools in Google Chrome browser.",
                     logo: Chrome,
                     color: "rgba(129, 179, 84, 0.30)"
                 },
                 {
                     title: "Heroku",
+                    description: "Cloud platform for deploying applications.",
                     logo: Heroku,
                     color: "rgba(67, 0, 152, 0.30)"
                 },
                 {
                     title: "Render",
+                    description: "Cloud platform for hosting web applications and static sites.",
                     logo: Render,
                     color: "rgba(214, 31, 39, 0.30)"
                 },
                 {
                     title: "Netlify",
+                    description: "Hosting and automation platform for web projects and serverless functions.",
                     logo: Netlify,
                     color: "rgba(37, 199, 183, 0.30)"
                 },
                 {
                     title: "Varcel",
+                    description: "Cloud platform for serverless functions and static site hosting.",
                     logo: Varcel,
                     color: "rgba(233, 202, 50, 0.30)"
                 },
                 {
                     title: "Figma",
+                    description: "Collaborative interface design tool for teams.",
                     logo: Figma,
                     color: "rgba(10, 207, 131, 0.30)"
                 },
                 {
                     title: "Postman",
+                    description: "API development and testing tool.",
                     logo: Postman,
                     color: "rgba(255, 108, 55, 0.30)"
-                },
-                {
-                    title: "Android Studio",
-                    logo: AndroidStudio,
-                    color: "rgba(3, 169, 244, 0.30)"
                 }
             ]
         }
@@ -471,7 +537,7 @@ const portfolioData = {
                 logo: MosafirLogo,
                 description: "As a remote developer for Musafir, a leading South African online wholesaler, I designed and implemented a fully functional e-commerce site. Leveraging React, Tailwind CSS, GraphQL, Apollo Client, and Selore, I ensured dynamic interfaces, responsive design, and efficient data handling. This project highlights my skills in modern web technologies and commitment to delivering impactful solutions.",
                 images: [MosafirCover, MosafirImg1, MosafirImg2, MosafirImg3],
-                technology: ["React", "React Router Dom", "Tailwind CSS", "GraphQL", "Apollo client", "Selore", "Postsgress", ""],
+                technology: ["React", "React Router Dom", "Tailwind CSS", "GraphQL", "Apollo client", "Selore", "Postsgress", "Varcel"],
                 point: [
                     "Developed a fully functional e-commerce website utilizing React for dynamic user interfaces and Tailwind CSS for responsive design.",
                     "Implemented Apollo Client to manage state and handle GraphQL queries for seamless data fetching and manipulation.",

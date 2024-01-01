@@ -186,7 +186,15 @@
    background-attachment: fixed;
     background-position: top;
 }
+.skillsCard{
+    transition: 0.5s ease-in-out;
 
+}
+.skillsCard:hover{
+    box-shadow:-3px 3px 3px 3px #df00ff14;
+    transform: rotate3d(45,50,5,-8deg) scale(1.1) scaleZ(-1.1);
+    transition: 0.5s ease-in;
+}
 
 
 

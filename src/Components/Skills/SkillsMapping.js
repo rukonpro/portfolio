@@ -5,6 +5,8 @@ import SkillsCard from "./SkillsCard";
 import {Link} from "react-router-dom";
 
 const SkillsMapping = ({data}) => {
+
+
     return (
         <LazyLoader>
             <div>
@@ -29,13 +31,15 @@ const SkillsMapping = ({data}) => {
                 </ol>
 
                 <div className="flex justify-center py-5">
-                    <Link to={`all-skills/${data?.title}`}
+                    <Link
+                        to={`all-skills/${data?.title}`}
                           data-aos="fade-up"
                           data-aos-anchor-placement="bottom-bottom"
                           data-aos-duration="1000"
                     >
-                        <button type="button"
-                                className="text-lg font-bold  w-64 border py-2 px-5 rounded-lg hover:bg-[#350b70] shadow-2xl shadow-fuchsia-300 active:shadow-md active:shadow-fuchsia-100/30">
+                        <button
+                            type="button"
+                                className="text-lg font-bold  text-white w-64 border py-2 px-5 rounded-lg hover:bg-[#350b70] shadow-2xl shadow-fuchsia-300 active:shadow-md active:shadow-fuchsia-100/30">
                             All {data.title}
                         </button>
                     </Link>

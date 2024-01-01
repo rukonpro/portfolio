@@ -4,6 +4,7 @@ import portfolioData from "../../data/portfolioData";
 import {useParams} from "react-router-dom";
 import SkillsCard from "../../Components/Skills/SkillsCard";
 import Arrow from "../../Images/arrow.png"
+import ScrollingBottomToTop from "../../Helpers/ScrollingBottomToTop";
 const SkillsAll = () => {
 
     const {id}=useParams();
@@ -11,11 +12,15 @@ const SkillsAll = () => {
     const skills=portfolioData?.skills?.find(data=>data?.title===id);
 
 
-    useEffect(() => {
+   /* useEffect(() => {
         if(skills?.descriptions){
             document.getElementById("skillsDescriptions").innerHTML=skills?.descriptions;
         }
-    }, [skills?.descriptions]);
+    }, [skills?.descriptions]);*/
+
+    useEffect(() => {
+        ScrollingBottomToTop()
+    }, []);
 
     return (
         <div>
@@ -40,10 +45,10 @@ const SkillsAll = () => {
                     </div>
 
 
-                    <div>
+                {/*    <div>
                         {skills?.descriptions&&<p id="skillsDescriptions" className="pb-10"></p>}
 
-                    </div>
+                    </div>*/}
                     <ol className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3  gap-5">
                         {
                             skills?.data?.map((data, index) => {
