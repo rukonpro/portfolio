@@ -15,10 +15,10 @@ const Header = () => {
     return (
         <header
             id="home"
-            className="relative pb-10 bg-[#0e0e36]     overflow-hidden"
+            className="relative pb-10 bg-[#0e0e36] overflow-hidden h-screen"
         >
-            <div className="relative z-10 md:px-28">
-                <div className='lg:flex flex-none justify-between max-w-[1200px] mx-auto md:pt-28 pt-28 md:px-0 px-5  '>
+            <div className="relative z-10  container mx-auto px-5">
+                <div className='lg:flex flex-none justify-between  mx-auto md:pt-28 pt-28 md:px-0 px-5  '>
                     <div
                         data-aos="fade-right"
                         data-aos-offset="10"
@@ -138,16 +138,19 @@ const Header = () => {
                         </LazyLoader>
                     </div>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center relative">
                     <button
+
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
                         onClick={() => {
                             OnClickSound("/keypress.mp3").catch();
-                            window.scrollBy(0, 600);
+                            window.scrollBy(0, 900);
                         }}
                         type="button"
                         id="mouseButton"
                         aria-label="mouseButton"
-                        className="mouseButton "
+                        className="mouseButton  "
                     >
                         <svg
                             width="45"
