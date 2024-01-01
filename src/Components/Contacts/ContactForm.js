@@ -66,7 +66,7 @@ const ContactForm = () => {
         <form onSubmit={handleSubmit(sendEmail)}
               className="grid grid-cols-2 md:gap-5 gap-y-3 gap-x-1 md:pb-0 px-5 pb-16">
             <div>
-                <label className="text-white">First Name:</label>
+                <label htmlFor="fname" className="text-white">First Name:</label>
                 <input
                     className=" mt-2 px-5 py-2 w-full rounded-full border  border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r  from-[#5f3391ff] to-[#020617ff] text-white font-bold "
                     {...register("fname", {required: true})}
@@ -83,7 +83,7 @@ const ContactForm = () => {
                 )}
             </div>
             <div>
-                <label className="text-white">Last Name:</label>
+                <label htmlFor="lname" className="text-white">Last Name:</label>
                 <input
                     className=" mt-2 px-5 py-2 w-full rounded-full   border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold  "
                     {...register("lname", {required: true})}
@@ -100,7 +100,7 @@ const ContactForm = () => {
                 )}
             </div>
             <div className="col-span-2">
-                <label className="text-white">Email address:</label>
+                <label htmlFor="email" className="text-white">Email address:</label>
                 <input
                     className=" mt-2  px-5 py-2 w-full rounded-full   border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold  "
                     {...register("email", {required: true})}
@@ -118,7 +118,7 @@ const ContactForm = () => {
             </div>
 
             <div className="col-span-2">
-                <label className="text-white">Subject:</label>
+                <label htmlFor="subject" className="text-white">Subject:</label>
                 <input
                     className=" mt-2  px-5 py-2 w-full rounded-full   border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold  "
                     {...register("subject", {required: true})}
@@ -136,7 +136,7 @@ const ContactForm = () => {
             </div>
 
             <div className="col-span-2">
-                <label className="text-white">Massage:</label>
+                <label htmlFor="massage" className="text-white">Massage:</label>
                 <textarea
                     className=" mt-2  px-2 py-2 w-full rounded-md h-48  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white font-bold  "
                     {...register("massage", {required: true})}
@@ -156,7 +156,7 @@ const ContactForm = () => {
                 <button
                     type="submit"
                     aria-label="Send"
-                    id="emailSubmit"
+                    id="Send"
                     className="w-[167px] h-[49px]  border  border-purple-500  focus:outline-purple-400 rounded-[86.50px] bg-gradient-to-l   from-[#5f3391ff] to-[#111827] shadow-2xl shadow-indigo-600 hover:bg-gradient-to-tr active:bg-gradient-to-r "
                     onClick={() => OnClickSound("/keypress.mp3")}
                 >
