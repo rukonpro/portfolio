@@ -155,6 +155,7 @@ const ContactForm = () => {
             <div className='col-span-2 flex justify-center text-white font-bold font-["Roboto"] '>
                 <button
                     type="submit"
+                    aria-label="Send"
                     id="emailSubmit"
                     className="w-[167px] h-[49px]  border  border-purple-500  focus:outline-purple-400 rounded-[86.50px] bg-gradient-to-l   from-[#5f3391ff] to-[#111827] shadow-2xl shadow-indigo-600 hover:bg-gradient-to-tr active:bg-gradient-to-r "
                     onClick={() => OnClickSound("/keypress.mp3")}

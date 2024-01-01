@@ -55,6 +55,7 @@ const Pricing= () => {
                                             </p>
 
                                             <button
+                                                aria-label="Get Started"
                                                 onClick={() => {
                                                     OnClickSound("/keypress.mp3").catch()
                                                     document.getElementById("contactModal").showModal()

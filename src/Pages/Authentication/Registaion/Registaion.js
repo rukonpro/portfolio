@@ -61,9 +61,10 @@ const Registration = ({ setIsLogin }) => {
                                 <div className="flex justify-between ">
                                     <label className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-sm font-bold ">Password:</label>
                                     <button
+                                        aria-label="Forgot password?"
                                         type="button"
                                         onClick={()=>OnClickSound("/keypress.mp3")}
-                                        className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-xs font-bold clickSound"><span className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text"> Forgot password?</span> </button>
+                                        className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-xs font-bold clickSound"><span className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text">Forgot password?</span> </button>
                                 </div>
 
                                 <button
@@ -102,7 +103,7 @@ const Registration = ({ setIsLogin }) => {
 
                                 <button
                                     type="submit"
-                                    aria-label="Login"
+                                    aria-label="Register"
                                     onClick={()=>OnClickSound("/keypress.mp3")}
                                     className=" w-full py-2  rounded-[10px] border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white text-xl font-bold   hover:shadow-2xl  hover:shadow-[#111827] clickSound"
                                 >
@@ -114,6 +115,7 @@ const Registration = ({ setIsLogin }) => {
                             <div className="col-span-2 flex justify-center ">
                                 <p className="text-[#fccdff] text-sm">Are you alrady Registered?
                                     <button
+                                        aria-label="Please Login"
                                         type="button"
                                         onClick={() => {
                                             OnClickSound("/keypress.mp3").catch()

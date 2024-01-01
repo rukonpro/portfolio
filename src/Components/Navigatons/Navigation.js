@@ -62,8 +62,10 @@ const Navigation = () => {
                         <div>
                             <Link to="/#home">
                                 <button
+                                    type="button"
+                                    aria-label="Rukon.Pro"
                                     onClick={()=>OnClickSound("/keypress.mp3")}
-                                     className="bg-gradient-to-br from-[#816aff] to-[#d066fd] text-transparent bg-clip-text text-[22px] font-bold  tracking-[2px] ">Rukon.Pro</button>
+                                    className="bg-gradient-to-br from-[#816aff] to-[#d066fd] text-transparent bg-clip-text text-[22px] font-bold  tracking-[2px] ">Rukon.Pro</button>
                             </Link>
 
                         </div>
@@ -77,6 +79,8 @@ const Navigation = () => {
                                             <li className="animated-button" key={index}>
                                                 <a href={nav?.path}>
                                                     <button
+                                                        type="button"
+                                                        aria-label={nav?.title}
                                                         onClick={()=>OnClickSound("/keypress.mp3")}
                                                         className="tracking-[2px] text-[#fccdff]">
                                                         {nav?.title}
@@ -87,6 +91,8 @@ const Navigation = () => {
                                     }
                                     <li>
                                         <button
+                                            type="button"
+                                            aria-label="Login"
                                             className=" bg-gradient-to-r from-[#5e2594ec] to-[#270257fd] px-5 py-1 rounded-lg  animated-button tracking-[3px]  text-[#fccdff]"
                                             onClick={() =>{
                                                 if(loginModal)loginModal.showModal()
@@ -99,7 +105,10 @@ const Navigation = () => {
                                 </ul>
                             </div>
                         </div>
-                        <button id="threeDotButton" onClick={menuHandler}
+                        <button
+                            type="button"
+                            id="threeDotButton"
+                            onClick={menuHandler}
                                 className="lg:hidden p-2  bg-gradient-to-tr from-[#030b55ec] to-[#994cd0f5] rounded-full block">
                             {
                                 !menuOpen ? <img className="h-5 w-5" src={MenuBar || undefined} alt="icon"/> :
@@ -126,7 +135,10 @@ const Navigation = () => {
                             )
                         }
                         <li className=" bg-gradient-to-l from-[#0a0cd00d] to-[#9a4cd09d] px-5 py-3 rounded-l-full my-3 animated-button w-full">
-                            <button type="button" id="loginbuttion1"
+                            <button
+                                    type="button"
+                                    id="loginbuttion1"
+                                    aria-label="Login"
                                     onClick={() => {
                                         OnClickSound("/keypress.mp3").catch()
                                         document.getElementById("loginModal").showModal()

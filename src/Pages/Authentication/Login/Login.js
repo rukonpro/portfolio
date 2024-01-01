@@ -41,6 +41,7 @@ const Login = ({ setIsLogin }) => {
                     Password:
                   </label>
                   <button
+                      aria-label="Forgot password?"
                     type="button"
                     className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-[16px] font-bold clickSound"
                     onClick={()=>OnClickSound("/keypress.mp3")}
@@ -120,6 +121,7 @@ const Login = ({ setIsLogin }) => {
                     Are you not Registered?
                   </span>
                   <button
+                    aria-label="Please Register"
                     type="button"
                     onClick={() => {
                       setIsLogin((isLogin) => !isLogin)
