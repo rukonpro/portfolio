@@ -26,7 +26,7 @@ const SkillsAll = () => {
                      data-aos-anchor-placement="bottom-bottom"
                      data-aos-duration="1000"
                 >
-                    <h1 className={`text-white text-xl  font-bold  pt-15 `}>All Skills</h1>
+                    <h1 className={`text-white text-xl  font-bold  pt-15 `}>All {id}</h1>
                    <BackButton/>
                 </div>
                 <div>
