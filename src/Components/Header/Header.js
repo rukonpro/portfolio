@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <header
             id="home"
-            className="relative pb-10 bg-[#0e0e36] overflow-hidden h-screen"
+            className="relative pb-10 bg-[#0e0e36] overflow-hidden h-[100vh]"
         >
             <div className="relative z-10  container mx-auto px-5">
                 <div className='lg:flex flex-none justify-between  mx-auto md:pt-28 pt-28 md:px-0 px-5  '>
