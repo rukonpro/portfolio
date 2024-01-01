@@ -133,7 +133,7 @@ const Header = () => {
                                 height="100%"
                                 width="100%"
                                 alt="bannderphoto"
-                                loading="lazy"
+                                loading="eager"
                             />
                         </LazyLoader>
                     </div>
