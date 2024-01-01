@@ -13,7 +13,7 @@ const Registration = ({ setIsLogin }) => {
                 <div className="flex ">
                     <div className="flex px-8 ">
                         <div className="relative -inset-3   w-[55px] h-[55px] bg-gradient-to-r from-[#17113a] to-[#8907c0]  animate-spin rounded-full customShadow" />
-                        <h1 className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute">Registration</h1>
+                        <h1 className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text z-10 md:text-5xl text-2xl font-bold  absolute">Registration</h1>
                     </div>
                 </div>
 
@@ -28,7 +28,7 @@ const Registration = ({ setIsLogin }) => {
                             <div className=" col-span-1 ">
                                 <label className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text font-bold ">First Name:</label>
                                 <input
-                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] clickSound"
+                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold  clickSound"
                                     type="fname"
                                     name="fname"
                                     placeholder='Rukon'
@@ -39,7 +39,7 @@ const Registration = ({ setIsLogin }) => {
                             <div className=" col-span-1 ">
                                 <label className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text font-bold ">Last Name:</label>
                                 <input
-                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] clickSound"
+                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold  clickSound"
                                     type="lname"
                                     name="lname"
                                     placeholder='Uddin'
@@ -49,7 +49,7 @@ const Registration = ({ setIsLogin }) => {
                             <div className=" col-span-2 ">
                                 <label className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text font-bold ">Email address:</label>
                                 <input
-                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white font-bold  font-['Roboto'] clickSound"
+                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white font-bold   clickSound"
                                     type="email"
                                     name="email"
                                     placeholder='rukon.pro@gmail.com'
@@ -91,7 +91,7 @@ const Registration = ({ setIsLogin }) => {
 
                                 <input
                                     type={isPasswordHidden ? "password" : "text"}
-                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white font-bold  font-['Roboto'] clickSound"
+                                    className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white font-bold   clickSound"
                                     placeholder='******'
                                     onClick={()=>OnClickSound("/keypress.mp3")}
 

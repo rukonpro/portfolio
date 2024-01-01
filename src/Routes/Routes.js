@@ -7,6 +7,7 @@ import Loader from "../Helpers/Loader";
 import Root from "../Pages/Root/Root";
 import NotfoundPage from "../Pages/404/NotfoundPage";
 import SkillsAll from "../Pages/SkillsAll/SkillsAll";
+import ProjectAll from "../Pages/PorjectAll/ProjectAll";
 
 
 const router = createBrowserRouter([
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
             {
                 path: "all-skills/:id",
                 element: <SkillsAll />,
+                loader: Loader,
+            },
+            {
+                path: "projects-all",
+                element: <ProjectAll />,
                 loader: Loader,
             },
             {

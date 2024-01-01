@@ -6,7 +6,7 @@ import OnClickSound from "../../../Helpers/OnClickSound";
 export default function LoginModal() {
     const [isLogin, setIsLogin] = useState(false);
     return (
-        <dialog id="loginModal" className="modal">
+        <dialog id="login" className="modal">
             <div className="modal-box p-0 shadow-2xl shadow-[#3f223a80]">
                 <form method="dialog">
                     <button

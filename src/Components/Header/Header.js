@@ -30,12 +30,12 @@ const Header = () => {
                                     className="text-2xl font-bold bg-gradient-to-r from-[#816aff] to-[#d066fd] text-transparent bg-clip-text tracking-[5px]">
                                     Hello!, I'm
                                 </span>
-                                <h1 className=" md:text-7xl text-4xl font-bold font-['Roboto'] pt-2  "><
+                                <h1 className=" md:text-7xl text-4xl font-bold  pt-2  "><
                                     span
-                                    className="bg-gradient-to-br from-[#816aff] to-[#d066fd] text-transparent bg-clip-text tracking-[4px] ">Rukon Uddin</span>
+                                    className="bg-gradient-to-br from-[#816aff]  to-[#d066fd] text-transparent bg-clip-text tracking-[2px] ">Rukon Uddin</span>
                                 </h1>
 
-                                <p className=" md:text-xl text-base font-bold font-['Roboto'] mt-2 md:tracking-[5px] tracking-[2px] text-[#fccdff]">MERN-stack
+                                <p className=" md:text-xl text-base font-bold  mt-2 md:tracking-[3px] tracking-[1px] text-[#fccdff]">MERN-stack
                                     Developer | React Developer | Javascript Developer</p>
 
 
@@ -113,7 +113,7 @@ const Header = () => {
                                         onClick={()=>OnClickSound("/keypress.mp3")}
                                         id="downloadcv"
                                         aria-label="Download CV"
-                                        className=" mt-5  text-center text-white md:text-xl text-base font-bold font-['Roboto'] bg-gradient-to-l from-[#1355b7] to-[#0e0e36] rounded-full active:bg-gradient-to-l hover:shadow-2xl  hover:shadow-[#263458] tracking-[1px] px-4 py-2 ">
+                                        className=" mt-5  text-center text-white md:text-xl text-base font-bold  bg-gradient-to-l from-[#1355b7] to-[#0e0e36] rounded-full active:bg-gradient-to-l hover:shadow-2xl  hover:shadow-[#263458] tracking-[1px] px-4 py-2 ">
                                         <span
                                             className="bg-gradient-to-r from-[#816aff] to-[#d066fd] text-transparent bg-clip-text"> Download CV</span>
                                     </button>

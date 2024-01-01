@@ -1,12 +1,13 @@
-import React, { useState} from "react";
+import React, {useEffect, useState} from "react";
 import { Link, NavLink } from "react-router-dom";
 import MenuBar from "../../Images/menu-bar.png";
 import Close from "../../Images/close.png";
 import OnClickSound from "../../Helpers/OnClickSound";
+import LoginModal from "../../Pages/Authentication/LoginModal/LoginModal";
 
 const Navigation = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-
+    const [loginModal, setLoginModal] = useState(null);
     const navLinks = [
         {
             title: "Home",
@@ -44,8 +45,14 @@ const Navigation = () => {
         setMenuOpen(value => !value)
     };
 
+
+    useEffect(() => {
+            const loginModal= document.getElementById("login");
+            setLoginModal(loginModal)
+    }, []);
+
     return (
-        <nav className="fixed z-50   w-screen">
+        <nav className="fixed z-50 top-0  w-screen" >
 
             <div
                 className={`  ${menuOpen ? " m-3 rounded-xl bg-gradient-to-tr from-[#5e2594ec] to-[#270257fd]" +
@@ -56,7 +63,7 @@ const Navigation = () => {
                             <Link to="/#home">
                                 <button
                                     onClick={()=>OnClickSound("/keypress.mp3")}
-                                     className="bg-gradient-to-br from-[#816aff] to-[#d066fd] text-transparent bg-clip-text text-[22px] font-bold font-['Roboto'] tracking-[2px] ">Rukon.PRO</button>
+                                     className="bg-gradient-to-br from-[#816aff] to-[#d066fd] text-transparent bg-clip-text text-[22px] font-bold  tracking-[2px] ">Rukon.Pro</button>
                             </Link>
 
                         </div>
@@ -82,8 +89,9 @@ const Navigation = () => {
                                         <button
                                             className=" bg-gradient-to-r from-[#5e2594ec] to-[#270257fd] px-5 py-1 rounded-lg  animated-button tracking-[3px]  text-[#fccdff]"
                                             onClick={() =>{
-                                                document.getElementById("loginModal").showModal()
+                                                if(loginModal)loginModal.showModal()
                                                 OnClickSound("/keypress.mp3").catch()
+
                                             }}><span
                                             className="bg-gradient-to-r from-[#816aff] to-[#d066fd] text-transparent bg-clip-text">Login</span>
                                         </button>
@@ -132,7 +140,7 @@ const Navigation = () => {
                 </div>
             </div>
 
-
+            <LoginModal/>
         </nav>
     );
 };

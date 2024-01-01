@@ -10,7 +10,7 @@ const SkillsMapping = ({data}) => {
     return (
         <LazyLoader>
             <div>
-                <h1 className={`text-[#f8cafb] text-3xl  font-bold font-[Roboto] pt-15 pb-3`}>{data?.title}</h1>
+                <h1 className={`text-[#f8cafb] text-3xl  font-bold pt-15 pb-3`}>{data?.title}</h1>
                 <ol className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-5">
                     {
                         data?.data?.slice(0, 4).map((data, index) => {

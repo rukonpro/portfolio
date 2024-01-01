@@ -1,8 +1,7 @@
 import React from "react";
-import Modals from "./Modals";
 import portfolioData from "../../data/portfolioData";
-import LazyLoader from "../../Helpers/LazyLoader";
-import OnClickSound from "../../Helpers/OnClickSound";
+import {Link} from "react-router-dom";
+import PortfolioMapping from "./PortfolioMapping";
 
 const Portfolios = () => {
   return (
@@ -22,61 +21,29 @@ const Portfolios = () => {
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
               data-aos-duration="2000"
-              className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute tracking-[4px]">
+              className="text-white z-10 md:text-5xl text-2xl font-bold  absolute tracking-[4px]">
             {portfolioData?.portfolios?.title}
           </h1>
         </div>
-        <div className="flex justify-center  mt-10">
+        <div className="flex justify-center  mt-10 pb-10">
           <p
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
               data-aos-duration="2000"
-              className="max-w-4xl  font-bold font-['Roboto'] text-base text-slate-400 tracking-[2px] md:text-center text-justify">
+              className="max-w-4xl  font-bold  text-base text-slate-400 tracking-[2px] md:text-center text-justify">
             {portfolioData?.portfolios?.description}
           </p>
         </div>
-        <div
-            className="grid grid-cols-1 md:grid-cols-2 items-center  gap-5 pt-24 pb-10">
-          {portfolioData?.portfolios?.future.map((data,index) =>
-              data?.id ? (
-                  <div
-                      data-aos="fade-up"
-                      data-aos-anchor-placement="center-bottom"
-                      data-aos-duration="1000"
-                      key={index}
-                      onClick={() => document.getElementById(data?.id).showModal()}
-                      className="bg-[#0d1247] hover:bg-[#280f5f] h-full flex items-center py-[16px] px-[32px] font-[400] rounded-2xl "
-                  >
-                    <LazyLoader>
-                      <div className="grid grid-cols-3 gap-5 items-center">
 
-                        <div className="col-span-1">
-                          <h1 className="text-[24px] text-white lg:text-[40px]">{data?.title.split(" ")[0].slice(0,30)}</h1>
-                        </div>
-                        <div className="col-span-2">
-                          <img
-                              onClick={() => OnClickSound("/keypress.mp3")}
-                              className=" w-full cursor-pointer  rounded-2xl hover:transform  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-x-100  duration-300"
-                              src={data?.images?.[0]}
-                              height="100%"
-                              width="100%"
-                              alt="protfoliocover"
-                              loading="lazy"
-                          />
-                        </div>
-                      </div>
-                    </LazyLoader>
-                    <Modals data={data}/>
-                  </div>
-              ) : null
-          )}
+        <PortfolioMapping/>
 
-        </div>
         <div className="flex justify-center">
-          <button type="button"
-                  className="font-bold text-white border py-2 px-5 rounded-lg hover:bg-[#350b70]  shadow-2xl shadow-fuchsia-300 active:shadow-xl active:shadow-fuchsia-100/30">
-            All Project
-          </button>
+          <Link to="/projects-all">
+            <button type="button"
+                    className="font-bold text-white border py-2 px-5 rounded-lg hover:bg-[#350b70]  shadow-2xl shadow-fuchsia-300 active:shadow-xl active:shadow-fuchsia-100/30">
+              All Project
+            </button>
+          </Link>
         </div>
 
 

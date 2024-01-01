@@ -68,7 +68,7 @@ const ContactForm = () => {
             <div>
                 <label className="text-white">First Name:</label>
                 <input
-                    className=" mt-2 px-5 py-2 w-full rounded-full border  border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r  from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto']"
+                    className=" mt-2 px-5 py-2 w-full rounded-full border  border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r  from-[#5f3391ff] to-[#020617ff] text-white font-bold "
                     {...register("fname", {required: true})}
                     type="fname"
                     name="fname"
@@ -85,7 +85,7 @@ const ContactForm = () => {
             <div>
                 <label className="text-white">Last Name:</label>
                 <input
-                    className=" mt-2 px-5 py-2 w-full rounded-full   border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] "
+                    className=" mt-2 px-5 py-2 w-full rounded-full   border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold  "
                     {...register("lname", {required: true})}
                     type="lname"
                     name="lname"
@@ -102,7 +102,7 @@ const ContactForm = () => {
             <div className="col-span-2">
                 <label className="text-white">Email address:</label>
                 <input
-                    className=" mt-2  px-5 py-2 w-full rounded-full   border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] "
+                    className=" mt-2  px-5 py-2 w-full rounded-full   border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold  "
                     {...register("email", {required: true})}
                     type="email"
                     name="email"
@@ -120,7 +120,7 @@ const ContactForm = () => {
             <div className="col-span-2">
                 <label className="text-white">Subject:</label>
                 <input
-                    className=" mt-2  px-5 py-2 w-full rounded-full   border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold font-['Roboto'] "
+                    className=" mt-2  px-5 py-2 w-full rounded-full   border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff] text-white font-bold  "
                     {...register("subject", {required: true})}
                     type="text"
                     name="subject"
@@ -138,7 +138,7 @@ const ContactForm = () => {
             <div className="col-span-2">
                 <label className="text-white">Massage:</label>
                 <textarea
-                    className=" mt-2  px-2 py-2 w-full rounded-md h-48  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white font-bold font-['Roboto'] "
+                    className=" mt-2  px-2 py-2 w-full rounded-md h-48  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white font-bold  "
                     {...register("massage", {required: true})}
                     name="massage"
                     id="massage"

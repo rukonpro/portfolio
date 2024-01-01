@@ -19,7 +19,7 @@ const Blog = () => {
                             data-aos="fade-up"
                             data-aos-anchor-placement="center-center"
                             data-aos-duration="1000"
-                            className="text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] absolute tracking-[4px]">Blogs</h1>
+                            className="text-white z-10 md:text-5xl text-2xl font-bold  absolute tracking-[4px]">Blogs</h1>
                     </div>
 
                     <div className="grid md:grid-cols-3 grid-cols-2  pt-10">
@@ -59,8 +59,8 @@ const Blog = () => {
 
             <div className="flex justify-center pt-5">
                 <button type="button"
-                        className="text-lg font-bold  w-64 border py-2 px-5 rounded-lg hover:bg-[#350b70] shadow-2xl shadow-fuchsia-300 active:shadow-md active:shadow-fuchsia-100/30">
-                    All Project
+                        className="text-white text-lg font-bold  w-64 border py-2 px-5 rounded-lg hover:bg-[#350b70] shadow-2xl shadow-fuchsia-300 active:shadow-md active:shadow-fuchsia-100/30">
+                    All Blogs
                 </button>
             </div>
         </section>

@@ -9,8 +9,6 @@ const About = () => {
 
     return (
         <section id="about" className='relative bg-slate-950 px-5 py-10'>
-
-
             <div className="relative z-10">
                 <div className='max-w-[1200px] mx-auto grid lg:grid-cols-2 '>
                     <div className=" flex lg:justify-start justify-center items-center text-center  ">
@@ -28,7 +26,7 @@ const About = () => {
                             <h1
                                 data-aos="fade-up"
                                 data-aos-anchor-placement="bottom-bottom"
-                                className="text-white  md:text-3xl text-2xl font-bold font-['Roboto'] tracking-[2px] pt-5 ">MD.
+                                className="text-white  md:text-3xl text-2xl font-bold  tracking-[2px] pt-5 ">MD.
                                 Rukon Uddin</h1>
                         </div>
                     </div>
@@ -43,13 +41,14 @@ const About = () => {
                                     <h1
                                         data-aos="fade-up"
                                         data-aos-anchor-placement="bottom-bottom"
-                                        className="absolute top-3 text-white  md:text-5xl text-2xl font-bold font-['Roboto'] tracking-[4px] ">About
+                                        className="absolute top-3 text-white  md:text-5xl text-2xl font-bold  tracking-[4px] ">About
                                         me</h1>
                                 </div>
                             </div>
 
                             <article
-                                className="text-white  md:text-xl text-base   font-['Roboto'] pt-10 tracking-[1px] mt-10"><span
+
+                                className="text-white  md:text-xl text-base   pt-10 tracking-[1px] mt-10"><span
 
                                 className='text-2xl font-extrabold'>Hello!</span> <br/>
 

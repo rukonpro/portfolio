@@ -21,7 +21,7 @@ const Services = () => {
                         <h1
                             data-aos="fade-up"
                             data-aos-anchor-placement="bottom-bottom"
-                            className=" relative right-10 text-white z-10 md:text-5xl text-2xl font-bold font-['Roboto'] tracking-[4px]">My
+                            className=" relative right-10 text-white z-10 md:text-5xl text-2xl font-bold  tracking-[4px]">My
                             services</h1>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ const Services = () => {
                         data-aos="fade-up"
                         data-aos-anchor-placement="bottom-bottom"
                         data-aos-duration="1000"
-                        className="max-w-4xl  font-bold font-['Roboto'] text-base text-slate-400 tracking-[2px] md:text-center text-justify">If
+                        className="max-w-4xl  font-bold  text-base text-slate-400 tracking-[2px] md:text-center text-justify">If
                         you're looking for a developer with expertise in a stack typically associated with web
                         development, here's a brief description of the MEAN stack, which is a popular choice</p>
                 </div>
@@ -96,11 +96,11 @@ const Services = () => {
                                 <h1
                                     data-aos="fade-up"
                                     data-aos-anchor-placement="bottom-bottom"
-                                    className="  text-white md:text-2xl text-xl font-bold font-['Roboto'] tracking-[4px]">Front-End</h1>
+                                    className="  text-white md:text-2xl text-xl font-bold  tracking-[4px]">Front-End</h1>
                                 <p
                                     data-aos="fade-up"
                                     data-aos-anchor-placement="bottom-bottom"
-                                    className=" text-gray-300 text-base pt-5 font-bold font-['Roboto'] tracking-[1px]">
+                                    className=" text-gray-300 text-base pt-5 font-bold tracking-[1px]">
                                     As well as making responsive front-end development with popular javascript
                                     frameworks such as React.js, familiar with Vue.js, HTML5, CSS3, Bootstrap4&5,and
                                     MaterialUI.
@@ -128,11 +128,11 @@ const Services = () => {
                                 <h1
                                     data-aos="fade-up"
                                     data-aos-anchor-placement="bottom-bottom"
-                                    className="  text-white md:text-2xl text-xl font-bold font-['Roboto'] tracking-[4px]">Back-End</h1>
+                                    className="  text-white md:text-2xl text-xl font-bold  tracking-[4px]">Back-End</h1>
                                 <p
                                     data-aos="fade-up"
                                     data-aos-anchor-placement="bottom-bottom"
-                                    className=" text-gray-300 text-base pt-5 font-bold font-['Roboto'] tracking-[1px]">
+                                    className=" text-gray-300 text-base pt-5 font-bold  tracking-[1px]">
                                     Utilising node.js, express.js, mongoDB, firebase, heroku, including REST APIs, and
                                     more. Building e-services, e-commerce, e-learning and more website and web
                                     applications. </p>
@@ -156,11 +156,11 @@ const Services = () => {
                                 <h1
                                     data-aos="fade-up"
                                     data-aos-anchor-placement="bottom-bottom"
-                                    className="  text-white md:text-2xl text-xl font-bold font-['Roboto'] tracking-[4px]">Template</h1>
+                                    className="  text-white md:text-2xl text-xl font-bold  tracking-[4px]">Template</h1>
                                 <p
                                     data-aos="fade-up"
                                     data-aos-anchor-placement="bottom-bottom"
-                                    className="  text-gray-300 pt-5 font-bold font-['Roboto'] tracking-[1px]">
+                                    className="  text-gray-300 pt-5 font-bold  tracking-[1px]">
                                     As well as making responsive web template with HTML5, CSS3, Bootstrap4&5,
                                     Tailwind-CSS and Metaril UI.
                                 </p>
@@ -217,12 +217,12 @@ const Services = () => {
                                 <h1
                                     data-aos="fade-up"
                                     data-aos-anchor-placement="bottom-bottom"
-                                    className=" text-left text-white md:text-2xl text-xl  font-bold font-['Roboto'] tracking-[2px]">Full-Stack
+                                    className=" text-left text-white md:text-2xl text-xl  font-bold  tracking-[2px]">Full-Stack
                                     Development</h1>
                                 <p
                                     data-aos="fade-up"
                                     data-aos-anchor-placement="bottom-bottom"
-                                    className="text-left text-gray-300 text-base pt-5 font-bold font-['Roboto'] tracking-[1px]"> Full-stack
+                                    className="text-left text-gray-300 text-base pt-5 font-bold  tracking-[1px]"> Full-stack
                                     developers are proficient in both frontend and backend development, allowing them to
                                     work on the entire web application development process.</p>
                             </div>
@@ -250,12 +250,12 @@ const Services = () => {
                                 <h1
                                     data-aos="fade-up"
                                     data-aos-anchor-placement="bottom-bottom"
-                                    className=" text-left text-white md:text-2xl text-xl font-bold font-['Roboto'] tracking-[4px]">Web
+                                    className=" text-left text-white md:text-2xl text-xl font-bold  tracking-[4px]">Web
                                     Hosting and Maintenance</h1>
                                 <p
                                     data-aos="fade-up"
                                     data-aos-anchor-placement="bottom-bottom"
-                                    className="text-left text-gray-300 text-base pt-5  font-bold font-['Roboto'] tracking-[1px]">After
+                                    className="text-left text-gray-300 text-base pt-5  font-bold  tracking-[1px]">After
                                     development, websites and applications need hosting and ongoing maintenance to
                                     ensure they remain secure, updated, and operational.</p>
                             </div>
@@ -283,12 +283,12 @@ const Services = () => {
                                 <h1
                                     data-aos="fade-up"
                                     data-aos-anchor-placement="bottom-bottom"
-                                    className=" text-left text-white md:text-2xl text-xl  font-bold font-['Roboto'] tracking-[4px]">E-commerce
+                                    className=" text-left text-white md:text-2xl text-xl  font-bold  tracking-[4px]">E-commerce
                                     Development</h1>
                                 <p
                                     data-aos="fade-up"
                                     data-aos-anchor-placement="bottom-bottom"
-                                    className="text-left text-gray-300 text-base pt-5 font-bold font-['Roboto'] tracking-[1px]">Specialized
+                                    className="text-left text-gray-300 text-base pt-5 font-bold  tracking-[1px]">Specialized
                                     in
                                     creating online stores, e-commerce developers enable businesses to sell products and
                                     services online, often integrating payment gateways and shopping cart

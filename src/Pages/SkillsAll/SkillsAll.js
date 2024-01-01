@@ -3,52 +3,34 @@ import Navigation from "../../Components/Navigatons/Navigation";
 import portfolioData from "../../data/portfolioData";
 import {useParams} from "react-router-dom";
 import SkillsCard from "../../Components/Skills/SkillsCard";
-import Arrow from "../../Images/arrow.png"
 import ScrollingBottomToTop from "../../Helpers/ScrollingBottomToTop";
+import BackButton from "../../Helpers/BackButton";
 const SkillsAll = () => {
 
     const {id}=useParams();
 
     const skills=portfolioData?.skills?.find(data=>data?.title===id);
 
-
-   /* useEffect(() => {
-        if(skills?.descriptions){
-            document.getElementById("skillsDescriptions").innerHTML=skills?.descriptions;
-        }
-    }, [skills?.descriptions]);*/
-
     useEffect(() => {
         ScrollingBottomToTop()
     }, []);
 
     return (
-        <div>
-
+        <div className=" bg-[#0e0e36] min-h-screen overflow-hidden ">
             <Navigation/>
+            <div className="absolute custom-animate-pulse inset-0 blur-[118px] radial-gradient"></div>
 
-            <section id="skills"
-                     className="relative flex justify-center items-center bg-[#0e0e36] py-20 px-5">
-                <div className="absolute custom-animate-pulse inset-0 blur-[118px] radial-gradient"></div>
-                <div className="max-w-[1200px] relative z-10 mx-auto">
-                    <div className="flex justify-between items-center py-3"
-                         data-aos="fade-up"
-                         data-aos-anchor-placement="bottom-bottom"
-                         data-aos-duration="1000"
-                    >
-                        <h1 className={`text-[#f8cafb] text-3xl  font-bold font-[Roboto] pt-15 pb-3`}>{id}</h1>
-                        <button type="button"
-                                onClick={() => window.history.back()}
-                        >
-                            <img className="h-12" src={Arrow || undefined} alt=""/>
-                        </button>
-                    </div>
+            <div className="max-w-[1200px] relative  z-10 mx-auto px-5 py-20">
+                <div className="flex justify-between items-center py-3"
+                     data-aos="fade-up"
+                     data-aos-anchor-placement="bottom-bottom"
+                     data-aos-duration="1000"
+                >
+                    <h1 className={`text-white text-xl  font-bold  pt-15 `}>All Skills</h1>
+                   <BackButton/>
+                </div>
+                <div>
 
-
-                {/*    <div>
-                        {skills?.descriptions&&<p id="skillsDescriptions" className="pb-10"></p>}
-
-                    </div>*/}
                     <ol className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3  gap-5">
                         {
                             skills?.data?.map((data, index) => {
@@ -66,18 +48,11 @@ const SkillsAll = () => {
                     </ol>
 
                     <div className="flex justify-center py-3">
-                        <button type="button"
-                                onClick={() => window.history.back()}
-                                data-aos="fade-up"
-                                data-aos-anchor-placement="bottom-bottom"
-                                data-aos-duration="1000"
-                        >
-                            <img className="h-12" src={Arrow || undefined} alt=""/>
-                        </button>
+                        <BackButton/>
                     </div>
                 </div>
 
-            </section>
+            </div>
         </div>
     );
 };

@@ -5,13 +5,13 @@ import Header from "../../Components/Header/Header";
 import Navigation from "../../Components/Navigatons/Navigation";
 import Portfolios from "../../Components/Portfolios/Portfolios";
 import Services from "../../Components/Services/Services";
-import LoginModal from "../Authentication/LoginModal/LoginModal";
 import ScrollToHashElement from "../../Helpers/HashLink";
 import Skills from "../../Components/Skills/Skills";
 import Pricing from "../../Components/Pricing/Pricing";
 import LazyLoader from "../../Helpers/LazyLoader";
 import ContactModal from "../../Components/Contacts/ContactModal";
 import ContactContainer from "../../Components/Contacts/ContactContainer";
+import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
     return (
@@ -41,7 +41,7 @@ const Home = () => {
            <LazyLoader>
                <ContactContainer/>
            </LazyLoader>
-            <LoginModal/>
+           <Footer/>
         </React.Fragment>
     )
 }

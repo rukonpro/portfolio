@@ -19,19 +19,19 @@ const ContactInfo = () => {
                     }}
                 ></div>
                 <div className="relative z-10">
-                    <h1 className="text-white text-2xl font-bold font-['Roboto'] tracking-[4px]">
+                    <h1 className="text-white text-2xl font-bold  tracking-[4px]">
                         CONTACT INFO
                     </h1>
                     <br/>
                     <article
-                        className="text-[#fdccffff] text-base font-bold font-['Roboto'] text-justify tracking-[2px]">
+                        className="text-[#fdccffff] text-base font-bold  text-justify tracking-[2px]">
                         "Ready to bring your digital vision to life. Let's connect and
                         discuss how I can elevate your online presence. Reach out for
                         web development expertise in HTML, CSS, JavaScript, and more.
                         Looking forward to collaborating with you!"
                     </article>
                     <br/>
-                    <address className="text-white text-sm font-bold font-['Roboto'] flex gap-2 items-center">
+                    <address className="text-white text-sm font-bold  flex gap-2 items-center">
                         <img
                             src={AddressIcon || undefined}
                             height="100%"
@@ -43,7 +43,7 @@ const ContactInfo = () => {
                         <span>Address: Sunamganj, Sylhet, Bangladesh.</span>
                     </address>
                     <br/>
-                    <address className="text-white text-sm font-bold font-['Roboto'] flex gap-2 items-center">
+                    <address className="text-white text-sm font-bold  flex gap-2 items-center">
                         <img
                             src={EmailIcon || undefined}
                             alt="EmailIcon"
@@ -55,7 +55,7 @@ const ContactInfo = () => {
                         Email:
                         <span>
                     <a
-                        className="text-white text-sm font-bold font-['Roboto']"
+                        className="text-white text-sm font-bold "
                         onClick={() => OnClickSound("/keypress.mp3")}
                         href="mailto:rukon.js@gmail.com"
                         target="_blank" rel="noreferrer"
@@ -65,7 +65,7 @@ const ContactInfo = () => {
                   </span>
                     </address>
                     <br/>
-                    <address className="text-white text-sm font-bold font-['Roboto'] flex items-center gap-2">
+                    <address className="text-white text-sm font-bold  flex items-center gap-2">
                         <img
                             src={PhoneIcon || undefined}
                             alt="PhoneIcon"
@@ -77,7 +77,7 @@ const ContactInfo = () => {
                         Phone:
                         <span>
                     <a
-                        className="text-white text-sm font-bold font-['Roboto']"
+                        className="text-white text-sm font-bold "
                         href="tel:+8801765459224"
                         target="_blank" rel="noreferrer"
                         onClick={() => OnClickSound("/keypress.mp3")}
@@ -87,7 +87,7 @@ const ContactInfo = () => {
                   </span>
                     </address>
                     <br/>
-                    <address className="text-white text-sm font-bold font-['Roboto'] flex items-center gap-2">
+                    <address className="text-white text-sm font-bold  flex items-center gap-2">
                         <img
                             src={Whatsapp || undefined}
                             height="100%"
@@ -100,7 +100,7 @@ const ContactInfo = () => {
                         Whatsapp:
                         <span>
                     <a
-                        className="text-white text-sm font-bold font-['Roboto']"
+                        className="text-white text-sm font-bold "
                         href="tel:+8801765459224"
                         target="_blank" rel="noreferrer"
                         onClick={() => OnClickSound("/keypress.mp3")}
@@ -110,7 +110,7 @@ const ContactInfo = () => {
                   </span>
                     </address>
                     <br/>
-                    <address className="text-white text-sm font-bold font-['Roboto'] flex items-center gap-2">
+                    <address className="text-white text-sm font-bold  flex items-center gap-2">
                         <img
                             src={SkypeIcon || undefined}
                             height="100%"
@@ -122,7 +122,7 @@ const ContactInfo = () => {
                         Skype:{" "}
                         <span>
                     <a
-                        className="text-white text-sm font-bold font-['Roboto']"
+                        className="text-white text-sm font-bold "
                         href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR0_F5FZQG1sYISeOdnT_dB3PTJqS1bxp4OOI590YbfpZE9gGmw4rs_pYYU"
                         target="_blank" rel="noreferrer"
                         onClick={() => OnClickSound("/keypress.mp3")}
@@ -133,7 +133,7 @@ const ContactInfo = () => {
                   </span>
                     </address>
                     <br/>
-                    <address className="text-white text-sm font-bold font-['Roboto'] flex items-center gap-2">
+                    <address className="text-white text-sm font-bold  flex items-center gap-2">
                         <img
                             src={LinkdinIcon || undefined}
                             height="100%"
@@ -145,7 +145,7 @@ const ContactInfo = () => {
                         Linkdin:{" "}
                         <span>
                     <a
-                        className="text-white text-sm font-bold font-['Roboto']"
+                        className="text-white text-sm font-bold "
                         href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR0_F5FZQG1sYISeOdnT_dB3PTJqS1bxp4OOI590YbfpZE9gGmw4rs_pYYU"
                         target="_blank" rel="noreferrer"
                         onClick={() => OnClickSound("/keypress.mp3")}
