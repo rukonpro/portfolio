@@ -23,7 +23,6 @@ const Portfolio = ({ data }) => {
                     <ol className='flex gap-4 mt-5'>
                         {data?.links?.liveLink && <li>
                             <a
-
                                 href={data?.links?.liveLink}
                                 onClick={()=>OnClickSound("/keypress.mp3")}
                                 target="_blank"

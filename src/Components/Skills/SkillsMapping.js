@@ -39,6 +39,7 @@ const SkillsMapping = ({data}) => {
                     >
                         <button
                             aria-label={`All ${data.title}`}
+                            onClick={()=>OnClickSound("/keypress.mp3")}
                             type="button"
                                 className="text-lg font-bold  text-white w-64 border py-2 px-5 rounded-lg hover:bg-[#350b70] shadow-2xl shadow-fuchsia-300 active:shadow-md active:shadow-fuchsia-100/30">
                             All {data.title}

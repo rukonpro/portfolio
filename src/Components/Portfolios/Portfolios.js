@@ -2,6 +2,7 @@ import React from "react";
 import portfolioData from "../../data/portfolioData";
 import {Link} from "react-router-dom";
 import PortfolioMapping from "./PortfolioMapping";
+import OnClickSound from "../../Helpers/OnClickSound";
 
 const Portfolios = () => {
   return (
@@ -41,6 +42,7 @@ const Portfolios = () => {
           <Link to="/projects-all">
             <button
                 aria-label="All Project"
+                onClick={()=>OnClickSound("/keypress.mp3")}
                 type="button"
                     className="text-white text-lg font-bold  w-64 border py-2 px-5 rounded-lg hover:bg-[#350b70] shadow-2xl shadow-fuchsia-300 active:shadow-md active:shadow-fuchsia-100/30">
               All Project
