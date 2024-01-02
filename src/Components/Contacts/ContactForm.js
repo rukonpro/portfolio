@@ -1,9 +1,9 @@
 import React from 'react';
-import OnClickSound from "../../Helpers/OnClickSound";
-import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
-import onClickSound from "../../Helpers/OnClickSound";
 import {useForm} from "react-hook-form";
+import emailjs from "@emailjs/browser";
+import OnClickSound from "../../Helpers/OnClickSound";
+
 
 const ContactForm = () => {
 
@@ -31,35 +31,22 @@ const ContactForm = () => {
             .then(
                 function (response) {
                     if (response.status === 200) {
-
+                        OnClickSound("/successSound.mp3").then()
                         Swal.fire({
                             title: "Email send is success",
                             text: "Thank you for email",
                             icon: "success",
-                        }).then(res=>{
-                           if(res){
-                               onClickSound("/successSound.mp3")
-                                   .catch(errors=>{
-                                       console.log(errors)
-                                   })
-                           }
-                        })
+                        }).then()
                         reset();
                     }
                 },
             ).catch(errors=>{
-
+            OnClickSound("/error.mp3").then()
             Swal.fire({
                 title: "Sorry! something wrong please try again...",
                 text: errors.massage,
                 icon: "error",
-            }).then(res=>{
-               if(res){
-                   onClickSound("/error.mp3").catch(errors=>{
-                       console.log(errors)
-                   })
-               }
-            })
+            }).then()
         })
     };
     return (
