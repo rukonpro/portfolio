@@ -12,6 +12,7 @@ import LazyLoader from "../../Helpers/LazyLoader";
 import ContactModal from "../../Components/Contacts/ContactModal";
 import ContactContainer from "../../Components/Contacts/ContactContainer";
 import Footer from "../../Components/Footer/Footer";
+import Certifications from "../../Components/Certifications/Certifications";
 
 const Home = () => {
     return (
@@ -24,6 +25,9 @@ const Home = () => {
             </LazyLoader>
             <LazyLoader>
                 <Skills/>
+            </LazyLoader>
+            <LazyLoader>
+                <Certifications/>
             </LazyLoader>
             <LazyLoader>
                 <Services/>

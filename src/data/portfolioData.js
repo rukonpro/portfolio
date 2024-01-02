@@ -65,6 +65,10 @@ import PyCharm from "../SkillsLogo/PyCharm_Icon.svg.png";
 import Express from "../SkillsLogo/express-109.svg";
 import Postgresql from "../SkillsLogo/postgresql.png"
 import Mongoose from '../SkillsLogo/mongoos.png';
+import  ReactCertifications from "../certifications/Programming_Hero_Certificate_react_fundamental.png";
+import  MernStackCertifications from "../certifications/certificate1024_1.png";
+import BlackBelt from "../certifications/Blackbelt.png";
+import  Congratulation from "../certifications/Congrates.png";
 
 const portfolioData = {
     about:{
@@ -713,6 +717,24 @@ const portfolioData = {
 
             },
         ]
-    }
+    },
+    certifications:[
+        {
+            title:"Programing hero Batch-4 Certifications",
+            image: MernStackCertifications
+        },
+        {
+            title:"React Certifications",
+            image:ReactCertifications
+        },
+        {
+            title:"Programing Herro Graduate for Black Belt",
+            image:BlackBelt
+        },
+        {
+            title: "Congrats for Complete Web development",
+            image: Congratulation
+        }
+    ]
 }
 export default portfolioData;
