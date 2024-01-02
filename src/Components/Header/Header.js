@@ -66,7 +66,7 @@ const Header = () => {
                                             data-aos-offset="10"
                                             data-aos-duration="1200"
                                             data-aos-easing="ease-in-sine"
-                                            href="https://github.com/RnRukon" target="_blank" rel="noreferrer">
+                                            href="https://github.com/rukonpro" target="_blank" rel="noreferrer">
                                             <button
                                                 onClick={() => OnClickSound("/keypress.mp3")}
                                                 className=' w-10 p-2 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#007ab9] to-[#eceff1]  shadow-2xl shadow-fuchsia-300 '>

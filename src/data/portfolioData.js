@@ -563,8 +563,8 @@ const portfolioData = {
                     "Users can contact us using the contact us form and by messenger chatting system. Ask any questions using the faq form. They can Review our website, private tutor, and books."
                 ],
                 links: {
-                    fontEndCode: "https://github.com/team-avengers-endgame/Eskul-Client",
-                    backEndCode: "https://github.com/team-avengers-endgame/Eskul-Server",
+                    fontEndCode: "https://github.com/rukonpro/Eskul_Client",
+                    backEndCode: "https://github.com/rukonpro/Eskul_server",
                     liveLink: "https://eskul-avengers.web.app"
                 }
             },
@@ -602,8 +602,8 @@ const portfolioData = {
 
                 ],
                 links: {
-                    fontEndCode: "https://github.com/RnRukon/ONLINE-CLOCK-SHOP",
-                    backEndCode: "https://github.com/RnRukon/ONLINE-CLOCK-SHOP-Server",
+                    fontEndCode: "https://github.com/rukonpro/ONLINE-CLOCK-SHOP",
+                    backEndCode: "https://github.com/rukonpro/ONLINE-CLOCK-SHOP-Server",
                     liveLink: "https://premier-pottery-retailer.web.app/"
                 }
             },
@@ -622,8 +622,8 @@ const portfolioData = {
                 ],
 
                 links: {
-                    fontEndCode: "https://github.com/RnRukon/Doctor-portal-cline-site",
-                    backEndCode: "https://github.com/RnRukon/Doctor-Portal-Server",
+                    fontEndCode: "https://github.com/rukonpro/Doctor-portal-cline-site",
+                    backEndCode: "https://github.com/rukonpro/Doctor-Portal-Server",
                     liveLink: "https://doctor-portal-b1210.web.app/"
                 }
             },
@@ -641,8 +641,8 @@ const portfolioData = {
 
                 ],
                 links: {
-                    fontEndCode: "https://github.com/RnRukon/Explore-Tarvel-Client",
-                    backEndCode: "https://github.com/RnRukon/Explore-Tarvel-server",
+                    fontEndCode: "https://github.com/rukonpro/Explore-Tarvel-Client",
+                    backEndCode: "https://github.com/rukonpro/Explore-Tarvel-server",
                     liveLink: "https://explore-travel-df23a.web.app"
                 }
             },
@@ -664,8 +664,8 @@ const portfolioData = {
                     "Account Management: Users can create accounts and log in, providing a personalized and secure shopping experience."
                 ],
                 links: {
-                    fontEndCode: "https://github.com/RnRukon/Shop-mart-client-site-code",
-                    backEndCode: "https://github.com/RnRukon/Shop-mart-server-code",
+                    fontEndCode: "https://github.com/rukonpro/Shop-mart-client-site-code",
+                    backEndCode: "https://github.com/rukonpro/Shop-mart-server-code",
                     liveLink: "https://shop-mart-80ef1.web.app"
                 }
             }
