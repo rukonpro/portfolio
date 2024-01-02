@@ -15,7 +15,7 @@ const ProjectAll = () => {
                      data-aos-anchor-placement="bottom-bottom"
                      data-aos-duration="1000"
                 >
-                    <h1 className={`text-white text-3xl  font-bold  pt-15 `}>All projects</h1>
+                    <h1 className={`text-white text-xl  font-bold  pt-15 `}>All projects</h1>
                     <BackButton/>
                 </div>
                 <PortfolioMapping/>
