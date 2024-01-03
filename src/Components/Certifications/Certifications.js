@@ -26,7 +26,7 @@ const Certifications = () => {
                     <Marquee
                         pauseOnHover={true}
                     >
-                        <ol className="flex gap-7 ">
+                        <ol className="flex gap-7 pr-7">
                             {
                                 portfolioData?.certifications?.map((data, index) => {
                                     return (
