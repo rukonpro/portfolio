@@ -41,7 +41,7 @@ const Navigation = () => {
     ];
 
     const menuHandler = () => {
-        OnClickSound("/keypress.mp3").catch()
+        OnClickSound("/Music/keypress.mp3").catch()
         setMenuOpen(value => !value)
     };
 
@@ -64,7 +64,7 @@ const Navigation = () => {
                                 <button
                                     type="button"
                                     aria-label="Rukon.Pro"
-                                    onClick={()=>OnClickSound("/keypress.mp3")}
+                                    onClick={()=>OnClickSound("/Music/keypress.mp3")}
                                     className="bg-gradient-to-br from-[#816aff] to-[#d066fd] text-transparent bg-clip-text text-[22px] font-bold  tracking-[2px] ">Rukon.Pro</button>
                             </Link>
 
@@ -81,7 +81,7 @@ const Navigation = () => {
                                                     <button
                                                         type="button"
                                                         aria-label={nav?.title}
-                                                        onClick={()=>OnClickSound("/keypress.mp3")}
+                                                        onClick={()=>OnClickSound("/Music/keypress.mp3")}
                                                         className="tracking-[2px] text-[#fccdff]">
                                                         {nav?.title}
                                                     </button>
@@ -96,7 +96,7 @@ const Navigation = () => {
                                             className=" bg-gradient-to-r from-[#5e2594ec] to-[#270257fd] px-5 py-1 rounded-lg  animated-button tracking-[3px]  text-[#fccdff]"
                                             onClick={() =>{
                                                 if(loginModal)loginModal.showModal()
-                                                OnClickSound("/keypress.mp3").catch()
+                                                OnClickSound("/Music/keypress.mp3").catch()
 
                                             }}><span
                                             className="bg-gradient-to-r from-[#816aff] to-[#d066fd] text-transparent bg-clip-text">Login</span>
@@ -127,7 +127,7 @@ const Navigation = () => {
                                 <li key={index}>
                                     <NavLink to={nav?.path}
                                              onClick={() => {
-                                                 OnClickSound("/keypress.mp3").catch()
+                                                 OnClickSound("/Music/keypress.mp3").catch()
                                                  setMenuOpen(false)
                                              }}
                                              className="animated-button w-full rounded-l-full inline-block transition-opacity hover:bg-gradient-to-l hover:transition-opacity   from-[#9a4cd00d] to-[#270257fd] px-5 py-3 tracking-[2px] text-[#fccdff]">{nav?.title}</NavLink>
@@ -140,8 +140,8 @@ const Navigation = () => {
                                     id="loginbuttion1"
                                     aria-label="Login"
                                     onClick={() => {
-                                        OnClickSound("/keypress.mp3").catch()
-                                        document.getElementById("loginModal").showModal()
+                                        OnClickSound("/Music/keypress.mp3").catch()
+                                        document.getElementById("login").showModal()
 
                                     }}
                                     className="w-full tracking-[3px] "><span

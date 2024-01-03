@@ -56,7 +56,7 @@ const ContactInfo = () => {
                         <span>
                     <a
                         className="text-white text-sm font-bold "
-                        onClick={() => OnClickSound("/keypress.mp3")}
+                        onClick={() => OnClickSound("/Music/keypress.mp3")}
                         href="mailto:rukon.js@gmail.com"
                         target="_blank" rel="noreferrer"
                     >
@@ -80,7 +80,7 @@ const ContactInfo = () => {
                         className="text-white text-sm font-bold "
                         href="tel:+8801765459224"
                         target="_blank" rel="noreferrer"
-                        onClick={() => OnClickSound("/keypress.mp3")}
+                        onClick={() => OnClickSound("/Music/keypress.mp3")}
                     >
                       +8801765459224
                     </a>
@@ -103,7 +103,7 @@ const ContactInfo = () => {
                         className="text-white text-sm font-bold "
                         href="tel:+8801765459224"
                         target="_blank" rel="noreferrer"
-                        onClick={() => OnClickSound("/keypress.mp3")}
+                        onClick={() => OnClickSound("/Music/keypress.mp3")}
                     >
                       +8801765459224
                     </a>
@@ -125,7 +125,7 @@ const ContactInfo = () => {
                         className="text-white text-sm font-bold "
                         href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR0_F5FZQG1sYISeOdnT_dB3PTJqS1bxp4OOI590YbfpZE9gGmw4rs_pYYU"
                         target="_blank" rel="noreferrer"
-                        onClick={() => OnClickSound("/keypress.mp3")}
+                        onClick={() => OnClickSound("/Music/keypress.mp3")}
                     >
                       {" "}
                         live:.cid.adbc52c0d5ebc624
@@ -148,7 +148,7 @@ const ContactInfo = () => {
                         className="text-white text-sm font-bold "
                         href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR0_F5FZQG1sYISeOdnT_dB3PTJqS1bxp4OOI590YbfpZE9gGmw4rs_pYYU"
                         target="_blank" rel="noreferrer"
-                        onClick={() => OnClickSound("/keypress.mp3")}
+                        onClick={() => OnClickSound("/Music/keypress.mp3")}
                     >
                       {" "}
                         Rukon Uddin

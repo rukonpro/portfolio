@@ -22,7 +22,7 @@ const Registration = ({ setIsLogin }) => {
                 <div className='py-10 '>
                     <form >
 
-                        <div className='grid grid-cols-2 md:gap-5 gap-y-3 gap-x-1  px-3 md:mt-0 mt-16  border border-purple-700  rounded-lg py-5'>
+                        <div className='grid grid-cols-2 md:gap-5 gap-y-3 gap-x-1  px-3   border border-purple-700  rounded-lg py-5'>
 
 
                             <div className=" col-span-1 ">
@@ -32,7 +32,7 @@ const Registration = ({ setIsLogin }) => {
                                     type="fname"
                                     name="fname"
                                     placeholder='Rukon'
-                                    onClick={()=>OnClickSound("/keypress.mp3")}
+                                    onClick={()=>OnClickSound("/Music/keypress.mp3")}
                                 />
                             </div>
 
@@ -43,7 +43,7 @@ const Registration = ({ setIsLogin }) => {
                                     type="lname"
                                     name="lname"
                                     placeholder='Uddin'
-                                    onClick={()=>OnClickSound("/keypress.mp3")}
+                                    onClick={()=>OnClickSound("/Music/keypress.mp3")}
                                 />
                             </div>
                             <div className=" col-span-2 ">
@@ -53,7 +53,7 @@ const Registration = ({ setIsLogin }) => {
                                     type="email"
                                     name="email"
                                     placeholder='rukon.pro@gmail.com'
-                                    onClick={()=>OnClickSound("/keypress.mp3")}
+                                    onClick={()=>OnClickSound("/Music/keypress.mp3")}
                                 />
 
                             </div>
@@ -63,7 +63,7 @@ const Registration = ({ setIsLogin }) => {
                                     <button
                                         aria-label="Forgot password?"
                                         type="button"
-                                        onClick={()=>OnClickSound("/keypress.mp3")}
+                                        onClick={()=>OnClickSound("/Music/keypress.mp3")}
                                         className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-xs font-bold clickSound"><span className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text">Forgot password?</span> </button>
                                 </div>
 
@@ -71,7 +71,7 @@ const Registration = ({ setIsLogin }) => {
                                     type="button"
                                     className="text-gray-400 absolute right-[10px] top-[30px] inset-y-0  my-auto active:text-gray-600 clickSound"
                                     onClick={() => {
-                                        OnClickSound("/keypress.mp3").catch()
+                                        OnClickSound("/Music/keypress.mp3").catch()
                                         setPasswordHidden(!isPasswordHidden)
                                     }}
                                 >
@@ -94,7 +94,7 @@ const Registration = ({ setIsLogin }) => {
                                     type={isPasswordHidden ? "password" : "text"}
                                     className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white font-bold   clickSound"
                                     placeholder='******'
-                                    onClick={()=>OnClickSound("/keypress.mp3")}
+                                    onClick={()=>OnClickSound("/Music/keypress.mp3")}
 
                                 />
 
@@ -104,7 +104,7 @@ const Registration = ({ setIsLogin }) => {
                                 <button
                                     type="submit"
                                     aria-label="Register"
-                                    onClick={()=>OnClickSound("/keypress.mp3")}
+                                    onClick={()=>OnClickSound("/Music/keypress.mp3")}
                                     className=" w-full py-2  rounded-[10px] border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#5f3391ff] to-[#020617ff]  text-white text-xl font-bold   hover:shadow-2xl  hover:shadow-[#111827] clickSound"
                                 >
                                     <span className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text  font-bold">
@@ -118,7 +118,7 @@ const Registration = ({ setIsLogin }) => {
                                         aria-label="Please Login"
                                         type="button"
                                         onClick={() => {
-                                            OnClickSound("/keypress.mp3").catch()
+                                            OnClickSound("/Music/keypress.mp3").catch()
                                             setIsLogin(isLogin => !isLogin)
                                         }}
 

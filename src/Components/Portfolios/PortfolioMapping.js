@@ -26,7 +26,7 @@ const PortfolioMapping = () => {
                                     </div>
                                     <div className="col-span-2">
                                         <img
-                                            onClick={() => OnClickSound("/keypress.mp3")}
+                                            onClick={() => OnClickSound("/Music/keypress.mp3")}
                                             className=" w-full cursor-pointer  rounded-2xl hover:transform  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-x-100  duration-300"
                                             src={data?.images?.[0]}
                                             height="100%"

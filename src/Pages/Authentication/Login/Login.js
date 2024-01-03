@@ -21,7 +21,7 @@ const Login = ({ setIsLogin }) => {
 
         <div className="py-10 ">
           <form>
-            <div className="grid grid-cols-2 md:gap-5 gap-y-3 gap-x-1  px-3 md:mt-0 mt-16 border border-purple-700 rounded-2xl    py-5">
+            <div className="grid grid-cols-2 md:gap-5 gap-y-3 gap-x-1  px-3  border border-purple-700 rounded-2xl    py-5">
               <div className=" col-span-2 ">
                 <label className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-[16px] font-bold">
                   Email address:
@@ -31,7 +31,7 @@ const Login = ({ setIsLogin }) => {
                   type="email"
                   name="email"
                   placeholder="rukon.pro@gmail.com"
-                  onClick={()=>OnClickSound("/keypress.mp3")}
+                  onClick={()=>OnClickSound("/Music/keypress.mp3")}
                 />
               </div>
 
@@ -44,7 +44,7 @@ const Login = ({ setIsLogin }) => {
                       aria-label="Forgot password?"
                     type="button"
                     className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-[16px] font-bold clickSound"
-                    onClick={()=>OnClickSound("/keypress.mp3")}
+                    onClick={()=>OnClickSound("/Music/keypress.mp3")}
                   >
                     Forgot password?
                   </button>
@@ -54,7 +54,7 @@ const Login = ({ setIsLogin }) => {
                   type="button"
                   className="text-gray-400 absolute right-[10px] top-[30px] inset-y-0  my-auto active:text-gray-600 clickSound"
                   onClick={() => {
-                    OnClickSound("/keypress.mp3").catch()
+                    OnClickSound("/Music/keypress.mp3").catch()
                     setPasswordHidden(!isPasswordHidden)
                   }}
                 >
@@ -100,7 +100,7 @@ const Login = ({ setIsLogin }) => {
                   type={isPasswordHidden ? "password" : "text"}
                   className="mt-2 px-5 py-2 w-full rounded-[10px]  border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-l  from-[#020617ff] via-[#5f3391ff] to-[#020617ff] text-white font-bold   clickSound"
                   placeholder="******"
-                  onClick={()=>OnClickSound("/keypress.mp3")}
+                  onClick={()=>OnClickSound("/Music/keypress.mp3")}
                 />
               </div>
               <div className='col-span-2 flex justify-center text-white font-bold font-["Roboto"] '>
@@ -108,7 +108,7 @@ const Login = ({ setIsLogin }) => {
                   type="submit"
                   aria-label="Login"
                   className=" w-full py-2  rounded-[10px] border border-purple-500  focus:outline-purple-400 bg-gradient-to-l focus:bg-gradient-to-r   from-[#020617ff] via-[#5f3391ff] to-[#020617ff]   text-white text-xl font-bold   hover:shadow-2xl  hover:shadow-[#111827] clickSound"
-                  onClick={()=>OnClickSound("/keypress.mp3")}
+                  onClick={()=>OnClickSound("/Music/keypress.mp3")}
                 >
                   <span className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text  font-bold">
                     Login
@@ -125,7 +125,7 @@ const Login = ({ setIsLogin }) => {
                     type="button"
                     onClick={() => {
                       setIsLogin((isLogin) => !isLogin)
-                      OnClickSound("/keypress.mp3").catch()
+                      OnClickSound("/Music/keypress.mp3").catch()
                     }}
                     className="bg-gradient-to-r from-[#9e31f7ff] to-[#344dedff] text-transparent bg-clip-text text-[16px] font-bold px-1 clickSound"
                   >

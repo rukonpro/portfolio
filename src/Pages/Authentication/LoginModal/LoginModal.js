@@ -11,7 +11,7 @@ export default function LoginModal() {
                 <form method="dialog">
                     <button
                         aria-label="x"
-                        onClick={()=>OnClickSound("/keypress.mp3")}
+                        onClick={()=>OnClickSound("/Music/keypress.mp3")}
                         className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 z-10 text-purple-500 text-3xl ">✕</button>
                 </form>
                 <div>

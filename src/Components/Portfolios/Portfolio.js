@@ -24,7 +24,7 @@ const Portfolio = ({ data }) => {
                         {data?.links?.liveLink && <li>
                             <a
                                 href={data?.links?.liveLink}
-                                onClick={()=>OnClickSound("/keypress.mp3")}
+                                onClick={()=>OnClickSound("/Music/keypress.mp3")}
                                 target="_blank"
                                 aria-label={data?.title}
                                 rel="noopener noreferrer"
@@ -39,7 +39,7 @@ const Portfolio = ({ data }) => {
                         </li>}
                         {data?.links?.fontEndCode && <li>
                             <a
-                               onClick={()=>OnClickSound("/keypress.mp3")}
+                               onClick={()=>OnClickSound("/Music/keypress.mp3")}
                                href={data?.links?.fontEndCode}
                                aria-label={data?.title}
                                target="_blank"
@@ -53,7 +53,7 @@ const Portfolio = ({ data }) => {
                         </li>}
                         {data?.links?.backEndCode && <li>
                             <a
-                               onClick={()=>OnClickSound("/keypress.mp3")}
+                               onClick={()=>OnClickSound("/Music/keypress.mp3")}
                                href={data?.links?.backEndCode}
                                aria-label={data?.title} target="_blank"
                                rel="noopener noreferrer">

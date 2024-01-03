@@ -17,7 +17,7 @@ const Header = () => {
             id="home"
             className="relative  bg-[#0e0e36]    "
         >
-            <div className=" container h-screen flex items-center mx-auto px-5 py-24">
+            <div className=" container h-screen overflow-hidden flex items-center mx-auto px-5 py-24">
                 <div className=" relative z-10 ">
                     <div className='grid lg:grid-cols-2 grid-cols-1 items-center'>
                         <div>
@@ -68,7 +68,7 @@ const Header = () => {
                                             data-aos-easing="ease-in-sine"
                                             href="https://github.com/rukonpro" target="_blank" rel="noreferrer">
                                             <button
-                                                onClick={() => OnClickSound("/keypress.mp3")}
+                                                onClick={() => OnClickSound("/Music/keypress.mp3")}
                                                 className=' w-10 p-2 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#007ab9] to-[#eceff1]  shadow-2xl shadow-fuchsia-300 '>
                                                 <LazyLoader>
                                                     <img src={GithubIcon || undefined} height="100%" width="100%"
@@ -86,7 +86,7 @@ const Header = () => {
                                             href="https://www.linkedin.com/in/rukonpro/" target="_blank"
                                            rel="noreferrer">
                                             <button
-                                                onClick={() => OnClickSound("/keypress.mp3")}
+                                                onClick={() => OnClickSound("/Music/keypress.mp3")}
                                                 className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#007ab9] to-[#0e0e36] '>
                                                 <LazyLoader>
                                                     <img src={LinkdinIcon || undefined} height="100%" width="100%"
@@ -103,7 +103,7 @@ const Header = () => {
                                             data-aos-easing="ease-in-sine"
                                             href="mailto:rukon.js@gamil.com" target="_blank" rel="noreferrer">
                                             <button
-                                                onClick={() => OnClickSound("/keypress.mp3")}
+                                                onClick={() => OnClickSound("/Music/keypress.mp3")}
                                                 className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#f44336] to-[#0e0e36] '>
                                                 <LazyLoader>
                                                     <img src={EmailIcon || undefined} height="100%" width="100%"
@@ -121,7 +121,7 @@ const Header = () => {
                                             href="https://join.skype.com/invite/yXu1Kxuk8hZF?fbclid=IwAR18ICJ_AmaQUWEIsiIfd4XyikyYvhcEIrM5HLImwXXJc42KT6pwqWjDaC0"
                                            target="_blank" rel="noreferrer">
                                             <button
-                                                onClick={() => OnClickSound("/keypress.mp3")}
+                                                onClick={() => OnClickSound("/Music/keypress.mp3")}
                                                 className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#00aff0] to-[#0e0e36] '>
                                                 <LazyLoader>
                                                     <img src={SkypeIcon || undefined} height="100%" width="100%"
@@ -138,7 +138,7 @@ const Header = () => {
                                             href="https://api.whatsapp.com/send?phone=1765459224" target="_blank"
                                            rel="noreferrer">
                                             <button
-                                                onClick={() => OnClickSound("/keypress.mp3")}
+                                                onClick={() => OnClickSound("/Music/keypress.mp3")}
                                                 className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#4caf50] to-[#0e0e36] '>
                                                 <LazyLoader>
                                                     <img src={Whatsapp || undefined} height="100%" width="100%"
@@ -156,7 +156,7 @@ const Header = () => {
                                             data-aos-easing="ease-in-sine"
                                             href="tel:+8801765459224" target="_blank" rel="noreferrer">
                                             <button
-                                                onClick={() => OnClickSound("/keypress.mp3")}
+                                                onClick={() => OnClickSound("/Music/keypress.mp3")}
                                                 className=' w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-bl from-[#3e9ddd] to-[#0e0e36] '
                                                 data-aos="fade-in"
                                             >
@@ -176,7 +176,7 @@ const Header = () => {
                                         href="https://drive.google.com/file/d/1S8dFRWC7f3QH6ZVnGp6miYLwPz8s4coh/view?usp=sharing"
                                        target="_blank" rel="noreferrer">
                                         <button
-                                            onClick={() => OnClickSound("/keypress.mp3")}
+                                            onClick={() => OnClickSound("/Music/keypress.mp3")}
                                             id="downloadcv"
                                             aria-label="Download CV"
                                             className=" mt-5  text-center text-white md:text-xl text-base font-bold  bg-gradient-to-l from-[#1355b7] to-[#0e0e36] rounded-full active:bg-gradient-to-l hover:shadow-2xl  hover:shadow-[#263458] tracking-[1px] px-4 py-2 ">
@@ -210,7 +210,7 @@ const Header = () => {
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-sine"
                             onClick={() => {
-                                OnClickSound("/keypress.mp3").catch();
+                                OnClickSound("/Music/keypress.mp3").catch();
                                 window.scrollBy(0, 900);
                             }}
                             type="button"

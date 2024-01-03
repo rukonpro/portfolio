@@ -10,7 +10,7 @@ const ContactModal = () => {
                 <form method="dialog" className=" absolute z-20 right-0">
                     <button
                         aria-label="x"
-                        onClick={() => OnClickSound("/keypress.mp3")}
+                        onClick={() => OnClickSound("/Music/keypress.mp3")}
                         className="btn btn-sm btn-circle btn-ghost  right-2 top-2 relative text-purple-500 text-3xl z-10 ">✕
                     </button>
                 </form>

@@ -13,6 +13,7 @@ import ContactModal from "../../Components/Contacts/ContactModal";
 import ContactContainer from "../../Components/Contacts/ContactContainer";
 import Footer from "../../Components/Footer/Footer";
 import Certifications from "../../Components/Certifications/Certifications";
+import Counters from "../../Components/Counters/Counters";
 
 const Home = () => {
     return (
@@ -21,8 +22,12 @@ const Home = () => {
             <Navigation/>
             <Header/>
             <LazyLoader>
+                <Counters/>
+            </LazyLoader>
+            <LazyLoader>
                 <About/>
             </LazyLoader>
+
             <LazyLoader>
                 <Skills/>
             </LazyLoader>
@@ -35,6 +40,7 @@ const Home = () => {
             <LazyLoader>
                 <Portfolios/>
             </LazyLoader>
+
             <LazyLoader>
                 <Blog/>
             </LazyLoader>

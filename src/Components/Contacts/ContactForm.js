@@ -31,7 +31,7 @@ const ContactForm = () => {
             .then(
                 function (response) {
                     if (response.status === 200) {
-                        OnClickSound("/successSound.mp3").then()
+                        OnClickSound("/Music/successSound.mp3").then()
                         Swal.fire({
                             title: "Email send is success",
                             text: "Thank you for email",
@@ -41,7 +41,7 @@ const ContactForm = () => {
                     }
                 },
             ).catch(errors=>{
-            OnClickSound("/error.mp3").then()
+            OnClickSound("/Music/error.mp3").then()
             Swal.fire({
                 title: "Sorry! something wrong please try again...",
                 text: errors.massage,
@@ -61,7 +61,7 @@ const ContactForm = () => {
                     name="fname"
                     id="fname"
                     placeholder="Rukon"
-                    onClick={() => OnClickSound("/keypress.mp3")}
+                    onClick={() => OnClickSound("/Music/keypress.mp3")}
                 />
                 {errors.fname && (
                     <span className="text-xs text-red-500">
@@ -78,7 +78,7 @@ const ContactForm = () => {
                     name="lname"
                     id="lname"
                     placeholder="Uddin"
-                    onClick={() => OnClickSound("/keypress.mp3")}
+                    onClick={() => OnClickSound("/Music/keypress.mp3")}
                 />
                 {errors.lname && (
                     <span className="text-xs text-red-500">
@@ -95,7 +95,7 @@ const ContactForm = () => {
                     name="email"
                     id="email"
                     placeholder="example@gmail.com"
-                    onClick={() => OnClickSound("/keypress.mp3")}
+                    onClick={() => OnClickSound("/Music/keypress.mp3")}
                 />
                 {errors.email && (
                     <span className="text-xs text-red-500">
@@ -113,7 +113,7 @@ const ContactForm = () => {
                     name="subject"
                     id="subject"
                     placeholder="Subject"
-                    onClick={() => OnClickSound("/keypress.mp3")}
+                    onClick={() => OnClickSound("/Music/keypress.mp3")}
                 />
                 {errors.subject && (
                     <span className="text-xs text-red-500">
@@ -130,7 +130,7 @@ const ContactForm = () => {
                     name="massage"
                     id="massage"
                     placeholder="Your massage"
-                    onClick={() => OnClickSound("/keypress.mp3")}
+                    onClick={() => OnClickSound("/Music/keypress.mp3")}
                 />
                 {errors.massage && (
                     <span className="text-xs text-red-500">
@@ -145,7 +145,7 @@ const ContactForm = () => {
                     aria-label="Send"
                     id="Send"
                     className="w-[167px] h-[49px]  border  border-purple-500  focus:outline-purple-400 rounded-[86.50px] bg-gradient-to-l   from-[#5f3391ff] to-[#111827] shadow-2xl shadow-indigo-600 hover:bg-gradient-to-tr active:bg-gradient-to-r "
-                    onClick={() => OnClickSound("/keypress.mp3")}
+                    onClick={() => OnClickSound("/Music/keypress.mp3")}
                 >
                     Send
                 </button>
