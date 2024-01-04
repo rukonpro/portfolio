@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfilePhoto from '../../Images/profilePhoto.webp';
+import ProfilePhoto from '../../Images/rukon.jpg';
 import LazyLoader from "../../Helpers/LazyLoader";
 
 
