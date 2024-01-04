@@ -1,5 +1,5 @@
 import React from "react";
-import Iphone from "../../Images/header-laptop-2.svg";
+/*import Iphone from "../../Images/header-laptop-2.svg";*/
 import EmailIcon from "../../Images/gmail.png";
 import PhoneIcon from "../../Images/phone-call.png";
 import SkypeIcon from "../../Images/skype.png";
@@ -8,6 +8,7 @@ import Whatsapp from "../../Images/whatsapp.png";
 import GithubIcon from "../../Images/github-icon-1.svg";
 import LazyLoader from "../../Helpers/LazyLoader";
 import OnClickSound from "../../Helpers/OnClickSound";
+import Slider from "./Slider";
 
 
 const Header = () => {
@@ -17,7 +18,7 @@ const Header = () => {
             id="home"
             className="relative  bg-[#0e0e36]    "
         >
-            <div className=" container h-screen overflow-hidden flex items-center mx-auto px-5 py-24">
+            <div className=" container min-h-screen overflow-hidden flex items-center mx-auto px-5 py-24">
                 <div className=" relative z-10 ">
                     <div className='grid lg:grid-cols-2 grid-cols-1 items-center'>
                         <div>
@@ -186,20 +187,9 @@ const Header = () => {
                                     </a>
                                 </div>
                         </div>
-                        <div className="flex justify-end">
+                        <div className="flex justify-center lg:justify-end">
                             <LazyLoader>
-                                <img
-                                    data-aos="fade-left"
-                                    data-aos-offset="10"
-                                    data-aos-duration="2000"
-                                    data-aos-easing="ease-in-sine"
-                                    className=" md:w-[76vh]"
-                                    src={Iphone || undefined}
-                                    height="100%"
-                                    width="100%"
-                                    alt="bannderphoto"
-                                    loading="eager"
-                                />
+                                <Slider/>
                             </LazyLoader>
                         </div>
                     </div>
