@@ -11,7 +11,7 @@ import React from "react";
 function App() {
     AocFuc()
   return (
-      <main className="overflow-hidden" >
+      <main className="overflow-hidden">
           <RouterProvider router={router}/>
       </main>
   );

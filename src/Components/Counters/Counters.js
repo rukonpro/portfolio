@@ -25,7 +25,7 @@ const Counters = () => {
         <div className="relative  overflow-hidden">
             <div className="absolute -inset-full bg-[#0e0e36]/85 "></div>
             <div className="relative z-10">
-                <div className="w-full max-w-[1200px] mx-auto py-28  px-5">
+                <div className="w-full max-w-[1200px] mx-auto md:py-24 py-16 px-5">
                     <div className="grid grid-cols-3 gap-4 md:gap-5 items-center justify-center">
                         {counter?.map((counter, index) => (
                             <InView key={index} trackVisibility rootMargin="0px 0px" delay={100}>
@@ -55,7 +55,7 @@ style={{
                 </div>
             </div>
 
-            <video  className="blur-[1px] object-cover  w-full h-full fixed top-0 left-0 z-[-1] overflow-hidden" autoPlay={true} muted loop>
+            <video  className="blur-[1px] object-cover  w-full h-full fixed top-0 left-0 z-[-1]" autoPlay={true} muted loop>
                 <source src="/Music/codingVideo.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>

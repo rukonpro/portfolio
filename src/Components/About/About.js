@@ -4,9 +4,6 @@ import LazyLoader from "../../Helpers/LazyLoader";
 
 
 const About = () => {
-
-
-
     return (
         <section id="about" className='relative bg-[#121837] px-5 py-28'>
             <div className="relative z-10">
