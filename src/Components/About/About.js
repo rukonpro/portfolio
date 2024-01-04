@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfilePhoto from '../../Images/rukon.jpg';
+import ProfilePhoto from '../../Images/rukon.webp';
 import LazyLoader from "../../Helpers/LazyLoader";
 
 
@@ -12,14 +12,13 @@ const About = () => {
             <div className="relative z-10">
                 <div className='max-w-[1200px] mx-auto grid lg:grid-cols-2 '>
                     <div className=" flex lg:justify-start justify-center items-center text-center  ">
-                        <div className="md:w-[350px] w-[292px]">
+                        <div className="md:w-[350px] w-[292px]" >
                             <LazyLoader>
                                 <img
                                     data-aos="fade-up"
-                                    data-aos-anchor-placement="bottom-bottom"
                                     data-aos-easing="linear"
                                     data-aos-duration="1500"
-                                    className='rounded-full object-contain scale-x-[-1]'
+                                    className='rounded-full object-contain scale-x-[-1] !transform rotate-X-190'
                                     src={ProfilePhoto || undefined}
                                     alt="profilephoto" height="100%" width="100%" loading="lazy"/>
                             </LazyLoader>
