@@ -51,7 +51,9 @@ const Home = () => {
            <LazyLoader>
                <ContactContainer/>
            </LazyLoader>
-           <Footer/>
+            <LazyLoader>
+                <Footer/>
+            </LazyLoader>
         </React.Fragment>
     )
 }

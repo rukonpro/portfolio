@@ -6,7 +6,6 @@ const Login = ({ setIsLogin }) => {
 
   return (
     <section
-      id="contact"
       className=" relative  overflow-hidden bg-gradient-to-tl to-[#13053d] via-[#031220] from-[#250725]  py-10  "
     >
       <div className="relative  z-10 container mx-auto  px-3">

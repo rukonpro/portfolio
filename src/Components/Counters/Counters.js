@@ -55,7 +55,7 @@ style={{
                 </div>
             </div>
 
-            <video  className="blur-[1px] object-cover  w-full h-full fixed top-0 left-0 z-[-1]" autoPlay={true} muted loop>
+            <video  className="blur-[1px] object-cover  w-full h-full object-contain fixed top-0 left-0 z-[-1] overflow-hidden" autoPlay={true} muted loop>
                 <source src="/Music/codingVideo.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>

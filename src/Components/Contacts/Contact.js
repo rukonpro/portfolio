@@ -4,7 +4,7 @@ import ContactInfo from "./ContactInfo";
 const Contact = () => {
 
   return (
-      <section id="contact" className=" relative bg-slate-950 py-10 ">
+      <section className=" relative bg-slate-950 py-10 ">
         <div
             className="absolute inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg"
             style={{
