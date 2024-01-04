@@ -4,7 +4,7 @@ import portfolioData from "../../data/portfolioData";
 const Pricing= () => {
 
     return (
-        <section className='relative py-14 px-5 bg-gray-950 '>
+        <section className='relative py-28 px-5 bg-gray-950 '>
             <div className='absolute inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl  radial-gradient' ></div>
             <div className="relative max-w-[1200px] mx-auto text-gray-300 sm:px-4 md:px-8">
                 <div className='max-w-xl mx-auto space-y-3 px-4 sm:text-center sm:px-0'>

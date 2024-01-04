@@ -6,7 +6,7 @@ const Skills = () => {
 
     return (
         <section id="skills"
-            className=" overflow-hidden relative flex justify-center items-center bg-[#0e0e36] py-20 px-5">
+            className=" overflow-hidden relative flex justify-center items-center bg-[#0e0e36] py-28 px-5">
             <div className="absolute custom-animate-pulse inset-0 blur-[118px] radial-gradient"></div>
             <div className="max-w-[1200px] relative z-10 mx-auto">
                 <div className="flex justify-center">

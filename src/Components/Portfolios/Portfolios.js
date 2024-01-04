@@ -8,7 +8,7 @@ const Portfolios = () => {
   return (
     <section
       id="portfolio"
-      className="relative  bg-[#0e0e36] py-10 px-5 overflow-hidden"
+      className="relative  bg-[#0e0e36] py-28 px-5"
     >
       <div
         className="absolute  inset-0  blur-[118px] radial-gradient"

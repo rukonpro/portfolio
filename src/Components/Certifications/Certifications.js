@@ -6,7 +6,7 @@ import LazyLoader from "../../Helpers/LazyLoader";
 const Certifications = () => {
     return (
         <div
-            className="py-24 relative bg-[#0e0e36]"
+            className="py-28 relative bg-[#0e0e36]"
         >
             <div className="absolute custom-animate-pulse inset-0 blur-[118px] radial-gradient"></div>
             <div className="relative z-10">

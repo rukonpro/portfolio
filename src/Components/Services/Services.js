@@ -9,7 +9,7 @@ import LazyLoader from "../../Helpers/LazyLoader";
 const Services = () => {
     return (
         <section id="services"
-                 className=" overflow-hidden relative flex justify-center items-center bg-[#0e0e36] py-20 px-3">
+                 className=" overflow-hidden relative flex justify-center items-center bg-[#0e0e36] py-28 px-3">
             <div
                 className="absolute custom-animate-pulse inset-0 m-auto max-w-xs h-[357px] blur-[1000px] sm:max-w-md md:max-w-lg"
                 style={{background: "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)"}}></div>
