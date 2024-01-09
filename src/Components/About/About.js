@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfilePhoto from '../../Images/rukon.webp';
+import ProfilePhoto from '../../Images/myprofile.webp';
 import LazyLoader from "../../Helpers/LazyLoader";
 
 
@@ -7,44 +7,47 @@ const About = () => {
     return (
         <section id="about" className='relative bg-[#121837] px-5 py-28'>
             <div className="relative z-10">
-                <div className='max-w-[1200px] mx-auto grid lg:grid-cols-2 '>
+                <div className='max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-10 items-center'>
                     <div className=" flex lg:justify-start justify-center items-center text-center  ">
-                        <div className="md:w-[350px] w-[292px]" >
+                        <div
+                            data-aos="fade-up"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500"
+                            className=" w-full h-full object-cover rounded-lg overflow-hidden ">
                             <LazyLoader>
                                 <img
-                                    data-aos="fade-up"
-                                    data-aos-easing="linear"
-                                    data-aos-duration="1500"
-                                    className='rounded-full object-contain scale-x-[-1] !transform rotate-X-190'
+                                    className='  object-contain scale-x-[-1] !transform rotate-X-190 '
                                     src={ProfilePhoto || undefined}
                                     alt="profilephoto" height="100%" width="100%" loading="lazy"/>
                             </LazyLoader>
-                            <h1
+                          {/*  <h1
                                 data-aos="fade-up"
                                 data-aos-anchor-placement="bottom-bottom"
-                                className="text-white  md:text-3xl text-2xl font-bold  tracking-[2px] pt-5 ">MD.
-                                Rukon Uddin</h1>
+                                className="text-white  md:text-3xl text-2xl font-bold  tracking-[2px] p-5  ">MD.
+                                RUKON UDDIN</h1>*/}
                         </div>
                     </div>
                     <div>
-                        <div
-                            className='pt-10 '>
+                        <div>
                             <div className="relative ">
-                            <div>
+                                <div>
                                     <div
                                         className="absolute w-[55px] h-[55px] bg-gradient-to-tl from-[#17113a] to-[#8907c0]  animate-spin rounded-full customShadow "
                                     ></div>
                                     <h1
                                         data-aos="fade-up"
-                                        data-aos-anchor-placement="bottom-bottom"
+                                        data-aos-easing="linear"
+                                        data-aos-duration="1300"
                                         className="absolute top-3 text-white  md:text-5xl text-2xl font-bold  tracking-[4px] ">About
                                         me</h1>
                                 </div>
                             </div>
 
                             <article
-
-                                className="text-white  md:text-xl text-base   pt-10 tracking-[1px] mt-10"><span
+                                data-aos="fade-up"
+                                data-aos-easing="linear"
+                                data-aos-duration="1000"
+                                className="text-white  md:text-xl text-base   tracking-[1px] pt-20"><span
 
                                 className='text-2xl font-extrabold'>Hello!</span> <br/>
 
@@ -67,7 +70,7 @@ const About = () => {
                                 <br/>
                                 <br/>
                                 I have good knowledge of building web applications with
- 
+
                                 <span
                                     data-aos="fade-up"
                                     data-aos-anchor-placement="bottom-bottom"
